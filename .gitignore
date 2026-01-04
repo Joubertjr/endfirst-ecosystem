@@ -1,0 +1,46 @@
+# ENDFIRST - .gitignore
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+logs/
+
+# Dependências
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+secrets/
+*.key
+*.pem
+
+# Cache
+.cache/
+*.cache
+
+# Arquivos pessoais
+RASCUNHOS/
+NOTAS_PESSOAIS/

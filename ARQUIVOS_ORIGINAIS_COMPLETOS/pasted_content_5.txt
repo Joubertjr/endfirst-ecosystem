@@ -1,0 +1,448 @@
+# Especificação Técnica - @google_Store v2.0
+## Sistema de Banco de Referências com RAG
+
+**Versão**: 2.0
+**Data**: 19 de Dezembro de 2025
+**Status**: Especificação para Implementação
+
+---
+
+## 1. VISÃO GERAL DO SISTEMA
+
+### 1.1 Objetivo
+Transformar o @google_Store de um sistema específico de análise de documentos jurídicos em um **Banco de Referências Universal** - um sistema de memória institucional capaz de indexar, pesquisar e analisar qualquer tipo de documento usando RAG (Retrieval-Augmented Generation) com Google Gemini File Search.
+
+### 1.2 Evolução do Projeto
+- **v1.0 (Atual)**: Sistema focado em análise de documentos jurídicos (procurações) com 2 playbooks específicos
+- **v2.0 (Alvo)**: Plataforma genérica de conhecimento institucional com playbooks configuráveis e multi-domínio
+
+### 1.3 Características Principais
+- **RAG Nativo**: Google File Search Store como fonte única de verdade
+- **Multi-Playbook**: Análises configuráveis por tipo de documento
+- **Processamento Assíncrono**: Background jobs com tracking de status
+- **Busca Semântica**: Retrieval contextual usando embeddings do Gemini
+- **Analytics Avançado**: Dashboards de métricas e insights
+- **Escalabilidade**: 10 usuários → 10.000 usuários com auto-scaling
+
+---
+
+## 2. ARQUITETURA DO SISTEMA
+
+### 2.1 Visão de Alto Nível
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        USUÁRIO FINAL                             │
+│                    (Browser / Mobile App)                        │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │ HTTPS / TLS 1.3
+                       │
+┌──────────────────────▼──────────────────────────────────────────┐
+│                     FRONTEND LAYER                               │
+│  ┌────────────────────────────────────────────────────────────┐ │
+│  │  Next.js 15 (React Server Components + Client Components)  │ │
+│  │  - Server Actions para mutations                           │ │
+│  │  - Streaming UI com Suspense                               │ │
+│  │  - Real-time updates (Server-Sent Events)                  │ │
+│  │  - TypeScript + Zod validation                             │ │
+│  └────────────────────────────────────────────────────────────┘ │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │ REST API / GraphQL (TBD)
+                       │
+┌──────────────────────▼──────────────────────────────────────────┐
+│                     API GATEWAY LAYER                            │
+│  ┌────────────────────────────────────────────────────────────┐ │
+│  │  Google Cloud Load Balancer                                │ │
+│  │  - Rate Limiting (1000 req/min por IP)                     │ │
+│  │  - DDoS Protection (Cloud Armor)                           │ │
+│  │  - SSL Termination                                         │ │
+│  │  - Request/Response Logging                                │ │
+│  └────────────────────────────────────────────────────────────┘ │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────────────┐
+│                   APPLICATION LAYER                              │
+│  ┌────────────────────────────────────────────────────────────┐ │
+│  │              FastAPI Backend (Python 3.12+)                │ │
+│  │  ┌──────────────────────────────────────────────────────┐  │ │
+│  │  │  Controllers (Routers)                               │  │ │
+│  │  │  - /documents (upload, list, delete, get)            │  │ │
+│  │  │  - /analysis (trigger, status, results)              │  │ │
+│  │  │  - /search (semantic, keyword, hybrid)               │  │ │
+│  │  │  - /playbooks (CRUD, list templates)                 │  │ │
+│  │  │  - /analytics (dashboards, metrics, exports)         │  │ │
+│  │  └──────────────────────────────────────────────────────┘  │ │
+│  │  ┌──────────────────────────────────────────────────────┐  │ │
+│  │  │  Business Logic (Services)                           │  │ │
+│  │  │  - DocumentService (gestão de arquivos)              │  │ │
+│  │  │  - AnalysisService (orquestração de análises)        │  │ │
+│  │  │  - SearchService (RAG + semantic search)             │  │ │
+│  │  │  - PlaybookService (templates e execução)            │  │ │
+│  │  │  - MetricsService (coleta e agregação)               │  │ │
+│  │  └──────────────────────────────────────────────────────┘  │ │
+│  │  ┌──────────────────────────────────────────────────────┐  │ │
+│  │  │  Data Access Layer (Repositories)                    │  │ │
+│  │  │  - DocumentRepository (PostgreSQL)                   │  │ │
+│  │  │  - AnalysisRepository (PostgreSQL)                   │  │ │
+│  │  │  - CacheRepository (Dragonfly)                       │  │ │
+│  │  │  - VectorRepository (Google File Search + pgvector)  │  │ │
+│  │  └──────────────────────────────────────────────────────┘  │ │
+│  └────────────────────────────────────────────────────────────┘ │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+         ┌─────────────┼─────────────┬─────────────┐
+         │             │             │             │
+┌────────▼────┐ ┌──────▼──────┐ ┌────▼─────┐ ┌────▼─────────┐
+│  PostgreSQL │ │  Dragonfly  │ │  Google  │ │   Temporal   │
+│   (Neon)    │ │   (Cache)   │ │   File   │ │  Workflows   │
+│             │ │             │ │  Search  │ │  + BullMQ    │
+│ - Metadata  │ │ - Sessions  │ │          │ │              │
+│ - Analyses  │ │ - Results   │ │ - PDFs   │ │ - Jobs       │
+│ - Users     │ │ - Queries   │ │ - Docs   │ │ - Schedules  │
+│ - Playbooks │ │ - Hot data  │ │ - Images │ │ - Retries    │
+│ - pgvector  │ │             │ │          │ │              │
+└─────────────┘ └─────────────┘ └──────────┘ └──────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    OBSERVABILITY LAYER                           │
+│  ┌───────────────┐  ┌───────────────┐  ┌───────────────────┐   │
+│  │  Prometheus   │  │    Grafana    │  │  Tempo (Traces)   │   │
+│  │  (Metrics)    │  │  (Dashboards) │  │  OpenTelemetry    │   │
+│  └───────────────┘  └───────────────┘  └───────────────────┘   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 2.2 Camadas da Arquitetura
+
+#### 2.2.1 Frontend Layer
+**Tecnologia**: Next.js 15 com App Router
+
+**Componentes**:
+- **Server Components**: Renderização inicial, SEO, data fetching
+- **Client Components**: Interatividade (upload, drag-and-drop, modais)
+- **Server Actions**: Mutations sem criar endpoints explícitos
+- **Streaming UI**: Suspense boundaries para loading states
+- **Real-time Updates**: SSE para status de análises em andamento
+
+**Estrutura de Diretórios**:
+```
+frontend/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   └── signup/
+│   ├── (dashboard)/
+│   │   ├── documentos/
+│   │   ├── analises/
+│   │   ├── busca/
+│   │   ├── playbooks/
+│   │   └── analytics/
+│   ├── api/                    # Route handlers
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/                     # shadcn/ui components
+│   ├── features/               # Feature-specific components
+│   └── shared/                 # Shared components
+├── lib/
+│   ├── actions/                # Server Actions
+│   ├── api/                    # API client
+│   ├── hooks/                  # Custom hooks
+│   └── utils/                  # Utilities
+└── public/
+```
+
+#### 2.2.2 API Gateway Layer
+**Tecnologia**: Google Cloud Load Balancer + Cloud Armor
+
+**Responsabilidades**:
+- Rate limiting (1000 req/min por IP, 10000 req/min global)
+- DDoS protection (Cloud Armor rules)
+- SSL/TLS termination (TLS 1.3)
+- Request/response logging
+- CORS handling
+- Health checks
+
+#### 2.2.3 Application Layer
+**Tecnologia**: FastAPI (Python 3.12+)
+
+**Estrutura de Diretórios**:
+```
+backend/
+├── app/
+│   ├── api/
+│   │   ├── v1/
+│   │   │   ├── endpoints/
+│   │   │   │   ├── documents.py
+│   │   │   │   ├── analysis.py
+│   │   │   │   ├── search.py
+│   │   │   │   ├── playbooks.py
+│   │   │   │   └── analytics.py
+│   │   │   └── router.py
+│   │   └── deps.py             # Dependencies (DB, auth, etc)
+│   ├── core/
+│   │   ├── config.py           # Settings (Pydantic BaseSettings)
+│   │   ├── security.py         # Auth, JWT, permissions
+│   │   └── exceptions.py       # Custom exceptions
+│   ├── models/
+│   │   ├── document.py         # SQLAlchemy models
+│   │   ├── analysis.py
+│   │   ├── user.py
+│   │   └── playbook.py
+│   ├── schemas/
+│   │   ├── document.py         # Pydantic schemas (DTOs)
+│   │   ├── analysis.py
+│   │   └── playbook.py
+│   ├── services/
+│   │   ├── document_service.py
+│   │   ├── analysis_service.py
+│   │   ├── search_service.py
+│   │   ├── playbook_service.py
+│   │   └── metrics_service.py
+│   ├── repositories/
+│   │   ├── document_repository.py
+│   │   ├── analysis_repository.py
+│   │   ├── cache_repository.py
+│   │   └── vector_repository.py
+│   ├── workers/
+│   │   ├── analysis_worker.py  # Temporal workers
+│   │   └── scheduled_tasks.py
+│   └── main.py                 # FastAPI app
+├── tests/
+├── alembic/                    # Database migrations
+└── requirements.txt
+```
+
+**Padrões de Design**:
+- **Repository Pattern**: Abstração do acesso a dados
+- **Service Layer**: Lógica de negócio isolada
+- **Dependency Injection**: FastAPI Depends para injeção de dependências
+- **DTO Pattern**: Pydantic schemas para validação e serialização
+
+#### 2.2.4 Data Layer
+
+##### PostgreSQL (Neon Serverless)
+**Propósito**: Base de dados relacional principal
+
+**Schemas**:
+```sql
+-- Tabela de Usuários
+CREATE TABLE users (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    email VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    clerk_user_id VARCHAR(255) UNIQUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Tabela de Documentos
+CREATE TABLE documents (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+    google_file_id VARCHAR(255) UNIQUE NOT NULL,
+    filename VARCHAR(500) NOT NULL,
+    file_type VARCHAR(50),
+    file_size_bytes BIGINT,
+    upload_date TIMESTAMP DEFAULT NOW(),
+    metadata JSONB,
+    status VARCHAR(50) DEFAULT 'active',
+    INDEX idx_user_id (user_id),
+    INDEX idx_google_file_id (google_file_id),
+    INDEX idx_upload_date (upload_date DESC)
+);
+
+-- Tabela de Playbooks
+CREATE TABLE playbooks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    template_content TEXT NOT NULL,
+    category VARCHAR(100),
+    is_active BOOLEAN DEFAULT TRUE,
+    created_by UUID REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    INDEX idx_category (category),
+    INDEX idx_is_active (is_active)
+);
+
+-- Tabela de Análises
+CREATE TABLE analyses (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    document_id UUID REFERENCES documents(id) ON DELETE CASCADE,
+    playbook_id UUID REFERENCES playbooks(id),
+    user_id UUID REFERENCES users(id),
+    status VARCHAR(50) DEFAULT 'pending',
+    started_at TIMESTAMP,
+    completed_at TIMESTAMP,
+    results JSONB,
+    error_message TEXT,
+    metrics JSONB,
+    INDEX idx_document_id (document_id),
+    INDEX idx_status (status),
+    INDEX idx_completed_at (completed_at DESC)
+);
+
+-- Tabela de Embeddings (pgvector)
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE document_embeddings (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    document_id UUID REFERENCES documents(id) ON DELETE CASCADE,
+    chunk_index INTEGER NOT NULL,
+    chunk_text TEXT NOT NULL,
+    embedding vector(768),
+    metadata JSONB,
+    INDEX idx_document_id (document_id),
+    INDEX embedding_idx ON document_embeddings USING ivfflat (embedding vector_cosine_ops)
+);
+
+-- Tabela de Métricas Agregadas
+CREATE TABLE metrics_summary (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    date DATE NOT NULL,
+    total_documents INTEGER DEFAULT 0,
+    total_analyses INTEGER DEFAULT 0,
+    avg_processing_time_ms INTEGER,
+    success_rate DECIMAL(5,2),
+    metrics_json JSONB,
+    INDEX idx_date (date DESC)
+);
+```
+
+##### Dragonfly (Cache)
+**Propósito**: Cache de alta performance
+
+**Estratégias de Cache**:
+```python
+# Cache de resultados de análise (TTL: 1 hora)
+cache_key = f"analysis:{analysis_id}"
+ttl = 3600
+
+# Cache de buscas semânticas (TTL: 15 minutos)
+cache_key = f"search:{hash(query)}"
+ttl = 900
+
+# Cache de sessões (TTL: 24 horas)
+cache_key = f"session:{user_id}"
+ttl = 86400
+
+# Cache de playbooks (TTL: 1 hora, invalidado em updates)
+cache_key = f"playbook:{playbook_id}"
+ttl = 3600
+```
+
+**Padrões**:
+- **Cache-Aside**: App busca cache primeiro, depois DB
+- **Write-Through**: Escritas vão para cache e DB simultaneamente
+- **TTL Automático**: Expiração baseada em tempo
+- **Cache Invalidation**: Manual em updates/deletes
+
+##### Google File Search Store
+**Propósito**: Armazenamento e busca semântica de documentos
+
+**ID Fixo**: `fileSearchStores/rag-document-store-ab5c372uq26w`
+
+**Fluxo de Dados**:
+1. Upload: App → Google File Search (retorna google_file_id)
+2. Metadata: google_file_id → PostgreSQL
+3. Search: Query → Google File Search → Retrieval → Gemini
+4. Delete: App → Google File Search API (documents.delete)
+
+**Garantias**:
+- Fonte única de verdade para documentos
+- Embeddings gerenciados automaticamente
+- Busca semântica nativa
+- Suporte a 50+ formatos de arquivo
+
+##### Temporal + BullMQ
+**Propósito**: Processamento assíncrono e workflows
+
+**Workflows Temporal** (tarefas complexas, long-running):
+```python
+@workflow.defn
+class DocumentAnalysisWorkflow:
+    @workflow.run
+    async def run(self, document_id: str, playbook_ids: List[str]) -> Dict:
+        # 1. Buscar documento do Google File Search
+        doc = await workflow.execute_activity(
+            fetch_document,
+            document_id,
+            start_to_close_timeout=timedelta(seconds=30)
+        )
+
+        # 2. Executar análises de cada playbook
+        results = []
+        for playbook_id in playbook_ids:
+            result = await workflow.execute_activity(
+                run_playbook_analysis,
+                doc,
+                playbook_id,
+                start_to_close_timeout=timedelta(minutes=5),
+                retry_policy=RetryPolicy(maximum_attempts=3)
+            )
+            results.append(result)
+
+        # 3. Agregar métricas
+        metrics = await workflow.execute_activity(
+            aggregate_metrics,
+            results,
+            start_to_close_timeout=timedelta(seconds=10)
+        )
+
+        return {"results": results, "metrics": metrics}
+```
+
+**BullMQ Jobs** (tarefas simples, curta duração):
+- Envio de notificações
+- Limpeza de cache
+- Geração de relatórios diários
+- Webhooks
+
+#### 2.2.5 Observability Layer
+
+**Prometheus** (Métricas):
+```yaml
+# Métricas coletadas
+- http_requests_total (counter)
+- http_request_duration_seconds (histogram)
+- analysis_processing_time_seconds (histogram)
+- google_api_calls_total (counter)
+- cache_hit_ratio (gauge)
+- active_users (gauge)
+- document_upload_size_bytes (histogram)
+```
+
+**Grafana** (Dashboards):
+- Dashboard de Performance (latências p50/p95/p99)
+- Dashboard de Negócio (uploads, análises, usuários ativos)
+- Dashboard de Infraestrutura (CPU, memória, disco)
+- Dashboard de Custos (API calls, storage, compute)
+
+**Tempo** (Traces):
+- Rastreamento end-to-end de requests
+- Correlação entre logs, métricas e traces
+- Performance profiling de análises
+
+---
+
+## 3. REQUISITOS FUNCIONAIS
+
+### RF-01: Upload e Indexação de Documentos
+**Descrição**: Sistema deve permitir upload de documentos e indexá-los automaticamente no Google File Search.
+
+**Regras de Negócio**:
+- Formatos suportados: PDF, DOCX, TXT, MD, XLSX, PPTX, PNG, JPG (50+ formatos via Gemini)
+- Tamanho máximo: 100 MB por arquivo (limite do Google File Search)
+- Upload em lote: Até 10 arquivos simultâneos
+- Metadata obrigatória: filename, file_type, user_id
+- Metadata opcional: tags, categoria, descrição
+
+**Fluxo**:
+1. Usuário seleciona arquivo(s) no frontend
+2. Frontend faz upload para backend (multipart/form-data)
+3. Backend valida formato e tamanho
+(Content truncated due to size limit. Use page ranges or line ranges to read remaining content)

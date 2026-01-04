@@ -1,0 +1,10 @@
+C4Context
+  title System Context Diagram for Banco de Referências
+
+  Person(user, "Usuário Final", "Consulta e gerencia documentos e projetos.")
+  System(banco_referencias, "Sistema de Banco de Referências", "Permite a criação e consulta de bases de conhecimento contextuais.")
+
+  System_Ext(gemini_api, "Google Gemini API", "Fornece os serviços de File Search (RAG) e geração de linguagem natural.")
+
+  Rel(user, banco_referencias, "Utiliza")
+  Rel(banco_referencias, gemini_api, "Consome API para RAG e LLM")

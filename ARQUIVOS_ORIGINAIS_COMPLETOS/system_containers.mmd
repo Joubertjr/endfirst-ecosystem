@@ -1,0 +1,18 @@
+C4Container
+  title Container Diagram for Banco de Referências
+
+  Person(user, "Usuário Final", "Consulta e gerencia documentos e projetos.")
+  System_Ext(gemini_api, "Google Gemini API", "Fornece os serviços de File Search (RAG) e geração de linguagem natural.")
+
+  System_Boundary(banco_referencias, "Sistema de Banco de Referências") {
+    Container(frontend, "Frontend Web App", "Next.js 15, React 19, TypeScript", "Interface do usuário para gerenciamento e consulta.")
+    Container(backend, "Backend API", "FastAPI (Python)", "API REST para lógica de negócio, gerenciamento de projetos e orquestração.")
+    Container(db, "Banco de Dados", "PostgreSQL (via Supabase)", "Armazena metadados de projetos, usuários, documentos e templates.")
+    Container(cache, "Cache", "Redis", "Armazena em cache respostas frequentes e dados de sessão.")
+  }
+
+  Rel(user, frontend, "Utiliza", "HTTPS")
+  Rel(frontend, backend, "Consome API", "HTTPS/JSON")
+  Rel(backend, db, "Lê/Escreve", "TCP")
+  Rel(backend, cache, "Lê/Escreve", "TCP")
+  Rel(backend, gemini_api, "Consome API para RAG e LLM", "HTTPS/JSON")

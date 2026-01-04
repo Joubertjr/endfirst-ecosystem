@@ -1,0 +1,172 @@
+Perfeito. Vou olhar seus requisitos de negócio do BANCO DE REFERÊNCIAS (RF1–RF13) e mapear repositórios prontos (open-source / GitHub) que podem ser “blocos de Lego” pra gente montar algo equivalente ao Cody — só que para dados estruturados + não estruturados (papers, PDFs, web, notas, livros, vídeos), com grafo, busca, qualidade e lacunas.
+
+Abaixo está a lista orientada por requisito (o “o quê”), com o que cada repo resolve e onde encaixa no seu documento.
+
+⸻
+
+A. Base sólida (Citation Manager + captura + citação pronta)
+
+Esses são os “Zotero do mundo” — mas a vantagem é que dá pra estender com o que o Zotero não faz (RF4/RF6/RF8).
+
+1) Zotero (core) — RF1, RF2, RF7, parte do RF3
+	•	Repo principal do Zotero: zotero/zotero  ￼
+	•	Site/descrição do produto (funcionalidades de captura/organização/citação):  ￼
+	•	Conectores de browser (captura por URL “1 clique”): zotero/zotero-connectors (na org Zotero)  ￼
+
+Por que é importante pro seu banco:
+Se você quiser “não reinventar o básico”, o Zotero já entrega RF1/RF2/RF7 muito bem. O que o ENDFIRST adiciona é: RF4 (qualidade), RF6 (lacunas), RF8 (melhora com o tempo).
+
+2) Awesome Zotero (hub de extensões e tweaks) — acelera RF9/RF12
+	•	MohamedElashri/awesome-zotero  ￼
+
+Serve como “catálogo” pra você achar add-ons que já resolvem pedaços do seu roadmap.
+
+⸻
+
+B. “Cody do Banco de Referências”: GraphRAG + Neo4j + PDFs + (Zotero API)
+
+Aqui começa o pulo do gato: grafo (RF5) + consulta inteligente + escala + base híbrida (texto + estrutura).
+
+3) Graph-RAG que puxa PDFs do Zotero e monta grafo (Neo4j) — RF5, RF6 (base), RF8 (base), parte de RF3
+	•	zjkhurry/Graph-RAG — “Graph RAG for PDFs … can fetch PDFs from Zotero Library through Zotero API”  ￼
+
+Por que é “ouro” pro seu caso:
+Ele já conecta exatamente o que você descreveu como gap: citação + conhecimento + grafo (RF5), usando Neo4j e ainda puxando do Zotero.
+
+⸻
+
+C. Qualidade científica (RF4) com dados externos: citações, rede, metadata
+
+Você quer um diferencial: hierarquia de evidências + “força” da fonte.
+
+O que dá pra fazer com repos prontos:
+	•	puxar sinal de qualidade (peer-review proxy, citações, venue, tipo de estudo etc.)
+	•	construir “features” para o seu RF4 (e depois você aplica sua hierarquia 7 níveis / 3 níveis).
+
+4) Plugin Zotero da scite (enriquecimento por citações “smart citations”) — RF4 (inputs), RF2
+	•	scitedotai/scite-zotero-plugin  ￼
+
+Mesmo que você não use scite como “verdade final”, é um padrão de arquitetura: enriquecer sua biblioteca com sinais externos.
+
+5) Zotero Citation Counts Manager — RF4 (inputs), RF8 (automatização)
+	•	FrLars21/ZoteroCitationCountsManager (pega citation counts via Crossref / INSPIRE / Semantic Scholar)  ￼
+
+Isso resolve uma parte essencial do RF4: metadados objetivos que ajudam a “rankear” fontes.
+
+6) Semantic Scholar API + clientes e MCP servers — RF3, RF4, RF5
+	•	Tutorial oficial da API (base):  ￼
+	•	Cliente Python: danielnsilva/semanticscholar  ￼
+	•	Cliente R: njahn82/semscholar  ￼
+	•	MCP Servers (pra plugar direto num agente):
+	•	zongmin-yu/semantic-scholar-fastmcp-mcp-server  ￼
+	•	JackKuo666/semanticscholar-MCP-Server  ￼
+	•	outro MCP server semelhante: alperenkocyigit/semantic-scholar-graph-api  ￼
+
+Por que isso é fundamental:
+Se o seu “Banco” vai crescer para 50k fontes, você precisa de automação para preencher e validar metadata (tipo paper, autores, citações, referências, temas). Semantic Scholar ajuda muito nisso.
+
+⸻
+
+D. RAG para PDFs (não estruturado) com foco em pesquisa — base para RF3/RF6/RF10
+
+Esses repos te dão o “cérebro de consulta” em cima de milhares de PDFs.
+
+7) PDF RAG Assistant — RF3 (busca), RF10 (análise futura)
+	•	eteitelbaum/pdf-rag-assistant  ￼
+
+8) Research Assistant RAG (local-first) — RF3 + privacidade
+	•	aragit/research-assistant-rag  ￼
+
+9) LabRAG / Lab Lens (papers + media coverage) — RF3 + RF10
+	•	cmcouto-silva/labrag  ￼
+
+Esses são úteis para você não precisar criar do zero:
+	•	ingestão/embedding,
+	•	chat/Q&A,
+	•	fluxo “pesquisar → perguntar → salvar insights”.
+
+⸻
+
+E. “Agente de pesquisa” híbrido (grafo + vetor) — aproxima RF6/RF8
+
+Aqui é onde entra o padrão “agentic hybrid RAG”: o agente decide quando usar:
+	•	grafo (precisão, relações)
+	•	vetor (semântica, texto longo)
+
+10) Paper/Framework agentic hybrid RAG (Neo4j + FAISS + agente) — blueprint forte pra RF6/RF8
+	•	arXiv HTML do trabalho:  ￼
+	•	menção alternativa do mesmo trabalho:  ￼
+
+Isso não é “repo único pronto” no GitHub nesse resultado, mas é uma arquitetura muito alinhada ao que você quer:
+
+“base cresce e o sistema fica mais útil” (RF8) + sugestões e rotas de pesquisa (RF6).
+
+⸻
+
+F. GraphRAG e “Knowledge Graph Builder” (pra não codar tudo) — acelera RF5/RF6/RF8
+
+Se vocês quiserem prototipar rápido:
+
+11) Neo4j: tutorial RAG com grafo + vetor (padrão de implementação) — RF5/RF3
+	•	“How to Build a RAG System on a Knowledge Graph”  ￼
+
+12) Neo4j LLM Knowledge Graph Builder (extrair KG rápido) — RF5/RF8 (prototipagem)
+	•	“LLM Knowledge Graph Builder… From Zero to GraphRAG in Five Minutes”  ￼
+
+Esses conteúdos não são “repos puros” como um app completo, mas são atalhos de implementação e mostram um caminho de MVP muito realista.
+
+⸻
+
+Mapeamento rápido (repos → requisitos RF)
+
+P1 (críticos)
+	•	RF1 Adicionar: Zotero core + conectores  ￼
+	•	RF3 Buscar: Zotero + RAG assistants + Semantic Scholar API  ￼
+	•	RF4 Qualidade: citation counts + scite plugin + Semantic Scholar enrichment  ￼
+
+P2 (essenciais)
+	•	RF2 Organizar: Zotero tags/collections  ￼
+	•	RF7 Citar: Zotero (citações/bibliografia)  ￼
+
+P3 (experimentais)
+	•	RF5 Conexões: Graph-RAG com Neo4j + Zotero PDFs  ￼
+	•	RF6 Lacunas: GraphRAG + rede de citações (Semantic Scholar) + arquitetura hybrid RAG  ￼
+	•	RF8 Base crescente: combinação (Zotero + enrichment + grafo + retrieval híbrido)  ￼
+
+⸻
+
+O que eu recomendo como “pilha pronta” sem reinventar roda
+
+Se o objetivo é usar algo pronto agora e só adicionar o diferencial ENDFIRST (RF4/RF6/RF8), eu faria assim:
+
+Stack ENDFIRST Banco v0.1
+	1.	Zotero como “single source of truth” de referências e PDFs  ￼
+	2.	Enriquecimento automático:
+	•	Citation Counts Manager  ￼
+	•	Semantic Scholar (cliente ou MCP)  ￼
+	3.	Graph layer:
+	•	zjkhurry/Graph-RAG (Neo4j + PDFs do Zotero)  ￼
+	4.	ENDFIRST layer (seu diferencial):
+	•	aplicar “Hierarquia de Evidências” (7 níveis / 3 níveis) em cima dos sinais,
+	•	gerar filtros/ordenações e relatórios de lacunas.
+
+Isso atende seu “Cody para o Banco” muito mais rápido do que construir do zero.
+
+⸻
+
+Se você quiser, eu já faço a próxima entrega no estilo ENDFIRST “resultado, não como”:
+
+✅ Arquitetura funcional do Banco (componentes) + fluxo do usuário
+✅ Quais repos compõem cada componente
+✅ Como cada RF vira um módulo (P1→P4)
+
+E eu também consigo propor um formato de dados (schema lógico) para:
+	•	referência,
+	•	evidência,
+	•	tags,
+	•	conexões,
+	•	lacunas,
+
+sem entrar em código ainda (só “como deve ser representado”).
+
+Quer que eu entregue esse “blueprint do Banco” agora?
