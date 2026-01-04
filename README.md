@@ -23,7 +23,7 @@ endfirst-ecosystem/
 ├── CENTRAL/                          # Visão consolidada
 │   ├── DEMANDAS/                     # Backlog central
 │   ├── PRODUCTS/                     # Produtos centrais
-│   └── KANBANTOOL/                   # Integração GitHub Projects
+│   └── GITHUB_PROJECTS/             # Configuração GitHub Projects
 │
 ├── DOMAIN_1_METODOLOGIA/             # Domínio 1: Metodologia ENDFIRST
 │   ├── SUBDOMAIN_1.1_PILARES/        # 13 Pilares do método
@@ -45,7 +45,7 @@ endfirst-ecosystem/
 **Cada subdomínio contém:**
 - `DEMANDAS/` - Backlog local (AGUARDANDO, EM_PROGRESSO, EM_REVISAO, BLOQUEADO, CONCLUIDO, TEMPLATES)
 - `PRODUCTS/` - Produtos entregues
-- `KANBANTOOL/` - Integração com GitHub Projects
+- `GITHUB_PROJECTS/` - Configuração e automação GitHub Projects
 
 ---
 
