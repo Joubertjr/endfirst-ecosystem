@@ -1,3 +1,0 @@
-"""Repositories - Data Access Layer."""
-
-

@@ -1,2 +1,0 @@
-"""Testes de integração."""
-
