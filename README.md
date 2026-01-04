@@ -43,7 +43,7 @@ endfirst-ecosystem/
 ```
 
 **Cada subdomínio contém:**
-- `DEMANDAS/` - Backlog local (AGUARDANDO, EM_PROGRESSO, EM_REVISAO, BLOQUEADO, CONCLUIDO, TEMPLATES)
+- `DEMANDAS/` - Gestão de demandas (BACKLOG, AGUARDANDO, EM_PROGRESSO, EM_REVISAO, BLOQUEADO, CONCLUIDO, TEMPLATES)
 - `PRODUCTS/` - Produtos entregues
 - `GITHUB_PROJECTS/` - Configuração e automação GitHub Projects
 
@@ -166,11 +166,12 @@ endfirst-ecosystem/
 - **Validação:** Manus valida antes de concluir
 
 **Colunas:**
-1. 📋 Aguardando
-2. 🔄 Em Progresso (WIP ≤ 3)
-3. 👀 Em Revisão
-4. 🚫 Bloqueado
-5. ✅ Concluído
+1. Backlog (todas as demandas priorizadas)
+2. 📋 Aguardando (prontas para puxar)
+3. 🔄 Em Progresso (WIP ≤ 3)
+4. 👀 Em Revisão
+5. 🚫 Bloqueado
+6. ✅ Concluído
 
 ---
 
