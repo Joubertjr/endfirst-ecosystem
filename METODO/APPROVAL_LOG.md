@@ -55,8 +55,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | ONTOLOGY_DECISIONS_v1.1_OD-004 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-004 adicionada: DEMANDA ≠ PROJETO ≠ PRODUTO (validada contra 5 critérios) | /METODO/PILAR_ENDFIRST.md | [b4a46d2](https://github.com/Joubertjr/endfirst-ecosystem/commit/b4a46d2) |
 | COMMIT_REVIEW_APPROVAL | canonical | approved | CEO | 2026-01-08 | Aprovação formal do CEO sobre revisão completa de 20 commits - repositório 100% revisado, classificado e governado | /METODO/COMMIT_REVIEW_PROCESS.md | [43b02dc](https://github.com/Joubertjr/endfirst-ecosystem/commit/43b02dc) |
 | ONTOLOGY_DECISIONS_v1.2_OD-005 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-005 adicionada: Toda Demanda pertence a um Produto + OD-004 revisado para alinhar | /METODO/PILAR_ENDFIRST.md | [0e33ea2](https://github.com/Joubertjr/endfirst-ecosystem/commit/0e33ea2) |
-| GOVERNANCE_CYCLE_CLOSURE | canonical | approved | CEO | 2026-01-08 | Encerramento formal do ciclo de governança - decisões congeladas, foco muda para execução | /METODO/PILAR_ENDFIRST.md | TBD |
-| DEMANDA-001_v1.1 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | TBD |
+| GOVERNANCE_CYCLE_CLOSURE | canonical | approved | CEO | 2026-01-08 | Encerramento formal do ciclo de governança - decisões congeladas, foco muda para execução | /METODO/PILAR_ENDFIRST.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
+| DEMANDA-001_v1.1 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
 
 ---
 
