@@ -44,6 +44,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | README_ROOT | operational | approved | CEO | 2026-01-07 | README raiz atualizado para estado vivo (v11.7) - aprovado retroativamente | /METODO/PILAR_ENDFIRST.md | [30a7081](https://github.com/Joubertjr/endfirst-ecosystem/commit/30a7081) |
 | TEMPLATE_DEMANDA | operational | approved | CEO | 2026-01-08 | Template operacional baseado em 8 Pilares - aprovado retroativamente (subordinado ao Pilar ENDFIRST) | /METODO/INTEGRATION_13_PILARES.md | [178e186](https://github.com/Joubertjr/endfirst-ecosystem/commit/178e186) |
 | DEMANDA_001_DOCUMENTAR_13_PILARES | example | approved | CEO | 2026-01-08 | Demanda válida em backlog - aprovado retroativamente (deve passar por ENDFIRST_SPEC antes de executar) | /CENTRAL/DEMANDAS/TEMPLATES/TEMPLATE_DEMANDA.md | [178e186](https://github.com/Joubertjr/endfirst-ecosystem/commit/178e186) |
+| COMMIT_GOVERNANCE_CHECKLIST | operational | approved | CEO | 2026-01-08 | Checklist de conformidade para commits governados - elimina commits "quase conformes" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [TBD_CURRENT_COMMIT] |
+| APPROVAL_LOG_RULES | operational | approved | CEO | 2026-01-08 | Regras estruturais anti-TBD - mata estados inválidos por definição | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [TBD_CURRENT_COMMIT] |
+| README_ROOT_v11.8 | operational | approved | CEO | 2026-01-08 | README atualizado para v11.8 - Estado Atual vs Visão + Governança Reforçada | /METODO/PILAR_ENDFIRST.md | [TBD_CURRENT_COMMIT] |
 
 ---
 
@@ -57,14 +60,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 14  
-**Aprovados:** 14 (100%)  
+**Total de documentos no repositório:** 17  
+**Aprovados:** 17 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
 - **Canônicos (Tipo A):** 3 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 5 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 8 aprovados, 0 pendentes
 - **Exemplos (Tipo C):** 6 aprovados, 0 pendentes
 
 ---
@@ -80,6 +83,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | Repositório 100% aprovado (14/14 documentos) | Manus (Agent) |
 | 2026-01-08 | Correção: commit TBD substituído por hashes reais (30a7081, 178e186) | Manus (Agent) |
 | 2026-01-08 | Correção: total de documentos corrigido de 17 para 14 (contagem real) | Manus (Agent) |
+| 2026-01-08 | Melhoria de governança: 3 documentos de apoio operacional criados (COMMIT_GOVERNANCE_CHECKLIST, APPROVAL_LOG_RULES, README v11.8) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 17/17 documentos (100% aprovado) | Manus (Agent) |
 
 ---
 
