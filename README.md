@@ -6,16 +6,18 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.15
+version: v11.16
 created_at: 2026-01-04
 updated_at: 2026-01-07
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.15
+# 🚀 ENDFIRST Ecosystem v11.16
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.15  
-**Status:** ✅ EXECUTOR EXPLÍCITO (OD-006) — CURSOR EXECUTA
+**Versão:** v11.16  
+**Status:** ✅ END É PRÉ-CONDIÇÃO ABSOLUTA (OD-007)
+
+> **"END primeiro. HOW depois. Sempre."**
 
 > **"Demandas são executadas por agentes de tecnologia, nunca por pessoas."**
 
@@ -48,6 +50,7 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **OD-004: DEMANDA ≠ PROJETO ≠ PRODUTO** — Decisão ontológica (revisada: Produto obrigatório, Projeto opcional)
 - [x] **OD-005: Toda Demanda pertence a um Produto** — Fundação ontológica do sistema (validada contra 5 critérios)
 - [x] **OD-006: Execução é responsabilidade da Tecnologia (Cursor)** — Elimina ambiguidade sobre executor (validada contra 5 critérios)
+- [x] **OD-007: END é pré-condição absoluta** — Nada começa sem END documentado, versionado e aprovado no Git (frase canônica: "END primeiro. HOW depois. Sempre.")
 - [x] **ONTOLOGY_DECISIONS.md v1.3** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3)
 - [x] **EXECUTION_MODEL.md** — Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa (`/METODO/EXECUTION_MODEL.md`)
 - [x] **Governance Cycle Closure** — Ciclo de governança formalmente encerrado, decisões congeladas (`/METODO/GOVERNANCE_CYCLE_CLOSURE.md`)

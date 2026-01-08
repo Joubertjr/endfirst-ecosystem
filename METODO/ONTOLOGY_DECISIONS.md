@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.3  
+**Versão:** 1.4  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -20,6 +20,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.1 (2026-01-08): OD-004 adicionada (DEMANDA ≠ PROJETO ≠ PRODUTO)
 - v1.2 (2026-01-08): OD-005 adicionada (Toda Demanda pertence a um Produto) + OD-004 revisada
 - v1.3 (2026-01-08): OD-006 adicionada (Execução é responsabilidade da Tecnologia - Cursor)
+- v1.4 (2026-01-08): OD-007 adicionada (END é pré-condição absoluta)
 
 ---
 
@@ -482,6 +483,202 @@ Explícito = elimina ambiguidade por design.
 
 **Status:** CANÔNICA  
 **Aplicação:** Imediata
+
+---
+
+### OD-007 — END é pré-condição absoluta
+
+**ID:** OD-007  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08
+
+---
+
+#### 🧠 DECLARAÇÃO CANÔNICA
+
+**END é pré-condição absoluta.**
+
+**Nenhuma ação pode começar sem END documentado, versionado e aprovado no Git.**
+
+---
+
+#### 📝 RACIONAL
+
+O sistema criou OD-006 (quem executa) e EXECUTION_MODEL.md (modelo de execução), mas o momento de entrada do executor ainda estava:
+- Implícito
+- Fora do método
+- Dependente de "alguém explicar"
+
+**Isso é um vazamento estrutural clássico.**
+
+Se precisamos explicar como onboardar o Cursor, então o método ainda não está completo.
+
+**Onboarding de Executor é parte do método, não um prompt ad-hoc.**
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**END (Expected iN Document):**
+- Documento que define **o que fazer** (DEMANDA)
+- Documento que define **resultado esperado** (ENDFIRST_SPEC)
+- Documento que define **critérios de sucesso** (ACCEPTANCE)
+- Documento que define **como julgar** (FINAL_DECISION_TEMPLATE)
+- Documento que define **como onboardar** (EXECUTOR_ONBOARDING_PROCESS)
+
+**Pré-condição absoluta:**
+- Nada começa sem END
+- Nada é executado sem END
+- Nada é julgado sem END
+- END está no Git, não em mensagens
+- END está versionado, não em memória
+- END está aprovado, não em discussão
+
+---
+
+#### ⛔ PROIBIÇÕES EXPLÍCITAS
+
+**❌ Começar pelo HOW**
+- Proibido começar execução sem END documentado
+- Proibido "fazer rápido" sem registrar END
+- Proibido "testar" sem END aprovado
+
+**❌ Onboarding sem END**
+- Proibido onboardar executor sem END no Git
+- Proibido explicar verbalmente o que fazer
+- Proibido prompt improvisado fora do repositório
+
+**❌ Prompt, setup ou execução sem END registrado**
+- Proibido executar demanda sem DEMANDA-XXX.md
+- Proibido executar sem ENDFIRST_SPEC.md
+- Proibido executar sem DEMANDA-XXX_ACCEPTANCE.md
+- Proibido onboardar sem EXECUTOR_ONBOARDING_PROCESS.md
+
+---
+
+#### 🚫 EXEMPLOS PROIBIDOS (REAIS)
+
+**Exemplo 1: Onboarding do Cursor sem END no Git**
+- **Problema:** Prompt de onboarding criado fora do Git
+- **Violação:** END não estava documentado, versionado e aprovado
+- **Correção:** Criar EXECUTOR_ONBOARDING_PROCESS.md no Git
+
+**Exemplo 2: Explicação verbal fora do repositório**
+- **Problema:** "Explica para o Cursor o que fazer"
+- **Violação:** END estava em mensagens, não no Git
+- **Correção:** Tudo no Git, nada em mensagens
+
+**Exemplo 3: Execução iniciada por contexto humano**
+- **Problema:** Executor pergunta "o que fazer?"
+- **Violação:** END não estava acessível ao executor
+- **Correção:** Executor lê do Git, não de pessoas
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+**Para CEO:**
+- Não autorizar execução sem END aprovado
+- Não explicar verbalmente o que fazer
+- Não criar "atalhos" fora do Git
+
+**Para Manus:**
+- Não especificar fora do Git
+- Não criar processos improvisados
+- Não documentar em mensagens
+
+**Para Cursor:**
+- Não executar sem ler END do Git
+- Não perguntar "o que fazer?"
+- Não aceitar instruções verbais
+
+---
+
+#### 📝 EXEMPLOS VÁLIDOS
+
+**Exemplo 1: Onboarding correto**
+- EXECUTOR_ONBOARDING_PROCESS.md existe no Git
+- Executor lê documento
+- Executor sabe o que fazer sem perguntar
+
+**Exemplo 2: Execução correta**
+- DEMANDA-001.md existe no Git
+- ENDFIRST_SPEC_EF-2026-001.md existe no Git
+- DEMANDA-001_ACCEPTANCE.md existe no Git
+- Cursor lê e executa
+
+**Exemplo 3: Julgamento correto**
+- FINAL_DECISION_TEMPLATE.md existe no Git
+- CEO lê e decide
+- Decisão é registrada no Git
+
+---
+
+#### 🎯 ANTI-EXEMPLOS (PROIBIDOS)
+
+**Anti-exemplo 1:**
+> "Vou explicar para o Cursor o que fazer."
+
+**Por que é proibido:**
+- END não está no Git
+- Depende de explicação oral
+- Não é repetível
+
+---
+
+**Anti-exemplo 2:**
+> "Vou criar um prompt rápido para onboardar."
+
+**Por que é proibido:**
+- END não está versionado
+- Prompt improvisado
+- Não é auditável
+
+---
+
+**Anti-exemplo 3:**
+> "Vou começar a executar e documentar depois."
+
+**Por que é proibido:**
+- END não existe antes da execução
+- Viola pré-condição absoluta
+- Não é governado
+
+---
+
+#### 📜 FRASE CANÔNICA (CULTURA)
+
+> **"END primeiro. HOW depois. Sempre."**
+
+**Uso:**
+- Cultura organizacional
+- Onboarding de time
+- Revisão de processos
+- Decisões diárias
+
+**Implicação:**
+- Nada começa sem END
+- END está no Git
+- END é pré-condição, não sugestão
+
+---
+
+#### 🔗 DOCUMENTOS RELACIONADOS
+
+- `/METODO/EXECUTION_MODEL.md` (Modelo de execução)
+- `/METODO/EXECUTOR_ONBOARDING_PROCESS.md` (Processo de onboarding)
+- `/METODO/FINAL_DECISION_TEMPLATE.md` (Como CEO julga)
+- `/METODO/PILAR_ENDFIRST.md` (Meta-pilar)
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Se precisamos explicar como onboardar o Cursor, então o método ainda não está completo. OD-007 fecha o último vazamento estrutural do sistema: END é pré-condição absoluta, não opção."
+
+**Data:** 2026-01-08  
+**Responsável:** CEO (Joubert Jr)
 
 ---
 
