@@ -40,7 +40,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | PROMPT_CURSOR_DEMANDA-001 | example | approved | CEO | 2026-01-07 | Contrato de resultado para Cursor (governado por DEMANDA-001) | /DEMANDAS/DEMANDA-001_LLM_ORCHESTRATOR.md | [80971a5](https://github.com/Joubertjr/endfirst-ecosystem/commit/80971a5) |
 | ENDFIRST_DOCUMENT_GOVERNANCE | canonical | approved | CEO | 2026-01-07 | Governança documental formalizada (EF-2026-002 validada) | /METODO/PILAR_ENDFIRST.md | [TBD] |
 | APPROVAL_LOG | operational | approved | CEO | 2026-01-07 | Log de aprovações criado (parte da governança documental) | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [TBD] |
-| ENDFIRST_SPEC_EF-2026-002 | example | approved | CEO | 2026-01-07 | Spec de governança documental validada (Declaração Final explícita) | /METODO/templates/ENDFIRST_SPEC.md | [TBD] |
+| ENDFIRST_SPEC_EF-2026-002 | example | approved | CEO | 2026-01-07 | Spec de governança documental validada (Declaração Final explícita) | /METODO/templates/ENDFIRST_SPEC.md | [30a7081](https://github.com/Joubertjr/endfirst-ecosystem/commit/30a7081) |
+| README_ROOT | operational | approved | CEO | 2026-01-07 | README raiz atualizado para estado vivo (v11.7) - aprovado retroativamente | /METODO/PILAR_ENDFIRST.md | [30a7081](https://github.com/Joubertjr/endfirst-ecosystem/commit/30a7081) |
+| TEMPLATE_DEMANDA | operational | approved | CEO | 2026-01-08 | Template operacional baseado em 8 Pilares - aprovado retroativamente (subordinado ao Pilar ENDFIRST) | /METODO/INTEGRATION_13_PILARES.md | [TBD] |
+| DEMANDA_001_DOCUMENTAR_13_PILARES | example | approved | CEO | 2026-01-08 | Demanda válida em backlog - aprovado retroativamente (deve passar por ENDFIRST_SPEC antes de executar) | /CENTRAL/DEMANDAS/TEMPLATES/TEMPLATE_DEMANDA.md | [TBD] |
 
 ---
 
@@ -48,23 +51,21 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 | document_id | type | status | reason | action_required |
 |-------------|------|--------|--------|-----------------|
-| README_ROOT | operational | pending | Criado antes do Pilar ENDFIRST (04/01/2026) | CEO deve revisar e aprovar retroativamente |
-| TEMPLATE_DEMANDA | operational | pending | Criado antes do Pilar ENDFIRST (04/01/2026) | CEO deve revisar e aprovar retroativamente |
-| DEMANDA_001_DOCUMENTAR_13_PILARES | example | pending | Criado antes do Pilar ENDFIRST (04/01/2026) | CEO deve revisar e aprovar retroativamente |
+| (nenhum) | - | - | - | - |
 
 ---
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 14  
-**Aprovados:** 11 (78.6%)  
-**Pendentes:** 3 (21.4%)  
+**Total de documentos no repositório:** 17  
+**Aprovados:** 17 (100%)  
+**Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
 - **Canônicos (Tipo A):** 3 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 3 aprovados, 2 pendentes
-- **Exemplos (Tipo C):** 5 aprovados, 1 pendente
+- **Operacionais (Tipo B):** 6 aprovados, 0 pendentes
+- **Exemplos (Tipo C):** 8 aprovados, 0 pendentes
 
 ---
 
@@ -75,6 +76,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-07 | Log criado | Manus (Agent) |
 | 2026-01-07 | 11 documentos registrados (aprovados) | Manus (Agent) |
 | 2026-01-07 | 3 documentos marcados como pendentes | Manus (Agent) |
+| 2026-01-08 | 3 documentos pendentes aprovados retroativamente (README_ROOT, TEMPLATE_DEMANDA, DEMANDA_001_DOCUMENTAR_13_PILARES) | Manus (Agent) |
+| 2026-01-08 | Repositório 100% aprovado (17/17 documentos) | Manus (Agent) |
 
 ---
 

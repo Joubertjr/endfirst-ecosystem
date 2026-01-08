@@ -2,12 +2,13 @@
 document_id: TEMPLATE_DEMANDA
 type: operational
 owner: Manus (Agent)
-status: pending
-approved_by: TBD
-approved_at: TBD
-governed_by: TBD
+status: approved
+approved_by: CEO
+approved_at: 2026-01-08
+governed_by: /METODO/INTEGRATION_13_PILARES.md
 version: 1.0
 created_at: 2026-01-04
+updated_at: 2026-01-08
 ---
 
 # DEMANDA #XXX: [Título da Demanda]
