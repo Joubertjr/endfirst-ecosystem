@@ -10,10 +10,15 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.0  
+**Versão:** 1.2  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
+
+**Histórico de versões:**
+- v1.0 (2026-01-08): Versão inicial com estrutura base
+- v1.1 (2026-01-08): OD-004 adicionada (DEMANDA ≠ PROJETO ≠ PRODUTO)
+- v1.2 (2026-01-08): OD-005 adicionada (Toda Demanda pertence a um Produto) + OD-004 revisada
 
 ---
 
