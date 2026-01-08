@@ -48,7 +48,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | APPROVAL_LOG_RULES | operational | approved | CEO | 2026-01-08 | Regras estruturais anti-TBD - mata estados inválidos por definição | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | README_ROOT_v11.8 | operational | approved | CEO | 2026-01-08 | README atualizado para v11.8 - Estado Atual vs Visão + Governança Reforçada | /METODO/PILAR_ENDFIRST.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | ONTOLOGY_DECISIONS | canonical | approved | CEO | 2026-01-08 | Ontologia operacional consolidada - frases normativas e verdades operacionais já vividas | /METODO/PILAR_ENDFIRST.md | [9793be8](https://github.com/Joubertjr/endfirst-ecosystem/commit/9793be8) |
-| ONTOLOGY_DECISIONS_TRIGGER | operational | approved | CEO | 2026-01-08 | Gatilho formal para popular ONTOLOGY_DECISIONS.md - 5 critérios obrigatórios + processo de criação | /METODO/ONTOLOGY_DECISIONS.md | [TBD_CURRENT_COMMIT] |
+| ONTOLOGY_DECISIONS_TRIGGER | operational | approved | CEO | 2026-01-08 | Gatilho formal para popular ONTOLOGY_DECISIONS.md - 5 critérios obrigatórios + processo de criação | /METODO/ONTOLOGY_DECISIONS.md | [1477359](https://github.com/Joubertjr/endfirst-ecosystem/commit/1477359) |
 
 ---
 
