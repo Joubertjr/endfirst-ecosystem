@@ -161,6 +161,112 @@ Este documento (ONTOLOGY_DECISIONS.md) registra regras já vividas, não teorias
 
 ---
 
+## 🧠 DECISÕES ONTOLÓGICAS FORMAIS
+
+### OD-004 — DEMANDA ≠ PROJETO ≠ PRODUTO
+
+**ID:** OD-004  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08
+
+---
+
+#### 🧠 DECISÃO
+
+Nem toda demanda está vinculada a um projeto ou a um produto.
+
+No método ENDFIRST:
+- **DEMANDA** é a unidade mínima soberana de resultado verificável
+- **PROJETO** é um agrupamento temporário de demandas (opcional)
+- **PRODUTO** é um resultado estável e recorrente que emerge da execução (opcional)
+
+Projetos e produtos não são pré-requisitos para a existência de uma demanda.
+
+---
+
+#### 🎯 REGRA FORMAL
+
+Toda demanda deve estar vinculada a uma **INTENÇÃO / RESULTADO** claro.  
+Nenhuma demanda precisa nascer como projeto ou produto.
+
+Projetos e produtos:
+- só são criados quando a realidade exige
+- nunca por antecipação
+- nunca como requisito burocrático
+
+---
+
+#### 🔍 DEFINIÇÕES OPERACIONAIS
+
+**DEMANDA**
+- Unidade mínima de trabalho governada por resultado
+- Pode existir isoladamente
+- Vive até o resultado ser produzido ou descartado
+
+**PROJETO**
+- Agrupamento temporário de múltiplas demandas
+- Criado quando há coordenação, dependência ou risco sistêmico
+- Não é obrigatório
+
+**PRODUTO**
+- Resultado estabilizado, reutilizável e contínuo
+- Surge após validação prática
+- Pode gerar novas demandas
+
+---
+
+#### ❌ O QUE ESTA DECISÃO PROÍBE
+
+- ❌ Criar projetos "vazios" só para justificar demandas
+- ❌ Criar produtos no papel antes da execução
+- ❌ Bloquear demandas por ausência de projeto ou produto
+- ❌ Planejamento abstrato antes de resultado verificável
+
+---
+
+#### ✅ O QUE ESTA DECISÃO GARANTE
+
+- Clareza ontológica entre demanda, projeto e produto
+- Redução de burocracia precoce
+- Execução orientada a resultado real
+- Emergência natural de projetos e produtos
+- Rastreabilidade limpa de intenção → execução
+
+---
+
+#### 📌 EXEMPLO APLICADO
+
+**DEMANDA-001 — LLM Orchestrator**
+- É uma DEMANDA válida
+- Ainda não é um PROJETO formal
+- Ainda não é um PRODUTO
+- Pode vir a ser ambos, se a execução justificar
+
+---
+
+#### 🧭 PRINCÍPIO
+
+> Projetos e produtos emergem da execução.  
+> Demandas emergem da intenção.  
+> Nunca o contrário.
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+Reconheço esta decisão como canônica e obrigatória para o método ENDFIRST.
+
+Esta decisão passa a governar:
+- Criação de demandas
+- Organização do backlog
+- Leitura de DEMANDA-001 e futuras demandas
+
+**Status:** CANÔNICA  
+**Aplicação:** Imediata
+
+---
+
 ## 🧠 ENTIDADES FUNDAMENTAIS
 
 ### Documento

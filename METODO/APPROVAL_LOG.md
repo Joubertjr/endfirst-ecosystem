@@ -52,6 +52,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | ROLES_AND_RESPONSIBILITIES | canonical | approved | CEO | 2026-01-08 | Papéis e responsabilidades formalizados (CEO/Manus/Cursor) - sistema institucional, não pessoal | /METODO/PILAR_ENDFIRST.md | [5d307cf](https://github.com/Joubertjr/endfirst-ecosystem/commit/5d307cf) |
 | COMMIT_REVIEW_PROCESS | operational | approved | CEO | 2026-01-08 | Processo oficial de revisão de commits - fluxo correto em 5 passos + formato canônico de parecer | /METODO/ROLES_AND_RESPONSIBILITIES.md | [5d307cf](https://github.com/Joubertjr/endfirst-ecosystem/commit/5d307cf) |
 | ENDFIRST_DOCUMENT_GOVERNANCE_v1.1 | canonical | approved | CEO | 2026-01-08 | Regra crítica adicionada: auto-aprovação proibida (exceto CEO) | /METODO/PILAR_ENDFIRST.md | [5d307cf](https://github.com/Joubertjr/endfirst-ecosystem/commit/5d307cf) |
+| ONTOLOGY_DECISIONS_v1.1_OD-004 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-004 adicionada: DEMANDA ≠ PROJETO ≠ PRODUTO (validada contra 5 critérios) | /METODO/PILAR_ENDFIRST.md | TBD |
 
 ---
 
@@ -65,15 +66,15 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 22  
-**Aprovados:** 22 (100%)  
+**Total de documentos no repositório:** 20  
+**Aprovados:** 20 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 6 aprovados, 0 pendentes (+2)
-- **Operacionais (Tipo B):** 10 aprovados, 0 pendentes (+1)
-- **Exemplos (Tipo C):** 6 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 6 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 10 aprovados, 0 pendentes
+- **Exemplos (Tipo C):** 4 aprovados, 0 pendentes
 
 ---
 
@@ -94,6 +95,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | Repositório atualizado para 18/18 documentos (100% aprovado) | Manus (Agent) |
 | 2026-01-08 | Gatilho formal: ONTOLOGY_DECISIONS_TRIGGER.md criado (5 critérios + processo de criação) | Manus (Agent) |
 | 2026-01-08 | Repositório atualizado para 19/19 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Papéis e responsabilidades formalizados: ROLES_AND_RESPONSIBILITIES.md criado (CEO/Manus/Cursor) | Manus (Agent) |
+| 2026-01-08 | Processo de revisão de commits: COMMIT_REVIEW_PROCESS.md criado (5 passos + formato canônico) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 20/20 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-004 adicionada: DEMANDA ≠ PROJETO ≠ PRODUTO (validada contra 5 critérios do ONTOLOGY_DECISIONS_TRIGGER.md) | Manus (Agent) |
 
 ---
 
