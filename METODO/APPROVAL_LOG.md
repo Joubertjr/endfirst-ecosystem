@@ -69,9 +69,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | TEMPLATE_DEMANDA_MANUS | operational | approved | CEO | 2026-01-08 | Template de demanda para Manus - END explícito obrigatório, escopo definido, critério de encerramento | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
 | DEMANDA_MANUS-001 | example | approved | CEO | 2026-01-08 | Primeira demanda formal para Manus - OD-007 (END é pré-condição absoluta) | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
 | ONTOLOGY_DECISIONS_v1.5_OD-008 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-008 adicionada: Demandas para Manus também são demandas formais | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
-| README_v11.17 | operational | approved | CEO | 2026-01-08 | Frase canônica de cultura adicionada: "Se algo depende de disciplina humana para funcionar, está errado por definição" | /METODO/PILAR_ENDFIRST.md | TBD |
-| ONTOLOGY_DECISIONS_v1.6_OD-009 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-009 adicionada: Disciplina Humana é Sinal de Falha de Design - princípio transversal | /METODO/PILAR_ENDFIRST.md | TBD |
-| COMMIT_GOVERNANCE_CHECKLIST_v1.1 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-009 adicionado: "Isso exige disciplina humana para não dar errado?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | TBD |
+| README_v11.17 | operational | approved | CEO | 2026-01-08 | Frase canônica de cultura adicionada: "Se algo depende de disciplina humana para funcionar, está errado por definição" | /METODO/PILAR_ENDFIRST.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
+| ONTOLOGY_DECISIONS_v1.6_OD-009 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-009 adicionada: Disciplina Humana é Sinal de Falha de Design - princípio transversal | /METODO/PILAR_ENDFIRST.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
+| COMMIT_GOVERNANCE_CHECKLIST_v1.1 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-009 adicionado: "Isso exige disciplina humana para não dar errado?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
 
 ---
 
