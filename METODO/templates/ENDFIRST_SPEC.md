@@ -1,3 +1,15 @@
+---
+document_id: ENDFIRST_SPEC
+type: canonical
+owner: CEO (Joubert Jr)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/PILAR_ENDFIRST.md
+version: 1.0
+created_at: 2026-01-07
+---
+
 # ENDFIRST_SPEC — Template Canônico
 
 **Status:** Template Oficial  

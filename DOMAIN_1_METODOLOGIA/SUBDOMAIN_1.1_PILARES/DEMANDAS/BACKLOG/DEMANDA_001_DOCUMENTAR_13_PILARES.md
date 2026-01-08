@@ -1,3 +1,15 @@
+---
+document_id: DEMANDA_001_DOCUMENTAR_13_PILARES
+type: example
+owner: Manus (Agent)
+status: pending
+approved_by: TBD
+approved_at: TBD
+governed_by: TBD
+version: 1.0
+created_at: 2026-01-04
+---
+
 # DEMANDA #001: Documentar 13 Pilares ENDFIRST
 
 **Data de Criação:** 04/01/2026  

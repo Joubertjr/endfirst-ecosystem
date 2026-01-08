@@ -1,3 +1,16 @@
+---
+document_id: ENDFIRST_SPEC_EF-2026-001
+type: example
+owner: CEO (Joubert Jr)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/templates/ENDFIRST_SPEC.md
+spec_id: EF-2026-001
+version: v0
+created_at: 2026-01-07
+---
+
 # ENDFIRST_SPEC — Validação Cruzada de Prompts com Múltiplas LLMs
 
 **Status:** Exemplo Oficial  

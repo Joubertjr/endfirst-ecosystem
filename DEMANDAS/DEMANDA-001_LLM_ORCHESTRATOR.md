@@ -1,3 +1,15 @@
+---
+document_id: DEMANDA-001_LLM_ORCHESTRATOR
+type: example
+owner: CEO (Joubert Jr)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md
+version: v1
+created_at: 2026-01-07
+---
+
 # DEMANDA-001 — LLM Orchestrator v1
 
 **Status:** Pronta para Execução  

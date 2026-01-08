@@ -1,124 +1,210 @@
-# 🚀 ENDFIRST Ecosystem v11.6
+---
+document_id: README_ROOT
+type: operational
+owner: CEO (Joubert Jr)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/PILAR_ENDFIRST.md
+version: v11.7
+created_at: 2026-01-04
+updated_at: 2026-01-07
+---
 
-**Data:** 4 de Janeiro de 2026  
-**Versão:** v11.6  
-**Status:** 🏗️ Em Construção (Fase: Fundação)
+# 🚀 ENDFIRST Ecosystem v11.7
+
+**Data:** 7 de Janeiro de 2026  
+**Versão:** v11.7  
+**Status:** 🟢 Núcleo Operacional Ativo
 
 ---
 
 ## 🎯 O que é o ENDFIRST Ecosystem?
 
-O **ENDFIRST Ecosystem** é um ecossistema completo para gestão de projetos baseado em **13 pilares fundamentais**. Este repositório contém a metodologia, processos, ferramentas e banco de conhecimento necessários para aplicar ENDFIRST em qualquer projeto.
+O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método ENDFIRST para gestão de projetos e especificação de resultados.
 
 **Princípio fundamental:** Começar pelo fim (END FIRST) - definir claramente o resultado esperado antes de iniciar qualquer trabalho.
 
+**Núcleo operacional:** `/METODO/` contém o Pilar ENDFIRST (meta-pilar) que governa como criar especificações.
+
 ---
 
-## 🧭 Pilar 0 — Resultado Esperado
+## 📊 ESTADO ATUAL vs ESTADO DESEJADO
 
-**Este documento define o estado final desejado do ENDFIRST Ecosystem.**
+### ✅ O QUE JÁ EXISTE (Estado Atual)
 
-Tudo que não contribui diretamente para este estado **não deve ser puxado do backlog**.
+**Núcleo Operacional ENDFIRST (v1.0):**
+- [x] **Pilar ENDFIRST** — Meta-pilar que governa especificações (`/METODO/PILAR_ENDFIRST.md`)
+- [x] **Template ENDFIRST_SPEC** — Template oficial para criar especificações (`/METODO/templates/ENDFIRST_SPEC.md`)
+- [x] **Processo ENDFIRST** — Processo humano de 30 segundos (`/METODO/processos/ENDFIRST_PROCESS.md`)
+- [x] **Governança Documental** — Sistema de aprovação de documentos (`/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`)
+- [x] **Approval Log** — Registro de aprovações (`/METODO/APPROVAL_LOG.md`)
+- [x] **Integração 13 Pilares** — Resolução de conflito entre sistemas (`/METODO/INTEGRATION_13_PILARES.md`)
 
-### Como saber que o ENDFIRST Ecosystem está completo?
+**Exemplos Reais:**
+- [x] **ENDFIRST_SPEC_EF-2026-001** — LLM Orchestrator (validada pelo CEO)
+- [x] **ENDFIRST_SPEC_EF-2026-002** — Governança Documental (validada pelo CEO)
+- [x] **DEMANDA-001** — LLM Orchestrator v1 (pronta para execução)
 
-Quando **todas** estas condições forem verdadeiras:
+**Estrutura de Repositório:**
+- [x] Estrutura `/METODO/` criada e operacional
+- [x] Estrutura `/DEMANDAS/` criada e operacional
+- [x] Estrutura DOMAIN/SUBDOMAIN criada (legado)
 
-**✅ Metodologia**
-- [ ] 13 Pilares documentados e validados
-- [ ] Processos operacionais funcionando
+---
+
+### 🎯 O QUE AINDA NÃO EXISTE (Estado Desejado)
+
+**Metodologia:**
+- [ ] 13 Pilares documentados oficialmente (backlog: `DEMANDA_001_DOCUMENTAR_13_PILARES.md`)
 - [ ] Ontologia formal implementada (LinkML, Neo4j, GraphQL, OWL)
-- [ ] Templates testados em projetos reais
+- [ ] Templates testados em 10+ projetos reais
 
-**✅ Banco de Conhecimento**
+**Banco de Conhecimento:**
 - [ ] Sistema RAG operacional
 - [ ] Indexação e busca semântica funcionando
 - [ ] Integração com Manus/Cursor validada
 
-**✅ Governança**
+**Governança:**
 - [ ] 13 GitHub Projects ativos e sincronizados
 - [ ] Fluxo Kanban respeitado (WIP ≤ 3)
 - [ ] APIs e OLAs documentados
-- [ ] Auditoria de demandas possível
 
-**✅ Wiki Navegável**
+**Wiki Navegável:**
 - [ ] Docusaurus publicado online
 - [ ] Sidebar hierárquica navegável
 - [ ] Busca e links internos funcionando
-- [ ] Acessível publicamente
 
-**✅ Divulgação**
+**Divulgação:**
 - [ ] 12+ artigos Medium publicados
 - [ ] 50+ posts Instagram ativos
 - [ ] 20+ vídeos YouTube publicados
 - [ ] Curso ENDFIRST disponível
 
-### Critérios de Parada
-
-O projeto **não** busca:
-- ❌ Criar software comercial
-- ❌ Competir com ferramentas de gestão
-- ❌ Virar consultoria ou serviço
-
-O projeto **busca**:
-- ✅ Documentar metodologia replicável
-- ✅ Validar conceitos na prática
-- ✅ Difundir conhecimento abertamente
-
-**Quando isto estiver completo, o projeto entra em modo manutenção.**
-
 ---
 
 ## 📂 Estrutura do Repositório
 
-O repositório está organizado por **DOMÍNIO/SUBDOMÍNIO**, refletindo a ontologia formal do ENDFIRST:
-
 ```
 endfirst-ecosystem/
-├── CENTRAL/                          # Visão consolidada
-│   ├── DEMANDAS/                     # Backlog central
-│   ├── PRODUCTS/                     # Produtos centrais
-│   └── GITHUB_PROJECTS/              # Configuração GitHub Projects
+├── METODO/                           # ✅ Núcleo Operacional ENDFIRST (v1.0)
+│   ├── PILAR_ENDFIRST.md             # Meta-pilar (soberano)
+│   ├── ENDFIRST_DOCUMENT_GOVERNANCE.md # Governança documental
+│   ├── APPROVAL_LOG.md               # Registro de aprovações
+│   ├── INTEGRATION_13_PILARES.md    # Integração de sistemas
+│   ├── templates/
+│   │   └── ENDFIRST_SPEC.md          # Template oficial
+│   ├── examples/
+│   │   ├── ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md
+│   │   └── ENDFIRST_SPEC_EF-2026-002_DOCUMENT_GOVERNANCE.md
+│   ├── processos/
+│   │   └── ENDFIRST_PROCESS.md       # Processo de 30 segundos
+│   └── README.md                     # Documentação de entrada
 │
-├── DOMAIN_1_METODOLOGIA/             # Domínio 1: Metodologia ENDFIRST
-│   ├── SUBDOMAIN_1.1_PILARES/        # 13 Pilares do método
-│   ├── SUBDOMAIN_1.2_GESTAO_PROJETOS/    # Gestão de projetos
-│   ├── SUBDOMAIN_1.3_PROCESSOS/      # Processos operacionais
-│   ├── SUBDOMAIN_1.4_COMUNICACAO/    # Comunicação
-│   ├── SUBDOMAIN_1.5_GOVERNANCA/     # Governança (Demandas + Serviços)
-│   ├── SUBDOMAIN_1.6_ONTOLOGIA/      # Ontologia formal
-│   ├── SUBDOMAIN_1.7_ARTIGOS_MEDIUM/ # Artigos para divulgação
-│   ├── SUBDOMAIN_1.8_INSTAGRAM/      # Conteúdo Instagram
-│   ├── SUBDOMAIN_1.9_YOUTUBE/        # Conteúdo YouTube
-│   ├── SUBDOMAIN_1.10_CURSOS/        # Cursos ENDFIRST
-│   └── SUBDOMAIN_1.11_COMUNICACAO_EFICAZ/  # Comunicação Eficaz (Ladeira)
+├── DEMANDAS/                         # ✅ Demandas oficiais (governadas por ENDFIRST_SPEC)
+│   ├── DEMANDA-001_LLM_ORCHESTRATOR.md
+│   └── PROMPT_CURSOR_DEMANDA-001.md
 │
-└── DOMAIN_2_BANCO_CONHECIMENTO/      # Domínio 2: Banco de Conhecimento
-    └── SUBDOMAIN_2.1_RAG/            # Sistema RAG
+├── CENTRAL/                          # ⏳ Estrutura legada (a integrar)
+│   └── DEMANDAS/
+│       └── TEMPLATES/
+│           └── TEMPLATE_DEMANDA.md   # Template operacional (8 pilares)
+│
+└── DOMAIN_1_METODOLOGIA/             # ⏳ Estrutura legada (a integrar)
+    └── SUBDOMAIN_1.1_PILARES/
+        └── DEMANDAS/
+            └── BACKLOG/
+                └── DEMANDA_001_DOCUMENTAR_13_PILARES.md
 ```
-
-**Cada subdomínio contém:**
-- `DEMANDAS/` - Gestão de demandas (BACKLOG, AGUARDANDO, EM_PROGRESSO, EM_REVISAO, BLOQUEADO, CONCLUIDO, TEMPLATES)
-- `PRODUCTS/` - Produtos entregues
-- `GITHUB_PROJECTS/` - Configuração e automação GitHub Projects
 
 ---
 
-## 📋 Os 13 Pilares do ENDFIRST
+## 🧭 Como Usar o Repositório
 
-1. **Pilar 0:** Resultado Esperado - Definir claramente o estado final
-2. **Pilar 1:** Obstáculos - Identificar e planejar soluções
-3. **Pilar 1.5:** Modelos Mentais - Frameworks de pensamento
-4. **Pilar 2:** Recursos - Listar e garantir disponibilidade
-5. **Pilar 3:** Calibração - Entender onde estamos vs onde queremos chegar
-6. **Pilar 3.5:** Gestão de Projetos - Estrutura e organização
-7. **Pilar 4:** Caminho Reverso - Planejar do fim para o início
-8. **Pilar 5:** Validação Externa - Protótipos e feedback
-9. **Pilar 6:** Execução - Implementação efetiva
-10. **Pilar 6.5:** Processos - Automação e padronização
-11. **Pilar 7:** Aprendizados - Captura de conhecimento
-12. **Pilar 8:** Comunicação - Stakeholders e alinhamento
-13. **Pilar 11:** Comunicação Eficaz - Gatilhos mentais e copywriting
+### 1. Criar Nova Demanda Estratégica
+
+**Use o Pilar ENDFIRST:**
+1. Leia `/METODO/PILAR_ENDFIRST.md`
+2. Use template `/METODO/templates/ENDFIRST_SPEC.md`
+3. Preencha as 6 perguntas
+4. Valide com CEO (Declaração Final de Passagem)
+5. Crie demanda oficial em `/DEMANDAS/`
+
+**Exemplo:** `ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md`
+
+---
+
+### 2. Criar Nova Demanda Tática
+
+**Use o Template de Demanda:**
+1. Use template `/CENTRAL/DEMANDAS/TEMPLATES/TEMPLATE_DEMANDA.md`
+2. Preencha os 8 pilares
+3. Salve em `/DOMAIN_X/SUBDOMAIN_X.X/DEMANDAS/BACKLOG/`
+
+**Exemplo:** `DEMANDA_001_DOCUMENTAR_13_PILARES.md`
+
+---
+
+### 3. Aprovar Documento
+
+**Siga a Governança Documental:**
+1. Leia `/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`
+2. Classifique documento (Tipo A, B ou C)
+3. Siga processo de aprovação por tipo
+4. Registre em `/METODO/APPROVAL_LOG.md`
+
+---
+
+## 🔗 Integração: Pilar ENDFIRST vs 13 Pilares
+
+**Decisão CEO:** Pilar ENDFIRST governa tudo.
+
+**Relação:**
+- **Pilar ENDFIRST** → Define **COMO** criar especificações (meta-pilar)
+- **13 Pilares** → Define **O QUE** incluir nas demandas (método operacional)
+
+**Documento de integração:** `/METODO/INTEGRATION_13_PILARES.md`
+
+**Regra:**
+- Demandas estratégicas → Usar ENDFIRST_SPEC (obrigatório)
+- Demandas táticas → Usar TEMPLATE_DEMANDA (opcional)
+
+---
+
+## 📊 Estatísticas do Repositório
+
+**Total de documentos:** 17  
+**Aprovados:** 14 (82.4%)  
+**Pendentes:** 3 (17.6%)
+
+**Por tipo:**
+- **Canônicos (Tipo A):** 3 aprovados
+- **Operacionais (Tipo B):** 5 aprovados, 2 pendentes
+- **Exemplos (Tipo C):** 6 aprovados, 1 pendente
+
+**Ver detalhes:** `/METODO/APPROVAL_LOG.md`
+
+---
+
+## 🚀 Próximos Passos
+
+### Prioridade 1: Implementar LLM Orchestrator
+**Demanda:** `DEMANDA-001_LLM_ORCHESTRATOR.md`  
+**Status:** Pronta para execução  
+**Responsável:** Cursor (via prompt)
+
+### Prioridade 2: Documentar 13 Pilares
+**Demanda:** `DEMANDA_001_DOCUMENTAR_13_PILARES.md`  
+**Status:** Backlog (precisa passar pelo Pilar ENDFIRST primeiro)  
+**Ação:** Criar ENDFIRST_SPEC para esta demanda
+
+### Prioridade 3: Aprovar Documentos Pendentes
+**Documentos:**
+- `README_ROOT` (este documento)
+- `TEMPLATE_DEMANDA`
+- `DEMANDA_001_DOCUMENTAR_13_PILARES`
+
+**Ação:** CEO deve revisar e aprovar retroativamente
 
 ---
 
@@ -134,20 +220,20 @@ Backlog → 📋 AGUARDANDO → 🔄 EM_PROGRESSO (≤3) → 👀 EM_REVISAO →
 
 ### Regras Fundamentais
 
-**WIP Limit**
+**WIP Limit:**
 - Máximo 3 demandas em progresso simultaneamente
 - Se WIP = 3, não puxe nova demanda até concluir uma
 
-**Pull System**
+**Pull System:**
 - Terminou uma demanda? Puxe a próxima do topo do backlog
 - Não empurre demandas para o executor
 
-**Priorização**
+**Priorização:**
 - Por dependências (Pilar 4 - Caminho Reverso)
 - O que desbloqueia mais itens vem primeiro
 - CEO pode repriorizar explicitamente
 
-**Validação**
+**Validação:**
 - Toda entrega passa por Manus (Pilar 5)
 - Aprovação = critérios de sucesso do Pilar 0 da demanda atendidos
 - Sem validação = não vai para CONCLUIDO
@@ -166,136 +252,25 @@ Backlog → 📋 AGUARDANDO → 🔄 EM_PROGRESSO (≤3) → 👀 EM_REVISAO →
 - [Central](https://github.com/users/Joubertjr/projects/1)
 - [1.1 - Pilares](https://github.com/users/Joubertjr/projects/2)
 - [1.2 - Gestão de Projetos](https://github.com/users/Joubertjr/projects/3)
-- [1.3 - Processos](https://github.com/users/Joubertjr/projects/4)
-- [1.4 - Comunicação](https://github.com/users/Joubertjr/projects/5)
-- [1.5 - Governança](https://github.com/users/Joubertjr/projects/6)
-- [1.6 - Ontologia](https://github.com/users/Joubertjr/projects/7)
-- [1.7 - Artigos Medium](https://github.com/users/Joubertjr/projects/8)
-- [1.8 - Instagram](https://github.com/users/Joubertjr/projects/9)
-- [1.9 - YouTube](https://github.com/users/Joubertjr/projects/10)
-- [1.10 - Cursos](https://github.com/users/Joubertjr/projects/11)
-- [1.11 - Comunicação Eficaz](https://github.com/users/Joubertjr/projects/12)
-- [2.1 - RAG](https://github.com/users/Joubertjr/projects/13)
+- [Demais projects...](https://github.com/users/Joubertjr/projects)
 
-### APIs e OLAs
+### Governança Documental
 
-**Service Level Agreements:**
-- CEO → Cursor: Demanda bem formada (8 pilares aplicados)
-- Cursor → Manus: Código testado, documentado, com PR
-- Manus → CEO: Validação em até 48h ou sinalização de bloqueio
+**Sistema:** `/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`
 
-**Interfaces (APIs):**
-- Template de Demanda padronizado
-- Formato de PR obrigatório
-- Estrutura de pastas rígida (DOMAIN/SUBDOMAIN)
+**Tipos de documentos:**
+- **Tipo A (Canônico):** Exige ENDFIRST_SPEC + aprovação CEO
+- **Tipo B (Operacional):** Exige checklist + aprovação Manus/Cursor
+- **Tipo C (Exemplo):** Exige conformidade com template
 
----
-
-## 🚀 Como Contribuir
-
-### Para CEO (Criar Demandas)
-
-1. **Definir Estado Final (Pilar 0)**
-   - O que você quer alcançar?
-   - Como saberá que terminou?
-
-2. **Criar Demanda**
-   - Use template em `SUBDOMAIN_X.X/DEMANDAS/TEMPLATES/`
-   - Aplique os 8 pilares principais
-   - Salve em `SUBDOMAIN_X.X/DEMANDAS/BACKLOG/`
-
-3. **Criar Issue no GitHub**
-   - Título: `DEMANDA #XXX: [Título]`
-   - Corpo: Conteúdo do arquivo .md
-   - Adicionar ao GitHub Project correspondente
-
-### Para Cursor (Implementar Demandas)
-
-1. **Puxar Demanda do Backlog**
-   - Verificar WIP Limit (máximo 3 em progresso)
-   - Escolher demanda do topo (mais prioritária)
-   - Mover para `EM_PROGRESSO/`
-
-2. **Criar Branch**
-   - Padrão: `domain/[DOMAIN]-[SUBDOMAIN]/issue-[ID]`
-   - Exemplo: `domain/1.1-pilares/issue-1`
-
-3. **Implementar**
-   - Commits frequentes
-   - Formato: `[DOMAIN-SUBDOMAIN] [tipo] [#ID]: Mensagem`
-   - Exemplo: `[1.1-PILARES] feat [#1]: Adicionar Pilar 0`
-
-4. **Submeter para Revisão**
-   - Criar Pull Request
-   - Mover demanda para `EM_REVISAO/`
-   - Solicitar revisão (Manus)
-
-### Para Manus (Validar Entregas)
-
-1. **Revisar Pull Request**
-   - Aplicar Pilar 5 (Validação Externa)
-   - Verificar critérios de sucesso
-   - Aprovar ou solicitar mudanças
-
-2. **Aprovar**
-   - Merge do PR
-   - Mover demanda para `CONCLUIDO/`
-   - Fechar Issue
-
----
-
-## 🗺️ Roadmap
-
-### 🔒 Governança do Roadmap
-
-**O roadmap não é exaustivo.** Novas iniciativas só entram se:
-
-1. **Tiverem Pilar associado** - Toda demanda deve aplicar os 8 pilares principais
-2. **Não violarem WIP Limit** - Máximo 3 em progresso, sempre
-3. **Aproximarem o Estado Final** - Verificar critérios do Pilar 0 acima
-
-**Exceções:**
-- Bloqueios críticos (podem interromper WIP)
-- Ajustes de segurança/compliance
-- Correções de bugs em produção
-
-**Fora do escopo:**
-- Features "seria legal ter"
-- Integrações não previstas no Estado Final
-- Otimizações prematuras
-
-### Fase Atual: Fundação ✅
-
-**Concluído:**
-- ✅ Repositório limpo
-- ✅ Estrutura por DOMÍNIO/SUBDOMÍNIO criada
-- ✅ GitHub Projects criados (13)
-- ✅ README.md robusto criado
-- ✅ Template de demanda criado
-- ✅ Token GitHub persistente configurado
-
-**Em Progresso:**
-- 🔄 DEMANDA #001: Documentar 13 Pilares (Backlog)
-
-**Próximo:**
-- ⏳ Cursor sobe Banco de Referências
-- ⏳ Implementar Wiki navegável (Docusaurus)
-- ⏳ Criar primeiros artigos Medium
-
----
-
-## 🔗 Links Importantes
-
-- **Repositório:** https://github.com/Joubertjr/endfirst-ecosystem
-- **Issues:** https://github.com/Joubertjr/endfirst-ecosystem/issues
-- **Projects:** https://github.com/users/Joubertjr/projects
+**Log de aprovações:** `/METODO/APPROVAL_LOG.md`
 
 ---
 
 ## 🤝 Equipe
 
-- **CEO:** Joubert Jr - Criador do método, define demandas
-- **Manus AI:** Chefe de Produto - Valida entregas, garante qualidade
+- **CEO:** Joubert Jr - Criador do método, define demandas estratégicas
+- **Manus AI:** Chefe de Produto - Valida entregas, garante qualidade, implementa governança
 - **Cursor AI:** Desenvolvedor - Implementa demandas
 
 ---
@@ -325,6 +300,14 @@ Até que a licença formal seja escolhida:
 
 ## 📝 Histórico de Versões
 
+### v11.7 (7 de Janeiro de 2026)
+- ✅ Núcleo Operacional ENDFIRST v1.0 implementado
+- ✅ Governança documental formalizada
+- ✅ Integração entre Pilar ENDFIRST e 13 Pilares resolvida
+- ✅ README atualizado para estado vivo (atual vs desejado)
+- ✅ YAML frontmatter padronizado em todos os documentos
+- ✅ Approval Log criado com inventário completo
+
 ### v11.6 (4 de Janeiro de 2026)
 - Limpeza total do repositório
 - Reestruturação por DOMÍNIO/SUBDOMÍNIO
@@ -333,11 +316,8 @@ Até que a licença formal seja escolhida:
 - Token GitHub persistente configurado
 - Início da reconstrução do zero
 
-### v11.4 (21 de Dezembro de 2025)
-- Versão anterior (obsoleta)
-- Estrutura genérica
-- Foco em preservação de histórico
-
 ---
 
-**Status:** 🏗️ **Em Construção - Aplicando ENDFIRST para criar o próprio ENDFIRST!**
+**Status:** 🟢 **Núcleo Operacional Ativo — Pronto para escalar**
+
+**Próxima ação:** Implementar DEMANDA-001 (LLM Orchestrator) ou aprovar documentos pendentes.

@@ -1,3 +1,15 @@
+---
+document_id: PROMPT_CURSOR_DEMANDA-001
+type: example
+owner: Manus (Agent)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /DEMANDAS/DEMANDA-001_LLM_ORCHESTRATOR.md
+version: 1.0
+created_at: 2026-01-07
+---
+
 # PROMPT PARA CURSOR — DEMANDA-001: LLM Orchestrator v1
 
 **Versão:** 1.0  

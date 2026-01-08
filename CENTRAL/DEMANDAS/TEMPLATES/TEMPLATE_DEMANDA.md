@@ -1,3 +1,15 @@
+---
+document_id: TEMPLATE_DEMANDA
+type: operational
+owner: Manus (Agent)
+status: pending
+approved_by: TBD
+approved_at: TBD
+governed_by: TBD
+version: 1.0
+created_at: 2026-01-04
+---
+
 # DEMANDA #XXX: [Título da Demanda]
 
 **Data de Criação:** [DD/MM/AAAA]  

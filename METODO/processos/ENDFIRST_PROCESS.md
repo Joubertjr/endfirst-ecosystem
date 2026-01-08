@@ -1,3 +1,15 @@
+---
+document_id: ENDFIRST_PROCESS
+type: operational
+owner: Manus (Agent)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/PILAR_ENDFIRST.md
+version: 1.0
+created_at: 2026-01-07
+---
+
 # ENDFIRST_PROCESS — Processo Humano de 30 Segundos
 
 **Versão:** 1.0  

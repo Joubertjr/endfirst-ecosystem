@@ -1,4 +1,16 @@
-# PILAR ENDFIRST — Documento Canônico
+---
+document_id: PILAR_ENDFIRST
+type: canonical
+owner: CEO (Joubert Jr)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: Si mesmo (meta-aplicação)
+version: 1.0
+created_at: 2026-01-04
+---
+
+# PILAR ENDFIRST — Fonte Soberana de Verdade
 
 **Versão:** 1.0  
 **Data:** 4 de Janeiro de 2026  

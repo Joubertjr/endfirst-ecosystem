@@ -1,3 +1,15 @@
+---
+document_id: PROMPT_CURSOR
+type: operational
+owner: Manus (Agent)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/PILAR_ENDFIRST.md
+version: 1.0
+created_at: 2026-01-07
+---
+
 # PROMPT PARA CURSOR (Modo Plan)
 
 **Versão:** 1.0  

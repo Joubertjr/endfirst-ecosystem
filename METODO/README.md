@@ -1,3 +1,15 @@
+---
+document_id: README_METODO
+type: example
+owner: Manus (Agent)
+status: approved
+approved_by: CEO
+approved_at: 2026-01-07
+governed_by: /METODO/PILAR_ENDFIRST.md
+version: 1.0
+created_at: 2026-01-07
+---
+
 # METODO — Núcleo Operacional ENDFIRST
 
 **Versão:** 1.0  
