@@ -63,6 +63,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | DEMANDA-001_v1.2 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
 | DEMANDA-001_ACCEPTANCE | operational | approved | CEO | 2026-01-08 | Critérios de aceitação final escritos pelo CEO - 5 critérios objetivos, imutável durante execução | /METODO/PILAR_ENDFIRST.md | [e98e0b1](https://github.com/Joubertjr/endfirst-ecosystem/commit/e98e0b1) |
 | FINAL_DECISION_TEMPLATE | operational | approved | CEO | 2026-01-08 | Formato padrão de decisão final - como CEO julga sucesso/fracasso de forma objetiva, repetível e auditável | /METODO/ONTOLOGY_DECISIONS.md | [b4319b5](https://github.com/Joubertjr/endfirst-ecosystem/commit/b4319b5) |
+| EXECUTOR_ONBOARDING_PROCESS | operational | approved | CEO | 2026-01-08 | Processo de onboarding de executor - elimina dependência de explicação oral, prompt improvisado ou memória humana | /METODO/PILAR_ENDFIRST.md | TBD |
 
 ---
 
@@ -76,14 +77,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 25  
-**Aprovados:** 25 (100%)  
+**Total de documentos no repositório:** 26  
+**Aprovados:** 26 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
 - **Canônicos (Tipo A):** 9 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 13 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 14 aprovados, 0 pendentes
 - **Exemplos (Tipo C):** 4 aprovados, 0 pendentes (DEMANDA-001 v1.1 → v1.2)
 
 ---
@@ -124,6 +125,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | ONTOLOGY_DECISIONS.md atualizado para v1.3 (histórico: v1.0 → v1.1 → v1.2 → v1.3) | Manus (Agent) |
 | 2026-01-08 | DEMANDA-001_ACCEPTANCE.md criado: critérios de aceitação final escritos pelo CEO (5 critérios objetivos, imutável) | CEO |
 | 2026-01-08 | FINAL_DECISION_TEMPLATE.md criado: formato padrão de decisão final (como CEO julga sucesso/fracasso) | CEO |
+| 2026-01-08 | EXECUTOR_ONBOARDING_PROCESS.md criado: processo de onboarding de executor (elimina dependência de explicação oral) | Manus (Agent) |
 
 ---
 
