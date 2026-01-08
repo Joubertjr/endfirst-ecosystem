@@ -53,7 +53,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | COMMIT_REVIEW_PROCESS | operational | approved | CEO | 2026-01-08 | Processo oficial de revisão de commits - fluxo correto em 5 passos + formato canônico de parecer | /METODO/ROLES_AND_RESPONSIBILITIES.md | [5d307cf](https://github.com/Joubertjr/endfirst-ecosystem/commit/5d307cf) |
 | ENDFIRST_DOCUMENT_GOVERNANCE_v1.1 | canonical | approved | CEO | 2026-01-08 | Regra crítica adicionada: auto-aprovação proibida (exceto CEO) | /METODO/PILAR_ENDFIRST.md | [5d307cf](https://github.com/Joubertjr/endfirst-ecosystem/commit/5d307cf) |
 | ONTOLOGY_DECISIONS_v1.1_OD-004 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-004 adicionada: DEMANDA ≠ PROJETO ≠ PRODUTO (validada contra 5 critérios) | /METODO/PILAR_ENDFIRST.md | [b4a46d2](https://github.com/Joubertjr/endfirst-ecosystem/commit/b4a46d2) |
-| COMMIT_REVIEW_APPROVAL | canonical | approved | CEO | 2026-01-08 | Aprovação formal do CEO sobre revisão completa de 20 commits - repositório 100% revisado, classificado e governado | /METODO/COMMIT_REVIEW_PROCESS.md | TBD |
+| COMMIT_REVIEW_APPROVAL | canonical | approved | CEO | 2026-01-08 | Aprovação formal do CEO sobre revisão completa de 20 commits - repositório 100% revisado, classificado e governado | /METODO/COMMIT_REVIEW_PROCESS.md | [43b02dc](https://github.com/Joubertjr/endfirst-ecosystem/commit/43b02dc) |
 
 ---
 
