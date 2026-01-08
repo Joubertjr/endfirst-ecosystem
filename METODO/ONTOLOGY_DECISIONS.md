@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.2  
+**Versão:** 1.3  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -19,6 +19,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.0 (2026-01-08): Versão inicial com estrutura base
 - v1.1 (2026-01-08): OD-004 adicionada (DEMANDA ≠ PROJETO ≠ PRODUTO)
 - v1.2 (2026-01-08): OD-005 adicionada (Toda Demanda pertence a um Produto) + OD-004 revisada
+- v1.3 (2026-01-08): OD-006 adicionada (Execução é responsabilidade da Tecnologia - Cursor)
 
 ---
 
@@ -375,6 +376,109 @@ Permitir demanda sem produto cria trabalho órfão, sem dono e sem direção est
 #### 📜 DECLARAÇÃO DO CEO
 
 > "Esta decisão não é opinião. É fundação ontológica do sistema. A partir de agora: qualquer demanda sem produto está errada por definição, projeto vira meio (não identidade), produto vira centro da governança."
+
+**Status:** CANÔNICA  
+**Aplicação:** Imediata
+
+---
+
+### OD-006 — Execução é sempre responsabilidade da Tecnologia (Cursor)
+
+**ID:** OD-006  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08
+
+---
+
+#### 🧠 DECISÃO
+
+DEMANDA nunca é executada por quem escreve.  
+DEMANDA nunca é executada pelo CEO.  
+DEMANDA é sempre executada pelo executor designado.  
+**No nosso sistema: Cursor.**
+
+---
+
+#### 📝 RACIONAL
+
+O sistema autorizava a execução, mas não declarava explicitamente o executor canônico.  
+Contrato de execução estava implícito, gerando ambiguidade sobre "quem executa".  
+Implícito = fonte de dúvida.  
+Explícito = elimina ambiguidade por design.
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**EXECUTOR (Cursor)**
+- Lê demandas do Git
+- Implementa especificações
+- Não decide
+- Não autoriza
+- Não especifica
+
+**ESPECIFICADOR (Manus)**
+- Escreve demandas
+- Escreve specs
+- Não executa
+- Não autoriza
+
+**AUTORIZADOR (CEO)**
+- Autoriza execução
+- Valida resultado
+- Não executa
+- Não especifica
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+- Toda DEMANDA DEVE ter campo `executor` no YAML
+- Executor padrão: `cursor`
+- Demanda sem executor → inválida
+- Executor diferente de `cursor` → erro ontológico (por enquanto)
+- Git é a fonte única de verdade
+- Cursor lê do Git, não de mensagens
+
+---
+
+#### 📌 FLUXO CANÔNICO
+
+1. CEO autoriza
+2. Manus escreve/spec
+3. Git é a fonte única
+4. Cursor lê do Git
+5. Cursor executa
+6. Resultado volta para o Git
+
+---
+
+#### ❌ O QUE NÃO ACONTECE
+
+- ❌ CEO não executa
+- ❌ Manus não executa
+- ❌ Cursor não decide
+- ❌ Cursor não pergunta "quem executa?"
+- ❌ Execução não depende de memória humana
+
+---
+
+#### 📜 FRASE CANÔNICA
+
+> "Demandas são executadas por agentes de tecnologia, nunca por pessoas."
+
+**Uso:**
+- Onboarding
+- Revisão
+- Cultura
+- Ontologia prática
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "O sistema está certo. A dúvida mostrou onde ele ainda estava silencioso. Vamos torná-lo explícito — e seguir."
 
 **Status:** CANÔNICA  
 **Aplicação:** Imediata

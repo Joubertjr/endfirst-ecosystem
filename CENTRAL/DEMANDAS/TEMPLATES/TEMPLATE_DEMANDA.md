@@ -6,7 +6,10 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-08
 governed_by: /METODO/INTEGRATION_13_PILARES.md
-version: 1.0
+product: [Nome do Produto]
+executor: cursor
+project: [Nome do Projeto ou "nenhum"]
+version: 1.1
 created_at: 2026-01-04
 updated_at: 2026-01-08
 ---
@@ -15,6 +18,9 @@ updated_at: 2026-01-08
 
 **Data de Criação:** [DD/MM/AAAA]  
 **Criado por:** [Nome]  
+**Produto:** [Nome do Produto] (obrigatório)  
+**Executor:** cursor (obrigatório)  
+**Projeto:** [Nome do Projeto ou "nenhum"] (opcional)  
 **Subdomínio:** [SUBDOMAIN_X.X_NOME]  
 **Prioridade:** 🔴 Crítica | 🟡 Alta | 🟢 Média | ⚪ Baixa  
 **Status:** Backlog

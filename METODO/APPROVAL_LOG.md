@@ -57,6 +57,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | ONTOLOGY_DECISIONS_v1.2_OD-005 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-005 adicionada: Toda Demanda pertence a um Produto + OD-004 revisado para alinhar | /METODO/PILAR_ENDFIRST.md | [0e33ea2](https://github.com/Joubertjr/endfirst-ecosystem/commit/0e33ea2) |
 | GOVERNANCE_CYCLE_CLOSURE | canonical | approved | CEO | 2026-01-08 | Encerramento formal do ciclo de governança - decisões congeladas, foco muda para execução | /METODO/PILAR_ENDFIRST.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
 | DEMANDA-001_v1.1 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
+| ONTOLOGY_DECISIONS_v1.3_OD-006 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-006 adicionada: Execução é responsabilidade da Tecnologia (Cursor) - elimina ambiguidade | /METODO/PILAR_ENDFIRST.md | TBD |
+| EXECUTION_MODEL | operational | approved | CEO | 2026-01-08 | Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa - fluxo canônico em 6 passos | /METODO/PILAR_ENDFIRST.md | TBD |
+| TEMPLATE_DEMANDA_v1.1 | operational | approved | CEO | 2026-01-08 | Template atualizado: campos product, executor e project obrigatórios | /METODO/INTEGRATION_13_PILARES.md | TBD |
+| DEMANDA-001_v1.2 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | TBD |
 
 ---
 
@@ -70,15 +74,15 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 22  
-**Aprovados:** 22 (100%)  
+**Total de documentos no repositório:** 23  
+**Aprovados:** 23 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 8 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 10 aprovados, 0 pendentes
-- **Exemplos (Tipo C):** 4 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 9 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 11 aprovados, 0 pendentes
+- **Exemplos (Tipo C):** 4 aprovados, 0 pendentes (DEMANDA-001 v1.1 → v1.2)
 
 ---
 
@@ -111,6 +115,11 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | Ciclo de governança formalmente encerrado: decisões congeladas, foco muda para execução | CEO |
 | 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | Manus (Agent) |
 | 2026-01-08 | ONTOLOGY_DECISIONS.md marcado como v1.2 (histórico de versões adicionado) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-006 formalizada: Execução é responsabilidade da Tecnologia (Cursor) - elimina ambiguidade sobre executor | Manus (Agent) |
+| 2026-01-08 | EXECUTION_MODEL.md criado: modelo de execução explícito (CEO autoriza, Manus especifica, Cursor executa) | Manus (Agent) |
+| 2026-01-08 | TEMPLATE_DEMANDA.md atualizado: campos product, executor e project obrigatórios (v1.0 → v1.1) | Manus (Agent) |
+| 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado (v1.1 → v1.2) | Manus (Agent) |
+| 2026-01-08 | ONTOLOGY_DECISIONS.md atualizado para v1.3 (histórico: v1.0 → v1.1 → v1.2 → v1.3) | Manus (Agent) |
 
 ---
 

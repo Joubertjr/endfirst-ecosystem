@@ -6,16 +6,18 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.14
+version: v11.15
 created_at: 2026-01-04
 updated_at: 2026-01-07
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.14
+# 🚀 ENDFIRST Ecosystem v11.15
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.14  
-**Status:** ✅ CICLO DE GOVERNANÇA ENCERRADO — LIBERADO PARA EXECUÇÃO
+**Versão:** v11.15  
+**Status:** ✅ EXECUTOR EXPLÍCITO (OD-006) — CURSOR EXECUTA
+
+> **"Demandas são executadas por agentes de tecnologia, nunca por pessoas."**
 
 ---
 
@@ -45,11 +47,13 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **Ontology Decisions Trigger** — Gatilho formal para popular ontologia (`/METODO/ONTOLOGY_DECISIONS_TRIGGER.md`)
 - [x] **OD-004: DEMANDA ≠ PROJETO ≠ PRODUTO** — Decisão ontológica (revisada: Produto obrigatório, Projeto opcional)
 - [x] **OD-005: Toda Demanda pertence a um Produto** — Fundação ontológica do sistema (validada contra 5 critérios)
-- [x] **ONTOLOGY_DECISIONS.md v1.2** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2)
+- [x] **OD-006: Execução é responsabilidade da Tecnologia (Cursor)** — Elimina ambiguidade sobre executor (validada contra 5 critérios)
+- [x] **ONTOLOGY_DECISIONS.md v1.3** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3)
+- [x] **EXECUTION_MODEL.md** — Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa (`/METODO/EXECUTION_MODEL.md`)
 - [x] **Governance Cycle Closure** — Ciclo de governança formalmente encerrado, decisões congeladas (`/METODO/GOVERNANCE_CYCLE_CLOSURE.md`)
 - [x] **Commit Review Approval** — Aprovação formal do CEO sobre revisão completa de 20 commits (`/METODO/COMMIT_REVIEW_APPROVAL.md`)
 - [x] **Histórico 100% revisado** — 20 commits classificados: 8 conformes, 12 conformes com ressalvas (legado aceito)
-- [x] **DEMANDA-001 v1.1** — Produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO
+- [x] **DEMANDA-001 v1.2** — Produto declarado (LLM Orchestrator), executor explícito (cursor), status LIBERADA PARA EXECUÇÃO
 - [x] **Integração 13 Pilares** — Resolução de conflito entre sistemas (`/METODO/INTEGRATION_13_PILARES.md`)
 **Exemplos Reais:**
 - [x] **ENDFIRST_SPEC_EF-2026-001** — LLM Orchestrator (validada pelo CEO)
