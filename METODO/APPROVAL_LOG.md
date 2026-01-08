@@ -62,7 +62,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | TEMPLATE_DEMANDA_v1.1 | operational | approved | CEO | 2026-01-08 | Template atualizado: campos product, executor e project obrigatórios | /METODO/INTEGRATION_13_PILARES.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
 | DEMANDA-001_v1.2 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
 | DEMANDA-001_ACCEPTANCE | operational | approved | CEO | 2026-01-08 | Critérios de aceitação final escritos pelo CEO - 5 critérios objetivos, imutável durante execução | /METODO/PILAR_ENDFIRST.md | [e98e0b1](https://github.com/Joubertjr/endfirst-ecosystem/commit/e98e0b1) |
-| FINAL_DECISION_TEMPLATE | operational | approved | CEO | 2026-01-08 | Formato padrão de decisão final - como CEO julga sucesso/fracasso de forma objetiva, repetível e auditável | /METODO/ONTOLOGY_DECISIONS.md | TBD |
+| FINAL_DECISION_TEMPLATE | operational | approved | CEO | 2026-01-08 | Formato padrão de decisão final - como CEO julga sucesso/fracasso de forma objetiva, repetível e auditável | /METODO/ONTOLOGY_DECISIONS.md | [b4319b5](https://github.com/Joubertjr/endfirst-ecosystem/commit/b4319b5) |
 
 ---
 
