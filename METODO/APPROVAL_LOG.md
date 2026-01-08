@@ -57,10 +57,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | ONTOLOGY_DECISIONS_v1.2_OD-005 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-005 adicionada: Toda Demanda pertence a um Produto + OD-004 revisado para alinhar | /METODO/PILAR_ENDFIRST.md | [0e33ea2](https://github.com/Joubertjr/endfirst-ecosystem/commit/0e33ea2) |
 | GOVERNANCE_CYCLE_CLOSURE | canonical | approved | CEO | 2026-01-08 | Encerramento formal do ciclo de governança - decisões congeladas, foco muda para execução | /METODO/PILAR_ENDFIRST.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
 | DEMANDA-001_v1.1 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [cdabb3d](https://github.com/Joubertjr/endfirst-ecosystem/commit/cdabb3d) |
-| ONTOLOGY_DECISIONS_v1.3_OD-006 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-006 adicionada: Execução é responsabilidade da Tecnologia (Cursor) - elimina ambiguidade | /METODO/PILAR_ENDFIRST.md | TBD |
-| EXECUTION_MODEL | operational | approved | CEO | 2026-01-08 | Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa - fluxo canônico em 6 passos | /METODO/PILAR_ENDFIRST.md | TBD |
-| TEMPLATE_DEMANDA_v1.1 | operational | approved | CEO | 2026-01-08 | Template atualizado: campos product, executor e project obrigatórios | /METODO/INTEGRATION_13_PILARES.md | TBD |
-| DEMANDA-001_v1.2 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | TBD |
+| ONTOLOGY_DECISIONS_v1.3_OD-006 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-006 adicionada: Execução é responsabilidade da Tecnologia (Cursor) - elimina ambiguidade | /METODO/PILAR_ENDFIRST.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
+| EXECUTION_MODEL | operational | approved | CEO | 2026-01-08 | Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa - fluxo canônico em 6 passos | /METODO/PILAR_ENDFIRST.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
+| TEMPLATE_DEMANDA_v1.1 | operational | approved | CEO | 2026-01-08 | Template atualizado: campos product, executor e project obrigatórios | /METODO/INTEGRATION_13_PILARES.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
+| DEMANDA-001_v1.2 | example | approved | CEO | 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado | /METODO/examples/ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md | [d3d2a72](https://github.com/Joubertjr/endfirst-ecosystem/commit/d3d2a72) |
 
 ---
 
