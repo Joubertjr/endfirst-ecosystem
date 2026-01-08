@@ -49,6 +49,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | README_ROOT_v11.8 | operational | approved | CEO | 2026-01-08 | README atualizado para v11.8 - Estado Atual vs Visão + Governança Reforçada | /METODO/PILAR_ENDFIRST.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | ONTOLOGY_DECISIONS | canonical | approved | CEO | 2026-01-08 | Ontologia operacional consolidada - frases normativas e verdades operacionais já vividas | /METODO/PILAR_ENDFIRST.md | [9793be8](https://github.com/Joubertjr/endfirst-ecosystem/commit/9793be8) |
 | ONTOLOGY_DECISIONS_TRIGGER | operational | approved | CEO | 2026-01-08 | Gatilho formal para popular ONTOLOGY_DECISIONS.md - 5 critérios obrigatórios + processo de criação | /METODO/ONTOLOGY_DECISIONS.md | [1477359](https://github.com/Joubertjr/endfirst-ecosystem/commit/1477359) |
+| ROLES_AND_RESPONSIBILITIES | canonical | approved | CEO | 2026-01-08 | Papéis e responsabilidades formalizados (CEO/Manus/Cursor) - sistema institucional, não pessoal | /METODO/PILAR_ENDFIRST.md | [TBD_CURRENT_COMMIT] |
+| COMMIT_REVIEW_PROCESS | operational | approved | CEO | 2026-01-08 | Processo oficial de revisão de commits - fluxo correto em 5 passos + formato canônico de parecer | /METODO/ROLES_AND_RESPONSIBILITIES.md | [TBD_CURRENT_COMMIT] |
+| ENDFIRST_DOCUMENT_GOVERNANCE_v1.1 | canonical | approved | CEO | 2026-01-08 | Regra crítica adicionada: auto-aprovação proibida (exceto CEO) | /METODO/PILAR_ENDFIRST.md | [TBD_CURRENT_COMMIT] |
 
 ---
 
@@ -62,14 +65,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 19  
-**Aprovados:** 19 (100%)  
+**Total de documentos no repositório:** 22  
+**Aprovados:** 22 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 4 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 9 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 6 aprovados, 0 pendentes (+2)
+- **Operacionais (Tipo B):** 10 aprovados, 0 pendentes (+1)
 - **Exemplos (Tipo C):** 6 aprovados, 0 pendentes
 
 ---

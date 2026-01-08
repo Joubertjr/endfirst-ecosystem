@@ -27,6 +27,26 @@ Este documento define o processo formal de governança e aprovação de **todos 
 
 ---
 
+## 🚫 REGRA CRÍTICA: AUTO-APROVAÇÃO PROIBIDA
+
+**Regra obrigatória:**
+> Nenhum documento pode ser aprovado por quem o escreveu.
+
+**Motivo:** Conflito de interesse estrutural.
+
+**Consequência:** Documento aprovado por autor é **INVÁLIDO**.
+
+**Aplicação:**
+- Manus escreve → CEO aprova
+- Cursor escreve → Manus valida, CEO aprova
+- CEO escreve → Manus valida, CEO auto-aprova (única exceção)
+
+**Exceção única:** CEO pode auto-aprovar documentos que escreveu (autoridade soberana).
+
+**Todos os outros casos:** Auto-aprovação é PROIBIDA.
+
+---
+
 ## 📂 CLASSIFICAÇÃO DE DOCUMENTOS
 
 Todo documento no repositório deve ser classificado em um dos 3 tipos:
