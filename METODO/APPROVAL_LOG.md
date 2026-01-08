@@ -47,6 +47,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | COMMIT_GOVERNANCE_CHECKLIST | operational | approved | CEO | 2026-01-08 | Checklist de conformidade para commits governados - elimina commits "quase conformes" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | APPROVAL_LOG_RULES | operational | approved | CEO | 2026-01-08 | Regras estruturais anti-TBD - mata estados inválidos por definição | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | README_ROOT_v11.8 | operational | approved | CEO | 2026-01-08 | README atualizado para v11.8 - Estado Atual vs Visão + Governança Reforçada | /METODO/PILAR_ENDFIRST.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
+| ONTOLOGY_DECISIONS | canonical | approved | CEO | 2026-01-08 | Ontologia operacional consolidada - frases normativas e verdades operacionais já vividas | /METODO/PILAR_ENDFIRST.md | [TBD_CURRENT_COMMIT] |
 
 ---
 
@@ -60,13 +61,13 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 17  
-**Aprovados:** 17 (100%)  
+**Total de documentos no repositório:** 18  
+**Aprovados:** 18 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 3 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 4 aprovados, 0 pendentes
 - **Operacionais (Tipo B):** 8 aprovados, 0 pendentes
 - **Exemplos (Tipo C):** 6 aprovados, 0 pendentes
 
@@ -85,6 +86,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | Correção: total de documentos corrigido de 17 para 14 (contagem real) | Manus (Agent) |
 | 2026-01-08 | Melhoria de governança: 3 documentos de apoio operacional criados (COMMIT_GOVERNANCE_CHECKLIST, APPROVAL_LOG_RULES, README v11.8) | Manus (Agent) |
 | 2026-01-08 | Repositório atualizado para 17/17 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Ontologia consolidada: ONTOLOGY_DECISIONS.md criado (frases normativas e verdades operacionais) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 18/18 documentos (100% aprovado) | Manus (Agent) |
 
 ---
 
