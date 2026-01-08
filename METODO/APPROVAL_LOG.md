@@ -65,6 +65,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | FINAL_DECISION_TEMPLATE | operational | approved | CEO | 2026-01-08 | Formato padrão de decisão final - como CEO julga sucesso/fracasso de forma objetiva, repetível e auditável | /METODO/ONTOLOGY_DECISIONS.md | [b4319b5](https://github.com/Joubertjr/endfirst-ecosystem/commit/b4319b5) |
 | EXECUTOR_ONBOARDING_PROCESS | operational | approved | CEO | 2026-01-08 | Processo de onboarding de executor - elimina dependência de explicação oral, prompt improvisado ou memória humana | /METODO/PILAR_ENDFIRST.md | TBD |
 | ONTOLOGY_DECISIONS_v1.4_OD-007 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-007 adicionada: END é pré-condição absoluta - nada começa sem END documentado, versionado e aprovado no Git | /METODO/PILAR_ENDFIRST.md | TBD |
+| DEMANDAS_MANUS_README | operational | approved | CEO | 2026-01-08 | Estrutura DEMANDAS_MANUS criada - demandas formais para Manus seguindo ENDFIRST | /METODO/PILAR_ENDFIRST.md | TBD |
+| TEMPLATE_DEMANDA_MANUS | operational | approved | CEO | 2026-01-08 | Template de demanda para Manus - END explícito obrigatório, escopo definido, critério de encerramento | /METODO/PILAR_ENDFIRST.md | TBD |
+| DEMANDA_MANUS-001 | example | approved | CEO | 2026-01-08 | Primeira demanda formal para Manus - OD-007 (END é pré-condição absoluta) | /METODO/PILAR_ENDFIRST.md | TBD |
+| ONTOLOGY_DECISIONS_v1.5_OD-008 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-008 adicionada: Demandas para Manus também são demandas formais | /METODO/PILAR_ENDFIRST.md | TBD |
 
 ---
 
@@ -78,15 +82,15 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 26  
-**Aprovados:** 26 (100%)  
+**Total de documentos no repositório:** 30  
+**Aprovados:** 30 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 9 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 14 aprovados, 0 pendentes
-- **Exemplos (Tipo C):** 4 aprovados, 0 pendentes (DEMANDA-001 v1.1 → v1.2)
+- **Canônicos (Tipo A):** 10 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 16 aprovados, 0 pendentes
+- **Exemplos (Tipo C):** 5 aprovados, 0 pendentes (DEMANDA-001 v1.1 → v1.2, DEMANDA_MANUS-001)
 
 ---
 
@@ -128,6 +132,10 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | FINAL_DECISION_TEMPLATE.md criado: formato padrão de decisão final (como CEO julga sucesso/fracasso) | CEO |
 | 2026-01-08 | EXECUTOR_ONBOARDING_PROCESS.md criado: processo de onboarding de executor (elimina dependência de explicação oral) | Manus (Agent) |
 | 2026-01-08 | Decisão ontológica OD-007 formalizada: END é pré-condição absoluta (nada começa sem END no Git) | CEO |
+| 2026-01-08 | Estrutura DEMANDAS_MANUS criada: demandas formais para Manus seguindo ENDFIRST | Manus (Agent) |
+| 2026-01-08 | TEMPLATE_DEMANDA_MANUS.md criado: template oficial para demandas ao Manus | Manus (Agent) |
+| 2026-01-08 | DEMANDA_MANUS-001 criada: primeira demanda formal para Manus (OD-007) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-008 formalizada: Demandas para Manus também são demandas formais | CEO |
 
 ---
 

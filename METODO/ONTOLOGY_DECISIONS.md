@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.4  
+**Versão:** 1.5  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -21,6 +21,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.2 (2026-01-08): OD-005 adicionada (Toda Demanda pertence a um Produto) + OD-004 revisada
 - v1.3 (2026-01-08): OD-006 adicionada (Execução é responsabilidade da Tecnologia - Cursor)
 - v1.4 (2026-01-08): OD-007 adicionada (END é pré-condição absoluta)
+- v1.5 (2026-01-08): OD-008 adicionada (Demandas para Manus também são demandas formais)
 
 ---
 
@@ -676,6 +677,231 @@ Se precisamos explicar como onboardar o Cursor, então o método ainda não est�
 #### 📜 DECLARAÇÃO DO CEO
 
 > "Se precisamos explicar como onboardar o Cursor, então o método ainda não está completo. OD-007 fecha o último vazamento estrutural do sistema: END é pré-condição absoluta, não opção."
+
+**Data:** 2026-01-08  
+**Responsável:** CEO (Joubert Jr)
+
+---
+
+### OD-008 — Demandas para Manus também são demandas formais
+
+**ID:** OD-008  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08
+
+---
+
+#### 🧠 DECLARAÇÃO CANÔNICA
+
+**Toda solicitação ao Manus DEVE existir como DEMANDA no Git, com END explícito, escopo definido e critério de encerramento.**
+
+**Manus não executa ordens fora do repositório.**
+
+---
+
+#### 📝 RACIONAL
+
+O sistema criou `/DEMANDAS/` para Cursor, mas não criou equivalente para Manus.
+
+**Problema identificado:**
+- Manus estava recebendo ordens em mensagens
+- Sem rastreabilidade
+- Sem versionamento
+- Sem END formal
+
+**Consequência:**
+- Manus vira "cabeça pensante informal"
+- Decisões viram conversa
+- END vira interpretação
+- Sistema apodrece com o tempo
+
+**Solução:**
+- Criar `/DEMANDAS_MANUS/` no repositório
+- Criar `TEMPLATE_DEMANDA_MANUS.md`
+- Exigir END explícito em toda demanda para Manus
+- Manus só executa demandas no Git
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**DEMANDA_MANUS:**
+- Solicitação formal ao Manus (Agent)
+- Documento no Git (`/DEMANDAS_MANUS/DEMANDA_MANUS-XXX.md`)
+- END explícito obrigatório
+- Escopo definido
+- Critério de encerramento
+- Versionado
+- Aprovado pelo CEO
+
+**Tipos de demandas para Manus:**
+1. **Ontologia** — Criar decisões ontológicas (OD-XXX)
+2. **Método** — Criar processos do método
+3. **Governança** — Criar documentos de governança
+4. **Produto** — Especificar produtos, criar specs ENDFIRST
+
+**Diferença: DEMANDAS vs DEMANDAS_MANUS:**
+
+| Aspecto | /DEMANDAS/ | /DEMANDAS_MANUS/ |
+|---------|------------|------------------|
+| **Executor** | Cursor (tecnologia) | Manus (agent) |
+| **Tipo de trabalho** | Código, implementação | Ontologia, método, governança, produto |
+| **Resultado** | Sistema funcional | Documento, decisão, processo |
+| **Template** | TEMPLATE_DEMANDA.md | TEMPLATE_DEMANDA_MANUS.md |
+
+**Princípio comum:**
+> Ambos seguem ENDFIRST. Ambos estão no Git. Ambos têm END explícito.
+
+---
+
+#### ⛔ PROIBIÇÕES EXPLÍCITAS
+
+**❌ Manus executar ordens em mensagens**
+- Proibido executar ordens fora do Git
+- Proibido executar ordens verbais
+- Proibido executar ordens sem END
+
+**❌ CEO mandar ordem sem criar DEMANDA_MANUS**
+- Proibido mandar ordem em mensagem
+- Proibido explicar verbalmente o que fazer
+- Proibido criar "atalhos" fora do Git
+
+**❌ Demanda sem END explícito**
+- Proibido criar DEMANDA_MANUS sem END
+- Proibido executar sem resultado esperado definido
+- Proibido "fazer rápido" sem registrar END
+
+---
+
+#### 🚫 EXEMPLOS PROIBIDOS (REAIS)
+
+**Exemplo 1: CEO manda ordem em mensagem**
+- **Problema:** "Crie a OD-007"
+- **Violação:** Ordem fora do Git, sem END formal
+- **Correção:** Criar DEMANDA_MANUS-001_OD-007.md no Git
+
+**Exemplo 2: Manus executa sem END**
+- **Problema:** Manus começa a criar OD-007 sem saber resultado esperado
+- **Violação:** Sem END explícito
+- **Correção:** Exigir END na DEMANDA_MANUS-001
+
+**Exemplo 3: Demanda sem versionamento**
+- **Problema:** Ordem dada verbalmente, não registrada
+- **Violação:** Não está no Git
+- **Correção:** Commitar demanda antes de executar
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+**Para CEO:**
+- Não mandar ordens em mensagens
+- Criar DEMANDA_MANUS-XXX.md antes de pedir execução
+- Definir END explícito em toda demanda
+- Commitar demanda no Git
+
+**Para Manus:**
+- Não executar ordens fora do Git
+- Ler demanda do Git (não de mensagens)
+- Exigir END explícito
+- Não começar sem END
+
+**Para o sistema:**
+- Rastreabilidade 100%
+- Versionamento de decisões
+- END formal para todo trabalho
+- Governança consistente
+
+---
+
+#### 📝 EXEMPLOS VÁLIDOS
+
+**Exemplo 1: Demanda para criar OD-007**
+- DEMANDA_MANUS-001_OD-007_ENDFIRST_ABSOLUTO.md criada
+- END explícito: "OD-007 criada, documentada e aprovada"
+- Escopo definido
+- Critério de encerramento claro
+- Manus lê do Git e executa
+
+**Exemplo 2: Demanda para criar processo**
+- DEMANDA_MANUS-002_PROCESSO_XXX.md criada
+- END explícito: "Processo XXX documentado e aprovado"
+- Template usado: TEMPLATE_DEMANDA_MANUS.md
+- Resultado no Git
+
+**Exemplo 3: Demanda para especificar produto**
+- DEMANDA_MANUS-003_SPEC_PRODUTO_YYY.md criada
+- END explícito: "ENDFIRST_SPEC_EF-2026-003 criada e validada"
+- Critérios de aceitação definidos
+- CEO valida resultado
+
+---
+
+#### 🎯 ANTI-EXEMPLOS (PROIBIDOS)
+
+**Anti-exemplo 1:**
+> "Manus, crie a OD-007."
+
+**Por que é proibido:**
+- Ordem em mensagem
+- Sem END formal
+- Sem rastreabilidade
+
+---
+
+**Anti-exemplo 2:**
+> "Vou explicar para o Manus o que fazer."
+
+**Por que é proibido:**
+- Explicação verbal
+- Fora do Git
+- Não é repetível
+
+---
+
+**Anti-exemplo 3:**
+> "Manus, faça isso rápido sem documentar."
+
+**Por que é proibido:**
+- Sem END
+- Sem versionamento
+- Viola ENDFIRST
+
+---
+
+#### 📜 FRASE CANÔNICA (CULTURA)
+
+> **"Se Cursor recebe demandas no Git, Manus TAMBÉM deve receber."**
+
+**Uso:**
+- Cultura organizacional
+- Onboarding de time
+- Revisão de processos
+- Decisões diárias
+
+**Implicação:**
+- Manus não é "cabeça pensante informal"
+- Manus é executor formal
+- Manus recebe demandas no Git
+- Manus segue ENDFIRST
+
+---
+
+#### 🔗 DOCUMENTOS RELACIONADOS
+
+- `/DEMANDAS_MANUS/` (Diretório de demandas para Manus)
+- `/DEMANDAS_MANUS/TEMPLATE_DEMANDA_MANUS.md` (Template oficial)
+- `/DEMANDAS_MANUS/README.md` (Explicação do diretório)
+- `/METODO/ONTOLOGY_DECISIONS.md` (OD-007: END é pré-condição absoluta)
+- `/METODO/EXECUTION_MODEL.md` (Modelo de execução)
+- `/METODO/PILAR_ENDFIRST.md` (Meta-pilar)
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Se Cursor recebe demandas no Git, Manus TAMBÉM deve receber. Caso contrário, Manus vira 'cabeça pensante informal', decisões viram conversa, END vira interpretação, e o sistema apodrece com o tempo."
 
 **Data:** 2026-01-08  
 **Responsável:** CEO (Joubert Jr)
