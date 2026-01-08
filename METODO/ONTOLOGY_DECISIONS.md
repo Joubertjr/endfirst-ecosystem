@@ -424,17 +424,27 @@ C governa A  ← CICLO (proibido)
 
 ## 🔒 REGRA DE ATUALIZAÇÃO
 
-**Este documento só pode ser atualizado com:**
-1. Frases normativas (não teoria)
-2. Verdades operacionais (não especulação)
-3. Regras já vividas (não futuras)
+**Este documento só pode ser atualizado quando:**
+
+1. **Gatilho formal dispara** (ver ONTOLOGY_DECISIONS_TRIGGER.md)
+2. **Todos os 5 critérios são cumpridos:**
+   - Houve confusão real
+   - Gerou risco sistêmico
+   - É transversal (não local)
+   - Cria fronteira clara (X ≠ Y)
+   - Já está em uso
+3. **CEO aprova a entrada**
 
 **Proibido adicionar:**
 - ❌ Teoria sem validação prática
 - ❌ Formalismo sem necessidade operacional
 - ❌ Conceitos que não foram testados
+- ❌ Ontologia "preventiva"
+- ❌ Glossário de termos
 
 **Motivo:** Ontologia congela aprendizado, não inovação.
+
+**Processo completo:** Ver `/METODO/ONTOLOGY_DECISIONS_TRIGGER.md`
 
 ---
 

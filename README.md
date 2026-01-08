@@ -6,16 +6,16 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.9
+version: v11.10
 created_at: 2026-01-04
 updated_at: 2026-01-07
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.9
+# 🚀 ENDFIRST Ecosystem v11.10
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.9  
-**Status:** 🟢 Núcleo Operacional Ativo + Ontologia Consolidada
+**Versão:** v11.10  
+**Status:** 🟢 Núcleo Operacional Ativo + Gatilho Formal Definido
 
 ---
 
@@ -42,6 +42,7 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **Approval Log Rules** — Regras anti-TBD (`/METODO/APPROVAL_LOG_RULES.md`)
 - [x] **Commit Governance Checklist** — Checklist de conformidade (`/METODO/COMMIT_GOVERNANCE_CHECKLIST.md`)
 - [x] **Ontology Decisions** — Ontologia operacional consolidada (`/METODO/ONTOLOGY_DECISIONS.md`)
+- [x] **Ontology Decisions Trigger** — Gatilho formal para popular ontologia (`/METODO/ONTOLOGY_DECISIONS_TRIGGER.md`)
 - [x] **Integração 13 Pilares** — Resolução de conflito entre sistemas (`/METODO/INTEGRATION_13_PILARES.md`)
 **Exemplos Reais:**
 - [x] **ENDFIRST_SPEC_EF-2026-001** — LLM Orchestrator (validada pelo CEO)

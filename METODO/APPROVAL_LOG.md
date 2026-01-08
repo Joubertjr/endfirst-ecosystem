@@ -48,6 +48,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | APPROVAL_LOG_RULES | operational | approved | CEO | 2026-01-08 | Regras estruturais anti-TBD - mata estados inválidos por definição | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | README_ROOT_v11.8 | operational | approved | CEO | 2026-01-08 | README atualizado para v11.8 - Estado Atual vs Visão + Governança Reforçada | /METODO/PILAR_ENDFIRST.md | [2d47fab](https://github.com/Joubertjr/endfirst-ecosystem/commit/2d47fab) |
 | ONTOLOGY_DECISIONS | canonical | approved | CEO | 2026-01-08 | Ontologia operacional consolidada - frases normativas e verdades operacionais já vividas | /METODO/PILAR_ENDFIRST.md | [9793be8](https://github.com/Joubertjr/endfirst-ecosystem/commit/9793be8) |
+| ONTOLOGY_DECISIONS_TRIGGER | operational | approved | CEO | 2026-01-08 | Gatilho formal para popular ONTOLOGY_DECISIONS.md - 5 critérios obrigatórios + processo de criação | /METODO/ONTOLOGY_DECISIONS.md | [TBD_CURRENT_COMMIT] |
 
 ---
 
@@ -61,14 +62,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 18  
-**Aprovados:** 18 (100%)  
+**Total de documentos no repositório:** 19  
+**Aprovados:** 19 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
 - **Canônicos (Tipo A):** 4 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 8 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 9 aprovados, 0 pendentes
 - **Exemplos (Tipo C):** 6 aprovados, 0 pendentes
 
 ---
@@ -88,6 +89,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | Repositório atualizado para 17/17 documentos (100% aprovado) | Manus (Agent) |
 | 2026-01-08 | Ontologia consolidada: ONTOLOGY_DECISIONS.md criado (frases normativas e verdades operacionais) | Manus (Agent) |
 | 2026-01-08 | Repositório atualizado para 18/18 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Gatilho formal: ONTOLOGY_DECISIONS_TRIGGER.md criado (5 critérios + processo de criação) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 19/19 documentos (100% aprovado) | Manus (Agent) |
 
 ---
 
