@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.5  
+**Versão:** 1.6  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -22,6 +22,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.3 (2026-01-08): OD-006 adicionada (Execução é responsabilidade da Tecnologia - Cursor)
 - v1.4 (2026-01-08): OD-007 adicionada (END é pré-condição absoluta)
 - v1.5 (2026-01-08): OD-008 adicionada (Demandas para Manus também são demandas formais)
+- v1.6 (2026-01-08): OD-009 adicionada (Disciplina Humana é Sinal de Falha de Design)
 
 ---
 
@@ -902,6 +903,295 @@ O sistema criou `/DEMANDAS/` para Cursor, mas não criou equivalente para Manus.
 #### 📜 DECLARAÇÃO DO CEO
 
 > "Se Cursor recebe demandas no Git, Manus TAMBÉM deve receber. Caso contrário, Manus vira 'cabeça pensante informal', decisões viram conversa, END vira interpretação, e o sistema apodrece com o tempo."
+
+**Data:** 2026-01-08  
+**Responsável:** CEO (Joubert Jr)
+
+---
+
+### OD-009 — Disciplina Humana é Sinal de Falha de Design
+
+**ID:** OD-009  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08  
+**Categoria:** Princípio Transversal (aplica-se a TODO o sistema)
+
+---
+
+#### 🧠 DECLARAÇÃO CANÔNICA
+
+**Qualquer processo que dependa de disciplina humana para evitar erro é ontologicamente inválido.**
+
+**O método deve impedir o erro por design, não por atenção, cuidado ou boa intenção.**
+
+---
+
+#### 📝 RACIONAL
+
+O problema nunca foi disciplina humana.
+
+**Sempre que um sistema exige disciplina, ele está mal desenhado.**
+
+O método ENDFIRST existe para eliminar a necessidade de disciplina por design.
+
+**Princípio:**
+> Se algo depende de disciplina humana para funcionar, está errado por definição.
+
+**Implicação:**
+- Disciplina é um sintoma de falha de design
+- O método ENDFIRST existe para tornar o erro estruturalmente impossível
+- Qualquer coisa que dependa de disciplina humana está proibida
+
+---
+
+#### ❌ O QUE ISSO ELIMINA
+
+**Frases proibidas:**
+- ❌ "Tem que lembrar de…"
+- ❌ "É só tomar cuidado"
+- ❌ "Normalmente a gente faz assim"
+- ❌ "Confia que não vai errar"
+- ❌ "As pessoas vão tomar cuidado"
+- ❌ "Basta ter disciplina"
+- ❌ "Precisa prestar atenção"
+
+**Por que são proibidas:**
+- Dependem de memória humana
+- Dependem de boa intenção
+- Dependem de atenção
+- Não são estruturais
+- Não escalam
+- Não são auditáveis
+
+---
+
+#### ✅ O QUE ISSO EXIGE
+
+**Soluções estruturais:**
+- ✅ Campo obrigatório em template
+- ✅ Regra explícita no processo
+- ✅ Bloqueio estrutural
+- ✅ Checklist que falha automaticamente
+- ✅ Validação automática
+- ✅ Sistema antifrágil (detecta e corrige)
+
+**Princípio:**
+> Se a única defesa do processo é "as pessoas vão tomar cuidado", o processo está errado.
+
+---
+
+#### 📝 EXEMPLOS REAIS (DO NOSSO SISTEMA)
+
+**Exemplo 1: TBD aparecendo**
+- **Problema:** TBD aparecia em APPROVAL_LOG.md
+- **Causa raiz:** Dependia de "lembrar de atualizar"
+- **Falha de design:** Sistema permitia TBD
+- **Solução estrutural:** Sistema antifrágil detecta e corrige automaticamente
+
+**Exemplo 2: Ordens fora do Git**
+- **Problema:** Manus recebia ordens em mensagens
+- **Causa raiz:** Dependia de "lembrar de criar DEMANDA"
+- **Falha de design:** Sistema permitia ordens informais
+- **Solução estrutural:** OD-008 (Manus só executa demandas no Git)
+
+**Exemplo 3: Onboarding sem END**
+- **Problema:** Onboarding do Cursor era prompt ad-hoc
+- **Causa raiz:** Dependia de "lembrar de documentar"
+- **Falha de design:** Sistema permitia onboarding fora do Git
+- **Solução estrutural:** EXECUTOR_ONBOARDING_PROCESS.md + OD-007
+
+**Exemplo 4: Commit sem validação**
+- **Problema:** Push antes de CEO validar
+- **Causa raiz:** Dependia de "lembrar de perguntar"
+- **Falha de design:** Sistema não bloqueava push
+- **Solução estrutural:** Processo explícito (commit → validar → push)
+
+---
+
+#### 🔍 FRONTEIRA SEMÂNTICA (X ≠ Y)
+
+**Disciplina ≠ Processo**
+- Disciplina: depende de memória humana
+- Processo: estrutura que impede erro
+
+**Atenção ≠ Governança**
+- Atenção: esforço humano
+- Governança: regra estrutural
+
+**Boa intenção ≠ Sistema correto**
+- Boa intenção: desejo de acertar
+- Sistema correto: impossibilidade de errar
+
+**Cuidado ≠ Design**
+- Cuidado: comportamento humano
+- Design: arquitetura que previne
+
+---
+
+#### ⛔ PROIBIÇÕES EXPLÍCITAS
+
+**❌ Processo que depende de disciplina**
+- Proibido criar processo que exige "lembrar"
+- Proibido criar processo que exige "tomar cuidado"
+- Proibido criar processo que exige "boa intenção"
+
+**❌ Checklist sem validação automática**
+- Proibido checklist que depende de "marcar manualmente"
+- Proibido checklist que não falha automaticamente
+- Proibido checklist que não é verificado pelo sistema
+
+**❌ Template sem campo obrigatório**
+- Proibido template que permite campo vazio
+- Proibido template que depende de "lembrar de preencher"
+- Proibido template sem validação estrutural
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+**Para CEO:**
+- Não aceitar processo que depende de disciplina
+- Rejeitar solução que exige "tomar cuidado"
+- Exigir bloqueio estrutural
+
+**Para Manus:**
+- Não criar processo que depende de memória
+- Não criar template sem validação
+- Não criar checklist sem automação
+
+**Para Cursor:**
+- Não implementar solução que exige disciplina
+- Não criar sistema que permite erro humano
+- Não aceitar "basta ter cuidado" como defesa
+
+**Para o sistema:**
+- Erro humano = falha de design
+- Disciplina = sintoma de problema
+- Processo correto = erro impossível
+
+---
+
+#### 📝 EXEMPLOS VÁLIDOS
+
+**Exemplo 1: Sistema antifrágil**
+- TBD detectado automaticamente
+- Sistema corrige sem intervenção humana
+- Não depende de "lembrar"
+
+**Exemplo 2: Campo obrigatório**
+- Template exige END
+- Sistema rejeita demanda sem END
+- Não depende de "tomar cuidado"
+
+**Exemplo 3: Processo explícito**
+- Commit → validar → push
+- Sistema bloqueia push sem validação
+- Não depende de "boa intenção"
+
+**Exemplo 4: OD-008**
+- Manus só executa demandas no Git
+- Sistema rejeita ordens em mensagens
+- Não depende de "disciplina"
+
+---
+
+#### 🎯 ANTI-EXEMPLOS (PROIBIDOS)
+
+**Anti-exemplo 1:**
+> "Tem que lembrar de atualizar o APPROVAL_LOG."
+
+**Por que é proibido:**
+- Depende de memória humana
+- Não é estrutural
+- Falha de design
+
+**Solução correta:**
+- Sistema antifrágil detecta TBD
+- Sistema corrige automaticamente
+
+---
+
+**Anti-exemplo 2:**
+> "É só tomar cuidado para não fazer push antes de validar."
+
+**Por que é proibido:**
+- Depende de atenção
+- Não é bloqueio estrutural
+- Falha de design
+
+**Solução correta:**
+- Processo explícito: commit → validar → push
+- Sistema exige validação antes de push
+
+---
+
+**Anti-exemplo 3:**
+> "Normalmente a gente cria a DEMANDA antes de executar."
+
+**Por que é proibido:**
+- Depende de "normalmente"
+- Não é regra estrutural
+- Falha de design
+
+**Solução correta:**
+- OD-008: Manus só executa demandas no Git
+- Sistema rejeita ordens fora do Git
+
+---
+
+#### 📜 FRASE CANÔNICA (CULTURA)
+
+> **"Se algo depende de disciplina humana para funcionar, está errado por definição. Sistemas corretos impedem o erro por design."**
+
+**Uso:**
+- Cultura organizacional
+- Onboarding de time
+- Revisão de processos
+- Decisões de design
+- Corte de escopo
+
+**Implicação:**
+- Disciplina é sintoma de falha
+- Processo correto não exige disciplina
+- Sistema deve impedir erro, não confiar em atenção
+
+---
+
+#### 🚨 CRITÉRIO OBRIGATÓRIO DE REVISÃO
+
+**Pergunta obrigatória em toda revisão:**
+
+> **"Isso exige disciplina humana para não dar errado?"**
+
+**Decisão:**
+- Se SIM → ❌ REJEITADO
+- Se NÃO → ✅ Pode seguir
+
+**Nota obrigatória:**
+> Se a única defesa do processo é "as pessoas vão tomar cuidado", o processo está errado.
+
+**Aplica-se a:**
+- Revisão de commits
+- Revisão de demandas (Cursor e Manus)
+- Revisão de processos
+- Revisão de templates
+- Revisão de governança
+
+---
+
+#### 🔗 DOCUMENTOS RELACIONADOS
+
+- `/METODO/COMMIT_GOVERNANCE_CHECKLIST.md` (Checklist de conformidade)
+- `/METODO/ONTOLOGY_DECISIONS.md` (OD-004 a OD-008)
+- `/METODO/PILAR_ENDFIRST.md` (Meta-pilar)
+- `/README.md` (Frase canônica de cultura)
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Disciplina é um sintoma de falha de design. O método ENDFIRST existe para tornar o erro estruturalmente impossível. A partir de agora, qualquer coisa que dependa de disciplina humana está proibida."
 
 **Data:** 2026-01-08  
 **Responsável:** CEO (Joubert Jr)

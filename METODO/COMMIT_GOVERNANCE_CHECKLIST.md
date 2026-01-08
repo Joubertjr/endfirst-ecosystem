@@ -36,6 +36,11 @@ Antes de considerar um commit **CONFORME com governança**, verifique:
   - Se SIM → Continuar checklist
   - Se NÃO → Checklist não se aplica
 
+- [ ] **Isso exige disciplina humana para não dar errado? (OD-009)**
+  - Se SIM → ❌ REJEITADO
+  - Se NÃO → ✅ Pode seguir
+  - Nota: Se a única defesa do processo é "as pessoas vão tomar cuidado", o processo está errado
+
 - [ ] **APPROVAL_LOG.md foi atualizado NESTE commit?**
   - Aprovações devem estar no mesmo commit que as mudanças
   - Não pode haver commit de documentos sem atualização do log

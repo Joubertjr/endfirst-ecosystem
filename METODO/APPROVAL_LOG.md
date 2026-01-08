@@ -69,6 +69,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | TEMPLATE_DEMANDA_MANUS | operational | approved | CEO | 2026-01-08 | Template de demanda para Manus - END explícito obrigatório, escopo definido, critério de encerramento | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
 | DEMANDA_MANUS-001 | example | approved | CEO | 2026-01-08 | Primeira demanda formal para Manus - OD-007 (END é pré-condição absoluta) | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
 | ONTOLOGY_DECISIONS_v1.5_OD-008 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-008 adicionada: Demandas para Manus também são demandas formais | /METODO/PILAR_ENDFIRST.md | [8af322a](https://github.com/Joubertjr/endfirst-ecosystem/commit/8af322a) |
+| README_v11.17 | operational | approved | CEO | 2026-01-08 | Frase canônica de cultura adicionada: "Se algo depende de disciplina humana para funcionar, está errado por definição" | /METODO/PILAR_ENDFIRST.md | TBD |
+| ONTOLOGY_DECISIONS_v1.6_OD-009 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-009 adicionada: Disciplina Humana é Sinal de Falha de Design - princípio transversal | /METODO/PILAR_ENDFIRST.md | TBD |
+| COMMIT_GOVERNANCE_CHECKLIST_v1.1 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-009 adicionado: "Isso exige disciplina humana para não dar errado?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | TBD |
 
 ---
 
@@ -82,14 +85,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 30  
-**Aprovados:** 30 (100%)  
+**Total de documentos no repositório:** 33  
+**Aprovados:** 33 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 10 aprovados, 0 pendentes
-- **Operacionais (Tipo B):** 16 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 11 aprovados, 0 pendentes
+- **Operacionais (Tipo B):** 18 aprovados, 0 pendentes
 - **Exemplos (Tipo C):** 5 aprovados, 0 pendentes (DEMANDA-001 v1.1 → v1.2, DEMANDA_MANUS-001)
 
 ---
@@ -136,6 +139,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | TEMPLATE_DEMANDA_MANUS.md criado: template oficial para demandas ao Manus | Manus (Agent) |
 | 2026-01-08 | DEMANDA_MANUS-001 criada: primeira demanda formal para Manus (OD-007) | Manus (Agent) |
 | 2026-01-08 | Decisão ontológica OD-008 formalizada: Demandas para Manus também são demandas formais | CEO |
+| 2026-01-08 | Frase canônica de cultura adicionada ao README: "Se algo depende de disciplina humana, está errado" | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-009 formalizada: Disciplina Humana é Sinal de Falha de Design (princípio transversal) | CEO |
+| 2026-01-08 | COMMIT_GOVERNANCE_CHECKLIST.md atualizado: critério obrigatório OD-009 adicionado | Manus (Agent) |
 
 ---
 

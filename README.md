@@ -6,20 +6,25 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.16
+version: v11.17
 created_at: 2026-01-04
 updated_at: 2026-01-07
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.16
+# 🚀 ENDFIRST Ecosystem v11.17
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.16  
-**Status:** ✅ END É PRÉ-CONDIÇÃO ABSOLUTA (OD-007)
+**Versão:** v11.17  
+**Status:** ✅ PROCESSO > DISCIPLINA (OD-009)
 
 > **"END primeiro. HOW depois. Sempre."**
 
 > **"Demandas são executadas por agentes de tecnologia, nunca por pessoas."**
+
+> **"Se algo depende de disciplina humana para funcionar, está errado por definição. Sistemas corretos impedem o erro por design."**
+
+**No método ENDFIRST, processos substituem disciplina.**  
+**Se alguém precisa 'lembrar de fazer certo', o sistema falhou.**
 
 ---
 
