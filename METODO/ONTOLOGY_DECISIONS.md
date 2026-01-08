@@ -174,23 +174,28 @@ Este documento (ONTOLOGY_DECISIONS.md) registra regras já vividas, não teorias
 
 #### 🧠 DECISÃO
 
-Nem toda demanda está vinculada a um projeto ou a um produto.
+**Toda demanda DEVE estar vinculada a um produto.**  
+**Nem toda demanda precisa estar vinculada a um projeto.**
 
 No método ENDFIRST:
 - **DEMANDA** é a unidade mínima soberana de resultado verificável
-- **PROJETO** é um agrupamento temporário de demandas (opcional)
-- **PRODUTO** é um resultado estável e recorrente que emerge da execução (opcional)
+- **PRODUTO** é o eixo contínuo de valor, ownership e evolução (obrigatório)
+- **PROJETO** é um contêiner temporário para acelerar mudanças em um produto (opcional)
 
-Projetos e produtos não são pré-requisitos para a existência de uma demanda.
+Produto é obrigatório. Projeto é opcional.
 
 ---
 
 #### 🎯 REGRA FORMAL
 
-Toda demanda deve estar vinculada a uma **INTENÇÃO / RESULTADO** claro.  
-Nenhuma demanda precisa nascer como projeto ou produto.
+Toda demanda deve estar vinculada a:
+1. **PRODUTO** (obrigatório) — eixo permanente de governança
+2. **INTENÇÃO / RESULTADO** claro (obrigatório)
+3. **PROJETO** (opcional) — contêiner temporário
 
-Projetos e produtos:
+Produto é obrigatório. Projeto é opcional.
+
+Projetos:
 - só são criados quando a realidade exige
 - nunca por antecipação
 - nunca como requisito burocrático
@@ -210,17 +215,20 @@ Projetos e produtos:
 - Não é obrigatório
 
 **PRODUTO**
-- Resultado estabilizado, reutilizável e contínuo
-- Surge após validação prática
-- Pode gerar novas demandas
+- Eixo contínuo de valor, ownership e evolução
+- Tem dono
+- Existe antes, durante e depois de projetos
+- É obrigatório para toda demanda
+- Ex.: ENDFIRST, LLM Orchestrator, Governança ENDFIRST
 
 ---
 
 #### ❌ O QUE ESTA DECISÃO PROÍBE
 
+- ❌ Criar demandas sem produto associado (trabalho órfão)
 - ❌ Criar projetos "vazios" só para justificar demandas
-- ❌ Criar produtos no papel antes da execução
-- ❌ Bloquear demandas por ausência de projeto ou produto
+- ❌ Bloquear demandas por ausência de projeto
+- ❌ Confundir projeto (meio) com produto (identidade)
 - ❌ Planejamento abstrato antes de resultado verificável
 
 ---
@@ -228,10 +236,12 @@ Projetos e produtos:
 #### ✅ O QUE ESTA DECISÃO GARANTE
 
 - Clareza ontológica entre demanda, projeto e produto
-- Redução de burocracia precoce
-- Execução orientada a resultado real
-- Emergência natural de projetos e produtos
-- Rastreabilidade limpa de intenção → execução
+- Produto como eixo permanente de governança
+- Backlog sempre organizado por produto
+- Ownership claro (produto define dono)
+- Redução de burocracia precoce (projeto é opcional)
+- Emergência natural de projetos
+- Rastreabilidade limpa de produto → demanda → execução
 
 ---
 
@@ -239,17 +249,19 @@ Projetos e produtos:
 
 **DEMANDA-001 — LLM Orchestrator**
 - É uma DEMANDA válida
-- Ainda não é um PROJETO formal
-- Ainda não é um PRODUTO
-- Pode vir a ser ambos, se a execução justificar
+- Pertence ao PRODUTO: "LLM Orchestrator"
+- Não está em um PROJETO formal (fluxo contínuo)
+- Produto já existe (mesmo que em v0)
+- Projeto é opcional
 
 ---
 
 #### 🧭 PRINCÍPIO
 
-> Projetos e produtos emergem da execução.  
-> Demandas emergem da intenção.  
-> Nunca o contrário.
+> Produto é o eixo permanente.  
+> Demandas alteram produtos.  
+> Projetos aceleram mudanças.  
+> Produto é obrigatório. Projeto é opcional.
 
 ---
 
@@ -261,6 +273,103 @@ Esta decisão passa a governar:
 - Criação de demandas
 - Organização do backlog
 - Leitura de DEMANDA-001 e futuras demandas
+
+**Status:** CANÔNICA  
+**Aplicação:** Imediata
+
+---
+
+### OD-005 — Toda Demanda pertence a um Produto
+
+**ID:** OD-005  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08
+
+---
+
+#### 🧠 DECISÃO
+
+Toda DEMANDA deve estar vinculada a exatamente um PRODUTO.  
+Uma DEMANDA pode ou não estar vinculada a um PROJETO.
+
+---
+
+#### 📝 RACIONAL
+
+Produto é o eixo contínuo de valor, ownership e evolução.  
+Projeto é um contêiner temporário para acelerar mudanças em um produto.  
+Permitir demanda sem produto cria trabalho órfão, sem dono e sem direção estratégica.
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**PRODUTO**
+- É contínuo
+- Tem dono
+- Evolui no tempo
+- Existe antes, durante e depois de projetos
+- Ex.: ENDFIRST, LLM Orchestrator, Governança ENDFIRST
+
+**PROJETO**
+- É temporário
+- Tem início e fim
+- Serve para mudar o estado de um produto
+- Pode conter várias demandas
+- Pode não existir (produto em modo contínuo)
+
+**DEMANDA**
+- É a menor unidade governável de trabalho
+- Sempre altera um produto
+- Pode estar:
+  - fora de projeto (fluxo contínuo), ou
+  - dentro de um projeto (iniciativa estruturada)
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+- Não existe demanda sem produto
+- Projeto é opcional
+- Produto é obrigatório
+- Backlog é sempre organizado por produto
+- Projetos agrupam demandas, não definem identidade
+
+---
+
+#### 📌 EXEMPLOS
+
+**Válidos:**
+- DEMANDA-001 (LLM Orchestrator) → Produto: LLM Orchestrator → Projeto: opcional
+- Ajuste de governança → Produto: ENDFIRST → Projeto: nenhum
+
+**Inválidos (proibidos):**
+- ❌ Demanda criada sem produto associado
+- ❌ Demanda "solta" no backlog
+- ❌ Trabalho sem dono
+
+---
+
+#### ❌ CONSEQUÊNCIAS PRÁTICAS
+
+1. ❌ Não existe "demanda solta"
+2. ❌ Não existe demanda sem produto
+3. ✅ Existe demanda sem projeto
+4. ✅ Projeto é um contêiner opcional
+5. ✅ Produto é o eixo permanente de governança
+
+**Isso resolve:**
+- Confusão de backlog
+- Confusão de ownership
+- Confusão de prioridade
+- Confusão entre execução e estratégia
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Esta decisão não é opinião. É fundação ontológica do sistema. A partir de agora: qualquer demanda sem produto está errada por definição, projeto vira meio (não identidade), produto vira centro da governança."
 
 **Status:** CANÔNICA  
 **Aplicação:** Imediata

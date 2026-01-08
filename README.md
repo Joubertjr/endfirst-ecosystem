@@ -6,16 +6,16 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.12
+version: v11.13
 created_at: 2026-01-04
 updated_at: 2026-01-07
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.12
+# 🚀 ENDFIRST Ecosystem v11.13
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.12  
-**Status:** ✅ APROVADO PARA EXECUÇÃO (Histórico 100% Revisado)
+**Versão:** v11.13  
+**Status:** ✅ APROVADO PARA EXECUÇÃO + Ontologia OD-005 Formalizada
 
 ---
 
@@ -43,7 +43,8 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **Commit Governance Checklist** — Checklist de conformidade (`/METODO/COMMIT_GOVERNANCE_CHECKLIST.md`)
 - [x] **Ontology Decisions** — Ontologia operacional consolidada (`/METODO/ONTOLOGY_DECISIONS.md`)
 - [x] **Ontology Decisions Trigger** — Gatilho formal para popular ontologia (`/METODO/ONTOLOGY_DECISIONS_TRIGGER.md`)
-- [x] **OD-004: DEMANDA ≠ PROJETO ≠ PRODUTO** — Primeira decisão ontológica formal (validada contra 5 critérios)
+- [x] **OD-004: DEMANDA ≠ PROJETO ≠ PRODUTO** — Decisão ontológica (revisada: Produto obrigatório, Projeto opcional)
+- [x] **OD-005: Toda Demanda pertence a um Produto** — Fundação ontológica do sistema (validada contra 5 critérios)
 - [x] **Commit Review Approval** — Aprovação formal do CEO sobre revisão completa de 20 commits (`/METODO/COMMIT_REVIEW_APPROVAL.md`)
 - [x] **Histórico 100% revisado** — 20 commits classificados: 8 conformes, 12 conformes com ressalvas (legado aceito)
 - [x] **Integração 13 Pilares** — Resolução de conflito entre sistemas (`/METODO/INTEGRATION_13_PILARES.md`)
