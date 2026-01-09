@@ -1,0 +1,34 @@
+{
+  "name": "llm-orchestrator",
+  "version": "1.0.0",
+  "description": "LLM Orchestrator - DEMANDA-001",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "dev": "npm run build:main && concurrently -k -n \"MAIN,RENDERER,ELECTRON\" -c \"blue,green,yellow\" \"npm run dev:main\" \"npm run dev:renderer\" \"wait-on http://localhost:5173 && NODE_ENV=development electron .\"",
+    "dev:main": "tsc -p src/main/tsconfig.json --watch",
+    "dev:renderer": "vite",
+    "build": "npm run build:main && npm run build:renderer",
+    "build:main": "tsc -p src/main/tsconfig.json",
+    "build:renderer": "vite build",
+    "start": "electron .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
+    "electron": "^28.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

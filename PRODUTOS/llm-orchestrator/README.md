@@ -74,13 +74,19 @@ cd PRODUTOS/llm-orchestrator
 # Instalar dependências
 npm install
 
-# Executar em modo desenvolvimento
+# Executar em modo desenvolvimento (compila main + inicia Vite + abre Electron)
 npm run dev
 
-# Ou compilar e executar
+# Ou compilar e executar em produção
 npm run build
 npm start
 ```
+
+**Nota:** No modo desenvolvimento, o aplicativo:
+- Compila o main process do Electron (TypeScript → JavaScript)
+- Inicia o servidor Vite para o renderer process (React)
+- Aguarda o Vite estar pronto e abre a janela Electron
+- Auto-reload quando há mudanças no código
 
 ### Configuração de APIs
 
