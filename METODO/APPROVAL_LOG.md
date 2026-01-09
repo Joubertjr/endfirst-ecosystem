@@ -72,9 +72,9 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | README_v11.17 | operational | approved | CEO | 2026-01-08 | Frase canônica de cultura adicionada: "Se algo depende de disciplina humana para funcionar, está errado por definição" | /METODO/PILAR_ENDFIRST.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
 | ONTOLOGY_DECISIONS_v1.6_OD-009 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-009 adicionada: Disciplina Humana é Sinal de Falha de Design - princípio transversal | /METODO/PILAR_ENDFIRST.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
 | COMMIT_GOVERNANCE_CHECKLIST_v1.1 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-009 adicionado: "Isso exige disciplina humana para não dar errado?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [d1b67e1](https://github.com/Joubertjr/endfirst-ecosystem/commit/d1b67e1) |
-| ONTOLOGY_DECISIONS_v1.7_OD-010 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-010 adicionada: RESULTADO é entidade de primeira classe - backlog é derivado, não origem | /METODO/PILAR_ENDFIRST.md | TBD |
-| TEMPLATE_RESULT | operational | approved | CEO | 2026-01-08 | Template de RESULTADO criado - define O QUE existe quando demanda termina, antes de backlog | /METODO/PILAR_ENDFIRST.md | TBD |
-| DEMANDA-001_RESULT | operational | approved | CEO | 2026-01-08 | RESULTADO de DEMANDA-001 definido - 7 provas observáveis, artefatos entregáveis, critérios de não-resultado | /METODO/PILAR_ENDFIRST.md | TBD |
+| ONTOLOGY_DECISIONS_v1.7_OD-010 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-010 adicionada: RESULTADO é entidade de primeira classe - backlog é derivado, não origem | /METODO/PILAR_ENDFIRST.md | [91c214a](https://github.com/Joubertjr/endfirst-ecosystem/commit/91c214a) |
+| TEMPLATE_RESULT | operational | approved | CEO | 2026-01-08 | Template de RESULTADO criado - define O QUE existe quando demanda termina, antes de backlog | /METODO/PILAR_ENDFIRST.md | [91c214a](https://github.com/Joubertjr/endfirst-ecosystem/commit/91c214a) |
+| DEMANDA-001_RESULT | operational | approved | CEO | 2026-01-08 | RESULTADO de DEMANDA-001 definido - 7 provas observáveis, artefatos entregáveis, critérios de não-resultado | /METODO/PILAR_ENDFIRST.md | [91c214a](https://github.com/Joubertjr/endfirst-ecosystem/commit/91c214a) |
 
 ---
 
