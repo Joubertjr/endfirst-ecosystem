@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.6  
+**Versão:** 1.7  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -23,6 +23,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.4 (2026-01-08): OD-007 adicionada (END é pré-condição absoluta)
 - v1.5 (2026-01-08): OD-008 adicionada (Demandas para Manus também são demandas formais)
 - v1.6 (2026-01-08): OD-009 adicionada (Disciplina Humana é Sinal de Falha de Design)
+- v1.7 (2026-01-08): OD-010 adicionada (RESULTADO é entidade de primeira classe - backlog é derivado)
 
 ---
 
@@ -1192,6 +1193,315 @@ O método ENDFIRST existe para eliminar a necessidade de disciplina por design.
 #### 📜 DECLARAÇÃO DO CEO
 
 > "Disciplina é um sintoma de falha de design. O método ENDFIRST existe para tornar o erro estruturalmente impossível. A partir de agora, qualquer coisa que dependa de disciplina humana está proibida."
+
+**Data:** 2026-01-08  
+**Responsável:** CEO (Joubert Jr)
+
+---
+
+### OD-010 — RESULTADO é Entidade de Primeira Classe (Backlog é Derivado)
+
+**ID:** OD-010  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-08  
+**Categoria:** Princípio Transversal (aplica-se a TODO o sistema)
+
+---
+
+#### 🧠 DECLARAÇÃO CANÔNICA
+
+**Nenhum backlog pode existir antes da definição formal do RESULTADO.**
+
+**O sistema só pode ser organizado a partir do RESULTADO, nunca o contrário.**
+
+**Frase canônica:**
+> **"Backlog não cria resultado. Resultado cria backlog."**
+
+---
+
+#### 📝 RACIONAL
+
+**O problema:**
+Estamos tratando backlog como entidade primária.
+
+**Mas no ENDFIRST, a hierarquia correta é:**
+
+```
+RESULTADO (END)
+   ↓
+CRITÉRIOS DE SUCESSO
+   ↓
+PROVAS OBSERVÁVEIS
+   ↓
+BACKLOG
+   ↓
+EXECUÇÃO
+```
+
+**Quando pulamos PROVAS OBSERVÁVEIS como entidade formal:**
+- Backlog vira "plano"
+- Execução vira "descoberta"
+- Acompanhamento vira "interpretação"
+
+**Isso quebra o método.**
+
+---
+
+#### 🎯 O QUE ENDFIRST REALMENTE EXIGE
+
+**ENDFIRST não é:**
+- ❌ "ter uma spec"
+- ❌ "ter critérios"
+- ❌ "ter um acceptance"
+
+**ENDFIRST é:**
+> "Nada existe enquanto o RESULTADO FINAL não estiver definido, versionado, governado e verificável."
+
+**Mais forte:**
+> "O sistema só pode ser organizado a partir do RESULTADO, nunca o contrário."
+
+---
+
+#### ❌ O QUE ISSO ELIMINA
+
+**Frases proibidas:**
+- ❌ "Vamos começar pelo backlog"
+- ❌ "Primeiro organizamos as tarefas"
+- ❌ "Depois vemos o resultado"
+- ❌ "Vamos descobrindo o que entregar"
+- ❌ "O backlog define o escopo"
+
+**Por que são proibidas:**
+- Invertem a hierarquia (PROCESS FIRST, não END FIRST)
+- Backlog vira origem, não derivado
+- Resultado vira descoberta, não pré-condição
+- Viola pilar ENDFIRST
+
+---
+
+#### ✅ O QUE ISSO EXIGE
+
+**RESULTADO como entidade de primeira classe:**
+- ✅ Documento explícito: `/DEMANDAS/DEMANDA-XXX_RESULT.md`
+- ✅ O que existe quando a demanda "termina"
+- ✅ O que pode ser observado
+- ✅ O que pode ser provado
+- ✅ O que encerra a demanda
+
+**Backlog como derivado:**
+- ✅ Backlog é um mapa de provas
+- ✅ Não é um plano de execução
+- ✅ Cada item responde: "Qual parte do RESULTADO isto prova?"
+- ✅ Se não prova nada → não entra no backlog
+
+**Ordem obrigatória:**
+1. ✅ Definir RESULTADO
+2. ✅ Definir CRITÉRIOS DE SUCESSO
+3. ✅ Definir PROVAS OBSERVÁVEIS
+4. ✅ Derivar BACKLOG
+5. ✅ Executar
+
+---
+
+#### 📝 EXEMPLOS REAIS (DO NOSSO SISTEMA)
+
+**Exemplo 1: Erro que detectamos**
+- **Problema:** Começamos a discutir backlog, Kanban, GitHub Projects
+- **Causa raiz:** Antes de congelar o RESULTADO como objeto governável
+- **Falha de design:** Agimos como PROCESS FIRST, não END FIRST
+- **Solução estrutural:** OD-010 (RESULTADO primeiro, backlog depois)
+
+**Exemplo 2: DEMANDA-001**
+- **Problema:** DEMANDA-001 tinha ACCEPTANCE, mas não RESULT formal
+- **Causa raiz:** Acceptance é parte, mas não é tudo
+- **Falha de design:** Faltava entidade RESULT como objeto de primeira classe
+- **Solução estrutural:** Criar DEMANDA-001_RESULT.md
+
+---
+
+#### 🔍 FRONTEIRA SEMÂNTICA (X ≠ Y)
+
+**RESULTADO ≠ Acceptance**
+- RESULTADO: O que existe quando termina
+- Acceptance: Como CEO julga sucesso
+- Acceptance é parte do RESULTADO, mas não é tudo
+
+**RESULTADO ≠ Spec**
+- RESULTADO: O que é entregue
+- Spec: Como é construído
+- Spec define HOW, RESULTADO define END
+
+**Backlog ≠ Escopo**
+- Backlog: Mapa de provas do RESULTADO
+- Escopo: O que está dentro/fora
+- RESULTADO define escopo, backlog deriva dele
+
+**Processo ≠ Resultado**
+- Processo: Como organizar execução
+- Resultado: O que encerra demanda
+- Processo não cria resultado, resultado cria processo
+
+---
+
+#### ⛔ PROIBIÇÕES EXPLÍCITAS
+
+**❌ Backlog antes de RESULTADO**
+- Proibido criar backlog antes de definir RESULTADO
+- Proibido organizar tarefas antes de congelar END
+- Proibido começar pelo HOW
+
+**❌ Execução sem RESULTADO formal**
+- Proibido executar sem RESULT.md no Git
+- Proibido "descobrir o resultado" durante execução
+- Proibido "ajustar o END" depois de começar
+
+**❌ Acompanhamento sem PROVAS OBSERVÁVEIS**
+- Proibido acompanhar progresso sem provas definidas
+- Proibido "interpretar" se está pronto
+- Proibido julgar sucesso sem critérios prévios
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+**Para CEO:**
+- Não aceitar demanda sem RESULT.md
+- Rejeitar backlog antes de RESULTADO
+- Exigir END formal antes de qualquer organização
+
+**Para Manus:**
+- Não criar processo antes de RESULTADO
+- Não organizar backlog antes de END
+- Não começar pelo HOW
+
+**Para Cursor:**
+- Não executar sem RESULT.md
+- Não "descobrir" resultado durante execução
+- Não aceitar demanda sem END formal
+
+**Para o sistema:**
+- RESULTADO é entidade de primeira classe
+- Backlog é derivado
+- END primeiro, HOW depois
+
+---
+
+#### 📝 EXEMPLOS VÁLIDOS
+
+**Exemplo 1: DEMANDA-001 corrigida**
+- DEMANDA-001_RESULT.md criado
+- RESULTADO definido: "LLM Orchestrator funcional"
+- PROVAS OBSERVÁVEIS: 7 critérios
+- Backlog derivado das provas
+
+**Exemplo 2: Ordem correta**
+1. Criar RESULT.md
+2. Definir PROVAS OBSERVÁVEIS
+3. Derivar backlog
+4. Executar
+
+**Exemplo 3: Backlog como mapa de provas**
+- Cada item do backlog responde: "Qual parte do RESULTADO isto prova?"
+- Se não prova nada → não entra
+
+---
+
+#### 🎯 ANTI-EXEMPLOS (PROIBIDOS)
+
+**Anti-exemplo 1:**
+> "Vamos começar organizando o backlog, depois vemos o resultado."
+
+**Por que é proibido:**
+- Inverte hierarquia (PROCESS FIRST)
+- Backlog vira origem
+- Viola ENDFIRST
+
+**Solução correta:**
+- Definir RESULTADO primeiro
+- Derivar backlog depois
+
+---
+
+**Anti-exemplo 2:**
+> "Vamos descobrindo o que entregar durante a execução."
+
+**Por que é proibido:**
+- Resultado vira descoberta
+- END não é pré-condição
+- Viola OD-007
+
+**Solução correta:**
+- RESULTADO definido antes de executar
+- END é pré-condição absoluta
+
+---
+
+**Anti-exemplo 3:**
+> "O backlog define o escopo."
+
+**Por que é proibido:**
+- Backlog vira entidade primária
+- RESULTADO vira derivado
+- Viola OD-010
+
+**Solução correta:**
+- RESULTADO define escopo
+- Backlog deriva do RESULTADO
+
+---
+
+#### 📜 FRASE CANÔNICA (CULTURA)
+
+> **"Backlog não cria resultado. Resultado cria backlog. Processo não cria resultado. Resultado cria processo."**
+
+**Uso:**
+- Cultura organizacional
+- Onboarding de time
+- Revisão de demandas
+- Decisões de planejamento
+- Corte de escopo
+
+**Implicação:**
+- END FIRST, não PROCESS FIRST
+- RESULTADO é entidade de primeira classe
+- Backlog é derivado, não origem
+
+---
+
+#### 🚨 CRITÉRIO OBRIGATÓRIO DE REVISÃO
+
+**Pergunta obrigatória em toda revisão:**
+
+> **"O RESULTADO está definido, versionado e governável antes do backlog?"**
+
+**Decisão:**
+- Se NÃO → ❌ REJEITADO
+- Se SIM → ✅ Pode seguir
+
+**Nota obrigatória:**
+> Se estamos discutindo backlog antes de congelar o resultado, o método falhou.
+
+**Aplica-se a:**
+- Revisão de demandas (Cursor e Manus)
+- Revisão de planejamento
+- Revisão de processos
+- Revisão de organização
+
+---
+
+#### 🔗 DOCUMENTOS RELACIONADOS
+
+- `/METODO/PILAR_ENDFIRST.md` (Meta-pilar)
+- `/METODO/ONTOLOGY_DECISIONS.md` (OD-004 a OD-009)
+- `/DEMANDAS/DEMANDA-XXX_RESULT.md` (Template de RESULTADO)
+- `/README.md` (Frase canônica de cultura)
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Se estamos discutindo backlog antes de congelar o resultado, o método falhou. ENDFIRST significa que o sistema só se organiza depois que o fim está absolutamente claro. Processo não cria resultado. Resultado cria processo."
 
 **Data:** 2026-01-08  
 **Responsável:** CEO (Joubert Jr)
