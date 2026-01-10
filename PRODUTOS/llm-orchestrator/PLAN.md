@@ -118,7 +118,7 @@
 
 **Ações:**
 - Criar interface de configuração de APIs
-- Implementar armazenamento local de credenciais (keychain macOS via electron-store ou similar)
+- Implementar armazenamento local de credenciais (electron-store - migrar para Keychain antes da aceitação final)
 - Criar módulo de configuração para 3 providers:
   - OpenAI (ChatGPT)
   - Google Gemini
@@ -127,7 +127,7 @@
 
 **Entregável:**
 - Interface de configuração funcional
-- Credenciais salvas localmente de forma segura
+- Credenciais salvas localmente (electron-store - migrar para Keychain antes da aceitação final do Critério 7)
 - Módulo de configuração modular para adicionar providers
 
 **Prova de Critério 7:** Interface de configuração funciona localmente, credenciais salvas no macOS
@@ -136,50 +136,53 @@
 
 ---
 
-### INCREMENTO 3: Integração com APIs de LLM
-**Objetivo:** Implementar chamadas reais para as 3 APIs
+### INCREMENTO 3: Envio Simultâneo para Múltiplas LLMs
+**Objetivo:** Enviar prompt para 1-3 LLMs simultaneamente e receber respostas
 
 **Ações:**
 - Criar abstração de provider (interface comum)
 - Implementar adaptadores:
-  - OpenAIAdapter
-  - GeminiAdapter
-  - AnthropicAdapter
-- Implementar serviço de orquestração que envia requests
+  - OpenAIAdapter (ChatGPT)
+  - GeminiAdapter (Google)
+  - AnthropicAdapter (Claude)
+- Implementar serviço de orquestração que envia requests paralelos
+- Criar interface React: input de prompt e seleção de LLMs
+- Implementar exibição de respostas recebidas
 - Adicionar tratamento de erros básico
-- Testar chamadas reais com credenciais válidas
 
 **Entregável:**
 - Módulo de integração com 3 APIs funcionando
+- Interface funcional: input de prompt + seleção de LLMs + exibição de respostas
 - Abstração permite adicionar 4º provider facilmente
-- Testes manuais confirmam respostas de APIs
-
-**Commit:** `feat(apis): integração com OpenAI, Gemini e Anthropic`
-
----
-
-### INCREMENTO 4: Interface de Input e Seleção de LLMs
-**Objetivo:** Interface para enviar prompt e selecionar quais LLMs responderão
-
-**Ações:**
-- Criar área de input de prompt (textarea)
-- Implementar seleção de LLMs (checkboxes para 1-3 LLMs)
-- Conectar com serviço de orquestração
-- Mostrar status de carregamento por LLM
-- Enviar requests paralelos
-
-**Entregável:**
-- Interface completa de input
-- Seleção de múltiplas LLMs funcional
 - Envio paralelo implementado
 
-**Prova de Critério 1 (parcial):** Enviar prompt selecionando 2 LLMs e receber 2 respostas
+**Prova de Critério 1 (parcial):**
+- ✅ Enviar prompt selecionando 1 LLM → receber 1 resposta
+- ✅ Enviar prompt selecionando 2 LLMs → receber 2 respostas distintas
+- ✅ Enviar prompt selecionando 3 LLMs → receber 3 respostas distintas
+- ✅ Verificar que todas as respostas foram recebidas (sucesso ou erro)
 
-**Commit:** `feat(ui): interface de input e seleção de LLMs`
+**Checklist de Prova do Critério 1:**
+```
+[ ] 1. Configurar pelo menos 2 providers na aba Configuração
+[ ] 2. Ir para aba Início
+[ ] 3. Digitar um prompt de teste (ex: "Explique o que é TypeScript em 2 frases")
+[ ] 4. Selecionar 1 LLM (checkbox)
+[ ] 5. Clicar em "Enviar para 1 LLM"
+[ ] 6. Verificar: 1 resposta aparece na seção "Respostas Recebidas"
+[ ] 7. Repetir com 2 LLMs selecionadas
+[ ] 8. Verificar: 2 respostas distintas aparecem
+[ ] 9. Repetir com 3 LLMs selecionadas (se 3 estiverem configuradas)
+[ ] 10. Verificar: 3 respostas distintas aparecem
+[ ] 11. Verificar: Cada resposta mostra provider name e conteúdo diferente
+[ ] 12. Verificar: Timestamps estão presentes
+```
+
+**Commit:** `feat(orchestration): INCREMENTO 3 - envio simultâneo para múltiplas LLMs`
 
 ---
 
-### INCREMENTO 5: Comparação Visual Lado a Lado
+### INCREMENTO 4: Comparação Visual Lado a Lado
 **Objetivo:** Exibir respostas de múltiplas LLMs simultaneamente
 
 **Ações:**

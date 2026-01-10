@@ -91,12 +91,13 @@ npm start
 ### Configuração de APIs
 
 1. Abra o aplicativo
-2. Vá para Configurações > APIs
+2. Vá para a aba "Configuração"
 3. Adicione suas chaves de API:
    - **OpenAI API Key:** Obtenha em https://platform.openai.com/api-keys
    - **Google Gemini API Key:** Obtenha em https://makersuite.google.com/app/apikey
    - **Anthropic API Key:** Obtenha em https://console.anthropic.com/
-4. As credenciais são salvas localmente no macOS (keychain/storage seguro)
+4. As credenciais são salvas localmente no macOS (electron-store)
+   - **Nota:** Migração para Keychain será feita antes da aceitação final do Critério 7
 
 ### Estrutura do Projeto
 

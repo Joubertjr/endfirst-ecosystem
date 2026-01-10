@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { APIConfig } from './components/APIConfig';
+import { PromptInput } from './components/PromptInput';
+import { ResponsesDisplay } from './components/ResponsesDisplay';
+import { LLMResponse } from '../shared/types';
 
 const App: React.FC = () => {
-  const [currentView, setCurrentView] = useState<'home' | 'config'>('config');
+  const [currentView, setCurrentView] = useState<'home' | 'config'>('home');
+  const [responses, setResponses] = useState<Array<{ success: boolean; response?: LLMResponse; error?: string; providerId: string }>>([]);
 
   return (
     <div style={{ fontFamily: 'system-ui', height: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -38,17 +42,14 @@ const App: React.FC = () => {
         </div>
       </nav>
 
-      <div style={{ flex: 1, overflow: 'auto' }}>
+      <div style={{ flex: 1, overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
         {currentView === 'home' && (
-          <div style={{ padding: '20px' }}>
-            <h1>LLM Orchestrator</h1>
-            <p>DEMANDA-001 - ENDFIRST_SPEC_EF-2026-001</p>
-            <p>Status: Em desenvolvimento - Incremento 2</p>
-            <p>Stack: Electron + React + TypeScript</p>
-            <p style={{ marginTop: '20px', color: '#666' }}>
-              Configure suas APIs na aba "Configuração" para começar a usar o orquestrador.
-            </p>
-          </div>
+          <>
+            <PromptInput onResponsesReceived={setResponses} />
+            <div style={{ borderTop: '1px solid #ddd', marginTop: '20px' }}>
+              <ResponsesDisplay responses={responses} />
+            </div>
+          </>
         )}
 
         {currentView === 'config' && <APIConfig />}

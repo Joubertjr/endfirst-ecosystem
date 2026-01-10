@@ -1,18 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProviderConfig } from '../../shared/types';
-
-declare global {
-  interface Window {
-    electronAPI: {
-      config: {
-        saveProvider: (config: ProviderConfig) => Promise<{ success: boolean; error?: string }>;
-        getProvider: (id: string) => Promise<ProviderConfig | undefined>;
-        getAllProviders: () => Promise<ProviderConfig[]>;
-        validateAPIKey: (apiKey: string) => Promise<boolean>;
-      };
-    };
-  }
-}
+import '../types/electron';
 
 interface ProviderFormData {
   id: 'openai' | 'gemini' | 'anthropic';
@@ -240,7 +228,7 @@ export const APIConfig: React.FC = () => {
     <div style={{ padding: '20px', fontFamily: 'system-ui', maxWidth: '800px' }}>
       <h1>Configuração de APIs</h1>
       <p style={{ color: '#666', marginBottom: '24px' }}>
-        Configure suas chaves de API para os providers de LLM. As credenciais são armazenadas localmente de forma segura.
+        Configure suas chaves de API para os providers de LLM. As credenciais são armazenadas localmente (migração para Keychain será feita antes da aceitação final).
       </p>
 
       {renderProviderForm('openai')}
