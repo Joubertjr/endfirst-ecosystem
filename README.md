@@ -220,14 +220,18 @@ endfirst-ecosystem/
 
 ## 📊 Estatísticas do Repositório
 
-**Total de documentos:** 17  
-**Aprovados:** 14 (82.4%)  
-**Pendentes:** 3 (17.6%)
+**Fonte única de verdade:** `/METODO/APPROVAL_LOG.md`
+
+**Total de documentos governados:** 45  
+**Aprovados:** 45 (100%)  
+**Pendentes:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 3 aprovados
-- **Operacionais (Tipo B):** 5 aprovados, 2 pendentes
-- **Exemplos (Tipo C):** 6 aprovados, 1 pendente
+- **Canônicos (Tipo A):** 15 aprovados
+- **Operacionais (Tipo B):** 21 aprovados
+- **Exemplos (Tipo C):** 9 aprovados
+
+> **Nota:** Totais derivam exclusivamente do APPROVAL_LOG (seção "LOG DE APROVAÇÕES"), não de contagem manual do filesystem. Repo tem arquivos, APPROVAL_LOG tem documentos governados.te
 
 **Ver detalhes:** `/METODO/APPROVAL_LOG.md`
 
