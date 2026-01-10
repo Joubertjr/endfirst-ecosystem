@@ -10,8 +10,8 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # EXECUTION MODEL — Modelo de Execução
 
-**Versão:** 1.0  
-**Data:** 8 de Janeiro de 2026  
+**Versão:** 1.1  
+**Data:** 10 de Janeiro de 2026  
 **Tipo:** Operacional (Tipo B)  
 **Status:** Aprovado pelo CEO
 
@@ -234,6 +234,47 @@ executor: cursor
 
 ---
 
+## 📋 KANBAN E VISIBILIDADE
+
+### Kanban Canônico
+**Fonte única de verdade:** GitHub Projects
+
+**Colunas obrigatórias:**
+1. **BACKLOG** — Demandas sem END explícito ou não priorizadas (CEO move para TODO)
+2. **TODO** — Demandas aprovadas e priorizadas, aguardando início (Executor move para DOING)
+3. **DOING** — Demandas em execução ativa, com evidência no Git (Executor move para DONE)
+4. **BLOCKED** — Demandas com impedimento estrutural (Executor documenta bloqueio)
+5. **DONE** — Demandas concluídas, com todos os critérios atingidos (CEO valida)
+
+**Regra de rastreabilidade:**
+> Todo incremento (commit/PR/issue) DEVE referenciar card.  
+> Formato: `[CARD-XXX]` ou `Refs #XXX` no título/descrição.
+
+**Documentação completa:**
+- `/METODO/KANBAN_CANONICO.md` (definição de colunas, regras, automações)
+- `/METODO/CONTRATO_ESTADOS.md` (quem move o quê, entrada/saída por papel)
+- `/METODO/INSTRUMENTACAO_VISIBILIDADE.md` (como CEO vê estado sem conversa)
+
+---
+
+### Visibilidade sem Conversa
+**Princípio:** CEO vê "o que está acontecendo" em 30s, sem conversa humana.
+
+**Perguntas que CEO responde em 30s:**
+1. **O que está em execução agora?** → Olhar coluna DOING
+2. **O que está bloqueado e por quê?** → Olhar coluna BLOCKED + descrição
+3. **O que falta para concluir DEMANDA-001?** → Contar cards em TODO/DOING/BLOCKED
+
+**Proibições:**
+- ❌ Status verbal como fonte de verdade ("estou trabalhando nisso")
+- ❌ Assumir progresso sem evidência no Git
+- ❌ Aceitar bloqueio sem descrição + responsável
+
+**Declaração do CEO:**
+> "A partir deste commit, 'o que está acontecendo' não é mais uma pergunta. Se não está visível no Kanban canônico, não está acontecendo. Status verbal passa a ser ruído."
+
+---
+
 ## 📊 EXEMPLO PRÁTICO
 
 ### DEMANDA-001 (LLM Orchestrator)
@@ -281,11 +322,13 @@ executor: cursor
 | Versão | Data | Mudança | Responsável |
 |--------|------|---------|-------------|
 | 1.0 | 2026-01-08 | Criação do modelo de execução | Manus (Agent) |
+| 1.1 | 2026-01-10 | Adição de seção Kanban e Visibilidade (DEMANDA_MANUS-002) | Manus (Agent) |
 
 ---
 
-**Versão:** 1.0  
+**Versão:** 1.1  
 **Criado:** 8 de Janeiro de 2026  
+**Atualizado:** 10 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
 **Status:** Operacional (Tipo B)
