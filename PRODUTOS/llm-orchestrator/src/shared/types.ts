@@ -14,3 +14,23 @@ export interface LLMResponse {
   timestamp: Date;
 }
 
+// Tipos para configuração de APIs
+export interface APIConfig {
+  openai?: {
+    apiKey: string;
+  };
+  gemini?: {
+    apiKey: string;
+  };
+  anthropic?: {
+    apiKey: string;
+  };
+}
+
+export interface ProviderConfig {
+  id: 'openai' | 'gemini' | 'anthropic';
+  name: string;
+  apiKey: string;
+  endpoint: string;
+  enabled: boolean;
+}
