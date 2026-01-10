@@ -196,3 +196,135 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
 **Próximo passo:** Padronizar YAML frontmatter em todos os documentos
+| ONTOLOGY_DECISIONS_v1.8_OD-011 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-011 adicionada: Entendimento sem mudança comportamental é fuga - entendimento só é válido se mudar comportamento pequeno agora | /METODO/PILAR_ENDFIRST.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
+| COMMIT_GOVERNANCE_CHECKLIST_v1.2 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-011 adicionado: "Que comportamento pequeno muda agora por causa disso?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
+| README_v11.19 | operational | approved | CEO | 2026-01-08 | Frase canônica de OD-011 adicionada: "Entendimento que não muda comportamento é fuga" | /METODO/PILAR_ENDFIRST.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
+
+---
+
+## ⚠️ DOCUMENTOS PENDENTES DE APROVAÇÃO
+| document_id | type | status | reason | action_required |
+|-------------|------|--------|--------|-----------------|
+| (nenhum) | - | - | - | - |
+
+---
+
+## 📋 ESTATÍSTICAS
+
+**Total de documentos no repositório:** 33  
+**Aprovados:** 33 (100%)  
+**Pendentes:** 0 (0%)  
+**Obsoletos:** 0 (0%)
+
+**Por tipo:**
+- **Canônicos (Tipo A):** 7 aprovados, 0 pendentes (PILAR_ENDFIRST, ENDFIRST_SPEC, ENDFIRST_DOCUMENT_GOVERNANCE, ONTOLOGY_DECISIONS, ROLES_AND_RESPONSIBILITIES, GOVERNANCE_CYCLE_CLOSURE, COMMIT_REVIEW_APPROVAL)
+- **Operacionais (Tipo B):** 18 aprovados, 0 pendentes (última: README v11.19, COMMIT_GOVERNANCE_CHECKLIST v1.2)
+- **Exemplos (Tipo C):** 8 aprovados, 0 pendentes
+
+---
+
+## 🔄 HISTÓRICO DE MUDANÇAS
+
+| Data | Evento | Responsável |
+|------|--------|-------------|
+| 2026-01-07 | Log criado | Manus (Agent) |
+| 2026-01-07 | 11 documentos registrados (aprovados) | Manus (Agent) |
+| 2026-01-07 | 3 documentos marcados como pendentes | Manus (Agent) |
+| 2026-01-08 | 3 documentos pendentes aprovados retroativamente (README_ROOT, TEMPLATE_DEMANDA, DEMANDA_001_DOCUMENTAR_13_PILARES) | Manus (Agent) |
+| 2026-01-08 | Repositório 100% aprovado (14/14 documentos) | Manus (Agent) |
+| 2026-01-08 | Correção: commit TBD substituído por hashes reais (30a7081, 178e186) | Manus (Agent) |
+| 2026-01-08 | Correção: total de documentos corrigido de 17 para 14 (contagem real) | Manus (Agent) |
+| 2026-01-08 | Melhoria de governança: 3 documentos de apoio operacional criados (COMMIT_GOVERNANCE_CHECKLIST, APPROVAL_LOG_RULES, README v11.8) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 17/17 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Ontologia consolidada: ONTOLOGY_DECISIONS.md criado (frases normativas e verdades operacionais) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 18/18 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Gatilho formal: ONTOLOGY_DECISIONS_TRIGGER.md criado (5 critérios + processo de criação) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 19/19 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Papéis e responsabilidades formalizados: ROLES_AND_RESPONSIBILITIES.md criado (CEO/Manus/Cursor) | Manus (Agent) |
+| 2026-01-08 | Processo de revisão de commits: COMMIT_REVIEW_PROCESS.md criado (5 passos + formato canônico) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 20/20 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-004 adicionada: DEMANDA ≠ PROJETO ≠ PRODUTO (validada contra 5 critérios do ONTOLOGY_DECISIONS_TRIGGER.md) | Manus (Agent) |
+| 2026-01-08 | CEO aprovou formalmente revisão completa de 20 commits: COMMIT_REVIEW_APPROVAL.md criado (repositório 100% revisado) | Manus (Agent) |
+| 2026-01-08 | Repositório atualizado para 21/21 documentos (100% aprovado) | Manus (Agent) |
+| 2026-01-08 | Status do repositório: ✅ APROVADO PARA EXECUÇÃO (sem bloqueios históricos, sem pendências, sem risco oculto) | CEO |
+| 2026-01-08 | Decisão ontológica OD-005 formalizada: Toda Demanda pertence a um Produto (fundação ontológica do sistema) | Manus (Agent) |
+| 2026-01-08 | OD-004 revisado para alinhar com OD-005: Produto obrigatório, Projeto opcional | Manus (Agent) |
+| 2026-01-08 | Ciclo de governança formalmente encerrado: decisões congeladas, foco muda para execução | CEO |
+| 2026-01-08 | DEMANDA-001 atualizada: produto declarado (LLM Orchestrator), status LIBERADA PARA EXECUÇÃO | Manus (Agent) |
+| 2026-01-08 | ONTOLOGY_DECISIONS.md marcado como v1.2 (histórico de versões adicionado) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-006 formalizada: Execução é responsabilidade da Tecnologia (Cursor) - elimina ambiguidade sobre executor | Manus (Agent) |
+| 2026-01-08 | EXECUTION_MODEL.md criado: modelo de execução explícito (CEO autoriza, Manus especifica, Cursor executa) | Manus (Agent) |
+| 2026-01-08 | TEMPLATE_DEMANDA.md atualizado: campos product, executor e project obrigatórios (v1.0 → v1.1) | Manus (Agent) |
+| 2026-01-08 | DEMANDA-001 atualizada: executor explícito (cursor) adicionado (v1.1 → v1.2) | Manus (Agent) |
+| 2026-01-08 | ONTOLOGY_DECISIONS.md atualizado para v1.3 (histórico: v1.0 → v1.1 → v1.2 → v1.3) | Manus (Agent) |
+| 2026-01-08 | DEMANDA-001_ACCEPTANCE.md criado: critérios de aceitação final escritos pelo CEO (5 critérios objetivos, imutável) | CEO |
+| 2026-01-08 | FINAL_DECISION_TEMPLATE.md criado: formato padrão de decisão final (como CEO julga sucesso/fracasso) | CEO |
+| 2026-01-08 | EXECUTOR_ONBOARDING_PROCESS.md criado: processo de onboarding de executor (elimina dependência de explicação oral) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-007 formalizada: END é pré-condição absoluta (nada começa sem END no Git) | CEO |
+| 2026-01-08 | Estrutura DEMANDAS_MANUS criada: demandas formais para Manus seguindo ENDFIRST | Manus (Agent) |
+| 2026-01-08 | TEMPLATE_DEMANDA_MANUS.md criado: template oficial para demandas ao Manus | Manus (Agent) |
+| 2026-01-08 | DEMANDA_MANUS-001 criada: primeira demanda formal para Manus (OD-007) | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-008 formalizada: Demandas para Manus também são demandas formais | CEO |
+| 2026-01-08 | Frase canônica de cultura adicionada ao README: "Se algo depende de disciplina humana, está errado" | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-009 formalizada: Disciplina Humana é Sinal de Falha de Design (princípio transversal) | CEO |
+| 2026-01-08 | COMMIT_GOVERNANCE_CHECKLIST.md atualizado: critério obrigatório OD-009 adicionado | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-010 formalizada: RESULTADO é entidade de primeira classe (backlog é derivado, não origem) | CEO |
+| 2026-01-08 | TEMPLATE_RESULT.md criado: define O QUE existe quando demanda termina, antes de backlog | Manus (Agent) |
+| 2026-01-08 | DEMANDA-001_RESULT.md criado: RESULTADO de DEMANDA-001 definido com 7 provas observáveis | Manus (Agent) |
+| 2026-01-08 | Decisão ontológica OD-011 formalizada: Entendimento sem mudança comportamental é fuga | CEO |
+| 2026-01-08 | COMMIT_GOVERNANCE_CHECKLIST.md atualizado para v1.2: critério obrigatório OD-011 adicionado | Manus (Agent) |
+| 2026-01-08 | README.md atualizado para v11.19: frase canônica de OD-011 adicionada | Manus (Agent) |
+| 2026-01-08 | APPROVAL_LOG separado em dois commits: substantivo (7635851) + log (este commit) - elimina loop de hash | Manus (Agent) |
+
+---
+
+## 📜 REGRAS DE MANUTENÇÃO
+
+### Quando adicionar entrada:
+- ✅ Documento novo criado e aprovado
+- ✅ Documento antigo aprovado retroativamente
+- ✅ Status de documento mudou (draft → approved, approved → obsolete)
+
+### Quando NÃO adicionar entrada:
+- ❌ Documento ainda em draft (não aprovado)
+- ❌ Mudanças menores no conteúdo (só atualizar `updated_at` no YAML)
+
+### Formato obrigatório:
+
+```markdown
+| document_id | type | status | approved_by | approved_at | reason | governed_by | commit |
+```
+
+**Campos:**
+- **document_id:** ID único do documento (mesmo do YAML frontmatter)
+- **type:** canonical | operational | example
+- **status:** approved | obsolete
+- **approved_by:** Nome do aprovador (CEO, Manus, Cursor)
+- **approved_at:** Data da aprovação (YYYY-MM-DD)
+- **reason:** Motivo da aprovação (1 frase)
+- **governed_by:** Path do documento que governa
+- **commit:** Link para commit/PR no GitHub (aponta para commit substantivo, não para commit de log)
+
+---
+
+## 🎯 VALIDAÇÃO
+
+**Este log está correto quando:**
+- [ ] Todos os documentos aprovados têm entrada
+- [ ] Todos os documentos pendentes estão listados
+- [ ] Estatísticas batem com inventário real
+- [ ] Links de commits funcionam
+- [ ] Datas estão no formato YYYY-MM-DD
+- [ ] Tipos estão corretos (canonical, operational, example)
+- [ ] Commits apontam para mudanças substantivas, não para atualizações de log
+
+**Responsável pela validação:** Manus (Agent)  
+**Frequência:** A cada 10 documentos novos OU 1x por mês
+
+---
+
+**Versão:** 1.1  
+**Data:** 8 de Janeiro de 2026  
+**Criado por:** Manus (Agent)  
+**Aprovado por:** CEO (Joubert Jr)  
+**Última atualização:** OD-011 adicionada - APPROVAL_LOG aponta para commit substantivo (7635851), não para commit de log (OD-009 aplicado)
