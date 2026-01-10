@@ -229,21 +229,53 @@
 
 ---
 
-### INCREMENTO 6: Seleção de Melhor Resposta
-**Objetivo:** Permitir seleção manual de uma resposta como "melhor"
+### INCREMENTO 5: Seleção de Melhor Resposta (Critério 3)
+**Objetivo:** Permitir seleção manual de uma resposta como "melhor" com feedback visual inequívoco
 
 **Ações:**
-- Implementar botão/clique para selecionar resposta
-- Adicionar feedback visual (highlight, borda, checkmark)
-- Deselecionar outras respostas quando uma é selecionada
-- Armazenar qual resposta foi selecionada
+- Adicionar estado para rastrear resposta selecionada
+- Implementar clique na resposta para selecionar/deselecionar
+- Adicionar feedback visual múltiplo:
+  - Borda mais grossa e azul (4px solid #1976d2)
+  - Background azul claro (#e3f2fd)
+  - Checkmark (✓) visível
+  - Badge "Melhor" no header
+  - Box shadow para destaque
+- Deselecionar outras respostas automaticamente quando uma é selecionada
+- Armazenar qual resposta foi selecionada no estado
 
 **Entregável:**
-- Seleção funcional com feedback visual claro
+- Seleção funcional com feedback visual claro e inequívoco
+- Múltiplos indicadores visuais (borda, cor, checkmark, badge)
+- Deseleção automática de outras respostas
 
-**Prova de Critério 3:** Clicar em resposta e verificar marcação visual (highlight/borda/checkmark)
+**Prova de Critério 3:**
+- ✅ Clicar em uma resposta e verificar marcação visual imediata
+- ✅ Verificar múltiplos indicadores visuais (borda, background, checkmark, badge)
+- ✅ Verificar que outras respostas perdem seleção automaticamente
+- ✅ Clicar em outra resposta e verificar que seleção muda
+- ✅ Clicar novamente na resposta selecionada para deselecionar
 
-**Commit:** `feat(ui): seleção de melhor resposta com feedback visual`
+**Checklist de Prova do Critério 3:**
+```
+[ ] 1. Enviar prompt para pelo menos 2 LLMs
+[ ] 2. Verificar que respostas aparecem lado a lado
+[ ] 3. Clicar em uma resposta (não erro)
+[ ] 4. Verificar: Borda muda para 4px sólida azul (#1976d2)
+[ ] 5. Verificar: Background muda para azul claro (#e3f2fd)
+[ ] 6. Verificar: Checkmark (✓) aparece no header
+[ ] 7. Verificar: Badge "Melhor" aparece no header
+[ ] 8. Verificar: Box shadow aparece (sombra azul)
+[ ] 9. Verificar: Outras respostas mantêm estilo original (não selecionadas)
+[ ] 10. Clicar em outra resposta
+[ ] 11. Verificar: Nova resposta recebe marcação visual
+[ ] 12. Verificar: Resposta anterior perde marcação (volta ao estilo original)
+[ ] 13. Clicar novamente na resposta selecionada
+[ ] 14. Verificar: Resposta é deselecionada (volta ao estilo original)
+[ ] 15. Verificar: Indicador na parte inferior mostra "Resposta selecionada como melhor" quando há seleção
+```
+
+**Commit:** `feat(ui): INCREMENTO 5 - seleção de melhor resposta (Critério 3)`
 
 ---
 
