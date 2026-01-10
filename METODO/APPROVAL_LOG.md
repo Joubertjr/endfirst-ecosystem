@@ -199,6 +199,11 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | ONTOLOGY_DECISIONS_v1.8_OD-011 | canonical | approved | CEO | 2026-01-08 | Decisão ontológica OD-011 adicionada: Entendimento sem mudança comportamental é fuga - entendimento só é válido se mudar comportamento pequeno agora | /METODO/PILAR_ENDFIRST.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
 | COMMIT_GOVERNANCE_CHECKLIST_v1.2 | operational | approved | CEO | 2026-01-08 | Critério obrigatório OD-011 adicionado: "Que comportamento pequeno muda agora por causa disso?" | /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
 | README_v11.19 | operational | approved | CEO | 2026-01-08 | Frase canônica de OD-011 adicionada: "Entendimento que não muda comportamento é fuga" | /METODO/PILAR_ENDFIRST.md | [7635851](https://github.com/Joubertjr/endfirst-ecosystem/commit/7635851) |
+| KANBAN_CANONICO | operational | approved | CEO | 2026-01-10 | Kanban canônico criado: 5 colunas obrigatórias (BACKLOG/TODO/DOING/BLOCKED/DONE), regras de rastreabilidade, automações estruturais - elimina status inventado | /METODO/PILAR_ENDFIRST.md | [dde7f4a](https://github.com/Joubertjr/endfirst-ecosystem/commit/dde7f4a) |
+| CONTRATO_ESTADOS | operational | approved | CEO | 2026-01-10 | Contrato de estados criado: quem move o quê (CEO/Manus/Cursor), transições de estado, entrada/saída por papel - sistema impede erro por design | /METODO/PILAR_ENDFIRST.md | [dde7f4a](https://github.com/Joubertjr/endfirst-ecosystem/commit/dde7f4a) |
+| INSTRUMENTACAO_VISIBILIDADE | operational | approved | CEO | 2026-01-10 | Instrumentação de visibilidade criada: CEO responde 3 perguntas em 30s, critérios de visibilidade, proibições absolutas - status verbal passa a ser ruído | /METODO/PILAR_ENDFIRST.md | [dde7f4a](https://github.com/Joubertjr/endfirst-ecosystem/commit/dde7f4a) |
+| EXECUTION_MODEL_v1.1 | operational | approved | CEO | 2026-01-10 | EXECUTION_MODEL atualizado (v1.0 → v1.1): seção Kanban e Visibilidade adicionada - integra execução + visibilidade | /METODO/PILAR_ENDFIRST.md | [dde7f4a](https://github.com/Joubertjr/endfirst-ecosystem/commit/dde7f4a) |
+| DEMANDA_MANUS-003 | operational | approved | CEO | 2026-01-10 | DEMANDA_MANUS-003 criada e executada: atualizar APPROVAL_LOG com 4 documentos de DEMANDA_MANUS-002 - garante rastreabilidade 100% | /METODO/PILAR_ENDFIRST.md | [88ea5b9](https://github.com/Joubertjr/endfirst-ecosystem/commit/88ea5b9) |
 
 ---
 
@@ -211,14 +216,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 33  
-**Aprovados:** 33 (100%)  
+**Total de documentos no repositório:** 38  
+**Aprovados:** 38 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
 - **Canônicos (Tipo A):** 7 aprovados, 0 pendentes (PILAR_ENDFIRST, ENDFIRST_SPEC, ENDFIRST_DOCUMENT_GOVERNANCE, ONTOLOGY_DECISIONS, ROLES_AND_RESPONSIBILITIES, GOVERNANCE_CYCLE_CLOSURE, COMMIT_REVIEW_APPROVAL)
-- **Operacionais (Tipo B):** 18 aprovados, 0 pendentes (última: README v11.19, COMMIT_GOVERNANCE_CHECKLIST v1.2)
+- **Operacionais (Tipo B):** 23 aprovados, 0 pendentes (última: KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003)
 - **Exemplos (Tipo C):** 8 aprovados, 0 pendentes
 
 ---
@@ -275,6 +280,11 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-08 | COMMIT_GOVERNANCE_CHECKLIST.md atualizado para v1.2: critério obrigatório OD-011 adicionado | Manus (Agent) |
 | 2026-01-08 | README.md atualizado para v11.19: frase canônica de OD-011 adicionada | Manus (Agent) |
 | 2026-01-08 | APPROVAL_LOG separado em dois commits: substantivo (7635851) + log (este commit) - elimina loop de hash | Manus (Agent) |
+| 2026-01-10 | DEMANDA_MANUS-002 criada: Kanban canônico + Contrato de estados (END: visibilidade sem conversa + sistema impede status inventado) | CEO |
+| 2026-01-10 | DEMANDA_MANUS-002 executada: 4 documentos criados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1) | Manus (Agent) |
+| 2026-01-10 | Declaração do CEO: "Este commit encerra definitivamente o teatro de status. A partir de agora, quem não está no Kanban não existe. E quem inventa status está estruturalmente errado." | CEO |
+| 2026-01-10 | GitHub Project criado: LLM Orchestrator (projeto #14) - incrementos posicionados (1→DONE, 2→DONE, 3→TODO) | Manus (Agent) |
+| 2026-01-10 | DEMANDA_MANUS-003 criada e executada: APPROVAL_LOG atualizado com 4 documentos de DEMANDA_MANUS-002 + própria DEMANDA_MANUS-003 registrada (38 documentos totais: 7 canônicos, 23 operacionais, 8 exemplos) | Manus (Agent) |
 
 ---
 
@@ -323,8 +333,8 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ---
 
-**Versão:** 1.1  
-**Data:** 8 de Janeiro de 2026  
+**Versão:** 1.2  
+**Data:** 10 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
-**Última atualização:** OD-011 adicionada - APPROVAL_LOG aponta para commit substantivo (7635851), não para commit de log (OD-009 aplicado)
+**Última atualização:** DEMANDA_MANUS-003 executada - 5 documentos adicionados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003) - 38 documentos totais
