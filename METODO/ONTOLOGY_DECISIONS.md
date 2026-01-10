@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.7  
+**Versão:** 1.8  
 **Data:** 8 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -24,6 +24,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.5 (2026-01-08): OD-008 adicionada (Demandas para Manus também são demandas formais)
 - v1.6 (2026-01-08): OD-009 adicionada (Disciplina Humana é Sinal de Falha de Design)
 - v1.7 (2026-01-08): OD-010 adicionada (RESULTADO é entidade de primeira classe - backlog é derivado)
+- v1.8 (2026-01-08): OD-011 adicionada (Entendimento sem mudança comportamental é fuga)
 
 ---
 
@@ -1502,6 +1503,176 @@ EXECUÇÃO
 #### 📜 DECLARAÇÃO DO CEO
 
 > "Se estamos discutindo backlog antes de congelar o resultado, o método falhou. ENDFIRST significa que o sistema só se organiza depois que o fim está absolutamente claro. Processo não cria resultado. Resultado cria processo."
+
+**Data:** 2026-01-08  
+**Responsável:** CEO (Joubert Jr)
+
+---
+
+## OD-011 — Entendimento sem mudança comportamental é fuga
+
+#### 📜 DECLARAÇÃO CANÔNICA
+
+> **"Se o entendimento não muda comportamento pequeno imediatamente, ele é fuga."**
+
+**Princípio:**
+- Entendimento só é válido se forçar ou impedir ao menos um comportamento pequeno agora
+- Se a mudança é "mais tarde", "quando amadurecer", "quando escalar" → ❌ inválido
+
+**Regra absoluta:**
+- Compreensão sem ação imediata = fuga sofisticada
+- Consenso sem mudança = racionalização elegante
+- Clareza sem impacto = ruído
+
+---
+
+#### ❌ PROIBIÇÕES EXPLÍCITAS
+
+1. **Entendimento sem ação imediata**
+   - Exemplo: "Agora ficou claro" sem mudança no Git
+   - Consequência: Fuga sofisticada
+
+2. **Documento que "explica" mas não muda nada**
+   - Exemplo: Wiki educativa sem trava estrutural
+   - Consequência: Conhecimento inútil
+
+3. **Processo que depende de consciência/atenção**
+   - Exemplo: "Agora todo mundo sabe"
+   - Consequência: Viola OD-009 (disciplina humana)
+
+4. **Cultura baseada em "todo mundo sabe"**
+   - Exemplo: Conhecimento implícito, não versionado
+   - Consequência: Viola OD-007 (END no Git)
+
+---
+
+#### ✅ EXEMPLOS VÁLIDOS
+
+**Entendimento que muda comportamento:**
+1. **OD-009 criada** → Checklist ganha critério obrigatório
+2. **Template criado** → Campo obrigatório impede erro
+3. **Regra formalizada** → Commit é rejeitado automaticamente
+4. **Processo documentado** → Executor lê do Git, não pergunta
+
+**Característica comum:**
+- Mudança pequena, mas imediata
+- Observável, não subjetiva
+- Estrutural, não cultural
+
+---
+
+#### ❌ ANTI-EXEMPLOS (PROIBIDOS)
+
+**Entendimento sem efeito:**
+1. **"Agora entendi o método"** → Mas continua fazendo igual
+2. **"Ficou claro"** → Mas nada muda no repositório
+3. **"Todo mundo sabe"** → Mas não está no Git
+4. **"Vamos ter cuidado"** → Depende de disciplina (viola OD-009)
+
+**Característica comum:**
+- Conforto intelectual
+- Sem mudança observável
+- Sem trava estrutural
+- Fuga sofisticada
+
+---
+
+#### 📜 RACIONAL
+
+Este princípio fecha o loop ontológico:
+
+**OD-007:** END primeiro (não HOW)
+**OD-009:** Processo > Disciplina
+**OD-010:** RESULTADO é entidade de primeira classe
+**OD-011:** Entendimento sem mudança é fuga
+
+**Sem OD-011, o sistema ainda permite:**
+- Compreensão sem ação
+- Consenso sem mudança
+- Clareza sem impacto
+
+**Com OD-011:**
+- Entendimento é inútil se não muda comportamento pequeno agora
+- Ou muda o mundo — ou não entra
+
+---
+
+#### 🎯 IMPLICAÇÕES PRÁTICAS
+
+**Para documentos:**
+- Documento sem trava estrutural = fuga
+- Wiki que não impede erro = inútil
+- Explicação que não altera fluxo = ruído
+
+**Para processos:**
+- Processo que depende de "lembrar" = viola OD-009
+- Processo que não muda comportamento = fuga
+
+**Para decisões:**
+- Decisão sem mudança imediata = não é decisão
+- Consenso sem efeito observável = teatro
+
+**Para comunicação:**
+- Comunicação do método deve forçar uso correto
+- Entendimento deve impedir erro estruturalmente
+- Se pessoa "entendeu" mas faz errado = sistema falhou
+
+---
+
+#### 📜 FRASE CANÔNICA (CULTURA)
+
+> **"Entendimento que não muda comportamento é fuga."**
+
+**Uso:**
+- Cultura organizacional
+- Revisão de documentos
+- Revisão de processos
+- Revisão de decisões
+- Onboarding de time
+
+**Implicação:**
+- END FIRST, não conforto intelectual
+- Mudança pequena, mas imediata
+- Estrutural, não cultural
+
+---
+
+#### 🚨 CRITÉRIO OBRIGATÓRIO DE REVISÃO
+
+**Pergunta obrigatória em toda revisão:**
+
+> **"Que comportamento pequeno muda agora por causa disso?"**
+
+**Decisão:**
+- Sem resposta concreta → ❌ REJEITADO
+- Se exigir disciplina humana → ❌ REJEITADO (OD-009)
+- Se mudança é "mais tarde" → ❌ REJEITADO
+- Se mudança é observável agora → ✅ Pode seguir
+
+**Nota obrigatória:**
+> Se algo "faz sentido" mas não muda nada, é fuga sofisticada.
+
+**Aplica-se a:**
+- Revisão de demandas (Cursor e Manus)
+- Revisão de ODs
+- Revisão de processos
+- Revisão de documentos
+- Revisão de comunicação do método
+
+---
+
+#### 🔗 DOCUMENTOS RELACIONADOS
+
+- `/METODO/PILAR_ENDFIRST.md` (Meta-pilar)
+- `/METODO/ONTOLOGY_DECISIONS.md` (OD-004 a OD-010)
+- `/METODO/COMMIT_GOVERNANCE_CHECKLIST.md` (Critério obrigatório)
+- `/README.md` (Frase canônica de cultura)
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "No ENDFIRST, entendimento é inútil se não muda comportamento pequeno agora. A partir de OD-011, qualquer coisa que apenas 'faça sentido' está proibida. Ou muda o mundo — ou não entra."
 
 **Data:** 2026-01-08  
 **Responsável:** CEO (Joubert Jr)

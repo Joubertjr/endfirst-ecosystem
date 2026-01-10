@@ -10,7 +10,7 @@ governed_by: /METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md
 
 # Commit Governance Checklist
 
-**Versão:** 1.0  
+**Versão:** 1.2  
 **Data:** 8 de Janeiro de 2026  
 **Governado por:** ENDFIRST_DOCUMENT_GOVERNANCE.md  
 **Status:** Operacional (Aprovado pelo CEO)
@@ -40,6 +40,13 @@ Antes de considerar um commit **CONFORME com governança**, verifique:
   - Se SIM → ❌ REJEITADO
   - Se NÃO → ✅ Pode seguir
   - Nota: Se a única defesa do processo é "as pessoas vão tomar cuidado", o processo está errado
+
+- [ ] **Que comportamento pequeno muda agora por causa disso? (OD-011)**
+  - Sem resposta concreta → ❌ REJEITADO
+  - Se exigir disciplina humana → ❌ REJEITADO (OD-009)
+  - Se mudança é "mais tarde" → ❌ REJEITADO
+  - Se mudança é observável agora → ✅ Pode seguir
+  - Nota: Se algo "faz sentido" mas não muda nada, é fuga sofisticada
 
 - [ ] **APPROVAL_LOG.md foi atualizado NESTE commit?**
   - Aprovações devem estar no mesmo commit que as mudanças

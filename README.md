@@ -6,16 +6,16 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.18
+version: v11.19
 created_at: 2026-01-04
 updated_at: 2026-01-08
 ---
 
-# 🚀 ENDFIRST Ecosystem v11.18
+# 🚀 ENDFIRST Ecosystem v11.19
 
 **Data:** 8 de Janeiro de 2026  
-**Versão:** v11.18  
-**Status:** ✅ RESULTADO É ENTIDADE DE PRIMEIRA CLASSE (OD-010)
+**Versão:** v11.19  
+**Status:** ✅ ENTENDIMENTO SEM MUDANÇA É FUGA (OD-011)
 
 > **"END primeiro. HOW depois. Sempre."**
 
@@ -25,9 +25,12 @@ updated_at: 2026-01-08
 
 > **"Backlog não cria resultado. Resultado cria backlog. Processo não cria resultado. Resultado cria processo."**
 
+> **"Entendimento que não muda comportamento é fuga."**
+
 **No método ENDFIRST, processos substituem disciplina.**  
 **Se alguém precisa 'lembrar de fazer certo', o sistema falhou.**  
-**RESULTADO é entidade de primeira classe. Backlog é derivado, não origem.**
+**RESULTADO é entidade de primeira classe. Backlog é derivado, não origem.**  
+**Entendimento só é válido se mudar comportamento pequeno agora.**
 
 ---
 
@@ -62,7 +65,8 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **OD-008: Demandas para Manus também são demandas formais** — Manus não executa ordens fora do Git (estrutura DEMANDAS_MANUS criada)
 - [x] **OD-009: Disciplina Humana é Sinal de Falha de Design** — Princípio transversal: se depende de disciplina, está errado (critério obrigatório de revisão)
 - [x] **OD-010: RESULTADO é entidade de primeira classe** — Backlog é derivado, não origem (frase canônica: "Backlog não cria resultado. Resultado cria backlog.")
-- [x] **ONTOLOGY_DECISIONS.md v1.7** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3 → v1.4 → v1.5 → v1.6 → v1.7)
+- [x] **OD-011: Entendimento sem mudança comportamental é fuga** — Entendimento só é válido se mudar comportamento pequeno agora (frase canônica: "Entendimento que não muda comportamento é fuga.")
+- [x] **ONTOLOGY_DECISIONS.md v1.8** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3 → v1.4 → v1.5 → v1.6 → v1.7 → v1.8)
 - [x] **EXECUTION_MODEL.md** — Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa (`/METODO/EXECUTION_MODEL.md`)
 - [x] **Governance Cycle Closure** — Ciclo de governança formalmente encerrado, decisões congeladas (`/METODO/GOVERNANCE_CYCLE_CLOSURE.md`)
 - [x] **Commit Review Approval** — Aprovação formal do CEO sobre revisão completa de 20 commits (`/METODO/COMMIT_REVIEW_APPROVAL.md`)
