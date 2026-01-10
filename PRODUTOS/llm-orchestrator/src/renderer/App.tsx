@@ -42,17 +42,23 @@ const App: React.FC = () => {
         </div>
       </nav>
 
-      <div style={{ flex: 1, overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
         {currentView === 'home' && (
-          <>
-            <PromptInput onResponsesReceived={setResponses} />
-            <div style={{ borderTop: '1px solid #ddd', marginTop: '20px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+            <div style={{ flexShrink: 0, borderBottom: '1px solid #ddd' }}>
+              <PromptInput onResponsesReceived={setResponses} />
+            </div>
+            <div style={{ flex: 1, overflow: 'hidden' }}>
               <ResponsesDisplay responses={responses} />
             </div>
-          </>
+          </div>
         )}
 
-        {currentView === 'config' && <APIConfig />}
+        {currentView === 'config' && (
+          <div style={{ flex: 1, overflow: 'auto' }}>
+            <APIConfig />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -182,25 +182,50 @@
 
 ---
 
-### INCREMENTO 4: Comparação Visual Lado a Lado
-**Objetivo:** Exibir respostas de múltiplas LLMs simultaneamente
+### INCREMENTO 4: Comparação Visual Lado a Lado (Critério 2)
+**Objetivo:** Layout fixo lado a lado para comparação direta de respostas
 
 **Ações:**
-- Criar layout de grid/columns (3 colunas máximo inicialmente)
-- Implementar componentes de visualização de resposta por LLM
-- Adicionar headers identificando cada LLM (nome, logo, timestamp)
-- Implementar scroll independente por resposta
-- Ajustar responsividade
+- Refatorar ResponsesDisplay para layout fixo (não grid adaptativo)
+- Implementar colunas dedicadas com largura fixa por resposta
+- Adicionar scroll independente por coluna (cada resposta tem seu próprio scroll)
+- Garantir altura fixa para visibilidade simultânea
+- Headers fixos (não scrollam) com identificação clara de cada LLM
+- Ajustar layout do App.tsx para melhor aproveitamento de espaço
 
 **Entregável:**
-- Interface visual com múltiplas colunas funcionando
-- Todas as respostas visíveis simultaneamente
+- Layout lado a lado fixo implementado
+- Scroll independente por resposta funcionando
+- Todas as respostas visíveis simultaneamente na tela
+- Identificação clara de cada LLM (header fixo)
 
-**Prova de Critério 2:** Enviar prompt para 3 LLMs e verificar que 3 respostas são exibidas simultaneamente na tela
+**Prova de Critério 2:**
+- ✅ Enviar prompt para 3 LLMs
+- ✅ Verificar que 3 respostas são exibidas simultaneamente na tela (sem necessidade de scroll horizontal para ver todas)
+- ✅ Verificar que cada resposta está em coluna dedicada
+- ✅ Verificar que scroll de uma resposta não afeta outras
+- ✅ Verificar que headers com nomes das LLMs estão sempre visíveis
+- ✅ Verificar identificação clara de cada LLM (nome, status)
 
-**Prova de Critério 1 (completo):** Enviar para 1, 2 e 3 LLMs e receber número correto de respostas
+**Checklist de Prova do Critério 2:**
+```
+[ ] 1. Configurar 3 providers na aba Configuração
+[ ] 2. Ir para aba Início
+[ ] 3. Digitar um prompt de teste
+[ ] 4. Selecionar 3 LLMs (checkboxes)
+[ ] 5. Clicar em "Enviar para 3 LLMs"
+[ ] 6. Verificar: 3 respostas aparecem lado a lado simultaneamente
+[ ] 7. Verificar: Cada resposta está em coluna dedicada (não empilhada)
+[ ] 8. Verificar: Nenhuma resposta está fora da tela (sem scroll horizontal necessário)
+[ ] 9. Verificar: Headers com nomes das LLMs estão visíveis no topo de cada coluna
+[ ] 10. Fazer scroll em uma resposta
+[ ] 11. Verificar: Scroll de uma resposta não move outras respostas
+[ ] 12. Verificar: Headers permanecem fixos durante scroll do conteúdo
+[ ] 13. Repetir com 2 LLMs - verificar layout 50/50
+[ ] 14. Repetir com 1 LLM - verificar layout 100% width
+```
 
-**Commit:** `feat(ui): comparação visual lado a lado de respostas`
+**Commit:** `feat(ui): INCREMENTO 4 - layout lado a lado fixo (Critério 2)`
 
 ---
 
