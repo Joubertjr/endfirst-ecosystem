@@ -216,15 +216,15 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 38  
-**Aprovados:** 38 (100%)  
+**Total de documentos no repositório:** 45  
+**Aprovados:** 45 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 7 aprovados, 0 pendentes (PILAR_ENDFIRST, ENDFIRST_SPEC, ENDFIRST_DOCUMENT_GOVERNANCE, ONTOLOGY_DECISIONS, ROLES_AND_RESPONSIBILITIES, GOVERNANCE_CYCLE_CLOSURE, COMMIT_REVIEW_APPROVAL)
-- **Operacionais (Tipo B):** 23 aprovados, 0 pendentes (última: KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003)
-- **Exemplos (Tipo C):** 8 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 15 aprovados, 0 pendentes (PILAR_ENDFIRST, ENDFIRST_SPEC, ENDFIRST_DOCUMENT_GOVERNANCE, ONTOLOGY_DECISIONS, ROLES_AND_RESPONSIBILITIES, GOVERNANCE_CYCLE_CLOSURE, COMMIT_REVIEW_APPROVAL, etc.)
+- **Operacionais (Tipo B):** 21 aprovados, 0 pendentes (última: KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003)
+- **Exemplos (Tipo C):** 9 aprovados, 0 pendentes
 
 ---
 
@@ -284,7 +284,7 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 | 2026-01-10 | DEMANDA_MANUS-002 executada: 4 documentos criados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1) | Manus (Agent) |
 | 2026-01-10 | Declaração do CEO: "Este commit encerra definitivamente o teatro de status. A partir de agora, quem não está no Kanban não existe. E quem inventa status está estruturalmente errado." | CEO |
 | 2026-01-10 | GitHub Project criado: LLM Orchestrator (projeto #14) - incrementos posicionados (1→DONE, 2→DONE, 3→TODO) | Manus (Agent) |
-| 2026-01-10 | DEMANDA_MANUS-003 criada e executada: APPROVAL_LOG atualizado com 4 documentos de DEMANDA_MANUS-002 + própria DEMANDA_MANUS-003 registrada (38 documentos totais: 7 canônicos, 23 operacionais, 8 exemplos) | Manus (Agent) |
+| 2026-01-10 | DEMANDA_MANUS-003 criada e executada: APPROVAL_LOG atualizado com 4 documentos de DEMANDA_MANUS-002 + própria DEMANDA_MANUS-003 registrada (45 documentos totais: 15 canônicos, 21 operacionais, 9 exemplos) | Manus (Agent) |
 
 ---
 
@@ -337,4 +337,4 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 **Data:** 10 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
-**Última atualização:** DEMANDA_MANUS-003 executada - 5 documentos adicionados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003) - 38 documentos totais
+**Última atualização:** DEMANDA_MANUS-003 executada - 5 documentos adicionados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003) - 45 documentos totais (derivados da lista do log: 15 canônicos + 21 operacionais + 9 exemplos)
