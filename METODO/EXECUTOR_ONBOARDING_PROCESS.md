@@ -15,8 +15,8 @@ created_at: 2026-01-08
 
 # EXECUTOR ONBOARDING PROCESS — Processo de Onboarding de Executor
 
-**Versão:** 1.0  
-**Data:** 8 de Janeiro de 2026  
+**Versão:** 1.1  
+**Data:** 10 de Janeiro de 2026  
 **Tipo:** Operacional (Tipo B)  
 **Owner:** CEO (Joubert Jr)
 
@@ -157,6 +157,34 @@ O executor DEVE ler os seguintes documentos **nesta ordem exata**:
 
 **Princípio:**
 > Governança é imutável durante execução. Executor cria código, não governança.
+
+---
+
+### Executor NÃO avalia se "está certo" (OD-011 estendida)
+
+- ❌ Executor não "pensa se está certo"
+- ❌ Executor não "avalia qualidade"
+- ❌ Executor não "percebe inconsistência"
+- ❌ Executor não "ajusta se notar"
+- ✅ Executor segue estados, critérios e evidências
+- ✅ Se algo não está claro no sistema, a execução PARA
+
+**Princípio:**
+
+> **"Executor não deve 'pensar se está certo'. Executor só segue estados, critérios e evidências. Se algo não está claro no sistema, a execução deve parar."**
+
+**Racional:**
+
+- Metacognição é habilidade humana
+- ENDFIRST é a decisão de não depender dela
+- Se executor precisa "perceber" erro para evitá-lo → design falhou
+- Sistema pensa no lugar do executor no caminho crítico
+
+**Implicação:**
+
+- Cursor não tenta ser inteligente
+- Manus não compensa lacuna com explicação
+- CEO não vira debugger humano
 
 ---
 

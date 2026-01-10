@@ -65,7 +65,7 @@ O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método
 - [x] **OD-008: Demandas para Manus também são demandas formais** — Manus não executa ordens fora do Git (estrutura DEMANDAS_MANUS criada)
 - [x] **OD-009: Disciplina Humana é Sinal de Falha de Design** — Princípio transversal: se depende de disciplina, está errado (critério obrigatório de revisão)
 - [x] **OD-010: RESULTADO é entidade de primeira classe** — Backlog é derivado, não origem (frase canônica: "Backlog não cria resultado. Resultado cria backlog.")
-- [x] **OD-011: Entendimento sem mudança comportamental é fuga** — Entendimento só é válido se mudar comportamento pequeno agora (frase canônica: "Entendimento que não muda comportamento é fuga.")
+- [x] **OD-011: Entendimento sem mudança comportamental é fuga** — Entendimento só é válido se mudar comportamento pequeno agora (frase canônica: "Entendimento que não muda comportamento é fuga.") + Extensão: **Metacognição é habilidade humana. ENDFIRST é a decisão de não depender dela.**
 - [x] **ONTOLOGY_DECISIONS.md v1.8** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3 → v1.4 → v1.5 → v1.6 → v1.7 → v1.8)
 - [x] **EXECUTION_MODEL.md** — Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa (`/METODO/EXECUTION_MODEL.md`)
 - [x] **Governance Cycle Closure** — Ciclo de governança formalmente encerrado, decisões congeladas (`/METODO/GOVERNANCE_CYCLE_CLOSURE.md`)

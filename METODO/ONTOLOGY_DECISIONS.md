@@ -10,8 +10,8 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.8  
-**Data:** 8 de Janeiro de 2026  
+**Versão:** 1.9  
+**Data:** 10 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
 
@@ -25,6 +25,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.6 (2026-01-08): OD-009 adicionada (Disciplina Humana é Sinal de Falha de Design)
 - v1.7 (2026-01-08): OD-010 adicionada (RESULTADO é entidade de primeira classe - backlog é derivado)
 - v1.8 (2026-01-08): OD-011 adicionada (Entendimento sem mudança comportamental é fuga)
+- v1.9 (2026-01-10): OD-011 estendida (Metacognição no caminho crítico)
 
 ---
 
@@ -1676,6 +1677,53 @@ Este princípio fecha o loop ontológico:
 
 **Data:** 2026-01-08  
 **Responsável:** CEO (Joubert Jr)
+
+---
+
+### 🚫 METACOGNIÇÃO NO CAMINHO CRÍTICO (EXTENSÃO ESTRUTURAL)
+
+**Declaração canonica (reforço):**
+
+> **"O método ENDFIRST existe para retirar a metacognição humana do caminho crítico. Se algo só funciona quando alguém percebe, nota ou ajusta, é estruturalmente inválido."**
+
+**Proibições explícitas:**
+
+- ❌ "se alguém perceber…"
+- ❌ "ajusta se notar…"
+- ❌ "depende de atenção/consciência"
+- ❌ "quando alguém revisar com cuidado"
+
+**Regra operacional absoluta:**
+
+> **"Se um erro só é evitado quando alguém nota, o design falhou."**
+
+**Princípio:**
+
+- Metacognição é habilidade humana
+- ENDFIRST é a decisão de não depender dela
+- Bloqueio estrutural > Atenção humana
+- Sistema pensa no lugar do humano no caminho crítico
+
+**Racional:**
+
+Metacognição no caminho crítico é a forma mais sofisticada de "entendimento sem mudança":
+
+- Se o sistema exige que alguém "perceba" para não errar → viola OD-009 (disciplina humana)
+- Se o sistema exige que alguém "reflita" para ajustar → viola OD-011 (entendimento sem mudança)
+- Se o sistema exige "cuidado" para funcionar → design errado
+
+**Exemplos reais:**
+
+- ❌ Status verbal (depende de alguém notar inconsistência)
+- ❌ Incremento sem card (depende de alguém perceber ausência)
+- ❌ Critério sem evidência binária (depende de alguém avaliar)
+- ✅ Kanban canônico (sistema impede status inventado)
+- ✅ Commit sem card → rejeitado automaticamente
+- ✅ Critério binário → passa ou falha, sem interpretação
+
+**Frase guia:**
+
+> **"Metacognição é habilidade humana. ENDFIRST é a decisão de não depender dela."**
 
 ---
 
