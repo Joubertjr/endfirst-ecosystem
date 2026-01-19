@@ -6,13 +6,13 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-10
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: 1.2
+version: 1.3
 created_at: 2026-01-10
 ---
 
 # CURSOR INSTRUCTIONS — Instruções Operacionais para Cursor
 
-**Versão:** 1.2  
+**Versão:** 1.3  
 **Data:** 19 de Janeiro de 2026 (atualizado)  
 **Tipo:** Operacional (Tipo B)  
 **Owner:** CEO (Joubert Jr)
@@ -297,9 +297,43 @@ Início  Commits  Fim
 | Versão | Data | Mudanças |
 |--------|------|----------|
 | 1.0 | 2026-01-10 | Versão inicial: regras de rastreabilidade Kanban |
+| 1.3 | 2026-01-19 | Adicionado Gate Z12 — Checklist de Auditoria Canônica |
 
 ---
 
 **Governado por:** `/METODO/PILAR_ENDFIRST.md`  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)
+
+
+---
+
+## ✅ Gate Z12 — Checklist de Auditoria Canônica (Obrigatório)
+
+Antes de declarar qualquer demanda como **DONE**, você **DEVE** executar este checklist de auditoria. Uma falha em qualquer um dos itens abaixo significa que o **Gate Z12 falhou (FAIL)**, e a declaração de DONE está **proibida**. A demanda deve ser corrigida e este checklist deve ser re-executado até que todos os itens passem (PASS).
+
+### Z12-A — Auditoria de Método (Estrutural)
+
+-   `[ ]` **Template Canônico:** A demanda segue rigorosamente a estrutura de 11 seções do Template Canônico?
+-   `[ ]` **Aprovação F-1:** Existe um artefato de aprovação F-1 claro e datado que precede o início da execução?
+-   `[ ]` **Respeito ao Escopo:** Nenhum arquivo foi criado, modificado ou excluído fora das diretrizes explícitas de `DO` e `DON'T` da demanda?
+-   `[ ]` **Violação de Frases Canônicas:** Nenhuma das frases canônicas do método foi violada durante a execução ou na documentação gerada?
+
+### Z12-B — Auditoria de Documentação (Qualidade)
+
+-   `[ ]` **Markdown Válido:** Todos os arquivos `.md` gerados ou modificados são sintaticamente válidos e renderizam corretamente, sem artefatos de lixo técnico (ex: números de linha, marcadores de conflito)?
+-   `[ ]` **Checklists Renderizáveis:** Todos os checklists usam a sintaxe correta (`- [ ]` ou `- [x]`) e são funcionais?
+-   `[ ]` **Existência de Evidências:** Todas as declarações de conclusão ou resultado são suportadas por evidências (arquivos, logs, screenshots) que estão devidamente referenciadas no corpo do texto?
+-   `[ ]` **Sem Vazamento de Artefatos:** Nenhum artefato técnico (ex: snippets de código de depuração, logs internos) vazou para documentos destinados ao usuário final ou à gestão?
+
+### Z12-C — Auditoria de Coerência (Lógica)
+
+-   `[ ]` **Execução vs. Planejamento:** Todas as ações executadas (commits, criação de arquivos, etc.) correspondem diretamente a um item que foi definido no planejamento (F-1)?
+-   `[ ]` **Planejamento vs. Execução:** Todos os itens definidos no planejamento foram de fato executados e concluídos?
+-   `[ ]` **DONE vs. PROOF:** Cada item declarado como "concluído" ou "entregue" possui uma prova (PROOF) clara e irrefutável de sua conclusão?
+
+---
+
+**Regra Final:** Somente após a verificação positiva de **TODOS** os itens acima, você pode proceder para o Gate Z11 e, subsequentemente, declarar a demanda como **DONE**.
+
+---

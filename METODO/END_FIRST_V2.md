@@ -6,7 +6,7 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-19
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: 1.1
+version: 1.2
 created_at: 2026-01-19
 ---
 
@@ -390,6 +390,46 @@ Demanda (Template Canônico) → F-1 (Planejamento) → Execução
 
 ---
 
+## 🔒 Gate Z12 — Auditoria Canônica Automática (Obrigatório)
+
+O **Gate Z12** é um gate estrutural e obrigatório que valida a conformidade da execução com o método END-FIRST. Sua função é garantir que a demanda foi executada corretamente, que a documentação é íntegra e que a coerência entre planejamento e resultado é total. Este gate é a última verificação sistêmica antes da entrega.
+
+> **Frase Canônica:** "Sem auditoria automática, DONE é apenas uma declaração. Com ela, DONE vira um fato."
+
+### Fluxo de Posição:
+
+```mermaid
+graph TD
+    A[DEMANDA] --> B{F-1 Aprovado}
+    B --> C[EXECUÇÃO]
+    C --> D{Gate Z12: Auditoria Canônica}
+    D -- PASS --> E{Gate Z11 + Suite}
+    D -- FAIL --> C
+    E --> F[DONE]
+```
+
+### Definição e Propósito:
+
+O Gate Z12 move a responsabilidade da verificação de conformidade de uma revisão humana, suscetível a erros e inconsistências, para um processo sistêmico e automatizável. Ele serve como uma barreira de qualidade que impede que problemas de método, documentação ou coerência cheguem à fase de entrega.
+
+### Regras de Execução:
+
+1.  **Obrigatoriedade:** O Gate Z12 deve ser executado para **toda e qualquer demanda** antes da declaração de DONE.
+2.  **Condição de Bloqueio:** Uma falha (FAIL) em qualquer um dos sub-gates do Z12 **proíbe a declaração de DONE**. A demanda deve ser corrigida e o gate re-executado até obter um PASS.
+3.  **Execução:** Inicialmente, a execução do Z12 será realizada de forma manual assistida por IA (Cursor/Claude), utilizando o checklist canônico definido em `CURSOR_INSTRUCTIONS.md`. A automação futura via scripts é o objetivo final, mas a formalização do gate no processo é o passo inicial e fundamental.
+
+### Sub-Gates:
+
+O Gate Z12 é composto por três auditorias específicas, que validam diferentes aspectos da entrega:
+
+-   **Z12-A (Auditoria de Método):** Garante que a estrutura fundamental do método foi seguida.
+-   **Z12-B (Auditoria de Documentação):** Garante a qualidade e integridade dos artefatos de documentação.
+-   **Z12-C (Auditoria de Coerência):** Garante que o que foi planejado, executado e entregue estão em perfeita sincronia.
+
+Ao institucionalizar o Gate Z12, o método END-FIRST fecha seu último loop estrutural, transformando a confiança em garantia e a revisão manual em validação sistêmica.
+
+---
+
 ## 📜 DECLARAÇÃO DO CEO
 
 Reconheço esta evolução como canônica e obrigatória para o método ENDFIRST.
@@ -401,11 +441,12 @@ END-FIRST v2 passa a governar:
 
 **Status:** CANÔNICO  
 **Aplicação:** Imediata para demandas complexas  
-**Versão:** 1.1
+**Versão:** 1.2
 
 **Histórico de mudanças:**
 - v1.0 (2026-01-19): Versão inicial (F-1 Planejamento Canônico)
 - v1.1 (2026-01-19): Adicionada seção Template Canônico de Demanda
+- v1.2 (2026-01-19): Adicionado Gate Z12 — Auditoria Canônica Automática
 
 ---
 
