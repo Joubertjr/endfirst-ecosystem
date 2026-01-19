@@ -1,0 +1,16 @@
+# Security: Never version authentication files
+.github-auth/
+
+# Environment variables
+.env
+.env.local
+
+# Secrets
+secrets/
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
