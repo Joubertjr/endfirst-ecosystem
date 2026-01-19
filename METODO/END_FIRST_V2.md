@@ -390,11 +390,11 @@ Demanda (Template Canônico) → F-1 (Planejamento) → Execução
 
 ---
 
-## 🔒 Gate Z12 — Auditoria Canônica Automática (Obrigatório)
+## 🔒 Gate Z12 — Auditoria Canônica (Obrigatório)
 
 O **Gate Z12** é um gate estrutural e obrigatório que valida a conformidade da execução com o método END-FIRST. Sua função é garantir que a demanda foi executada corretamente, que a documentação é íntegra e que a coerência entre planejamento e resultado é total. Este gate é a última verificação sistêmica antes da entrega.
 
-> **Frase Canônica:** "Sem auditoria automática, DONE é apenas uma declaração. Com ela, DONE vira um fato."
+> **Frase Canônica:** "Sem auditoria sistemática, DONE é apenas uma declaração. Com ela, DONE vira um fato."
 
 ### Fluxo de Posição:
 
@@ -416,7 +416,7 @@ O Gate Z12 move a responsabilidade da verificação de conformidade de uma revis
 
 1.  **Obrigatoriedade:** O Gate Z12 deve ser executado para **toda e qualquer demanda** antes da declaração de DONE.
 2.  **Condição de Bloqueio:** Uma falha (FAIL) em qualquer um dos sub-gates do Z12 **proíbe a declaração de DONE**. A demanda deve ser corrigida e o gate re-executado até obter um PASS.
-3.  **Execução:** Inicialmente, a execução do Z12 será realizada de forma manual assistida por IA (Cursor/Claude), utilizando o checklist canônico definido em `CURSOR_INSTRUCTIONS.md`. A automação futura via scripts é o objetivo final, mas a formalização do gate no processo é o passo inicial e fundamental.
+3.  **Execução:** O Gate Z12 é **manual até existir runner CI/script**. Inicialmente, a execução será realizada de forma manual assistida por IA (Cursor/Claude), utilizando o checklist canônico definido em `CURSOR_INSTRUCTIONS.md`. A automação futura via scripts é o objetivo final, mas a formalização do gate no processo é o passo inicial e fundamental.
 
 ### Sub-Gates:
 
@@ -446,7 +446,7 @@ END-FIRST v2 passa a governar:
 **Histórico de mudanças:**
 - v1.0 (2026-01-19): Versão inicial (F-1 Planejamento Canônico)
 - v1.1 (2026-01-19): Adicionada seção Template Canônico de Demanda
-- v1.2 (2026-01-19): Adicionado Gate Z12 — Auditoria Canônica Automática
+- v1.2 (2026-01-19): Adicionado Gate Z12 — Auditoria Canônica (manual até existir runner CI/script)
 
 ---
 
