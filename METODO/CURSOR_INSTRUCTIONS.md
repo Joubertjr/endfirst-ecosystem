@@ -298,6 +298,7 @@ Início  Commits  Fim
 |--------|------|----------|
 | 1.0 | 2026-01-10 | Versão inicial: regras de rastreabilidade Kanban |
 | 1.3 | 2026-01-19 | Adicionado Gate Z12 — Checklist de Auditoria Canônica |
+| 1.4 | 2026-01-19 | Adicionada automação de Z12-A e Z12-B (make z12) |
 
 ---
 
@@ -313,6 +314,22 @@ Início  Commits  Fim
 **Ordem Canônica:** Z0 (Estrutura) → Z11 (END-USER SMOKE) PASS → **Z12 (Auditoria Canônica)** → DONE
 
 O Gate Z12 é o **último gate antes de DONE**. Ele valida coerência entre planejamento, execução e evidências (incluindo Z11).
+
+### Automação Disponível
+
+Para executar as validações automatizadas de Z12-A e Z12-B, use:
+
+```bash
+make z12
+```
+
+Este comando executa:
+- `tools/z12_audit.sh` (Z12-A: Auditoria de Método)
+- `tools/z12_docs_check.sh` (Z12-B: Auditoria de Documentação)
+
+Se `make z12` retornar **PASS**, as validações automáticas estão OK. Z12-C (Coerência) ainda requer validação manual.
+
+### Checklist Manual (Z12-C e revisão final)
 
 Antes de declarar qualquer demanda como **DONE**, você **DEVE** executar este checklist de auditoria. Uma falha em qualquer um dos itens abaixo significa que o **Gate Z12 falhou (FAIL)**, e a declaração de DONE está **proibida**. A demanda deve ser corrigida e este checklist deve ser re-executado até que todos os itens passem (PASS).
 

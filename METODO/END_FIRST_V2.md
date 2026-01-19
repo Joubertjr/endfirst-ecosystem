@@ -416,7 +416,7 @@ O Gate Z12 move a responsabilidade da verificação de conformidade de uma revis
 
 1.  **Obrigatoriedade:** O Gate Z12 deve ser executado para **toda e qualquer demanda** antes da declaração de DONE.
 2.  **Condição de Bloqueio:** Uma falha (FAIL) em qualquer um dos sub-gates do Z12 **proíbe a declaração de DONE**. A demanda deve ser corrigida e o gate re-executado até obter um PASS.
-3.  **Execução:** O Gate Z12 é **manual até existir runner CI/script**. Inicialmente, a execução será realizada de forma manual assistida por IA (Cursor/Claude), utilizando o checklist canônico definido em `CURSOR_INSTRUCTIONS.md`. A automação futura via scripts é o objetivo final, mas a formalização do gate no processo é o passo inicial e fundamental.
+3.  **Execução:** O Gate Z12 possui **automação mínima implementada** via `make z12` (Z12-A e Z12-B automatizados). Z12-C (Coerência) ainda requer validação manual assistida por IA (Cursor/Claude), utilizando o checklist canônico definido em `CURSOR_INSTRUCTIONS.md`. Scripts disponíveis: `tools/z12_audit.sh` (método) e `tools/z12_docs_check.sh` (documentação).
 
 ### Sub-Gates:
 
