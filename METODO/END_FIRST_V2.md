@@ -402,10 +402,18 @@ O **Gate Z12** é um gate estrutural e obrigatório que valida a conformidade da
 graph TD
     A[DEMANDA] --> B{F-1 Aprovado}
     B --> C[EXECUÇÃO]
-    C --> D{Gate Z12: Auditoria Canônica}
-    D -- PASS --> E{Gate Z11 + Suite}
+    C --> D{Gate Z11: END-USER SMOKE}
+    D -- PASS --> E{Gate Z12: Auditoria Canônica}
+    E -- PASS --> F{Gate Z13: UI/UX Sistêmica}
+    F -- PASS --> G[DONE]
     D -- FAIL --> C
-    E --> F[DONE]
+    E -- FAIL --> C
+    F -- FAIL --> C
+```
+
+**Ordem canônica:**
+```
+Z0 (Estrutura) → Z11 (END-USER SMOKE) → Z12 (Auditoria Canônica) → Z13 (UI/UX Sistêmica) → DONE
 ```
 
 ### Definição e Propósito:
@@ -426,7 +434,53 @@ O Gate Z12 é composto por três auditorias específicas, que validam diferentes
 -   **Z12-B (Auditoria de Documentação):** Garante a qualidade e integridade dos artefatos de documentação.
 -   **Z12-C (Auditoria de Coerência):** Garante que o que foi planejado, executado e entregue estão em perfeita sincronia.
 
-Ao institucionalizar o Gate Z12, o método END-FIRST fecha seu último loop estrutural, transformando a confiança em garantia e a revisão manual em validação sistêmica.
+Ao institucionalizar o Gate Z12, o método END-FIRST fecha seu loop estrutural de auditoria de método, transformando a confiança em garantia e a revisão manual em validação sistêmica.
+
+---
+
+## 🔒 Gate Z13 — UI/UX Sistêmica (Obrigatório para demandas com UI)
+
+O **Gate Z13** é um gate de validação binário que garante que a interface do usuário final (UI) adere a um padrão mínimo de consistência, legibilidade e previsibilidade. Sua função é eliminar a subjetividade da avaliação de UI e transformá-la em um checklist de conformidade técnica, auditável e não-opinativo.
+
+> **Frase Canônica:** "Z13 não decide se a UI é boa. Decide se ela é aceitável como produto de engenharia."
+
+### Definição e Propósito:
+
+O Gate Z13 **não avalia se a UI é "bonita" ou "agradável"**. Ele valida se a UI segue as regras sistêmicas definidas, garantindo que o resultado final seja um produto de engenharia, não de arbitragem artística.
+
+### Regras de Execução:
+
+1.  **Aplicabilidade:** O Gate Z13 deve ser executado para **toda demanda que envolva UI/UX** antes da declaração de DONE.
+2.  **Condição de Bloqueio:** Uma falha (FAIL) em qualquer critério do Z13 **proíbe a declaração de DONE**. A demanda deve ser corrigida e o gate re-executado até obter um PASS.
+3.  **Execução:** O Gate Z13 é **manual** (checklist + screenshot). Executor preenche checklist de 9 critérios (Hierarquia, Consistência, Interação) e anexa screenshot como evidência.
+
+### 4 Regras Canônicas (Não Negociáveis):
+
+-   **R1:** Se tudo tem o mesmo peso visual, a UI falhou.
+-   **R2:** Conteúdo do usuário e metadados de auditoria não podem ocupar o mesmo plano visual.
+-   **R3:** Uma UI que exige explicação externa para ser usada é FAIL.
+-   **R4:** Inconsistência entre componentes idênticos é FAIL.
+
+### 9 Critérios de Aceitação (PASS/FAIL):
+
+**Eixo 1: Hierarquia e Layout (3 critérios)**
+-   H1: Hierarquia Tipográfica
+-   H2: Escala de Espaçamento
+-   H3: Alinhamento
+
+**Eixo 2: Consistência de Componentes (3 critérios)**
+-   C1: Consistência de Cor
+-   C2: Consistência de Borda
+-   C3: Consistência de Sombra
+
+**Eixo 3: Interação e Feedback (3 critérios)**
+-   I1: Feedback de Hover
+-   I2: Estado de Foco Visível
+-   I3: Sem Conteúdo de Debug
+
+**Documentação completa:** `/METODO/GATE_Z13_UI_UX_SISTEMICA.md`
+
+Ao institucionalizar o Gate Z13, o método END-FIRST fecha seu loop estrutural de UI/UX, transformando avaliação subjetiva em validação objetiva e removendo o CEO do loop de decisão de interface.
 
 ---
 
@@ -441,12 +495,13 @@ END-FIRST v2 passa a governar:
 
 **Status:** CANÔNICO  
 **Aplicação:** Imediata para demandas complexas  
-**Versão:** 1.2
+**Versão:** 1.4
 
 **Histórico de mudanças:**
 - v1.0 (2026-01-19): Versão inicial (F-1 Planejamento Canônico)
 - v1.1 (2026-01-19): Adicionada seção Template Canônico de Demanda
 - v1.2 (2026-01-19): Adicionado Gate Z12 — Auditoria Canônica (manual até existir runner CI/script)
+- v1.3 (2026-01-19): Adicionado Gate Z13 — UI/UX Sistêmica (elimina subjetividade de UI)
 
 ---
 

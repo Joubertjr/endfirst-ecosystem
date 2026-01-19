@@ -6,7 +6,7 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: Si mesmo (meta-aplicação)
-version: 1.3
+version: 1.4
 created_at: 2026-01-04
 ---
 
@@ -621,6 +621,29 @@ A revisão humana é valiosa para feedback qualitativo, estratégico e de valor,
 4.  **Escalabilidade:** Um método que depende de revisão humana para escalar inevitavelmente gera gargalos e inconsistências. Um método que se auto-audita escala com a mesma velocidade e qualidade, independentemente do número de executores.
 
 Este pilar é a manifestação prática da busca do END-FIRST por um sistema que não apenas guia a execução, mas também garante sua própria integridade, transformando "DONE" em um estado verificável e não apenas uma declaração de intenção.
+
+---
+
+## 🎨 Princípio 6: Legibilidade é Requisito Sistêmico, Não Estético
+
+> **Frase Canônica:** "Z13 não decide se a UI é boa. Decide se ela é aceitável como produto de engenharia."
+
+### Definição:
+
+O método END-FIRST trata UI/UX não como "design", mas como **engenharia de interface**. A avaliação de uma interface não deve ser subjetiva ("bonita", "agradável"), mas objetiva ("conforme", "consistente", "previsível").
+
+O **Gate Z13 (UI/UX Sistêmica)** transforma a avaliação de UI em um checklist binário de conformidade técnica, eliminando discussões estéticas e removendo o CEO do loop de decisão de interface.
+
+### Implicações Práticas:
+
+1.  **Hierarquia Visual é Obrigatória:** Se tudo tem o mesmo peso visual, a UI falhou. A ausência de hierarquia é um defeito, não um estilo.
+2.  **Consistência é Contrato:** Um botão deve ser sempre o mesmo botão. Inconsistência entre componentes idênticos é FAIL.
+3.  **Autoexplicabilidade é Requisito:** Uma UI que exige explicação externa para ser usada é FAIL. A interface deve ser autoexplicativa para as operações básicas.
+4.  **Separação de Planos:** Conteúdo do usuário e metadados de auditoria não podem ocupar o mesmo plano visual. Informações para o desenvolvedor (ex: IDs, logs de debug) não devem poluir a interface do usuário final.
+
+Este pilar é a manifestação prática da busca do END-FIRST por transformar subjetividade em objetividade, removendo "gosto pessoal" da equação e substituindo por "conformidade com regras sistêmicas".
+
+**Documentação completa:** `/METODO/GATE_Z13_UI_UX_SISTEMICA.md`
 
 ---
 
