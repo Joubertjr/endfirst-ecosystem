@@ -10,7 +10,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 2.0  
+**Versão:** 2.1  
 **Data:** 19 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
@@ -27,6 +27,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.8 (2026-01-08): OD-011 adicionada (Entendimento sem mudança comportamental é fuga)
 - v1.9 (2026-01-10): OD-011 estendida (Metacognição no caminho crítico)
 - v2.0 (2026-01-19): OD-012 adicionada (Planejamento é artefato de primeira classe - END-FIRST v2)
+- v2.1 (2026-01-19): OD-013 adicionada (Template de Demanda é Obrigatório)
 
 ---
 
@@ -2105,7 +2106,94 @@ Não é opinião. É evidência empírica.
 
 ---
 
-**Versão:** 2.0  
+---
+
+### OD-013 — Template de Demanda é Obrigatório
+
+**ID:** OD-013  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-19
+
+---
+
+#### 🧠 DECISÃO
+
+Toda demanda deve seguir o Template Canônico de Demanda com 11 seções obrigatórias.
+
+Demandas fora do template são FAIL estrutural.
+
+---
+
+#### 📝 RACIONAL
+
+Método END-FIRST v2 permite demandas sem estrutura padronizada, gerando:
+- Revisão manual recorrente
+- Regras implícitas
+- Frases canônicas perdidas
+- Overhead cognitivo
+- Ambiguidade entre bug/UX/produto
+
+**Template Canônico** corrige essa falha de design.
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**Template Canônico de Demanda:**
+- Estrutura obrigatória de 11 seções
+- Frases canônicas explícitas por tipo
+- Regra de UX canônica (scroll interno proibido)
+- Classificação estrutural (Bug/UX/Produto/Método)
+- Documento oficial: `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+**PROIBIÇÕES (FAIL estrutural):**
+- ❌ Demandas sem estrutura do template
+- ❌ Seções faltando
+- ❌ Frases canônicas implícitas
+- ❌ "Cada demanda é diferente"
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+- Toda demanda tem END explícito
+- Toda demanda tem critérios binários
+- Toda demanda tem bloqueios estruturais
+- Toda demanda tem frases canônicas
+- Revisão manual é eliminada por design
+- Manus/Cursor rejeitam demandas fora do template
+
+---
+
+#### 📌 FRASE CANÔNICA
+
+> "Se uma demanda precisa ser explicada, ela está errada. Se precisa ser revisada várias vezes, o método falhou."
+
+---
+
+#### 📜 EVIDÊNCIA
+
+Proposta baseada em uso real do método (projeto CoverageSummarizer) com múltiplos ciclos de revisão documentados.
+
+---
+
+#### 🔗 REFERÊNCIA
+
+**Documento canônico:** `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Esta decisão elimina ambiguidade na criação de demandas. Template Canônico é bloqueio estrutural, não disciplina humana. Demandas fora do template são FAIL por design."
+
+**Status:** CANÔNICA  
+**Aplicação:** Imediata para todas as demandas
+
+---
+
+**Versão:** 2.1  
 **Criado:** 8 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  

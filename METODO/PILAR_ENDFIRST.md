@@ -6,7 +6,7 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: Si mesmo (meta-aplicação)
-version: 1.1
+version: 1.2
 created_at: 2026-01-04
 ---
 
@@ -603,6 +603,45 @@ Pilar ENDFIRST → DEMANDA → F-1 (Planejamento) → EXECUÇÃO
 
 ---
 
+## 📝 Template Canônico de Demanda
+
+### O que é o Template Canônico
+
+O **Template Canônico de Demanda** é a estrutura obrigatória que toda demanda deve seguir no método END-FIRST v2.
+
+**Documento canônico:** `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+### Estrutura Obrigatória (11 seções)
+
+Toda demanda DEVE conter:
+
+1. Cabeçalho canônico
+2. 🔒 END (Resultado Observável)
+3. 🚫 Regras Canônicas
+4. ✅ Critérios de Aceitação
+5. 🧠 Problemas Observados
+6. 🚫 DO / DON'T
+7. 🧱 Bloqueios Estruturais
+8. 📋 TODO Canônico
+9. ❌ Fora de Escopo
+10. 📌 Status
+11. 🧭 Regra Final
+
+**Regra:**
+> Demandas fora do template são FAIL estrutural.
+
+### Regra de UX Canônica (GLOBAL)
+
+> **Scroll interno é PROIBIDO.**
+
+- Nenhum componente pode esconder conteúdo
+- Todo bloco deve expandir verticalmente
+- Conteúdo invisível ou cortado é BUG estrutural
+
+**Referência completa:** `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+---
+
 ## 📜 Declaração Final
 
 **Este documento é a fonte soberana de verdade sobre o Pilar ENDFIRST.**
@@ -613,7 +652,7 @@ Se este documento não responde, a resposta ainda não existe oficialmente.
 
 ---
 
-**Versão:** 1.1  
+**Versão:** 1.2  
 **Data:** 19 de Janeiro de 2026 (atualizado)  
 **Path Canônico:** `/METODO/PILAR_ENDFIRST.md`  
 **Status:** Canônico (Fechado)
@@ -621,3 +660,4 @@ Se este documento não responde, a resposta ainda não existe oficialmente.
 **Histórico de mudanças:**
 - v1.0 (2026-01-04): Versão inicial
 - v1.1 (2026-01-19): Adicionada referência a END-FIRST v2 (F-1 Planejamento Canônico)
+- v1.2 (2026-01-19): Adicionada referência ao Template Canônico de Demanda

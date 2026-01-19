@@ -370,3 +370,19 @@ Os hashes dos commits de END-FIRST v2 foram alterados devido a um hotfix de segu
 - Conteúdo dos documentos permanece idêntico
 - Apenas hashes de commit foram alterados
 - Governança e validação do END-FIRST v2 permanecem válidas
+
+
+---
+
+## 📋 ATUALIZAÇÃO: DEMANDA_MANUS-008 (Template Canônico de Demanda)
+
+**Data:** 19 de Janeiro de 2026  
+**Executado por:** Manus (Agent)  
+**Aprovado por:** CEO (Joubert Jr)  
+**Última atualização:** DEMANDA_MANUS-008 executada - Template Canônico de Demanda implementado - 5 documentos adicionados/atualizados (TEMPLATE_DEMANDA_CANONICA, PILAR_ENDFIRST v1.2, END_FIRST_V2 v1.1, CURSOR_INSTRUCTIONS v1.2, ONTOLOGY_DECISIONS v2.1) - 53 documentos totais (19 canônicos + 24 operacionais + 10 exemplos)
+
+| TEMPLATE_DEMANDA_CANONICA | canonical | approved | CEO | 2026-01-19 | Template obrigatório de demanda com 11 seções - elimina revisão manual e ambiguidade entre bug/UX/produto | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| PILAR_ENDFIRST_v1.2 | canonical | approved | CEO | 2026-01-19 | Referência ao Template Canônico adicionada - estrutura de 11 seções obrigatórias + regra de UX canônica (scroll proibido) | Si mesmo (meta-aplicação) | [PENDENTE] |
+| END_FIRST_V2_v1.1 | canonical | approved | CEO | 2026-01-19 | Seção Template Canônico adicionada - fluxo completo: Demanda (Template) → F-1 → Execução | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| CURSOR_INSTRUCTIONS_v1.2 | operational | approved | CEO | 2026-01-19 | Bloqueio de Template adicionado - Cursor rejeita demandas fora do template + regra de UX canônica (scroll proibido) | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| ONTOLOGY_DECISIONS_v2.1_OD-013 | canonical | approved | CEO | 2026-01-19 | Decisão ontológica OD-013 adicionada: Template de Demanda é Obrigatório - demandas fora do template são FAIL estrutural | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |

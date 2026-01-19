@@ -6,7 +6,7 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-19
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: 1.0
+version: 1.1
 created_at: 2026-01-19
 ---
 
@@ -356,6 +356,40 @@ Esta evolução nasce de **uso real do método**, com múltiplos ciclos de retra
 
 ---
 
+## 📝 TEMPLATE CANÔNICO DE DEMANDA
+
+### Relação entre F-1 e Template Canônico
+
+**Template Canônico de Demanda:**
+- Define estrutura obrigatória de toda demanda
+- 11 seções obrigatórias
+- Frases canônicas explícitas
+- Regra de UX canônica (scroll interno proibido)
+
+**F-1 (Planejamento Canônico):**
+- Transforma demanda (já no template) em plano executável
+- Obrigatório para demandas complexas
+- Opcional para demandas simples
+
+**Fluxo completo:**
+```
+Demanda (Template Canônico) → F-1 (Planejamento) → Execução
+```
+
+### Bloqueio Estrutural
+
+**Regra:**
+> Demandas fora do template são FAIL estrutural.
+
+**Bloqueios:**
+- 🔒 Manus não aceita demandas fora do template
+- 🔒 Cursor não executa demandas fora do template
+- 🔒 CEO não revisa demandas que não sigam o template
+
+**Documento canônico:** `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+---
+
 ## 📜 DECLARAÇÃO DO CEO
 
 Reconheço esta evolução como canônica e obrigatória para o método ENDFIRST.
@@ -367,7 +401,11 @@ END-FIRST v2 passa a governar:
 
 **Status:** CANÔNICO  
 **Aplicação:** Imediata para demandas complexas  
-**Versão:** 1.0
+**Versão:** 1.1
+
+**Histórico de mudanças:**
+- v1.0 (2026-01-19): Versão inicial (F-1 Planejamento Canônico)
+- v1.1 (2026-01-19): Adicionada seção Template Canônico de Demanda
 
 ---
 

@@ -6,13 +6,13 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-10
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: 1.1
+version: 1.2
 created_at: 2026-01-10
 ---
 
 # CURSOR INSTRUCTIONS — Instruções Operacionais para Cursor
 
-**Versão:** 1.1  
+**Versão:** 1.2  
 **Data:** 19 de Janeiro de 2026 (atualizado)  
 **Tipo:** Operacional (Tipo B)  
 **Owner:** CEO (Joubert Jr)
@@ -25,6 +25,60 @@ Este documento contém **instruções operacionais diretas** para o Cursor (exec
 
 **Regra:**
 > Cursor DEVE ler este documento antes de iniciar qualquer incremento.
+
+---
+
+## 🔒 BLOQUEIO DE TEMPLATE (END-FIRST v2)
+
+### Regra absoluta
+
+> **Demandas fora do template canônico são FAIL estrutural.**
+
+### O que é o Template Canônico
+
+**Template Canônico de Demanda** é a estrutura obrigatória de 11 seções que toda demanda deve seguir.
+
+**Documento oficial:** `/METODO/TEMPLATE_DEMANDA_CANONICA.md`
+
+### Estrutura Obrigatória (11 seções)
+
+Toda demanda DEVE conter:
+
+1. Cabeçalho canônico (YAML frontmatter)
+2. 🔒 END (Resultado Observável)
+3. 🚫 Regras Canônicas
+4. ✅ Critérios de Aceitação (PASS / FAIL)
+5. 🧠 Problemas Observados
+6. 🚫 DO / DON'T
+7. 🧱 Bloqueios Estruturais
+8. 📋 TODO Canônico
+9. ❌ Fora de Escopo
+10. 📌 Status
+11. 🧭 Regra Final
+
+### Como verificar
+
+**Antes de iniciar execução:**
+
+1. **Ler a demanda completa**
+2. **Verificar presença das 11 seções obrigatórias**
+3. **Se alguma seção estiver faltando:** **BLOQUEAR execução**
+
+### Frase de bloqueio
+
+Se demanda não segue o template:
+
+> "Esta demanda não segue o template canônico. Demandas fora do template são FAIL estrutural. Por favor, reescreva a demanda usando `/METODO/TEMPLATE_DEMANDA_CANONICA.md`."
+
+### Regra de UX Canônica (GLOBAL)
+
+> **Scroll interno é PROIBIDO.**
+
+- Nenhum componente pode esconder conteúdo
+- Todo bloco deve expandir verticalmente
+- Conteúdo invisível ou cortado é BUG estrutural
+
+**Esta regra se aplica a TODAS as demandas.**
 
 ---
 
