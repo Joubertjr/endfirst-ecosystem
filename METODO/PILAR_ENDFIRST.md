@@ -6,7 +6,7 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-07
 governed_by: Si mesmo (meta-aplicação)
-version: 1.0
+version: 1.1
 created_at: 2026-01-04
 ---
 
@@ -560,6 +560,49 @@ Isso significa que:
 
 ---
 
+## 🔄 END-FIRST v2 — Evolução do Método
+
+### O que é END-FIRST v2
+
+END-FIRST v2 é a **evolução canônica** do método que introduz **F-1 (Planejamento Canônico)** como estágio obrigatório e bloqueante antes de execução de demandas complexas.
+
+**Documento canônico:** `/METODO/END_FIRST_V2.md`
+
+### Relação entre Pilar ENDFIRST e END-FIRST v2
+
+**Pilar ENDFIRST:**
+- Transforma intenção difusa → resultado explícito (ENDFIRST_SPEC)
+- Ritual de 6 perguntas + 11 bloqueios
+- Acontece **antes** de qualquer demanda
+
+**END-FIRST v2 (F-1):**
+- Transforma demanda → plano executável
+- Bloqueio antes de execução
+- Acontece **depois** da demanda, **antes** da execução
+
+**Fluxo completo:**
+```
+Pilar ENDFIRST → DEMANDA → F-1 (Planejamento) → EXECUÇÃO
+```
+
+### Quando usar F-1
+
+**F-1 é obrigatório para:**
+- ✅ Projetos complexos (múltiplos arquivos, múltiplas etapas)
+- ✅ Mudanças estruturais no método
+- ✅ Implementação de novos produtos
+
+**F-1 é opcional para:**
+- ❌ Demandas simples (1 arquivo, 1 etapa, escopo claro)
+- ❌ Correções triviais
+
+**Regra:**
+> Se há dúvida se F-1 é necessário, F-1 é necessário.
+
+**Referência completa:** `/METODO/END_FIRST_V2.md`
+
+---
+
 ## 📜 Declaração Final
 
 **Este documento é a fonte soberana de verdade sobre o Pilar ENDFIRST.**
@@ -570,7 +613,11 @@ Se este documento não responde, a resposta ainda não existe oficialmente.
 
 ---
 
-**Versão:** 1.0  
-**Data:** 4 de Janeiro de 2026  
+**Versão:** 1.1  
+**Data:** 19 de Janeiro de 2026 (atualizado)  
 **Path Canônico:** `/METODO/PILAR_ENDFIRST.md`  
 **Status:** Canônico (Fechado)
+
+**Histórico de mudanças:**
+- v1.0 (2026-01-04): Versão inicial
+- v1.1 (2026-01-19): Adicionada referência a END-FIRST v2 (F-1 Planejamento Canônico)

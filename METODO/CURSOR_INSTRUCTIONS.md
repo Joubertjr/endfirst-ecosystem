@@ -6,14 +6,14 @@ status: approved
 approved_by: CEO
 approved_at: 2026-01-10
 governed_by: /METODO/PILAR_ENDFIRST.md
-version: 1.0
+version: 1.1
 created_at: 2026-01-10
 ---
 
 # CURSOR INSTRUCTIONS — Instruções Operacionais para Cursor
 
-**Versão:** 1.0  
-**Data:** 10 de Janeiro de 2026  
+**Versão:** 1.1  
+**Data:** 19 de Janeiro de 2026 (atualizado)  
 **Tipo:** Operacional (Tipo B)  
 **Owner:** CEO (Joubert Jr)
 
@@ -25,6 +25,79 @@ Este documento contém **instruções operacionais diretas** para o Cursor (exec
 
 **Regra:**
 > Cursor DEVE ler este documento antes de iniciar qualquer incremento.
+
+---
+
+## 🔒 BLOQUEIO F-1 (END-FIRST v2)
+
+### Regra absoluta
+
+> **Sem F-1 aprovada, não executar demandas complexas.**
+
+### O que é F-1
+
+**F-1 (Planejamento Canônico)** é o estágio obrigatório de planejamento que deve ser concluído e aprovado antes de qualquer execução.
+
+**Documento canônico:** `/METODO/END_FIRST_V2.md`
+
+### Quando F-1 é obrigatório
+
+**F-1 é obrigatório para:**
+- ✅ Projetos complexos (múltiplos arquivos, múltiplas etapas)
+- ✅ Mudanças estruturais no método
+- ✅ Implementação de novos produtos
+- ✅ Demandas com dependências entre etapas
+
+**F-1 é opcional para:**
+- ❌ Demandas simples (1 arquivo, 1 etapa, escopo claro)
+- ❌ Correções triviais (typo, formatação)
+
+**Regra de decisão:**
+> Se há dúvida se F-1 é necessário, F-1 é necessário.
+
+### Como verificar F-1
+
+**Antes de iniciar execução:**
+
+1. **Ler a demanda completa**
+2. **Avaliar complexidade:**
+   - Múltiplos arquivos? → F-1 obrigatório
+   - Múltiplas etapas? → F-1 obrigatório
+   - Dependências entre etapas? → F-1 obrigatório
+   - Mudança estrutural? → F-1 obrigatório
+3. **Procurar documento de planejamento:**
+   - Arquivo com nome `PLANEJAMENTO_*` ou `F1_*`
+   - Seção "F-1" ou "Planejamento Canônico" na demanda
+4. **Verificar aprovação:**
+   - Procurar declaração explícita: **"F-1 aprovada"**
+   - Se não houver: **BLOQUEAR execução**
+
+### Frase de bloqueio
+
+Se F-1 é necessário mas não existe ou não foi aprovado:
+
+> "Esta demanda requer F-1 (Planejamento Canônico). Sem F-1 aprovada, não posso executar. Por favor, crie o documento de planejamento com END, TODO canônico, escopo DO/DON'T, ordem de execução e critérios de FAIL."
+
+### O que F-1 deve conter
+
+**Mínimo obrigatório:**
+- ✅ END (resultado esperado da demanda)
+- ✅ TODO canônico (lista de etapas)
+- ✅ Escopo DO / DON'T explícito
+- ✅ Ordem de execução explícita
+- ✅ Critérios de FAIL explícitos
+- ✅ Declaração: "F-1 aprovada"
+
+### PROIBIÇÕES durante F-1
+
+Se você está criando F-1 (planejamento), é **estritamente proibido:**
+
+- ❌ Executar comandos
+- ❌ Criar código
+- ❌ Criar automações
+- ❌ "Validar rapidamente"
+
+**F-1 é planejamento, não execução.**
 
 ---
 

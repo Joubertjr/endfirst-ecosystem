@@ -88,15 +88,15 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ## 📋 ESTATÍSTICAS
 
-**Total de documentos no repositório:** 36  
-**Aprovados:** 36 (100%)  
+**Total de documentos no repositório:** 52  
+**Aprovados:** 52 (100%)  
 **Pendentes:** 0 (0%)  
 **Obsoletos:** 0 (0%)
 
 **Por tipo:**
-- **Canônicos (Tipo A):** 12 aprovados, 0 pendentes (OD-010 adicionada)
-- **Operacionais (Tipo B):** 20 aprovados, 0 pendentes (TEMPLATE_RESULT, DEMANDA-001_RESULT)
-- **Exemplos (Tipo C):** 5 aprovados, 0 pendentes
+- **Canônicos (Tipo A):** 18 aprovados, 0 pendentes (END-FIRST v2, PILAR v1.1, ONTOLOGY_DECISIONS v2.0 com OD-012)
+- **Operacionais (Tipo B):** 24 aprovados, 0 pendentes (CURSOR_INSTRUCTIONS v1.1, DEMANDA_MANUS-007_ANALISE_IMPACTO)
+- **Exemplos (Tipo C):** 10 aprovados, 0 pendentes (DEMANDA_MANUS-005, DEMANDA_MANUS-006, DEMANDA_MANUS-007)
 
 ---
 
@@ -334,8 +334,14 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 
 ---
 
-**Versão:** 1.2  
-**Data:** 10 de Janeiro de 2026  
+**Versão:** 1.3  
+**Data:** 19 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
-**Última atualização:** DEMANDA_MANUS-003 executada - 5 documentos adicionados (KANBAN_CANONICO, CONTRATO_ESTADOS, INSTRUMENTACAO_VISIBILIDADE, EXECUTION_MODEL v1.1, DEMANDA_MANUS-003) - 45 documentos totais (derivados da lista do log: 15 canônicos + 21 operacionais + 9 exemplos)
+**Última atualização:** DEMANDA_MANUS-007 executada - END-FIRST v2 implementado - 6 documentos adicionados/atualizados (END_FIRST_V2, PILAR_ENDFIRST v1.1, ONTOLOGY_DECISIONS v2.0, CURSOR_INSTRUCTIONS v1.1, DEMANDA_MANUS-007, DEMANDA_MANUS-007_ANALISE_IMPACTO) - 52 documentos totais (18 canônicos + 24 operacionais + 10 exemplos)
+| END_FIRST_V2 | canonical | approved | CEO | 2026-01-19 | Evolução canônica do método - F-1 (Planejamento Canônico BLOQUEANTE) elimina retrabalho e interpretação durante execução | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| PILAR_ENDFIRST_v1.1 | canonical | approved | CEO | 2026-01-19 | Referência a END-FIRST v2 adicionada - fluxo completo: Pilar → DEMANDA → F-1 → EXECUÇÃO | Si mesmo (meta-aplicação) | [PENDENTE] |
+| ONTOLOGY_DECISIONS_v2.0_OD-012 | canonical | approved | CEO | 2026-01-19 | Decisão ontológica OD-012 adicionada: Planejamento é artefato de primeira classe - F-1 obrigatório para demandas complexas | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| CURSOR_INSTRUCTIONS_v1.1 | operational | approved | CEO | 2026-01-19 | Bloqueio F-1 adicionado - Cursor não executa demandas complexas sem planejamento aprovado | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| DEMANDA_MANUS-007 | example | approved | CEO | 2026-01-19 | Demanda formal para implementação de END-FIRST v2 - evidência empírica de retrabalho sistemático | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |
+| DEMANDA_MANUS-007_ANALISE_IMPACTO | operational | approved | CEO | 2026-01-19 | Análise de impacto de END-FIRST v2 - conformidade total com ODs existentes, riscos baixos | /METODO/PILAR_ENDFIRST.md | [PENDENTE] |

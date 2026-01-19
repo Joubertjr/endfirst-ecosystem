@@ -10,8 +10,8 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 
 # Ontology Decisions
 
-**Versão:** 1.9  
-**Data:** 10 de Janeiro de 2026  
+**Versão:** 2.0  
+**Data:** 19 de Janeiro de 2026  
 **Tipo:** Canônico (Ontologia Operacional)  
 **Status:** Aprovado pelo CEO
 
@@ -26,6 +26,7 @@ governed_by: /METODO/PILAR_ENDFIRST.md
 - v1.7 (2026-01-08): OD-010 adicionada (RESULTADO é entidade de primeira classe - backlog é derivado)
 - v1.8 (2026-01-08): OD-011 adicionada (Entendimento sem mudança comportamental é fuga)
 - v1.9 (2026-01-10): OD-011 estendida (Metacognição no caminho crítico)
+- v2.0 (2026-01-19): OD-012 adicionada (Planejamento é artefato de primeira classe - END-FIRST v2)
 
 ---
 
@@ -2014,7 +2015,97 @@ C governa A  ← CICLO (proibido)
 
 ---
 
-**Versão:** 1.0  
+### OD-012 — Planejamento é artefato de primeira classe
+
+**ID:** OD-012  
+**Status:** APROVADA  
+**Aprovado por:** CEO (Joubert Jr)  
+**Data:** 2026-01-19
+
+---
+
+#### 🧠 DECISÃO
+
+Planejamento é artefato de primeira classe com END, DONE WHEN e critérios de FAIL explícitos.
+
+Execução sem planejamento aprovado (F-1) é bloqueada estruturalmente para demandas complexas.
+
+---
+
+#### 📝 RACIONAL
+
+Método END-FIRST atual permite execução sem planejamento aprovado, gerando:
+- Interpretação durante execução
+- Endurecimento tardio de regras
+- Retrabalho sistemático
+- Overhead cognitivo
+
+**F-1 (Planejamento Canônico BLOQUEANTE)** corrige essa falha de design.
+
+---
+
+#### 🔍 DEFINIÇÕES
+
+**F-1 (Planejamento Canônico)**
+- Estágio obrigatório antes de qualquer execução (demandas complexas)
+- Tem END explícito
+- Tem DONE WHEN verificável
+- Tem critérios de FAIL automáticos
+- Bloqueia execução até aprovação
+
+**PROIBIÇÕES (FAIL automático):**
+- ❌ Executar comandos durante F-1
+- ❌ Criar código durante F-1
+- ❌ Criar automações durante F-1
+- ❌ "Validar rapidamente"
+- ❌ Interpretar regras durante execução
+
+---
+
+#### ✅ IMPLICAÇÕES
+
+- Planejamento tem END próprio
+- Executor (Cursor) não interpreta, apenas executa plano aprovado
+- Arquitetura e governança são decididas antes de F-1
+- Retrabalho de validação é eliminado por design
+- F-1 é obrigatório para projetos complexos
+- F-1 é opcional para demandas simples
+
+---
+
+#### 📌 FRASE CANÔNICA
+
+> "Planejamento é artefato de primeira classe. Executor apenas executa."
+
+---
+
+#### 📜 EVIDÊNCIA
+
+Proposta baseada em uso real do método com múltiplos ciclos de retrabalho documentados durante:
+- Endurecimento tardio de regras
+- Redefinição de escopo
+- Validações repetidas
+
+Não é opinião. É evidência empírica.
+
+---
+
+#### 🔗 REFERÊNCIA
+
+**Documento canônico:** `/METODO/END_FIRST_V2.md`
+
+---
+
+#### 📜 DECLARAÇÃO DO CEO
+
+> "Esta decisão cristaliza a evolução do método END-FIRST para v2. Planejamento deixa de ser processo informal e passa a ser artefato governado com END próprio. F-1 é bloqueio estrutural, não disciplina humana."
+
+**Status:** CANÔNICA  
+**Aplicação:** Imediata para demandas complexas
+
+---
+
+**Versão:** 2.0  
 **Criado:** 8 de Janeiro de 2026  
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
