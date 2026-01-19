@@ -339,9 +339,34 @@ Este documento registra **todas as aprovações** de documentos no repositório 
 **Criado por:** Manus (Agent)  
 **Aprovado por:** CEO (Joubert Jr)  
 **Última atualização:** DEMANDA_MANUS-007 executada - END-FIRST v2 implementado - 6 documentos adicionados/atualizados (END_FIRST_V2, PILAR_ENDFIRST v1.1, ONTOLOGY_DECISIONS v2.0, CURSOR_INSTRUCTIONS v1.1, DEMANDA_MANUS-007, DEMANDA_MANUS-007_ANALISE_IMPACTO) - 52 documentos totais (18 canônicos + 24 operacionais + 10 exemplos)
-| END_FIRST_V2 | canonical | approved | CEO | 2026-01-19 | Evolução canônica do método - F-1 (Planejamento Canônico BLOQUEANTE) elimina retrabalho e interpretação durante execução | /METODO/PILAR_ENDFIRST.md | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
-| PILAR_ENDFIRST_v1.1 | canonical | approved | CEO | 2026-01-19 | Referência a END-FIRST v2 adicionada - fluxo completo: Pilar → DEMANDA → F-1 → EXECUÇÃO | Si mesmo (meta-aplicação) | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
-| ONTOLOGY_DECISIONS_v2.0_OD-012 | canonical | approved | CEO | 2026-01-19 | Decisão ontológica OD-012 adicionada: Planejamento é artefato de primeira classe - F-1 obrigatório para demandas complexas | /METODO/PILAR_ENDFIRST.md | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
-| CURSOR_INSTRUCTIONS_v1.1 | operational | approved | CEO | 2026-01-19 | Bloqueio F-1 adicionado - Cursor não executa demandas complexas sem planejamento aprovado | /METODO/PILAR_ENDFIRST.md | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
-| DEMANDA_MANUS-007 | example | approved | CEO | 2026-01-19 | Demanda formal para implementação de END-FIRST v2 - evidência empírica de retrabalho sistemático | /METODO/PILAR_ENDFIRST.md | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
-| DEMANDA_MANUS-007_ANALISE_IMPACTO | operational | approved | CEO | 2026-01-19 | Análise de impacto de END-FIRST v2 - conformidade total com ODs existentes, riscos baixos | /METODO/PILAR_ENDFIRST.md | [e12408f](https://github.com/Joubertjr/endfirst-ecosystem/commit/e12408f) |
+| END_FIRST_V2 | canonical | approved | CEO | 2026-01-19 | Evolução canônica do método - F-1 (Planejamento Canônico BLOQUEANTE) elimina retrabalho e interpretação durante execução | /METODO/PILAR_ENDFIRST.md | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+| PILAR_ENDFIRST_v1.1 | canonical | approved | CEO | 2026-01-19 | Referência a END-FIRST v2 adicionada - fluxo completo: Pilar → DEMANDA → F-1 → EXECUÇÃO | Si mesmo (meta-aplicação) | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+| ONTOLOGY_DECISIONS_v2.0_OD-012 | canonical | approved | CEO | 2026-01-19 | Decisão ontológica OD-012 adicionada: Planejamento é artefato de primeira classe - F-1 obrigatório para demandas complexas | /METODO/PILAR_ENDFIRST.md | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+| CURSOR_INSTRUCTIONS_v1.1 | operational | approved | CEO | 2026-01-19 | Bloqueio F-1 adicionado - Cursor não executa demandas complexas sem planejamento aprovado | /METODO/PILAR_ENDFIRST.md | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+| DEMANDA_MANUS-007 | example | approved | CEO | 2026-01-19 | Demanda formal para implementação de END-FIRST v2 - evidência empírica de retrabalho sistemático | /METODO/PILAR_ENDFIRST.md | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+| DEMANDA_MANUS-007_ANALISE_IMPACTO | operational | approved | CEO | 2026-01-19 | Análise de impacto de END-FIRST v2 - conformidade total com ODs existentes, riscos baixos | /METODO/PILAR_ENDFIRST.md | [658719d](https://github.com/Joubertjr/endfirst-ecosystem/commit/658719d) |
+
+---
+
+## ⚠️ NOTA SOBRE HASHES DE COMMIT
+
+**Hotfix de segurança (2026-01-19):**
+
+Os hashes dos commits de END-FIRST v2 foram alterados devido a um hotfix de segurança que executou rewrite completo do histórico Git para remover token de autenticação exposto.
+
+**Mapeamento de hashes:**
+- `e12408f` (original) → `658719d` (pós-purge)
+- `14aace2` (original) → `a4599f0` (pós-purge)
+
+**Ferramenta utilizada:** `git filter-repo --path .github-auth --invert-paths --force`
+
+**Evidências:**
+- Token revogado pelo CEO
+- Histórico purgado (`.github-auth/` removido completamente)
+- `.gitignore` criado para bloquear futuros versionamentos de secrets
+- Commit de segurança: [d21e6ef](https://github.com/Joubertjr/endfirst-ecosystem/commit/d21e6ef)
+
+**Impacto:**
+- Conteúdo dos documentos permanece idêntico
+- Apenas hashes de commit foram alterados
+- Governança e validação do END-FIRST v2 permanecem válidas
