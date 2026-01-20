@@ -1,8 +1,8 @@
-# DEMANDA-METODO-005 — ROBUSTEZ DE EXECUÇÃO LONGA, STREAMING E RESULTADO DURÁVEL
+# DEMANDA-METODO-005 — APLICAÇÃO OBRIGATÓRIA DE QUALIDADE EM EXECUÇÃO LONGA E STREAMING
 
-**Tipo:** Método / Qualidade de Produto  
+**Tipo:** Método / Governança de Qualidade  
 **Método:** END-FIRST v2  
-**Status:** BACKLOG (NÃO EXECUTAR)  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
 **Governança:** Método (impacta gates e provas aceitas)  
 **Motivação:** Falha real em produção detectada após PASS em gates existentes  
 
@@ -18,13 +18,27 @@ Para qualquer demanda de produto que envolva:
 - persistência de resultado
 - retomada ou consulta posterior
 
-o método garante que:
-- ❌ Nenhuma demanda PASSA sem prova explícita de que:
-  - o progresso é monotônico (não regride)
-  - a execução sobrevive à queda de conexão do cliente
-  - o resultado não se perde mesmo se o stream quebrar
-- ✅ Um revisor consegue dizer PASS/FAIL sem "achar que está ok"
-- ✅ Um bug como o do log não chega ao usuário validado como "qualidade suficiente"
+fica **obrigatório e inequívoco** que:
+
+1. **A qualidade NÃO é opcional**, mesmo quando:
+   - a lógica parece simples
+   - a implementação é incremental
+   - existem testes antigos "verdes"
+
+2. **Nenhuma demanda dessa classe pode ser declarada PASS se:**
+   - não provar comportamento correto sob falha
+   - não provar monotonicidade de progresso
+   - não provar durabilidade do resultado
+
+3. **Gates de qualidade (ex.: Z10) não podem ser implicitamente ignorados:**
+   - a dispensa precisa ser explícita, justificada e registrada
+   - ausência de decisão explícita = FAIL automático
+
+4. **Um revisor consegue olhar a demanda e responder binariamente:**
+   - "qualidade foi exigida e provada"
+   - ou "qualidade foi conscientemente dispensada"
+
+**Sem interpretação subjetiva.**
 
 ### Resumo do END
 
@@ -34,11 +48,12 @@ o método garante que:
 
 ## 🧭 FRASES CANÔNICAS (BLOQUEANTES)
 
-- **Robustez:** "Execução longa sem prova de retomada é promessa falsa."
-- **Streaming:** "Progresso que regride é bug, não detalhe."
-- **Persistência:** "Resultado que depende do stream para existir não é persistido."
-- **Qualidade:** "Smoke verde não prova robustez."
-- **Gate:** "Se a classe de falha não é coberta por prova, o gate é insuficiente."
+- **Qualidade:** "Qualidade não é complexidade; é sobrevivência sob falha."
+- **Gate:** "Gate não citado no END não está implicitamente dispensado."
+- **Streaming:** "Se o progresso pode regredir, o sistema não é confiável."
+- **Resultado:** "Resultado que se perde após falha não é resultado."
+- **Método:** "Se o método permite pular qualidade sem declarar, o método falhou."
+- **Governança:** "Qualidade que não é exigida explicitamente será violada silenciosamente."
 
 **Violação de qualquer frase = FAIL automático da demanda avaliada.**
 
@@ -82,29 +97,67 @@ Mas não exigiu prova da classe real de risco:
 
 ### PASS
 
-- ✅ O método define quando Z10 é obrigatório, independentemente de "complexidade percebida"
-- ✅ Existe uma classe explícita de demandas: "execução longa / streaming / histórico"
-- ✅ Para essa classe, o método exige prova explícita de:
-  - progresso monotônico
-  - persistência independente do stream
-  - resultado acessível após falha
+- ✅ Existe definição canônica de quando Z10 é obrigatório
+- ✅ Demandas com execução longa + streaming são explicitamente classificadas
+- ✅ Existe regra binária: **Z10 obrigatório OU dispensa explicitamente registrada**
+- ✅ O método define "o que provar" (robustez, monotonicidade, persistência, retomada)
+- ✅ O método define "quando exigir" (obrigatoriedade de Z10 por classe de demanda)
+- ✅ Provas mínimas de robustez são exigidas (não automação, mas critérios)
+- ✅ Nenhuma demanda dessa classe pode "passar por acidente"
 - ✅ A prova não depende de opinião ("parece robusto")
 - ✅ A prova pode ser documental, teste ou contrato, mas é explícita
 - ✅ Gates existentes (Z10/Z11/Z12) não são enfraquecidos, apenas qualificados
+- ✅ Evidência documental criada aplicando a regra em casos reais:
+  - DEMANDA-PROD-002
+  - falha SSE reportada
 
 ### FAIL (AUTOMÁTICO)
 
+- ❌ Gate Z10 ignorado por "parecia simples"
+- ❌ Confundir "teste existente" com "prova de robustez"
+- ❌ Confundir "teste funcional" com "teste de robustez"
+- ❌ PASS declarado sem prova de comportamento sob falha
+- ❌ Decisão implícita sobre qualidade
 - ❌ Demandas com streaming PASSAM sem prova de monotonicidade
 - ❌ Persistência é validada apenas "no caminho feliz"
 - ❌ Gate Z10 continua opcional por "sensação de simplicidade"
 - ❌ Robustez é tratada como "edge case"
+- ❌ Transferir responsabilidade para "bug futuro"
+- ❌ Resolver com automação em vez de governança
 - ❌ O método continua permitindo que bugs dessa classe cheguem ao usuário
+
+---
+
+## 🚫 DO / DON'T
+
+### DO
+
+- ✅ Tratar qualidade como contrato, não opinião
+- ✅ Exigir decisão explícita sobre Z10
+- ✅ Diferenciar:
+  - teste funcional (caminho feliz)
+  - teste de robustez (falha, reconexão, persistência)
+- ✅ Documentar critérios mínimos de streaming correto
+- ✅ Manter independência de ferramenta
+
+### DON'T
+
+- ❌ "Não é complexo, então não precisa"
+- ❌ "Os testes antigos cobrem"
+- ❌ "Depois a gente arruma"
+- ❌ Resolver bug sem corrigir método
+- ❌ Criar exceção tácita
 
 ---
 
 ## 🧱 BLOQUEIOS ESTRUTURAIS
 
 - 🔒 F-1 obrigatório (demanda de método)
+- 🔒 Sem execução sem aprovação explícita
+- 🔒 Nenhuma correção de produto
+- 🔒 Nenhuma automação nova
+- 🔒 Nenhum gate novo criado
+- 🔒 Revisão apenas do uso correto dos gates existentes
 - 🔒 Não criar bugfix de produto aqui
 - 🔒 Não criar automação por reflexo
 - 🔒 Não alterar UI
@@ -119,47 +172,99 @@ Mas não exigiu prova da classe real de risco:
 
 **Bloqueante. Nenhuma execução.**
 
----
-
-### F1 — Classificar Tipos de Demanda por Classe de Risco
-
-**END:** O método diferencia "CRUD simples" de "execução longa + estado".
+**END:** F-1 aprovado pelo CEO
 
 ---
 
-### F2 — Definir Classe "Execução Longa / Streaming"
+### F1 — Classificar Demandas por Tipo de Execução
 
-**END:** Classe canônica criada com critérios objetivos (tempo, estado, stream).
+**END:** Definição canônica de "demanda com execução longa + streaming"
 
----
+**PASS quando:**
+- Documento define critérios objetivos:
+  - streaming ativo (SSE, WebSocket, polling progressivo)
+  - progresso incremental
+  - resultado pós-processamento
+  - persistência de estado
+  - recuperação pós-falha
 
-### F3 — Revisar Gate Z10 para Essa Classe
-
-**END:** Z10 torna-se obrigatório para essa classe, mesmo sem lógica complexa.
-
----
-
-### F4 — Definir Provas Mínimas de Robustez
-
-**END:** Provas aceitas e não aceitas são listadas explicitamente.
-
-**Exemplo:**
-- ❌ "Funcionou no meu teste manual"
-- ❌ "HTML 200"
-- ✅ "Resultado disponível após desconectar stream"
-- ✅ "Progresso monotônico por contrato"
+**Artefato:** Documento de classificação de tipos de demanda
 
 ---
 
-### F5 — Aplicar Retroativamente (Evidência)
+### F2 — Definir Obrigatoriedade de Z10 por Classe
 
-**END:** DEMANDA-PROD-002 é reavaliada conceitualmente e classificada como FAIL sob o novo critério (evidência documental).
+**END:** Regra binária:
+- esta classe → Z10 obrigatório
+- exceção → justificativa explícita registrada
+
+**PASS quando:**
+- Regra está documentada
+- Critérios de dispensa estão explícitos
+- Ausência de decisão = FAIL automático
+
+**Artefato:** Atualização de gate Z10 ou documento de governança de gates
+
+---
+
+### F3 — Definir Provas Mínimas de Robustez (Conceitual)
+
+**END:** Critérios documentais mínimos de prova
+
+**PASS quando:**
+- Lista explícita de provas aceitas:
+  - ✅ "Resultado disponível após desconectar stream"
+  - ✅ "Progresso monotônico por contrato"
+  - ✅ "Reconexão não perde estado"
+  - ✅ "Resultado persiste após falha"
+- Lista explícita de provas NÃO aceitas:
+  - ❌ "Funcionou no meu teste manual"
+  - ❌ "HTML 200"
+  - ❌ "Testes antigos passam"
+
+**Artefato:** Documento de critérios de prova para execução longa/streaming
+
+*Sem exigir teste automático — apenas prova conceitual clara*
+
+---
+
+### F4 — Aplicar Regra Retroativamente (Evidência)
+
+**END:** Análise documentada de casos reais
+
+**PASS quando:**
+- DEMANDA-PROD-002 reavaliada sob novo critério
+- Falha SSE observada analisada
+- Documento mostra exatamente onde o método deixou passar
+
+**Artefato:** Evidência documental de aplicação retroativa
+
+---
+
+### F5 — Integrar ao Método
+
+**END:** Documento integrado ao método END-FIRST v2
+
+**PASS quando:**
+- Referência canônica adicionada a:
+  - END-FIRST v2
+  - definição de gates
+  - template de demanda
+- Integração por referência canônica, não path
+
+**Artefato:** Commits de atualização dos documentos do método
 
 ---
 
 ### F6 — Declarar PASS
 
-**Método atualizado, evidência criada, sem tocar no produto.**
+**END:** Regra ativa, documentada e verificável
+
+**PASS quando:**
+- Método atualizado
+- Evidência criada
+- Sem tocar no produto
+- Gates não enfraquecidos
 
 ---
 
@@ -168,12 +273,34 @@ Mas não exigiu prova da classe real de risco:
 > **"Qualidade não é ausência de erro visível.  
 > Qualidade é ausência de classes inteiras de falha não provadas."**
 
+> **"Qualidade que não é exigida explicitamente será violada silenciosamente."**
+
+> **"Quando dois documentos governam o mesmo END, o método perdeu autoridade."**
+
+---
+
+## 📊 HISTÓRICO DE VERSÕES
+
+### v1.0 (2026-01-19)
+- Criação inicial
+- Status: BACKLOG
+- Foco: identificação do problema e classe de falha
+
+### v2.0 (2026-01-20)
+- Incorporação de elementos de obrigatoriedade de Z10
+- Consolidação "o que provar" + "quando exigir"
+- Status: F-1 PENDENTE DE APROVAÇÃO
+- Razão: Evitar duplicação com proposta DEMANDA-METODO-006
+- Decisão: "Quando dois documentos governam o mesmo END, o método perdeu autoridade"
+
 ---
 
 ## 📊 METADADOS
 
 **Criado em:** 2026-01-19  
-**Versão:** 1.0  
+**Atualizado em:** 2026-01-20  
+**Versão:** 2.0  
 **Autor:** CEO  
-**Status:** BACKLOG  
-**Próxima ação:** Aguardar decisão do CEO para promover a F-1  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
+**Issue:** #14  
+**Próxima ação:** Criar F-1 (Planejamento Canônico) para aprovação do CEO  
