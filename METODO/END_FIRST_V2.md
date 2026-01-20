@@ -484,6 +484,84 @@ Ao institucionalizar o Gate Z13, o método END-FIRST fecha seu loop estrutural d
 
 ---
 
+## 🔒 Governança de Qualidade para Execução Longa e Streaming
+
+O método END-FIRST v2 define **governança explícita de qualidade** para demandas com **execução longa, streaming de progresso e persistência de resultado**.
+
+> **Frase Canônica:** "Qualidade não é complexidade; é sobrevivência sob falha."
+
+### Classificação de Demandas
+
+Demandas são classificadas em **classes estruturais** que determinam obrigatoriedade de gates:
+
+- **Classe A:** Execução Longa com Streaming e Persistência → **Z10 obrigatório**
+- **Classe B:** Operação Crítica de Negócio → Z10 recomendado
+- **Classe C:** Interface de Usuário Complexa → Z11 e Z13 obrigatórios
+- **Classe D:** Integração Externa → Z10 recomendado
+
+**Documentação completa:** `/METODO/CLASSIFICACAO_TIPOS_DEMANDA.md`
+
+### Regra Binária de Z10
+
+**Para demandas Classe A:**
+
+```
+SE demanda ∈ Classe A
+ENTÃO Z10 é OBRIGATÓRIO
+  OU dispensa explícita e registrada
+```
+
+**Dispensa válida requer:**
+1. Justificativa técnica explícita
+2. Aprovação do CEO ou arquiteto responsável
+3. Registro na demanda
+4. Análise de risco documentada
+
+**Ausência de decisão explícita = FAIL automático**
+
+**Documentação completa:** `/METODO/GOVERNANCA_GATES.md`
+
+### Provas Mínimas de Robustez
+
+**Demandas Classe A exigem 4 provas mínimas:**
+
+1. **Monotonicidade de Progresso:** Progresso nunca regride
+2. **Persistência de Resultado:** Resultado não depende de conexão ativa
+3. **Retomada Após Falha:** Execução sobrevive a desconexão do cliente
+4. **Durabilidade de Resultado:** Resultado não se perde após falha de stream
+
+**Formas de prova aceitas:**
+- Teste automatizado
+- Prova documental (contrato de API, arquitetura)
+- Inspeção de código
+
+**Provas NÃO aceitas:**
+- ❌ "Funcionou no meu teste manual"
+- ❌ "HTML 200"
+- ❌ "Testes antigos passam"
+- ❌ "Parece robusto"
+
+**Documentação completa:** `/METODO/PROVAS_MINIMAS_ROBUSTEZ.md`
+
+### Evidência de Aplicação Retroativa
+
+A governança de qualidade foi aplicada retroativamente em casos reais, demonstrando que:
+
+- DEMANDA-PROD-002 (Processamento de Log com SSE) teria sido classificada como Classe A
+- Z10 teria sido obrigatório
+- Bug de progresso regressivo teria sido detectado antes de PASS
+- Bug de resultado perdido teria sido bloqueado
+
+**Documentação completa:** `/EVIDENCIAS/aplicacao_retroativa_metodo_005.md`
+
+### Origem
+
+Esta governança foi formalizada via **DEMANDA-METODO-005 v2.0** (Aplicação Obrigatória de Qualidade em Execução Longa e Streaming), executada em 2026-01-20.
+
+**Referência:** `/DEMANDAS_MANUS/DEMANDA_METODO-005_ROBUSTEZ_EXECUCAO_LONGA.md`
+
+---
+
 ## 📜 DECLARAÇÃO DO CEO
 
 Reconheço esta evolução como canônica e obrigatória para o método ENDFIRST.
@@ -495,13 +573,14 @@ END-FIRST v2 passa a governar:
 
 **Status:** CANÔNICO  
 **Aplicação:** Imediata para demandas complexas  
-**Versão:** 1.4
+**Versão:** 1.5
 
 **Histórico de mudanças:**
 - v1.0 (2026-01-19): Versão inicial (F-1 Planejamento Canônico)
 - v1.1 (2026-01-19): Adicionada seção Template Canônico de Demanda
 - v1.2 (2026-01-19): Adicionado Gate Z12 — Auditoria Canônica (manual até existir runner CI/script)
 - v1.3 (2026-01-19): Adicionado Gate Z13 — UI/UX Sistêmica (elimina subjetividade de UI)
+- v1.4 (2026-01-20): Adicionada Governança de Qualidade para Execução Longa e Streaming (DEMANDA-METODO-005)
 
 ---
 
