@@ -3,7 +3,7 @@ demanda_id: DEMANDA_MANUS-008
 title: Template Canônico de Demanda (END-FIRST v2)
 type: Método / Governança
 method: END-FIRST v2
-status: doing
+status: done
 scope: Ecossistema END-FIRST (todas as demandas futuras)
 impact: Global / Estrutural
 created_at: 2026-01-19
@@ -15,18 +15,18 @@ executor: Manus (Agent)
 
 **Tipo:** Método / Governança  
 **Método:** END-FIRST v2  
-**Status:** DOING
+**Status:** DONE
 
-**⚠️ OBSERVAÇÃO DO CEO (2026-01-20):**
+**Data de conclusão:** 2026-01-20
 
-Esta demanda deve ser **FINALIZADA RAPIDAMENTE** e não se tornar demanda eterna.
+**Escopo executado:**
+- ✅ Template atualizado para v1.1
+- ✅ Campo `classe` (A/B/C/D) adicionado
+- ✅ Seção "Gates Obrigatórios" adicionada
+- ✅ Referências a governança de qualidade integradas
+- ✅ Histórico de versões documentado
 
-**Escopo finito:**
-- Atualizar template para refletir método já estabilizado
-- Alinhar com: classes de demanda, regra binária do Z10, provas mínimas
-- Após conclusão: **DONE** (não evolui mais como demanda)
-
-**Frase canônica:** "Quando o método amadurece, demandas antigas viram documentação histórica — não trabalho ativo."  
+**Frase canônica:** "Template é infraestrutura. Infraestrutura não evolui todo dia."  
 **Escopo:** Ecossistema END-FIRST (todas as demandas futuras)  
 **Impacto:** Global / Estrutural
 
