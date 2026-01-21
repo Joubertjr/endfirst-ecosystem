@@ -5,7 +5,7 @@ type: Método / Governança
 classe: nenhuma
 altera_funcionalidade: não
 exige_f1: sim
-status: backlog
+status: f1_pending
 created_at: 2026-01-20
 created_by: CEO (Joubert Jr)
 executor: Manus (Agent)
@@ -19,7 +19,7 @@ version: 1.0
 **Data de Criação:** 20 de Janeiro de 2026  
 **Solicitado por:** CEO (Joubert Jr)  
 **Executor:** Manus (Agent)  
-**Status:** BACKLOG (NÃO EXECUTAR)  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
 **Tipo:** Método / Governança  
 
 ---
@@ -343,5 +343,5 @@ Para manter o método limpo:
 
 ---
 
-**Status:** BACKLOG (NÃO EXECUTAR)  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
 **Próximos passos:** Aguardar decisão do CEO para promover a F-1
