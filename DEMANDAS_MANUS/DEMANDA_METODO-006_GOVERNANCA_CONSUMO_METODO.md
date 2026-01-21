@@ -10,13 +10,15 @@ created_at: 2026-01-20
 created_by: CEO (Joubert Jr)
 executor: Manus (Agent)
 governed_by: /METODO/END_FIRST_V2.md
-version: 1.0
+version: 1.1
+updated_at: 2026-01-20
 ---
 
 # DEMANDA-METODO-006 — Governança de Consumo, Atualização e Onboarding do Método
 
-**Versão:** 1.0  
+**Versão:** 1.1  
 **Data de Criação:** 20 de Janeiro de 2026  
+**Última atualização:** 20 de Janeiro de 2026  
 **Solicitado por:** CEO (Joubert Jr)  
 **Executor:** Manus (Agent)  
 **Status:** BACKLOG  
@@ -131,19 +133,50 @@ Para qualquer projeto que utilize a metodologia END-FIRST (ex.: projeto do livro
 
 > "Usar o método sem declarar consumo é violação estrutural."
 
+> "Consumo declarado precisa ser rastreável por marcador textual mínimo."
+
 ---
 
 ## ✅ Critérios de Aceitação (Binários)
 
 ### PASS
 
-- ✅ Existe mecanismo canônico de declaração de consumo do método por projetos
-- ✅ Existe mecanismo canônico de versionamento conceitual do método
-- ✅ Existe mecanismo canônico de comunicação de atualizações do método
-- ✅ Existe definição clara de "onboarding completo" no método
-- ✅ Existe contrato metodológico para ferramentas (Cursor, agentes)
-- ✅ Existe distinção clara entre mudanças retroativas e prospectivas
-- ✅ Existe documentação de como o método evolui
+**Artefatos conceituais mínimos (grep-friendly):**
+
+1. ✅ **METHOD_CONSUMPTION_DECLARATION** existe com campos obrigatórios:
+   - `method_name` (ex: "END-FIRST")
+   - `method_version` (ex: "v2.5")
+   - `adopted_at` (data)
+   - `source_of_truth_ref` (ex: tag/commit do repositório do método)
+   - `exceptions` (opcional: lista de regras dispensadas)
+
+2. ✅ **METHOD_CHANGELOG** existe com entradas estruturadas:
+   - `change_id` (identificador único)
+   - `version` (versão do método)
+   - `date` (data da mudança)
+   - `scope` (retroativo / prospectivo)
+   - `summary` (descrição da mudança)
+   - `impact` (quem precisa agir)
+
+3. ✅ **ONBOARDING_DEFINITION** existe com checklist binário:
+   - Lista de artefatos obrigatórios para leitura
+   - Critérios de "onboarding completo" (ex: "consegue criar demanda", "consegue executar F1-F6")
+   - Nenhuma dependência de explicação verbal
+
+4. ✅ **TOOL_CONTRACT** existe para ferramentas (Cursor/agentes):
+   - Lista de documentos que a ferramenta DEVE consultar
+   - Lista de ações que a ferramenta NUNCA executa sem referência explícita
+   - Lista de registros que a ferramenta SEMPRE cria (ex: log de decisões)
+
+5. ✅ **VERSIONING_MECHANISM** define:
+   - Como versões do método são identificadas
+   - Como projetos sabem qual versão estão usando
+   - Como verificar se estão desatualizados
+
+**Marcadores textuais mínimos (grep-friendly):**
+- Consumo declarado deve ser rastreável por marcador textual mínimo (ex: `method: END-FIRST v2.5`)
+- Mudanças do método devem ter marcador de escopo (ex: `scope: retroactive` ou `scope: prospective`)
+- Onboarding completo deve ter marcador de status (ex: `onboarding_status: complete`)
 
 ### FAIL
 
@@ -212,12 +245,17 @@ Durante a execução de projetos que utilizam END-FIRST (ex.: projeto do livro),
 
 ### DON'T (não fazer)
 
-- ❌ Definir README específico de projeto
-- ❌ Definir Cursor Rules específicas de projeto
-- ❌ Criar automação de atualização
-- ❌ Definir estrutura de pastas de projeto
+- ❌ Impor README/Cursor Rules como parte obrigatória do método
+- ❌ Criar automação obrigatória de atualização
+- ❌ Definir estrutura de pastas como norma do método
 - ❌ Obrigar atualização automática de projetos
 - ❌ Mudar projetos existentes agora
+- ❌ Proibir README/Cursor Rules como implementação operacional opcional
+
+**Esclarecimento importante:**
+- ✅ README e Cursor Rules **podem** ser usados como implementação operacional de "declaração de consumo"
+- ✅ Desde que atendam aos marcadores canônicos mínimos (grep-friendly)
+- ❌ O método **não** impõe README/Rules como única forma válida
 
 ---
 
@@ -248,14 +286,14 @@ Durante a execução de projetos que utilizam END-FIRST (ex.: projeto do livro),
 
 ## ❌ Fora de Escopo
 
-- ❌ Implementar README de projeto específico
-- ❌ Implementar Cursor Rules de projeto específico
-- ❌ Criar automação de sincronização
-- ❌ Definir estrutura de diretórios de projeto
-- ❌ Migrar projetos existentes
-- ❌ Criar ferramentas de atualização automática
+- ❌ Impor README/Cursor Rules como norma obrigatória do método
+- ❌ Criar automação obrigatória de sincronização
+- ❌ Definir estrutura de diretórios como parte do método
+- ❌ Migrar projetos existentes automaticamente
+- ❌ Criar ferramentas de atualização automática obrigatória
+- ❌ Proibir uso de README/Cursor Rules como implementação operacional
 
-**Razão:** Esta demanda define governança de consumo e atualização do método, não implementações específicas de projeto.
+**Razão:** Esta demanda define governança de consumo e atualização do método (artefatos conceituais e marcadores), não implementações específicas obrigatórias de projeto. README/Rules são permitidos como implementação operacional opcional.
 
 ---
 
@@ -298,3 +336,14 @@ Durante a execução de projetos que utilizam END-FIRST (ex.: projeto do livro),
 - `/METODO/END_FIRST_V2.md` — Método END-FIRST v2
 - `/METODO/GOVERNANCA_GATES.md` — Governança de gates
 - `/METODO/TEMPLATE_DEMANDA_CANONICA.md` — Template usado para criar esta demanda
+
+---
+
+## 📊 HISTÓRICO DE VERSÕES
+
+- **v1.0** (2026-01-20): Versão inicial da demanda
+- **v1.1** (2026-01-20): Ajustes conforme validação do CEO:
+  1. Binarização de critérios de aceitação (artefatos conceituais + marcadores grep-friendly)
+  2. Correção de DON'T/Fora de Escopo (README/Rules permitidos como implementação operacional)
+  3. Higiene do frontmatter (multi-linha)
+  4. Adicionada frase canônica: "Consumo declarado precisa ser rastreável por marcador textual mínimo"
