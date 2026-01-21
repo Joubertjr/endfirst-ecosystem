@@ -5,7 +5,7 @@ type: Método / Governança
 classe: nenhuma
 altera_funcionalidade: não
 exige_f1: sim
-status: backlog
+status: f1_pending
 created_at: 2026-01-20
 created_by: CEO (Joubert Jr)
 executor: Manus (Agent)
@@ -21,7 +21,7 @@ updated_at: 2026-01-20
 **Última atualização:** 20 de Janeiro de 2026  
 **Solicitado por:** CEO (Joubert Jr)  
 **Executor:** Manus (Agent)  
-**Status:** BACKLOG  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
 **Tipo:** Método / Governança  
 
 ---
@@ -325,7 +325,7 @@ Durante a execução de projetos que utilizam END-FIRST (ex.: projeto do livro),
 **Criado em:** 2026-01-20  
 **Autor:** CEO (Joubert Jr)  
 **Executor:** Manus (Agent)  
-**Status:** BACKLOG  
+**Status:** F-1 PENDENTE DE APROVAÇÃO  
 **Tipo:** Método / Governança  
 **Impacto:** Global / Estrutural (todos os projetos que usam END-FIRST)  
 
