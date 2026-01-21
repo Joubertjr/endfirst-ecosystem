@@ -1,7 +1,7 @@
 ---
 demanda_id: DEMANDA_MANUS-005
 title: Análise de DEMANDA-002 (Book Summarizer)
-status: doing
+status: cancelled
 created_at: 2026-01-11
 created_by: CEO
 assigned_to: Manus (Agent)
@@ -16,7 +16,11 @@ version: 1.0
 **Data de Criação:** 11 de Janeiro de 2026  
 **Solicitado por:** CEO  
 **Executor:** Manus (Agent)  
-**Status:** DOING
+**Status:** CANCELLED
+
+**Motivo do cancelamento:** Conhecimento absorvido pelo método via DEMANDA-METODO-005 v2.0. A função desta demanda (análise de falha de robustez) já foi institucionalizada no método END-FIRST v2 através da governança de qualidade para execução longa e streaming.
+
+**Decisão:** CEO (2026-01-20)
 
 ---
 

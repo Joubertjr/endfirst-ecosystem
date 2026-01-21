@@ -15,7 +15,18 @@ executor: Manus (Agent)
 
 **Tipo:** Método / Governança  
 **Método:** END-FIRST v2  
-**Status:** DOING  
+**Status:** DOING
+
+**⚠️ OBSERVAÇÃO DO CEO (2026-01-20):**
+
+Esta demanda deve ser **FINALIZADA RAPIDAMENTE** e não se tornar demanda eterna.
+
+**Escopo finito:**
+- Atualizar template para refletir método já estabilizado
+- Alinhar com: classes de demanda, regra binária do Z10, provas mínimas
+- Após conclusão: **DONE** (não evolui mais como demanda)
+
+**Frase canônica:** "Quando o método amadurece, demandas antigas viram documentação histórica — não trabalho ativo."  
 **Escopo:** Ecossistema END-FIRST (todas as demandas futuras)  
 **Impacto:** Global / Estrutural
 

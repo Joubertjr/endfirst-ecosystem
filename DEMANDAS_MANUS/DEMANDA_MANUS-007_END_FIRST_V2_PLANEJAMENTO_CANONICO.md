@@ -1,7 +1,7 @@
 ---
 demanda_id: DEMANDA_MANUS-007
 title: END-FIRST v2 — Planejamento como Artefato Canônico
-status: doing
+status: cancelled
 created_at: 2026-01-19
 created_by: CEO
 assigned_to: Manus (Agent)
@@ -16,7 +16,13 @@ version: 1.0
 **Data de Criação:** 19 de Janeiro de 2026  
 **Solicitado por:** CEO  
 **Executor:** Manus (Agent)  
-**Status:** DOING  
+**Status:** CANCELLED
+
+**Motivo do cancelamento:** Conteúdo incorporado ao método. END-FIRST v2 já existe, já foi atualizado (v1.5) e já foi aplicado com sucesso. O que resta não é mais "demanda" crítica, é manutenção editorial que ocorre fora de DOING.
+
+**Decisão:** CEO (2026-01-20)
+
+**Observação:** Planejamento não é mais trabalho crítico, é higiene.  
 **Tipo:** Methodology / Governance / END-FIRST
 
 ---
