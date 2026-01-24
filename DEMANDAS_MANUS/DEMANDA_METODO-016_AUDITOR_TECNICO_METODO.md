@@ -56,6 +56,26 @@ Após a conclusão desta demanda:
 
 > "Auditor não implementa. Auditor não decide escopo. Auditor não aprova demandas. Auditor valida."
 
+**Branch Padrão Governado:**
+
+> "O método define um branch padrão (master ou main). Todos os commits de método vão para o branch padrão. Branch padrão é contrato."
+
+**Anti-Placeholder em Artefatos:**
+
+> "Artefatos de método não podem conter TODO, TBD ou PLACEHOLDER. Placeholder em END é FAIL. Placeholder em critérios de fase é permitido se resolvido durante execução."
+
+**Unicidade de Markers no README:**
+
+> "Markers no README.md devem ser únicos. Duplicação de markers é FAIL estrutural."
+
+**Aprovação Explícita de F-1:**
+
+> "Todo F-1 deve ter status explícito (PENDENTE ou APROVADO), data de aprovação e autoridade aprovadora. F-1 sem aprovação explícita não pode ser executado."
+
+**Formato Canônico de Critérios:**
+
+> "Critérios de PASS/FAIL devem usar formato canônico: ### PASS e ### FAIL. Formato diferente é FAIL estrutural."
+
 ---
 
 ## ✅ Critérios de Aceitação (Binários)
@@ -74,6 +94,17 @@ Após a conclusão desta demanda:
 - ✅ Procedimento de auditoria de artefatos definido
 - ✅ Formato de relatório de auditoria definido
 - ✅ Critérios de PASS/FAIL para auditoria definidos
+- ✅ Regras canônicas de integridade definidas:
+  - Branch padrão governado
+  - Anti-placeholder em artefatos
+  - Unicidade de markers no README
+  - Aprovação explícita de F-1
+  - Formato canônico de critérios
+- ✅ Gate canônico de integridade definido:
+  - Nome do gate
+  - Critérios binários do gate
+  - Evidências exigidas
+  - Condições de bloqueio
 
 ### FAIL
 
@@ -85,6 +116,8 @@ Após a conclusão desta demanda:
 - ❌ Procedimentos de auditoria não estão definidos
 - ❌ Formato de relatório não está definido
 - ❌ Critérios de PASS/FAIL não estão definidos
+- ❌ Regras canônicas de integridade não estão definidas
+- ❌ Gate canônico de integridade não está definido
 
 ---
 
@@ -255,6 +288,51 @@ Sem Auditor Técnico:
    - Listar achados
    - Declarar PASS ou FAIL
    - Recomendar ações
+
+---
+
+## 🔒 GATE CANÔNICO DE INTEGRIDADE DO MÉTODO
+
+### Nome do Gate
+
+**`Z-METHOD-REPO-INTEGRITY`**
+
+### Propósito
+
+Validar a integridade estrutural do repositório do método END-FIRST antes de declarar PASS em qualquer demanda de método.
+
+### Critérios Binários
+
+**PASS:**
+- ✅ HEAD == origin/[branch_padrão]
+- ✅ Markers README únicos
+- ✅ Zero placeholders (TODO/TBD/PLACEHOLDER) em artefatos de método
+- ✅ Todas as demandas têm END + PASS/FAIL
+- ✅ Branch padrão definido e documentado
+- ✅ Todos os F-1s têm status explícito (PENDENTE ou APROVADO)
+- ✅ Formato canônico de critérios (### PASS / ### FAIL) em todas as demandas
+
+**FAIL:**
+- ❌ HEAD != origin/[branch_padrão]
+- ❌ Markers README duplicados
+- ❌ Placeholders em artefatos de método
+- ❌ Demandas sem END ou PASS/FAIL
+- ❌ Branch padrão não definido
+- ❌ F-1s sem status explícito
+- ❌ Formato de critérios não canônico
+
+### Evidências Exigidas
+
+1. Output de `git log --oneline -n 20`
+2. Output de `git status`
+3. Lista de markers no README.md
+4. Lista de demandas com END e PASS/FAIL
+5. Lista de F-1s com status
+6. Scan de placeholders em artefatos
+
+### Quando Bloqueia PASS
+
+O gate bloqueia PASS de qualquer demanda de método (DEMANDA-METODO-XXX) se **qualquer critério FAIL** for detectado.
 
 ---
 
