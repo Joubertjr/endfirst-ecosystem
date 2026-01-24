@@ -571,16 +571,275 @@ Um produto FALHA se:
 
 ---
 
-## 📌 STATUS DA CONSTRUÇÃO
+## 🔢 VERSIONAMENTO DE PRODUTO
 
-**Seções Concluídas:**
-- ✅ F1: Estrutura Canônica de Produto
-- ✅ F2: Regras de Governança
-- ✅ F3: Critérios de PASS/FAIL
+### Formato de Versão
 
-**Próximas Seções:**
-- ⏳ F4: Versionamento de Produto
+**Formato canônico:**
+> `MAJOR.MINOR.PATCH`
+
+**Exemplo:**
+- `1.0.0` — Primeira versão do produto
+- `1.1.0` — Nova funcionalidade adicionada
+- `1.1.1` — Correção de bug
+- `2.0.0` — Mudança que quebra compatibilidade
+
+**Regra canônica:**
+> "Versão de produto DEVE seguir formato MAJOR.MINOR.PATCH. Versão fora do formato é FAIL estrutural."
 
 ---
 
-**Documento em construção conforme DEMANDA-METODO-010.**
+### Regras Objetivas de Incremento
+
+#### Quando incrementar MAJOR
+
+**Critério:**
+- ✅ Mudança que quebra compatibilidade com versão anterior
+- ✅ Remoção de funcionalidade existente
+- ✅ Mudança de estrutura canônica
+- ✅ Mudança de END do produto
+
+**Exemplo:**
+- `1.5.3` → `2.0.0` (mudança que quebra compatibilidade)
+
+**Papel responsável:**
+- **Produto** (decide incremento)
+- **CEO** (aprova incremento)
+
+**Bloqueio:**
+- ❌ Incrementar MAJOR sem aprovação do CEO
+- ❌ Incrementar MAJOR sem DEMANDA-PROD
+
+---
+
+#### Quando incrementar MINOR
+
+**Critério:**
+- ✅ Nova funcionalidade adicionada
+- ✅ Melhoria de funcionalidade existente
+- ✅ Nova seção no README.md
+- ✅ Novo output gerado
+
+**Exemplo:**
+- `1.5.3` → `1.6.0` (nova funcionalidade)
+
+**Papel responsável:**
+- **Produto** (decide incremento)
+- **CEO** (aprova incremento)
+
+**Bloqueio:**
+- ❌ Incrementar MINOR sem aprovação do CEO
+- ❌ Incrementar MINOR sem DEMANDA-PROD
+
+---
+
+#### Quando incrementar PATCH
+
+**Critério:**
+- ✅ Correção de bug
+- ✅ Correção de documentação
+- ✅ Correção de metadata
+- ✅ Correção de placeholder
+
+**Exemplo:**
+- `1.5.3` → `1.5.4` (correção de bug)
+
+**Papel responsável:**
+- **Executor** (decide incremento)
+- **Auditor Técnico** (valida incremento)
+
+**Bloqueio:**
+- ❌ Incrementar PATCH sem evidência de correção
+- ❌ Incrementar PATCH sem validação do Auditor Técnico
+
+---
+
+### Relação entre Versões
+
+#### Versão do Produto × Versão do Método
+
+**Regra canônica:**
+> "README.md do produto DEVE referenciar a versão do método END-FIRST usado. Produto sem versão de método é FAIL estrutural."
+
+**Formato obrigatório no README.md:**
+```markdown
+**Método:** END-FIRST v2.5
+```
+
+**Relação:**
+- Produto criado com END-FIRST v2.5 → README.md referencia v2.5
+- Produto atualizado para END-FIRST v3.0 → README.md atualizado para v3.0
+- Mudança de versão de método → incrementa MINOR do produto
+
+**Bloqueio:**
+- ❌ README.md sem referência à versão do método
+- ❌ Versão do método desatualizada
+
+---
+
+#### Versão do Produto × Versão da Demanda/F-1
+
+**Regra canônica:**
+> "Cada versão de produto DEVE ter DEMANDA-PROD e F-1 correspondentes. Versão sem demanda é FAIL estrutural."
+
+**Relação:**
+
+| Versão do Produto | DEMANDA-PROD | F-1 | Tipo de Mudança |
+|---|---|---|---|
+| 1.0.0 | DEMANDA-PROD-001 | F-1 da 001 | Criação inicial |
+| 1.1.0 | DEMANDA-PROD-002 | F-1 da 002 | Nova funcionalidade |
+| 1.1.1 | DEMANDA-PROD-003 | F-1 da 003 | Correção de bug |
+| 2.0.0 | DEMANDA-PROD-004 | F-1 da 004 | Mudança breaking |
+
+**Formato obrigatório no README.md:**
+```markdown
+**Versão:** 1.1.0  
+**Demanda:** DEMANDA-PROD-002  
+**F-1:** F-1 da DEMANDA-PROD-002
+```
+
+**Bloqueio:**
+- ❌ Versão sem DEMANDA-PROD correspondente
+- ❌ Versão sem F-1 correspondente
+- ❌ README.md sem referência à demanda/F-1
+
+---
+
+### Critérios Binários de PASS/FAIL para Versionamento
+
+#### PASS
+
+Versio namento PASSA se:
+
+1. ✅ Versão segue formato `MAJOR.MINOR.PATCH`
+2. ✅ Incremento segue regras objetivas (MAJOR/MINOR/PATCH)
+3. ✅ README.md referencia versão do método END-FIRST
+4. ✅ README.md referencia DEMANDA-PROD e F-1 correspondentes
+5. ✅ DEMANDA-PROD existe e foi aprovada
+6. ✅ F-1 existe e foi aprovado
+7. ✅ Evidência de execução existe
+8. ✅ Auditor Técnico validou versionamento
+9. ✅ CEO aprovou versionamento (se MAJOR ou MINOR)
+
+**Papel responsável:**
+- **Produto** (MAJOR/MINOR)
+- **Executor** (PATCH)
+- **Auditor Técnico** (valida)
+- **CEO** (aprova MAJOR/MINOR)
+
+---
+
+#### FAIL
+
+Versionamento FALHA se:
+
+1. ❌ Versão fora do formato `MAJOR.MINOR.PATCH`
+2. ❌ Incremento não segue regras objetivas
+3. ❌ README.md sem referência à versão do método
+4. ❌ README.md sem referência à DEMANDA-PROD/F-1
+5. ❌ DEMANDA-PROD ausente ou não aprovada
+6. ❌ F-1 ausente ou não aprovado
+7. ❌ Evidência de execução ausente
+8. ❌ Versionamento não validado pelo Auditor Técnico
+9. ❌ Versionamento MAJOR/MINOR sem aprovação do CEO
+
+**Consequência:**
+- ❌ Produto é bloqueado
+- ❌ Versão é revertida
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+**Papel que bloqueia:**
+- **Auditor Técnico** (violação técnica)
+- **CEO** (violação de governança)
+
+---
+
+---
+
+## ✅ DOCUMENTO COMPLETO
+
+**Status:** ✅ CONCLUÍDO
+
+**Demanda:** DEMANDA-METODO-010 — Governança de Produtos dentro do Método  
+**Método:** END-FIRST v2  
+**Data de conclusão:** 24 de Janeiro de 2026  
+**Executor:** Manus
+
+---
+
+### Seções Concluídas
+
+1. ✅ **F1: Estrutura Canônica de Produto**
+   - Definida estrutura obrigatória de pastas e arquivos
+   - 6 pastas canônicas: README.md, DEMANDAS/, planejamento/, EVIDENCIAS/, CONTEXTO/, OUTPUTS/
+   - Propósito e critérios de PASS/FAIL para cada pasta
+
+2. ✅ **F2: Regras de Governança**
+   - 5 regras canônicas definidas:
+     - Regra 1: Criação de Produto
+     - Regra 2: Alteração de Produto
+     - Regra 3: Aprovação de Produto
+     - Regra 4: Auditoria de Produto
+     - Regra 5: Bloqueio de Produto
+   - Papéis responsáveis definidos para cada regra
+
+3. ✅ **F3: Critérios de PASS/FAIL**
+   - 4 critérios binários de PASS definidos
+   - 4 critérios binários de FAIL definidos
+   - 7 condições de bloqueio automático definidas
+   - Relação explícita com ontologia de personas
+
+4. ✅ **F4: Versionamento de Produto**
+   - Formato canônico: `MAJOR.MINOR.PATCH`
+   - Regras objetivas de incremento (MAJOR/MINOR/PATCH)
+   - Relação versão produto × versão método
+   - Relação versão produto × DEMANDA-PROD/F-1
+   - Critérios binários de PASS/FAIL para versionamento
+
+---
+
+### Evidências de Execução
+
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f1.md`
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f2.md`
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f3.md`
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f4.md`
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f5.md`
+- ✅ `/EVIDENCIAS/execucao_demanda_metodo_010_f6.md`
+
+---
+
+### Integrações
+
+**Ontologia de Personas:**
+- `/METODO/PERSONAS/DEFINICOES/CEO.md`
+- `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md`
+- `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md`
+- `/METODO/PERSONAS/DEFINICOES/PRODUTO.md`
+- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md`
+- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md`
+
+**Regras Canônicas:**
+- `/METODO/REGRA_PAPEL_ATIVO_OBRIGATORIO.md`
+- `/METODO/AUDITOR_TECNICO.md`
+
+---
+
+### Validação Final
+
+**END da DEMANDA-METODO-010:**
+> "Existe um contrato formal que define como produtos são criados, versionados e governados dentro do repositório endfirst-ecosystem, em `/PRODUTOS/<nome>/`."
+
+**Status:** ✅ **END ATINGIDO**
+
+**Justificativa:**
+1. ✅ Contrato formal existe (`/METODO/GOVERNANCA_PRODUTOS.md`)
+2. ✅ Define como produtos são criados (F1 + F2)
+3. ✅ Define como produtos são versionados (F4)
+4. ✅ Define como produtos são governados (F2 + F3)
+5. ✅ Localização: `/PRODUTOS/<nome>/`
+
+---
+
+**Documento concluído conforme DEMANDA-METODO-010.**  
+**Método END-FIRST v2 aplicado com sucesso.**
