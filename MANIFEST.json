@@ -1,0 +1,245 @@
+{
+  "versao": "1.0",
+  "data_geracao": "2026-01-24T18:00:07.904748",
+  "executor": "Manus (Agent)",
+  "metodo": "END-FIRST v2.5",
+  "repositorio": "endfirst-ecosystem",
+  "branch": "master",
+  "commit_final": "10dfe6d",
+  "total_demandas": 17,
+  "total_fases": 102,
+  "total_arquivos": 33,
+  "arquivos": [
+    {
+      "nome": "execucao_demanda_metodo_016.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_016.md",
+      "hash": "5b71a7e972ec122beef0ea23d2d60530a66348c1ec6b1ef035e50ddcebf36b30",
+      "tipo": "evidencia",
+      "tamanho": 3688
+    },
+    {
+      "nome": "execucao_ontologia_personas.md",
+      "caminho": "EVIDENCIAS/execucao_ontologia_personas.md",
+      "hash": "7c4d0d90baca5c91cdf8577724164be0c026b46eea5d31a80c5c0827bf8ed267",
+      "tipo": "evidencia",
+      "tamanho": 5046
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f1.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f1.md",
+      "hash": "0cd4429612928ee839a519e6dcfe327d0dc5de4473dd11902955bc717fbb45aa",
+      "tipo": "evidencia",
+      "tamanho": 8669
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f2.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f2.md",
+      "hash": "7945274ed31badd05f73e1cbb5498c3d2c6458873108623f196ff590cf6e65c3",
+      "tipo": "evidencia",
+      "tamanho": 9879
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f3.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f3.md",
+      "hash": "e67e6388d3b3c96763f4e8f1b5ebbbc52a629428f17c73b6bdc0a21a19e9d1e0",
+      "tipo": "evidencia",
+      "tamanho": 11099
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f4.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f4.md",
+      "hash": "9b1bc6d186e5ca97a019392a65d83a32a8c8627805232c5f1b9beb318f08b96e",
+      "tipo": "evidencia",
+      "tamanho": 8514
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f5.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f5.md",
+      "hash": "308fd707de46f9f9b9048bc64abadb7d3d9d8c51a253c1a3c0bcae383491f4e5",
+      "tipo": "evidencia",
+      "tamanho": 7240
+    },
+    {
+      "nome": "execucao_demanda_metodo_010_f6.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_010_f6.md",
+      "hash": "039a30abe3f632f3a8e6d3067c17622f3031e800a1209216761e6da0df80f654",
+      "tipo": "evidencia",
+      "tamanho": 9395
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f1.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f1.md",
+      "hash": "31bb67210c84d87121920158e75ee5d23fed6bbd8bedd20111c9a00f15fc719f",
+      "tipo": "evidencia",
+      "tamanho": 2813
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f2.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f2.md",
+      "hash": "ba24451de099e2f523e9e9242f75e0ad007156aa8da604a7dd26de6fba650613",
+      "tipo": "evidencia",
+      "tamanho": 3558
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f3.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f3.md",
+      "hash": "e92902b1b94abf3ae5c8a38cb88691590d1bd6a25b4b76dae1c3e4389d022a1b",
+      "tipo": "evidencia",
+      "tamanho": 3059
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f4.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f4.md",
+      "hash": "7344e36f2ae9cafe82084fa4513fee2cf0e803b1ee8c2418294e7b3784fbccc5",
+      "tipo": "evidencia",
+      "tamanho": 3676
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f5.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f5.md",
+      "hash": "1255f6b70c34bc34da9a00a256a7d9b55214d9a8b5d22e61ae5f831aca909209",
+      "tipo": "evidencia",
+      "tamanho": 3042
+    },
+    {
+      "nome": "execucao_demanda_metodo_005_f6.md",
+      "caminho": "EVIDENCIAS/execucao_demanda_metodo_005_f6.md",
+      "hash": "050dcc308e78254a42b048e8d1e50a4771596b4c82b743233a6c90f86dbf1879",
+      "tipo": "evidencia",
+      "tamanho": 4338
+    },
+    {
+      "nome": "execucao_metodo_007_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_007_consolidada.md",
+      "hash": "bf357adc2f0bebf14e42e099d99443060d19d6403740634f12924c62622e5cca",
+      "tipo": "evidencia",
+      "tamanho": 1361
+    },
+    {
+      "nome": "execucao_metodo_013_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_013_consolidada.md",
+      "hash": "ed120d4325339f220aa6052978652475bb85c240f31af8fed61d763d90b10f1e",
+      "tipo": "evidencia",
+      "tamanho": 1365
+    },
+    {
+      "nome": "execucao_metodo_006_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_006_consolidada.md",
+      "hash": "011fe89eace99fd38a3b9305c5b953a5fcdf2829dd4ec68a23ebb77b2d76dce6",
+      "tipo": "evidencia",
+      "tamanho": 1364
+    },
+    {
+      "nome": "execucao_metodo_011_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_011_consolidada.md",
+      "hash": "01cfe53101a6f51b99eb6267e7dd15d0fac6e7cb56a9f40eea90fbecf41632a7",
+      "tipo": "evidencia",
+      "tamanho": 1365
+    },
+    {
+      "nome": "execucao_metodo_012_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_012_consolidada.md",
+      "hash": "96e01cb79168e354dc9238d100d64c34fb3cde8952521866677b822063e479c1",
+      "tipo": "evidencia",
+      "tamanho": 1366
+    },
+    {
+      "nome": "execucao_gov_001_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_gov_001_consolidada.md",
+      "hash": "60427ba9cb9edd617275fcfc5efd66a62fd943a4c7c6c2bbda8d272d8edf1d46",
+      "tipo": "evidencia",
+      "tamanho": 1348
+    },
+    {
+      "nome": "execucao_metodo_015_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_metodo_015_consolidada.md",
+      "hash": "2859da511892cca6ad2381cd575ce7ef48b1f4372c4d385cd6b326cf39fca0c4",
+      "tipo": "evidencia",
+      "tamanho": 1365
+    },
+    {
+      "nome": "execucao_soft_004_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_soft_004_consolidada.md",
+      "hash": "27c08ebf770de022bbdae3a59ebefaa542811fc76f7ff9ddad2a190b7d868530",
+      "tipo": "evidencia",
+      "tamanho": 1351
+    },
+    {
+      "nome": "execucao_soft_003_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_soft_003_consolidada.md",
+      "hash": "b82b7de9b67fbddc3e9a6fb74851110dac56657406e8ccaee410153c40589618",
+      "tipo": "evidencia",
+      "tamanho": 1347
+    },
+    {
+      "nome": "execucao_soft_002_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_soft_002_consolidada.md",
+      "hash": "81a37462a9418d22d1dc17c7481aec998369477805ab1501973c92b8e51479db",
+      "tipo": "evidencia",
+      "tamanho": 1356
+    },
+    {
+      "nome": "execucao_soft_005_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_soft_005_consolidada.md",
+      "hash": "727229aaec1e51a913eed073bab9f2a9281b03d5e4774ff2f6e651979bbea471",
+      "tipo": "evidencia",
+      "tamanho": 1356
+    },
+    {
+      "nome": "execucao_soft_006_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_soft_006_consolidada.md",
+      "hash": "83e33d74f7532d7dfeae1f55983e1271703a0c1b2379448e4a00fb53f2b04985",
+      "tipo": "evidencia",
+      "tamanho": 1355
+    },
+    {
+      "nome": "execucao_prod_001_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_prod_001_consolidada.md",
+      "hash": "49d0bd92f729bd3d49c9ddf971087d435a1b9bfc278756a23b09097861f3e7c0",
+      "tipo": "evidencia",
+      "tamanho": 1357
+    },
+    {
+      "nome": "execucao_prod_002_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_prod_002_consolidada.md",
+      "hash": "8afd09f39023bb4d675732c1c852890a2096da81eddb9bb0ef366a6cb1656e69",
+      "tipo": "evidencia",
+      "tamanho": 1347
+    },
+    {
+      "nome": "execucao_prod_003_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_prod_003_consolidada.md",
+      "hash": "9ff5b7915de14ec524c879e591f9400986918c1846f08ae214174de4f5573595",
+      "tipo": "evidencia",
+      "tamanho": 1345
+    },
+    {
+      "nome": "execucao_prod_004_consolidada.md",
+      "caminho": "EVIDENCIAS/execucao_prod_004_consolidada.md",
+      "hash": "cb9fb64fa35b3d5573d93666db42c3b54fcebe321ece258e74ddd4625f8c036a",
+      "tipo": "evidencia",
+      "tamanho": 1355
+    },
+    {
+      "nome": "DEMANDA_SOFT-005_INTEGRACAO_NOTEBOOKLM.md",
+      "caminho": "DEMANDAS_MANUS/DEMANDA_SOFT-005_INTEGRACAO_NOTEBOOKLM.md",
+      "hash": "fd83040a332bc9cfd6cd1577be675990b0926add5f10964ed374e964c26c1190",
+      "tipo": "demanda",
+      "tamanho": 4639
+    },
+    {
+      "nome": "DEMANDA_SOFT-006_BANCO_CONTEXTO_INTERNO.md",
+      "caminho": "DEMANDAS_MANUS/DEMANDA_SOFT-006_BANCO_CONTEXTO_INTERNO.md",
+      "hash": "cd340f0f04088d108977d116b7143b5d1ced36025f5360fff29df0a9aad67333",
+      "tipo": "demanda",
+      "tamanho": 4426
+    },
+    {
+      "nome": "RELATORIO_FINAL_EXECUCAO.md",
+      "caminho": "RELATORIO_FINAL_EXECUCAO.md",
+      "hash": "575de78b086b1118ce492985b929210cdecc04c4d2d5134bd993a2cca2ad4d0e",
+      "tipo": "relatorio",
+      "tamanho": 4804
+    }
+  ]
+}
