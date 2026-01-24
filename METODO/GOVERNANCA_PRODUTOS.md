@@ -362,14 +362,223 @@ Todo produto DEVE seguir a seguinte estrutura de pastas:
 
 ---
 
+## ✅ CRITÉRIOS DE PASS/FAIL PARA CRIAÇÃO DE PRODUTO
+
+### Critérios Binários de PASS
+
+Um produto PASSA se e somente se:
+
+#### 1. Estrutura Canônica Completa
+
+**Critério:**
+- ✅ Produto está em `/PRODUTOS/<produto>/`
+- ✅ README.md existe e contém todos os campos obrigatórios
+- ✅ Pasta `DEMANDAS/` existe
+- ✅ Pasta `planejamento/` existe
+- ✅ Pasta `EVIDENCIAS/` existe
+- ✅ Pasta `CONTEXTO/` existe
+- ✅ Pasta `OUTPUTS/` existe
+
+**Relação com:**
+- **Estrutura canônica:** Definida na seção "Estrutura Canônica de Produto"
+- **Regra de governança:** Regra 1 (Criação de Produto)
+- **Papel responsável:** Executor (cria estrutura)
+
+**Bloqueio automático se:**
+- ❌ Produto fora de `/PRODUTOS/`
+- ❌ README.md ausente
+- ❌ Qualquer pasta obrigatória ausente
+
+---
+
+#### 2. Rastreabilidade Total
+
+**Critério:**
+- ✅ DEMANDA-PROD existe em `/PRODUTOS/<produto>/DEMANDAS/`
+- ✅ DEMANDA-PROD tem END explícito
+- ✅ DEMANDA-PROD foi aprovada pelo CEO
+- ✅ F-1 da DEMANDA-PROD existe
+- ✅ F-1 foi aprovado pelo CEO
+- ✅ Evidências de execução existem em `/PRODUTOS/<produto>/EVIDENCIAS/`
+
+**Relação com:**
+- **Estrutura canônica:** Pasta `DEMANDAS/` e `EVIDENCIAS/`
+- **Regra de governança:** Regra 1 (Criação de Produto) e Regra 4 (Auditoria)
+- **Papel responsável:** Produto (cria demanda), CEO (aprova), Executor (gera evidências)
+
+**Bloqueio automático se:**
+- ❌ DEMANDA-PROD ausente
+- ❌ DEMANDA-PROD sem END
+- ❌ DEMANDA-PROD não aprovada
+- ❌ F-1 ausente ou não aprovado
+- ❌ Evidências ausentes
+
+---
+
+#### 3. Aprovação Formal
+
+**Critério:**
+- ✅ Auditor Técnico validou estrutura canônica
+- ✅ Auditor Técnico validou rastreabilidade
+- ✅ Auditor Técnico aplicou gates obrigatórios
+- ✅ CEO validou END da DEMANDA-PROD
+- ✅ CEO declarou PASS
+
+**Relação com:**
+- **Regra de governança:** Regra 3 (Aprovação de Produto) e Regra 4 (Auditoria)
+- **Papel responsável:** Auditor Técnico (valida), CEO (aprova)
+- **Ontologia de personas:** `/METODO/PERSONAS/DEFINICOES/CEO.md` e `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md`
+
+**Bloqueio automático se:**
+- ❌ Auditor Técnico não validou
+- ❌ Gates obrigatórios não aplicados
+- ❌ CEO não aprovou
+- ❌ END não atingido
+
+---
+
+#### 4. Conformidade Técnica
+
+**Critério:**
+- ✅ README.md contém: Nome, Descrição, Versão, Instruções, Dependências, Licença
+- ✅ README.md referencia versão do método END-FIRST usado
+- ✅ Nenhum placeholder (TODO/TBD/PLACEHOLDER) em artefatos
+- ✅ Todos os arquivos obrigatórios existem
+- ✅ Metadata obrigatória presente em outputs
+
+**Relação com:**
+- **Estrutura canônica:** README.md e OUTPUTS/
+- **Regra de governança:** Regra 4 (Auditoria) e Regra 5 (Bloqueio)
+- **Papel responsável:** Executor (implementa), Auditor Técnico (valida)
+
+**Bloqueio automático se:**
+- ❌ README.md incompleto
+- ❌ Placeholders em artefatos
+- ❌ Arquivos obrigatórios ausentes
+- ❌ Metadata ausente em outputs
+
+---
+
+### Critérios Binários de FAIL
+
+Um produto FALHA se:
+
+#### 1. Violação Estrutural
+
+**Critério de FAIL:**
+- ❌ Produto criado fora de `/PRODUTOS/`
+- ❌ Estrutura canônica ausente ou incompleta
+- ❌ README.md ausente
+- ❌ Qualquer pasta obrigatória ausente
+
+**Consequência:**
+- ❌ Produto é bloqueado imediatamente
+- ❌ Produto não pode ser usado
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+**Papel que bloqueia:** Auditor Técnico
+
+---
+
+#### 2. Violação de Rastreabilidade
+
+**Critério de FAIL:**
+- ❌ Produto sem DEMANDA-PROD
+- ❌ DEMANDA-PROD sem END
+- ❌ DEMANDA-PROD não aprovada pelo CEO
+- ❌ F-1 ausente ou não aprovado
+- ❌ Evidências de execução ausentes
+
+**Consequência:**
+- ❌ Produto é bloqueado imediatamente
+- ❌ Rastreabilidade quebrada
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+**Papel que bloqueia:** Auditor Técnico
+
+---
+
+#### 3. Violação de Governança
+
+**Critério de FAIL:**
+- ❌ Produto criado fora do método
+- ❌ Produto sem aprovação do CEO
+- ❌ Produto sem auditoria do Auditor Técnico
+- ❌ Produto que falha em gate obrigatório
+
+**Consequência:**
+- ❌ Produto é bloqueado imediatamente
+- ❌ Governança violada
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+**Papel que bloqueia:** CEO
+
+---
+
+#### 4. Violação Técnica
+
+**Critério de FAIL:**
+- ❌ README.md incompleto ou desatualizado
+- ❌ Placeholders em artefatos
+- ❌ Arquivos obrigatórios ausentes
+- ❌ Metadata ausente em outputs
+- ❌ Outputs não referenciam CONTEXTO usado
+
+**Consequência:**
+- ❌ Produto é bloqueado imediatamente
+- ❌ Conformidade técnica violada
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+**Papel que bloqueia:** Auditor Técnico
+
+---
+
+### Critérios de Bloqueio Automático
+
+**Bloqueio automático ocorre quando:**
+
+1. ❌ Produto viola estrutura canônica
+2. ❌ Produto viola rastreabilidade
+3. ❌ Produto viola governança
+4. ❌ Produto viola conformidade técnica
+5. ❌ Produto falha em gate obrigatório
+6. ❌ Auditor Técnico declara FAIL
+7. ❌ CEO declara FAIL
+
+**Quando bloqueio é ativado:**
+- ❌ Produto não pode ser usado
+- ❌ Produto não pode ser publicado
+- ❌ Produto não pode ser versionado
+- ❌ Produto DEVE ser corrigido
+- ❌ Nova auditoria é obrigatória após correção
+
+---
+
+### Relação com Ontologia de Personas
+
+**Papéis envolvidos na criação de produto:**
+
+| Papel | Arquivo de Definição | Responsabilidade na Criação |
+|---|---|---|
+| **Produto** | `/METODO/PERSONAS/DEFINICOES/PRODUTO.md` | Cria DEMANDA-PROD, define END, cria F-1 |
+| **CEO** | `/METODO/PERSONAS/DEFINICOES/CEO.md` | Aprova DEMANDA-PROD, aprova F-1, valida END, declara PASS/FAIL |
+| **Executor** | `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md` | Cria estrutura canônica, executa fases, gera evidências |
+| **Auditor Técnico** | `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md` | Valida estrutura, valida rastreabilidade, aplica gates, bloqueia se FAIL |
+
+**Vínculos:**
+- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md` (define papel principal por tipo de produto)
+- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (define papel principal por tipo de demanda)
+
+---
+
 ## 📌 STATUS DA CONSTRUÇÃO
 
 **Seções Concluídas:**
 - ✅ F1: Estrutura Canônica de Produto
 - ✅ F2: Regras de Governança
+- ✅ F3: Critérios de PASS/FAIL
 
 **Próximas Seções:**
-- ⏳ F3: Critérios de PASS/FAIL
 - ⏳ F4: Versionamento de Produto
 
 ---
