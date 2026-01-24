@@ -1,41 +1,88 @@
 # F-1 — PLANEJAMENTO CANÔNICO
 
-**Demanda:** DEMANDA-004 — PERSONAS CONTRATACAO TI  
+**Demanda:** DEMANDA-004 — Personas do Produto (Contratação TI)  
 **Versão:** 1.0  
-**Data:** 23 de Janeiro de 2026  
+**Data:** 24 de Janeiro de 2026  
 **Método:** END-FIRST v2  
 **Executor:** Manus  
 **Chefe de Produto:** CEO (Joubert Jr)
 
 ---
 
-## 🔒 END — ESTADO FINAL ESPERADO
+## 🔒 END — ESTADO FINAL ESPERADO (EXATO)
 
-[Extraído da demanda - ver arquivo de demanda para detalhes]
+> "Existem personas operacionais do produto de contratação TI: Gestor, Técnico, Jurídico."
 
 ---
 
 ## 📋 FASES DE EXECUÇÃO
 
-### F1 — Fase 1
-**END desta fase:** [A definir durante execução]
+### F1 — Definir Persona Gestor
 
-### F2 — Fase 2
-**END desta fase:** [A definir durante execução]
+**END desta fase:**
+> "A persona Gestor está definida com responsabilidades e permissões."
 
-### F3 — Fase 3
-**END desta fase:** [A definir durante execução]
+**Artefato:**
+- [A definir durante execução]
 
-### F4 — Fase 4
-**END desta fase:** [A definir durante execução]
-
-### F5 — Fase 5
-**END desta fase:** [A definir durante execução]
-
-### F6 — Validar e Concluir
-**END desta fase:** [A definir durante execução]
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
 
 ---
+
+### F2 — Definir Persona Técnico
+
+**END desta fase:**
+> "A persona Técnico está definida com responsabilidades e permissões."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F3 — Definir Persona Jurídico
+
+**END desta fase:**
+> "A persona Jurídico está definida com responsabilidades e permissões."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F4 — Definir Fluxo de Interação
+
+**END desta fase:**
+> "O fluxo de interação entre personas está definido."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F5 — Validar Personas
+
+**END desta fase:**
+> "As personas estão validadas e completas."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+
 
 ## 📌 STATUS
 
@@ -44,4 +91,4 @@
 
 ---
 
-**Nota:** Este F-1 foi gerado automaticamente. As fases serão detalhadas durante a execução conforme o método END-FIRST v2.
+**Nota:** Este F-1 foi criado com estrutura de fases. Os critérios detalhados serão definidos durante a execução conforme o método END-FIRST v2.

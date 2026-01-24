@@ -1,41 +1,88 @@
 # F-1 — PLANEJAMENTO CANÔNICO
 
-**Demanda:** DEMANDA-004 — GOVERNANCA QUALIDADE SOFTWARE  
+**Demanda:** DEMANDA-004 — Governança de Qualidade de Software (TDD + Clean Code)  
 **Versão:** 1.0  
-**Data:** 23 de Janeiro de 2026  
+**Data:** 24 de Janeiro de 2026  
 **Método:** END-FIRST v2  
 **Executor:** Manus  
 **Chefe de Produto:** CEO (Joubert Jr)
 
 ---
 
-## 🔒 END — ESTADO FINAL ESPERADO
+## 🔒 END — ESTADO FINAL ESPERADO (EXATO)
 
-[Extraído da demanda - ver arquivo de demanda para detalhes]
+> "O software tem cobertura de testes >= 80%, segue Clean Code e passa em análise estática."
 
 ---
 
 ## 📋 FASES DE EXECUÇÃO
 
-### F1 — Fase 1
-**END desta fase:** [A definir durante execução]
+### F1 — Configurar TDD
 
-### F2 — Fase 2
-**END desta fase:** [A definir durante execução]
+**END desta fase:**
+> "O ambiente de TDD está configurado com pytest e coverage."
 
-### F3 — Fase 3
-**END desta fase:** [A definir durante execução]
+**Artefato:**
+- [A definir durante execução]
 
-### F4 — Fase 4
-**END desta fase:** [A definir durante execução]
-
-### F5 — Fase 5
-**END desta fase:** [A definir durante execução]
-
-### F6 — Validar e Concluir
-**END desta fase:** [A definir durante execução]
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
 
 ---
+
+### F2 — Escrever Testes Unitários
+
+**END desta fase:**
+> "Os testes unitários cobrem >= 80% do código."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F3 — Configurar Análise Estática
+
+**END desta fase:**
+> "A análise estática está configurada (pylint, mypy, black)."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F4 — Refatorar para Clean Code
+
+**END desta fase:**
+> "O código segue Clean Code e passa em análise estática."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F5 — Validar Qualidade
+
+**END desta fase:**
+> "O software tem cobertura >= 80% e passa em análise estática."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+
 
 ## 📌 STATUS
 
@@ -44,4 +91,4 @@
 
 ---
 
-**Nota:** Este F-1 foi gerado automaticamente. As fases serão detalhadas durante a execução conforme o método END-FIRST v2.
+**Nota:** Este F-1 foi criado com estrutura de fases. Os critérios detalhados serão definidos durante a execução conforme o método END-FIRST v2.

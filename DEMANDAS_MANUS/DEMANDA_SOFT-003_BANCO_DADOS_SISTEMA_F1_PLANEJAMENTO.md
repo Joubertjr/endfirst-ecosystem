@@ -1,41 +1,88 @@
 # F-1 — PLANEJAMENTO CANÔNICO
 
-**Demanda:** DEMANDA-003 — BANCO DADOS SISTEMA  
+**Demanda:** DEMANDA-003 — Banco de Dados do Sistema  
 **Versão:** 1.0  
-**Data:** 23 de Janeiro de 2026  
+**Data:** 24 de Janeiro de 2026  
 **Método:** END-FIRST v2  
 **Executor:** Manus  
 **Chefe de Produto:** CEO (Joubert Jr)
 
 ---
 
-## 🔒 END — ESTADO FINAL ESPERADO
+## 🔒 END — ESTADO FINAL ESPERADO (EXATO)
 
-[Extraído da demanda - ver arquivo de demanda para detalhes]
+> "O banco de dados persiste histórico de interações, sessões, usuários e evidências de execução de forma auditável."
 
 ---
 
 ## 📋 FASES DE EXECUÇÃO
 
-### F1 — Fase 1
-**END desta fase:** [A definir durante execução]
+### F1 — Definir Modelo de Dados
 
-### F2 — Fase 2
-**END desta fase:** [A definir durante execução]
+**END desta fase:**
+> "O modelo de dados está definido com tabelas, relações e constraints."
 
-### F3 — Fase 3
-**END desta fase:** [A definir durante execução]
+**Artefato:**
+- [A definir durante execução]
 
-### F4 — Fase 4
-**END desta fase:** [A definir durante execução]
-
-### F5 — Fase 5
-**END desta fase:** [A definir durante execução]
-
-### F6 — Validar e Concluir
-**END desta fase:** [A definir durante execução]
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
 
 ---
+
+### F2 — Criar Migrations
+
+**END desta fase:**
+> "As migrations estão criadas e executadas no banco de dados."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F3 — Implementar API de Persistência
+
+**END desta fase:**
+> "A API de persistência está implementada e funcional."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F4 — Implementar Auditoria
+
+**END desta fase:**
+> "O sistema de auditoria está implementado e registra todas as operações."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F5 — Validar End-to-End
+
+**END desta fase:**
+> "O banco de dados persiste e recupera dados corretamente."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+
 
 ## 📌 STATUS
 
@@ -44,4 +91,4 @@
 
 ---
 
-**Nota:** Este F-1 foi gerado automaticamente. As fases serão detalhadas durante a execução conforme o método END-FIRST v2.
+**Nota:** Este F-1 foi criado com estrutura de fases. Os critérios detalhados serão definidos durante a execução conforme o método END-FIRST v2.

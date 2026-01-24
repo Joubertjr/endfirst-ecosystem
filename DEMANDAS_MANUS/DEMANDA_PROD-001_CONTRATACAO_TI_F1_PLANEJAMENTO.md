@@ -1,41 +1,88 @@
 # F-1 — PLANEJAMENTO CANÔNICO
 
-**Demanda:** DEMANDA-001 — CONTRATACAO TI  
+**Demanda:** DEMANDA-001 — Produto 001 — Contratação Pública de TI  
 **Versão:** 1.0  
-**Data:** 23 de Janeiro de 2026  
+**Data:** 24 de Janeiro de 2026  
 **Método:** END-FIRST v2  
 **Executor:** Manus  
 **Chefe de Produto:** CEO (Joubert Jr)
 
 ---
 
-## 🔒 END — ESTADO FINAL ESPERADO
+## 🔒 END — ESTADO FINAL ESPERADO (EXATO)
 
-[Extraído da demanda - ver arquivo de demanda para detalhes]
+> "Existe um produto que gera editais de contratação de TI seguindo o método END-FIRST."
 
 ---
 
 ## 📋 FASES DE EXECUÇÃO
 
-### F1 — Fase 1
-**END desta fase:** [A definir durante execução]
+### F1 — Definir Estrutura do Produto
 
-### F2 — Fase 2
-**END desta fase:** [A definir durante execução]
+**END desta fase:**
+> "A estrutura do produto está definida conforme governança."
 
-### F3 — Fase 3
-**END desta fase:** [A definir durante execução]
+**Artefato:**
+- [A definir durante execução]
 
-### F4 — Fase 4
-**END desta fase:** [A definir durante execução]
-
-### F5 — Fase 5
-**END desta fase:** [A definir durante execução]
-
-### F6 — Validar e Concluir
-**END desta fase:** [A definir durante execução]
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
 
 ---
+
+### F2 — Criar Banco de Contexto
+
+**END desta fase:**
+> "O banco de contexto de contratação TI está criado."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F3 — Implementar Fluxo END-FIRST
+
+**END desta fase:**
+> "O fluxo END-FIRST para edital de TI está implementado."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F4 — Gerar Edital Real
+
+**END desta fase:**
+> "O produto gera um edital real de contratação de TI."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F5 — Validar Produto
+
+**END desta fase:**
+> "O produto está validado e gera editais conformes."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+
 
 ## 📌 STATUS
 
@@ -44,4 +91,4 @@
 
 ---
 
-**Nota:** Este F-1 foi gerado automaticamente. As fases serão detalhadas durante a execução conforme o método END-FIRST v2.
+**Nota:** Este F-1 foi criado com estrutura de fases. Os critérios detalhados serão definidos durante a execução conforme o método END-FIRST v2.

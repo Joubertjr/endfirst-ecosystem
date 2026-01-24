@@ -1,41 +1,88 @@
 # F-1 — PLANEJAMENTO CANÔNICO
 
-**Demanda:** DEMANDA-001 — RASTREABILIDADE TOTAL  
+**Demanda:** DEMANDA-001 — Rastreabilidade Total  
 **Versão:** 1.0  
-**Data:** 23 de Janeiro de 2026  
+**Data:** 24 de Janeiro de 2026  
 **Método:** END-FIRST v2  
 **Executor:** Manus  
 **Chefe de Produto:** CEO (Joubert Jr)
 
 ---
 
-## 🔒 END — ESTADO FINAL ESPERADO
+## 🔒 END — ESTADO FINAL ESPERADO (EXATO)
 
-[Extraído da demanda - ver arquivo de demanda para detalhes]
+> "Todo artefato gerado é rastreável: demanda → F-1 → fase → artefato → evidência → output."
 
 ---
 
 ## 📋 FASES DE EXECUÇÃO
 
-### F1 — Fase 1
-**END desta fase:** [A definir durante execução]
+### F1 — Definir Cadeia de Rastreabilidade
 
-### F2 — Fase 2
-**END desta fase:** [A definir durante execução]
+**END desta fase:**
+> "A cadeia de rastreabilidade está definida."
 
-### F3 — Fase 3
-**END desta fase:** [A definir durante execução]
+**Artefato:**
+- [A definir durante execução]
 
-### F4 — Fase 4
-**END desta fase:** [A definir durante execução]
-
-### F5 — Fase 5
-**END desta fase:** [A definir durante execução]
-
-### F6 — Validar e Concluir
-**END desta fase:** [A definir durante execução]
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
 
 ---
+
+### F2 — Implementar IDs Únicos
+
+**END desta fase:**
+> "Todos os artefatos têm IDs únicos e rastreáveis."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F3 — Implementar Versionamento
+
+**END desta fase:**
+> "Todos os artefatos são versionados."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F4 — Implementar Auditoria
+
+**END desta fase:**
+> "Todas as operações são auditáveis."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+### F5 — Validar Rastreabilidade
+
+**END desta fase:**
+> "A rastreabilidade total está validada."
+
+**Artefato:**
+- [A definir durante execução]
+
+**Critérios de PASS:**
+- ✅ [A definir durante execução]
+
+---
+
+
 
 ## 📌 STATUS
 
@@ -44,4 +91,4 @@
 
 ---
 
-**Nota:** Este F-1 foi gerado automaticamente. As fases serão detalhadas durante a execução conforme o método END-FIRST v2.
+**Nota:** Este F-1 foi criado com estrutura de fases. Os critérios detalhados serão definidos durante a execução conforme o método END-FIRST v2.
