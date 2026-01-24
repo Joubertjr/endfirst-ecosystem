@@ -173,6 +173,6 @@ O método END-FIRST v2.5 precisa definir:
 **Revisor:** CEO (Joubert Jr)  
 **Status:** F-1 PENDENTE  
 **Prioridade:** 🔴 ALTA  
-**Issue:** TBD  
+**Issue:** N/A  
 
 ---

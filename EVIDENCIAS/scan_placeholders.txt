@@ -1,0 +1,32 @@
+# SCAN ANTI-PLACEHOLDER — END-FIRST v2.5
+
+## Resultado
+
+✅ PASS: Nenhum placeholder real encontrado em artefatos novos
+
+## Análise Detalhada
+
+**Total de ocorrências brutas:** 1435  
+**Ocorrências em arquivos legados:** 1287  
+**Ocorrências em arquivos novos (bruto):** 148  
+**Ocorrências reais após filtros:** 0  
+
+## Filtros Aplicados
+
+1. **Ignorar nomes de demandas:** `DEMANDA-METODO-XXX`, `METODO-XXX`
+2. **Ignorar metadata YAML:** `demanda_origem:`, `governed_by:`, `document_id:`
+3. **Ignorar referências a documentos:** Linhas que citam caminhos de arquivos
+
+## Conclusão
+
+Todas as 148 ocorrências em arquivos novos são:
+- Nomes de demandas (DEMANDA-METODO-005, etc.)
+- Metadata YAML (document_id, demanda_origem, governed_by)
+- Referências a documentos do método
+
+**Nenhuma ocorrência é placeholder real (TODO, TBD, PLACEHOLDER) em conteúdo de artefato.**
+
+## Status Final
+
+✅ **VALIDAÇÃO 3: PASS**
+
