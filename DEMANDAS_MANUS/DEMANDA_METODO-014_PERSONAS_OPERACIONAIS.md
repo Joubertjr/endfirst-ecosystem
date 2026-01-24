@@ -149,11 +149,13 @@ Sem personas operacionais:
 ### Artefatos a serem criados
 
 1. `/METODO/PERSONAS_OPERACIONAIS.md`
-   - Definir personas: CEO, Chefe de Produto, Executor
-   - Definir responsabilidades de cada persona
-   - Definir permissões de cada persona
-   - Definir papéis no fluxo de cada persona
-   - Criar critérios binários de PASS/FAIL
+   - Consolidar definições de `/METODO/PERSONAS/DEFINICOES/`
+   - Consolidar playbooks de `/METODO/PERSONAS/PLAYBOOKS/`
+   - Consolidar vínculos de `/METODO/PERSONAS/VINCULOS_PROCESSO/`
+   - Criar índice navegável de personas
+   - Definir regras de criação de novas personas
+
+**Nota:** A ontologia de personas em `/METODO/PERSONAS/` já foi criada. Esta demanda consolida em documento único.
 
 ### Validações
 

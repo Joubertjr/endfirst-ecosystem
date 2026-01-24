@@ -31,6 +31,8 @@ Após a conclusão desta demanda:
 
 > "Dado um contexto (produto + tipo de demanda + classe + fase), o método determina automaticamente qual papel está ativo, quais decisões são permitidas, quais perguntas são obrigatórias e quais evidências bloqueiam PASS — de forma auditável e sem depender de explicação humana."
 
+**Nota:** Esta demanda usa a ontologia de personas em `/METODO/PERSONAS/` e os vínculos em `/METODO/PERSONAS/VINCULOS_PROCESSO/` como base.
+
 ---
 
 ## 🚫 Regras Canônicas
