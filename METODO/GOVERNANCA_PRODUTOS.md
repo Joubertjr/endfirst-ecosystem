@@ -204,13 +204,171 @@ Todo produto DEVE seguir a seguinte estrutura de pastas:
 
 ---
 
+## 🔒 REGRAS DE GOVERNANÇA
+
+### Regra 1: Criação de Produto
+
+**Regra canônica:**
+> "Produto novo DEVE ser criado via DEMANDA-PROD. Produto sem demanda é FAIL estrutural."
+
+**Processo obrigatório:**
+
+1. ✅ Criar DEMANDA-PROD com END explícito
+2. ✅ CEO aprova DEMANDA-PROD
+3. ✅ Produto cria F-1 da demanda
+4. ✅ CEO aprova F-1
+5. ✅ Executor cria estrutura canônica em `/PRODUTOS/<produto>/`
+6. ✅ Executor executa fases do F-1
+7. ✅ Auditor Técnico valida conformidade
+8. ✅ CEO valida END atingido
+
+**Papel responsável pela criação:**
+- **Produto** (cria demanda e F-1)
+- **CEO** (aprova demanda e F-1)
+- **Executor** (implementa produto)
+- **Auditor Técnico** (valida conformidade)
+
+**Bloqueios:**
+- ❌ Produto criado fora de `/PRODUTOS/`
+- ❌ Produto sem DEMANDA-PROD correspondente
+- ❌ Produto sem estrutura canônica
+- ❌ Produto sem README.md
+
+---
+
+### Regra 2: Alteração de Produto
+
+**Regra canônica:**
+> "Alteração de produto DEVE ser rastreada via DEMANDA-PROD. Alteração sem demanda é FAIL estrutural."
+
+**Processo obrigatório:**
+
+1. ✅ Criar DEMANDA-PROD para alteração
+2. ✅ CEO aprova DEMANDA-PROD
+3. ✅ Produto cria F-1 da demanda
+4. ✅ CEO aprova F-1
+5. ✅ Executor executa alterações
+6. ✅ Executor atualiza README.md com nova versão
+7. ✅ Executor gera evidência de execução
+8. ✅ Auditor Técnico valida conformidade
+9. ✅ CEO valida END atingido
+
+**Papel responsável pela alteração:**
+- **Produto** (define alteração e cria F-1)
+- **CEO** (aprova alteração)
+- **Executor** (implementa alteração)
+- **Auditor Técnico** (valida conformidade)
+
+**Bloqueios:**
+- ❌ Alteração sem DEMANDA-PROD
+- ❌ Alteração sem F-1 aprovado
+- ❌ README.md não atualizado com nova versão
+- ❌ Evidência de execução ausente
+
+---
+
+### Regra 3: Aprovação de Produto
+
+**Regra canônica:**
+> "Produto DEVE ser aprovado pelo CEO. Produto sem aprovação do CEO é FAIL estrutural."
+
+**Processo obrigatório:**
+
+1. ✅ Executor declara produto completo
+2. ✅ Executor gera evidência de conformidade
+3. ✅ Auditor Técnico valida estrutura canônica
+4. ✅ Auditor Técnico valida rastreabilidade
+5. ✅ Auditor Técnico aplica gates obrigatórios
+6. ✅ CEO valida END da DEMANDA-PROD
+7. ✅ CEO declara PASS ou FAIL
+
+**Papel responsável pela aprovação:**
+- **CEO** (único papel com autoridade para aprovar produto)
+
+**Bloqueios:**
+- ❌ Produto sem evidência de conformidade
+- ❌ Produto sem validação do Auditor Técnico
+- ❌ Produto sem aprovação do CEO
+- ❌ END da DEMANDA-PROD não atingido
+
+---
+
+### Regra 4: Auditoria de Produto
+
+**Regra canônica:**
+> "Produto DEVE ser auditado pelo Auditor Técnico. Produto sem auditoria é FAIL estrutural."
+
+**Quando auditar:**
+
+1. ✅ Antes da aprovação do CEO (obrigatório)
+2. ✅ Após alteração de produto (obrigatório)
+3. ✅ Quando gate obrigatório é ativado (obrigatório)
+4. ✅ Quando CEO solicita auditoria (opcional)
+
+**Papel responsável pela auditoria:**
+- **Auditor Técnico** (único papel com autoridade para auditar)
+
+**O que o Auditor Técnico valida:**
+
+1. ✅ Estrutura canônica presente
+2. ✅ README.md existe e está completo
+3. ✅ Todas as pastas obrigatórias existem
+4. ✅ DEMANDA-PROD existe e está rastreada
+5. ✅ F-1 existe e foi aprovado
+6. ✅ Evidências de execução existem
+7. ✅ Gates obrigatórios foram aplicados
+8. ✅ Nenhum placeholder em artefatos
+9. ✅ Rastreabilidade total garantida
+
+**Bloqueios:**
+- ❌ Estrutura canônica ausente
+- ❌ README.md ausente ou incompleto
+- ❌ Pastas obrigatórias ausentes
+- ❌ DEMANDA-PROD ausente
+- ❌ F-1 não aprovado
+- ❌ Evidências ausentes
+- ❌ Gates não aplicados
+- ❌ Placeholders em artefatos
+- ❌ Rastreabilidade quebrada
+
+---
+
+### Regra 5: Bloqueio de Produto
+
+**Regra canônica:**
+> "Produto que viola regras de governança DEVE ser bloqueado. Bloqueio é FAIL estrutural."
+
+**Condições de bloqueio:**
+
+1. ❌ Produto criado fora do método
+2. ❌ Produto sem DEMANDA-PROD
+3. ❌ Produto sem estrutura canônica
+4. ❌ Produto sem README.md
+5. ❌ Produto sem aprovação do CEO
+6. ❌ Produto sem auditoria do Auditor Técnico
+7. ❌ Produto com placeholders em artefatos
+8. ❌ Produto com rastreabilidade quebrada
+9. ❌ Produto que falha em gate obrigatório
+
+**Papel responsável pelo bloqueio:**
+- **Auditor Técnico** (bloqueia por violação técnica)
+- **CEO** (bloqueia por violação de governança)
+
+**Consequência do bloqueio:**
+- ❌ Produto não pode ser usado
+- ❌ Produto não pode ser publicado
+- ❌ Produto não pode ser versionado
+- ❌ Produto DEVE ser corrigido antes de PASS
+
+---
+
 ## 📌 STATUS DA CONSTRUÇÃO
 
 **Seções Concluídas:**
 - ✅ F1: Estrutura Canônica de Produto
+- ✅ F2: Regras de Governança
 
 **Próximas Seções:**
-- ⏳ F2: Regras de Governança
 - ⏳ F3: Critérios de PASS/FAIL
 - ⏳ F4: Versionamento de Produto
 
