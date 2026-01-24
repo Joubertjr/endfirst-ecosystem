@@ -1,374 +1,126 @@
----
-document_id: README_ROOT
-type: operational
-owner: CEO (Joubert Jr)
-status: approved
-approved_by: CEO
-approved_at: 2026-01-07
-governed_by: /METODO/PILAR_ENDFIRST.md
-version: v11.19
-created_at: 2026-01-04
-updated_at: 2026-01-08
----
+<!-- MARKER: README_START -->
 
-# 🚀 ENDFIRST Ecosystem v11.19
+# O Fim da Força de Vontade: Por que Este Projeto Existe
 
-**Data:** 8 de Janeiro de 2026  
-**Versão:** v11.19  
-**Status:** ✅ ENTENDIMENTO SEM MUDANÇA É FUGA (OD-011)
-
-> **"END primeiro. HOW depois. Sempre."**
-
-> **"Demandas são executadas por agentes de tecnologia, nunca por pessoas."**
-
-> **"Se algo depende de disciplina humana para funcionar, está errado por definição. Sistemas corretos impedem o erro por design."**
-
-> **"Backlog não cria resultado. Resultado cria backlog. Processo não cria resultado. Resultado cria processo."**
-
-> **"Entendimento que não muda comportamento é fuga."**
-
-**No método ENDFIRST, processos substituem disciplina.**  
-**Se alguém precisa 'lembrar de fazer certo', o sistema falhou.**  
-**RESULTADO é entidade de primeira classe. Backlog é derivado, não origem.**  
-**Entendimento só é válido se mudar comportamento pequeno agora.**
+> **TL;DR:** Este repositório não é sobre um software que resume livros. É sobre um método de engenharia que corrige a falha fundamental de como humanos lidam com projetos de longo prazo. Se você já abandonou uma resolução de Ano Novo, este projeto é para você.
 
 ---
 
-## 🎯 O que é o ENDFIRST Ecosystem?
+## 1. O Problema Humano: Por que Planos Lineares Falham
 
-O **ENDFIRST Ecosystem** é um repositório que documenta e implementa o método ENDFIRST para gestão de projetos e especificação de resultados.
+<!-- MARKER: SECTION_1_PSYCHOLOGY -->
 
-**Princípio fundamental:** Começar pelo fim (END FIRST) - definir claramente o resultado esperado antes de iniciar qualquer trabalho.
+> **Conceito-Chave:** A maioria dos nossos objetivos falha não por falta de disciplina, mas porque usamos um modelo de planejamento linear que é frágil à incerteza. Tentamos seguir um checklist rígido em um mundo caótico.
 
-**Núcleo operacional:** `/METODO/` contém o Pilar ENDFIRST (meta-pilar) que governa como criar especificações.
+A maioria das nossas grandes metas — especialmente as de Ano Novo — falha. A culpa, no entanto, não é da nossa falta de disciplina ou força de vontade. A culpa é do nosso método.
 
----
+Usamos um modelo de **planejamento linear**, que assume um futuro previsível e uma motivação constante. Ele é frágil por design e fadado ao fracasso no mundo real, que é caótico e imprevisível. É como tentar navegar por uma cidade desconhecida com um checklist de ruas em vez de um destino no GPS.
 
-## 📊 ESTADO ATUAL vs ESTADO DESEJADO
+**As três forças que garantem a falha:**
 
-### ✅ O QUE JÁ EXISTE (Estado Atual)
+-   **Planning Fallacy:** Nossa tendência otimista de subestimar o tempo e a dificuldade.
+-   **Decision Fatigue:** Nossa energia mental limitada para tomar boas decisões ao longo do dia.
+-   **Implementation Gap:** A lacuna entre a intenção e a ação concreta.
 
-**Núcleo Operacional ENDFIRST (v1.0):**
-- [x] **Pilar ENDFIRST** — Meta-pilar que governa especificações (`/METODO/PILAR_ENDFIRST.md`)
-- [x] **Template ENDFIRST_SPEC** — Template oficial para criar especificações (`/METODO/templates/ENDFIRST_SPEC.md`)
-- [x] **Processo ENDFIRST** — Processo humano de 30 segundos (`/METODO/processos/ENDFIRST_PROCESS.md`)
-- [x] **Governança Documental** — Sistema de aprovação de documentos (`/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`)
-- [x] **Approval Log** — Registro de aprovações (`/METODO/APPROVAL_LOG.md`)
-- [x] **Approval Log Rules** — Regras anti-TBD (`/METODO/APPROVAL_LOG_RULES.md`)
-- [x] **Commit Governance Checklist** — Checklist de conformidade (`/METODO/COMMIT_GOVERNANCE_CHECKLIST.md`)
-- [x] **Ontology Decisions** — Ontologia operacional consolidada (`/METODO/ONTOLOGY_DECISIONS.md`)
-- [x] **Ontology Decisions Trigger** — Gatilho formal para popular ontologia (`/METODO/ONTOLOGY_DECISIONS_TRIGGER.md`)
-- [x] **OD-004: DEMANDA ≠ PROJETO ≠ PRODUTO** — Decisão ontológica (revisada: Produto obrigatório, Projeto opcional)
-- [x] **OD-005: Toda Demanda pertence a um Produto** — Fundação ontológica do sistema (validada contra 5 critérios)
-- [x] **OD-006: Execução é responsabilidade da Tecnologia (Cursor)** — Elimina ambiguidade sobre executor (validada contra 5 critérios)
-- [x] **OD-007: END é pré-condição absoluta** — Nada começa sem END documentado, versionado e aprovado no Git (frase canônica: "END primeiro. HOW depois. Sempre.")
-- [x] **OD-008: Demandas para Manus também são demandas formais** — Manus não executa ordens fora do Git (estrutura DEMANDAS_MANUS criada)
-- [x] **OD-009: Disciplina Humana é Sinal de Falha de Design** — Princípio transversal: se depende de disciplina, está errado (critério obrigatório de revisão)
-- [x] **OD-010: RESULTADO é entidade de primeira classe** — Backlog é derivado, não origem (frase canônica: "Backlog não cria resultado. Resultado cria backlog.")
-- [x] **OD-011: Entendimento sem mudança comportamental é fuga** — Entendimento só é válido se mudar comportamento pequeno agora (frase canônica: "Entendimento que não muda comportamento é fuga.") + Extensão: **Metacognição é habilidade humana. ENDFIRST é a decisão de não depender dela.**
-- [x] **ONTOLOGY_DECISIONS.md v1.8** — Histórico de versões adicionado (v1.0 → v1.1 → v1.2 → v1.3 → v1.4 → v1.5 → v1.6 → v1.7 → v1.8)
-- [x] **EXECUTION_MODEL.md** — Modelo de execução explícito: CEO autoriza, Manus especifica, Cursor executa (`/METODO/EXECUTION_MODEL.md`)
-- [x] **Governance Cycle Closure** — Ciclo de governança formalmente encerrado, decisões congeladas (`/METODO/GOVERNANCE_CYCLE_CLOSURE.md`)
-- [x] **Commit Review Approval** — Aprovação formal do CEO sobre revisão completa de 20 commits (`/METODO/COMMIT_REVIEW_APPROVAL.md`)
-- [x] **Histórico 100% revisado** — 20 commits classificados: 8 conformes, 12 conformes com ressalvas (legado aceito)
-- [x] **DEMANDA-001 v1.2** — Produto declarado (LLM Orchestrator), executor explícito (cursor), status LIBERADA PARA EXECUÇÃO
-- [x] **DEMANDA-001_RESULT.md** — RESULTADO definido: 7 provas observáveis, artefatos entregáveis, critérios de não-resultado
-- [x] **DEMANDA-001_ACCEPTANCE.md** — Critérios de aceitação final escritos pelo CEO (5 critérios objetivos, imutável durante execução)
-- [x] **TEMPLATE_RESULT.md** — Template de RESULTADO criado (define O QUE existe quando demanda termina, antes de backlog)
-- [x] **FINAL_DECISION_TEMPLATE.md** — Formato padrão de decisão final (como CEO julga sucesso/fracasso)
-- [x] **EXECUTOR_ONBOARDING_PROCESS.md** — Processo de onboarding de executor (elimina dependência de explicação oral)
-- [x] **Integração 13 Pilares** — Resolução de conflito entre sistemas (`/METODO/INTEGRATION_13_PILARES.md`)
-**Exemplos Reais:**
-- [x] **ENDFIRST_SPEC_EF-2026-001** — LLM Orchestrator (validada pelo CEO)
-- [x] **ENDFIRST_SPEC_EF-2026-002** — Governança Documental (validada pelo CEO)
-- [x] **DEMANDA-001** — LLM Orchestrator v1 (pronta para execução)
-
-**Estrutura de Repositório:**
-- [x] Estrutura `/METODO/` criada e operacional
-- [x] Estrutura `/DEMANDAS/` criada e operacional
-- [x] Estrutura DOMAIN/SUBDOMAIN criada (legado)
+> **Frase Canônica:** "END-FIRST não é técnica; é correção de um erro humano."
 
 ---
 
-### 🎯 O QUE AINDA NÃO EXISTE (Estado Desejado)
+## 2. A Correção Estrutural: O Modelo Mental END-FIRST
 
-**Execução:**
-- [ ] **DEMANDA-001 (LLM Orchestrator)** — ✅ AUTORIZADA PARA EXECUÇÃO (CEO, 2026-01-08)
-- [ ] **Testes de validação** — 7 critérios de aceitação passando
-- [ ] **CEO usando regularmente** — Confiança estabelecida
+<!-- MARKER: SECTION_2_METHOD -->
 
-**Metodologia:**
-- [ ] 13 Pilares documentados oficialmente (backlog: `DEMANDA_001_DOCUMENTAR_13_PILARES.md`)
-- [ ] Ontologia formal implementada (LinkML, Neo4j, GraphQL, OWL)
-- [ ] Templates testados em 10+ projetos reais
+> **Conceito-Chave:** Em vez de focar no próximo passo, focamos no destino. O END-FIRST é um GPS para projetos: o destino é fixo, mas a rota se adapta à realidade.
 
-**Automação:**
-- [ ] **CLI ENDFIRST** — Linha de comando para criar specs
-- [ ] **CI/CD de governança** — Validação automática de commits
-- [ ] **Integração Cursor** — Plugin ou workflow otimizado
+O END-FIRST troca o checklist por um GPS. Em vez de nos prender a uma sequência rígida de passos, ele nos força a definir o **Estado Final Esperado (END)** — um destino claro, verificável e imutável. Com o destino fixo, a rota pode se adaptar dinamicamente aos obstáculos e aprendizados do caminho, sem que o projeto perca sua direção.
 
-**Banco de Conhecimento:**
-- [ ] Sistema RAG operacional
-- [ ] Indexação e busca semântica funcionando
-- [ ] Integração com Manus/Cursor validada
+**O que é um END (Estado Final Esperado)?**
 
-**Governança:**
-- [ ] 13 GitHub Projects ativos e sincronizados
-- [ ] Fluxo Kanban respeitado (WIP ≤ 3)
-- [ ] APIs e OLAs documentados
+-   Um destino claro, verificável e imutável.
+-   Define o sucesso de forma inequívoca.
+-   É o contrato que governa toda a execução.
 
-**Wiki Navegável:**
-- [ ] Docusaurus publicado online
-- [ ] Sidebar hierárquica navegável
-- [ ] Busca e links internos funcionando
-
-**Divulgação:**
-- [ ] 12+ artigos Medium publicados
-- [ ] 50+ posts Instagram ativos
-- [ ] 20+ vídeos YouTube publicados
-- [ ] Curso ENDFIRST disponível
+> **Frase Canônica:** "Código sem modelo mental é só execução cega."
 
 ---
 
-## 📂 Estrutura do Repositório
+## 3. A Tradução para Engenharia: Governando a Execução
 
-```
-endfirst-ecosystem/
-├── METODO/                           # ✅ Núcleo Operacional ENDFIRST (v1.0)
-│   ├── PILAR_ENDFIRST.md             # Meta-pilar (soberano)
-│   ├── ENDFIRST_DOCUMENT_GOVERNANCE.md # Governança documental
-│   ├── APPROVAL_LOG.md               # Registro de aprovações
-│   ├── INTEGRATION_13_PILARES.md    # Integração de sistemas
-│   ├── templates/
-│   │   └── ENDFIRST_SPEC.md          # Template oficial
-│   ├── examples/
-│   │   ├── ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md
-│   │   └── ENDFIRST_SPEC_EF-2026-002_DOCUMENT_GOVERNANCE.md
-│   ├── processos/
-│   │   └── ENDFIRST_PROCESS.md       # Processo de 30 segundos
-│   └── README.md                     # Documentação de entrada
-│
-├── DEMANDAS/                         # ✅ Demandas oficiais (governadas por ENDFIRST_SPEC)
-│   ├── DEMANDA-001_LLM_ORCHESTRATOR.md
-│   └── PROMPT_CURSOR_DEMANDA-001.md
-│
-├── CENTRAL/                          # ⏳ Estrutura legada (a integrar)
-│   └── DEMANDAS/
-│       └── TEMPLATES/
-│           └── TEMPLATE_DEMANDA.md   # Template operacional (8 pilares)
-│
-└── DOMAIN_1_METODOLOGIA/             # ⏳ Estrutura legada (a integrar)
-    └── SUBDOMAIN_1.1_PILARES/
-        └── DEMANDAS/
-            └── BACKLOG/
-                └── DEMANDA_001_DOCUMENTAR_13_PILARES.md
-```
+<!-- MARKER: SECTION_3_ENGINEERING -->
+
+> **Conceito-Chave:** O modelo mental se torna um processo de engenharia robusto através de artefatos que garantem qualidade e conformidade.
+
+Para que o modelo mental não se perca na execução, o END-FIRST o traduz em um processo de engenharia governado por artefatos que forçam a qualidade e a conformidade. A execução não depende da boa vontade do executor, mas de um sistema que a impõe.
+
+| Artefato | Propósito |
+|---|---|
+| **F-1 (Planejamento Canônico)** | O contrato de execução. | 
+| **Gates** | Pontos de verificação de qualidade. | 
+| **Evidências** | Provas auditáveis de conformidade. | 
+| **PASS/FAIL Binário** | Sucesso sem subjetividade. | 
+
+> **Frase Canônica:** "Qualidade não é uma expectativa. Qualidade é uma condição de passagem."
 
 ---
 
-## 🧭 Como Usar o Repositório
+## 4. A Implementação Concreta: O Projeto `livros`
 
-### 1. Criar Nova Demanda Estratégica
+<!-- MARKER: SECTION_4_CODE -->
 
-**Use o Pilar ENDFIRST:**
-1. Leia `/METODO/PILAR_ENDFIRST.md`
-2. Use template `/METODO/templates/ENDFIRST_SPEC.md`
-3. Preencha as 6 perguntas
-4. Valide com CEO (Declaração Final de Passagem)
-5. Crie demanda oficial em `/DEMANDAS/`
+> **Conceito-Chave:** Este repositório é a prova viva do método END-FIRST em ação. O código é a consequência do método, não o objetivo principal.
 
-**Exemplo:** `ENDFIRST_SPEC_EF-2026-001_LLM_ORCHESTRATOR.md`
+Este repositório, o `livros`, é a primeira implementação de referência do método END-FIRST. Ele não é apenas um software, mas a prova viva de que o método funciona. O código que você vê aqui é a consequência de um processo rigoroso de planejamento e execução, não o ponto de partida.
 
----
+**Onde ver o método em ação:**
 
-### 2. Criar Nova Demanda Tática
-
-**Use o Template de Demanda:**
-1. Use template `/CENTRAL/DEMANDAS/TEMPLATES/TEMPLATE_DEMANDA.md`
-2. Preencha os 8 pilares
-3. Salve em `/DOMAIN_X/SUBDOMAIN_X.X/DEMANDAS/BACKLOG/`
-
-**Exemplo:** `DEMANDA_001_DOCUMENTAR_13_PILARES.md`
+-   **Demandas e F-1s:** Veja a pasta `/DEMANDAS_MANUS/`.
+-   **Provas de Robustez:** Analise a `DEMANDA-METODO-005` e suas evidências.
+-   **Persistência Progressiva no Código:** A arquitetura de persistência e retomada está implementada nos scripts de execução e no gerenciamento de estado do `livros-cli`.
 
 ---
 
-### 3. Aprovar Documento
+## 5. O Contrato de Uso: Como Engajar com Este Projeto
 
-**Siga a Governança Documental:**
-1. Leia `/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`
-2. Classifique documento (Tipo A, B ou C)
-3. Siga processo de aprovação por tipo
-4. Registre em `/METODO/APPROVAL_LOG.md`
+<!-- MARKER: SECTION_5_GOVERNANCE -->
 
----
+> **Conceito-Chave:** Este projeto é uma implementação de um método. Contribuições devem fortalecer o método, não apenas adicionar features.
 
-## 🔗 Integração: Pilar ENDFIRST vs 13 Pilares
+**Como Contribuir:**
 
-**Decisão CEO:** Pilar ENDFIRST governa tudo.
+1.  **Proponha uma Demanda:** Crie uma nova demanda (de método ou produto) com um END claro.
+2.  **Crie um F-1:** Se a demanda for aprovada, crie um planejamento canônico.
+3.  **Execute o F-1:** Siga as fases, gere evidências e passe pelos gates.
 
-**Relação:**
-- **Pilar ENDFIRST** → Define **COMO** criar especificações (meta-pilar)
-- **13 Pilares** → Define **O QUE** incluir nas demandas (método operacional)
+**Pull requests com código sem um F-1 aprovado serão rejeitados.**
 
-**Documento de integração:** `/METODO/INTEGRATION_13_PILARES.md`
-
-**Regra:**
-- Demandas estratégicas → Usar ENDFIRST_SPEC (obrigatório)
-- Demandas táticas → Usar TEMPLATE_DEMANDA (opcional)
+> **Frase Canônica:** "README é contrato, não introdução."
 
 ---
 
-## 📊 Estatísticas do Repositório
+## Posicionamento Explícito: Para Quem é Este Projeto
 
-**Fonte única de verdade:** `/METODO/APPROVAL_LOG.md`
+<!-- MARKER: SECTION_6_POSITIONING -->
 
-**Total de documentos governados:** 45  
-**Aprovados:** 45 (100%)  
-**Pendentes:** 0 (0%)
+**Este projeto É para você se:**
 
-**Por tipo:**
-- **Canônicos (Tipo A):** 15 aprovados
-- **Operacionais (Tipo B):** 21 aprovados
-- **Exemplos (Tipo C):** 9 aprovados
+-   Você valoriza sistemas robustos e antifrágeis.
+-   Você acredita que a qualidade deve ser governada, não esperada.
+-   Você está cansado de projetos que perdem valor ou estado.
 
-> **Nota:** Totais derivam exclusivamente do APPROVAL_LOG (seção "LOG DE APROVAÇÕES"), não de contagem manual do filesystem. Repo tem arquivos, APPROVAL_LOG tem documentos governados.te
+**Este projeto NÃO é para você se:**
 
-**Ver detalhes:** `/METODO/APPROVAL_LOG.md`
-
----
-
-## 🚀 Próximos Passos
-
-### Prioridade 1: Implementar LLM Orchestrator
-**Demanda:** `DEMANDA-001_LLM_ORCHESTRATOR.md`  
-**Status:** Pronta para execução  
-**Responsável:** Cursor (via prompt)
-
-### Prioridade 2: Documentar 13 Pilares
-**Demanda:** `DEMANDA_001_DOCUMENTAR_13_PILARES.md`  
-**Status:** Backlog (precisa passar pelo Pilar ENDFIRST primeiro)  
-**Ação:** Criar ENDFIRST_SPEC para esta demanda
-
-### Prioridade 3: Aprovar Documentos Pendentes
-**Documentos:**
-- `README_ROOT` (este documento)
-- `TEMPLATE_DEMANDA`
-- `DEMANDA_001_DOCUMENTAR_13_PILARES`
-
-**Ação:** CEO deve revisar e aprovar retroativamente
+-   Você busca prototipagem rápida e soluções "descartáveis".
+-   Você acredita que "depois a gente arruma" é uma estratégia válida.
+-   Você prefere flexibilidade total sem governança.
 
 ---
 
-## ⚙️ Regras Operacionais (Kanban)
+<!-- MARKER: FOOTER -->
 
-**Modelo:** Fluxo contínuo sem sprints
+*Este README é um artefato metodológico governado pela [DEMANDA-METODO-008](DEMANDAS_MANUS/DEMANDA_METODO-008_README_ESTRATEGICO_END_FIRST.md). Para entender como ele foi construído, consulte o [F-1 correspondente](DEMANDAS_MANUS/DEMANDA_METODO-008_F1_PLANEJAMENTO.md).* 
 
-```
-Backlog → 📋 AGUARDANDO → 🔄 EM_PROGRESSO (≤3) → 👀 EM_REVISAO → ✅ CONCLUIDO
-                                   ↓
-                              🚫 BLOQUEADO
-```
+*Versão do Método em uso: [END-FIRST v2.5](METODO/END_FIRST_V2.md)*
 
-### Regras Fundamentais
+<!-- MARKER: README_END -->
 
-**WIP Limit:**
-- Máximo 3 demandas em progresso simultaneamente
-- Se WIP = 3, não puxe nova demanda até concluir uma
 
-**Pull System:**
-- Terminou uma demanda? Puxe a próxima do topo do backlog
-- Não empurre demandas para o executor
-
-**Priorização:**
-- Por dependências (Pilar 4 - Caminho Reverso)
-- O que desbloqueia mais itens vem primeiro
-- CEO pode repriorizar explicitamente
-
-**Validação:**
-- Toda entrega passa por Manus (Pilar 5)
-- Aprovação = critérios de sucesso do Pilar 0 da demanda atendidos
-- Sem validação = não vai para CONCLUIDO
-
----
-
-## 🏛️ Governança do Projeto
-
-### GitHub Projects (13)
-
-**Estrutura:**
-- 1 Project Central - Visão consolidada de todos os subdomínios
-- 12 Projects por Subdomínio - Backlogs específicos
-
-**Acesso:**
-- [Central](https://github.com/users/Joubertjr/projects/1)
-- [1.1 - Pilares](https://github.com/users/Joubertjr/projects/2)
-- [1.2 - Gestão de Projetos](https://github.com/users/Joubertjr/projects/3)
-- [Demais projects...](https://github.com/users/Joubertjr/projects)
-
-### Governança Documental
-
-**Sistema:** `/METODO/ENDFIRST_DOCUMENT_GOVERNANCE.md`
-
-**Tipos de documentos:**
-- **Tipo A (Canônico):** Exige ENDFIRST_SPEC + aprovação CEO
-- **Tipo B (Operacional):** Exige checklist + aprovação Manus/Cursor
-- **Tipo C (Exemplo):** Exige conformidade com template
-
-**Log de aprovações:** `/METODO/APPROVAL_LOG.md`
-
----
-
-## 🤝 Equipe
-
-- **CEO:** Joubert Jr - Criador do método, define demandas estratégicas
-- **Manus AI:** Chefe de Produto - Valida entregas, garante qualidade, implementa governança
-- **Cursor AI:** Desenvolvedor - Implementa demandas
-
----
-
-## 📄 Licença
-
-**Status:** Em definição
-
-Até que a licença formal seja escolhida:
-
-**Uso permitido:**
-- ✅ Uso pessoal e educacional
-- ✅ Estudo e aprendizado
-- ✅ Adaptação para projetos próprios
-- ✅ Referência em artigos/posts (com atribuição)
-
-**Uso NÃO permitido:**
-- ❌ Redistribuição comercial
-- ❌ Venda de materiais derivados
-- ❌ Uso em consultoria sem autorização
-- ❌ Remoção de atribuição ao autor original
-
-**Autor:** Joubert Jr  
-**Contato para licenciamento:** [a definir]
-
----
-
-## 📝 Histórico de Versões
-
-### v11.7 (7 de Janeiro de 2026)
-- ✅ Núcleo Operacional ENDFIRST v1.0 implementado
-- ✅ Governança documental formalizada
-- ✅ Integração entre Pilar ENDFIRST e 13 Pilares resolvida
-- ✅ README atualizado para estado vivo (atual vs desejado)
-- ✅ YAML frontmatter padronizado em todos os documentos
-- ✅ Approval Log criado com inventário completo
-
-### v11.6 (4 de Janeiro de 2026)
-- Limpeza total do repositório
-- Reestruturação por DOMÍNIO/SUBDOMÍNIO
-- Aplicação do próprio método ENDFIRST
-- README robusto com Pilar 0 explícito
-- Token GitHub persistente configurado
-- Início da reconstrução do zero
-
----
-
-**Status:** 🟢 **Núcleo Operacional Ativo — Pronto para escalar**
-
-**Próxima ação:** Implementar DEMANDA-001 (LLM Orchestrator) ou aprovar documentos pendentes.
