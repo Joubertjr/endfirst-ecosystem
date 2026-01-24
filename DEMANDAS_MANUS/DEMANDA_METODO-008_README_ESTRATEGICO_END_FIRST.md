@@ -2,9 +2,10 @@
 demanda_id: DEMANDA-METODO-008
 title: README Estratégico END-FIRST
 type: método / comunicação estratégica
-status: f1_pending
+status: completed
 version: 1.0
 created_at: 2026-01-20
+completed_at: 2026-01-20
 ---
 
 # DEMANDA-METODO-008 — README Estratégico END-FIRST
@@ -12,7 +13,7 @@ created_at: 2026-01-20
 **Versão:** 1.0  
 **Data de Criação:** 20 de Janeiro de 2026  
 **Tipo:** Método / Comunicação Estratégica  
-**Status:** F-1 PENDENTE DE APROVAÇÃO  
+**Status:** CONCLUÍDO  
 **Método:** END-FIRST v2  
 **Executor previsto:** Manus  
 **Bloqueio:** F-1 obrigatório antes de qualquer escrita
