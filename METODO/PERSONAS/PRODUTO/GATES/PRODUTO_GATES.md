@@ -43,7 +43,7 @@ Gates mínimos que Produto deve aplicar antes de submeter demanda/F-1 ao CEO.
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Submissão apenas quando gates PASS.
 
@@ -64,14 +64,39 @@ Gates mínimos que Produto deve aplicar antes de submeter demanda/F-1 ao CEO.
 
 ## 🧱 Gates canônicos (Produto)
 
-1. **Gate Estrutural**: demanda está em `DEMANDAS/ATIVAS/<ID>/` e formato canônico.
-2. **Gate END Binário**: END observável + mensurável + binário.
-3. **Gate PASS/FAIL Verificável**: critérios verificáveis, sem ambiguidade.
-4. **Gate Fora de Escopo**: explícito.
-5. **Gate Fonte Única de Personas**: referências a `/METODO/PERSONAS/<PAPEL>/`.
+### GATE 1 — Gate Estrutural
+
+Demanda está em `DEMANDAS/ATIVAS/<ID>/` e formato canônico.
+
+### GATE 2 — Gate END Binário + PASS/FAIL Verificável
+
+END observável + mensurável + binário, com critérios PASS/FAIL verificáveis (sem ambiguidade).
+
+### GATE 3 — Gate Fonte Única de Personas
+
+Referências a personas apontam para `/METODO/PERSONAS/<PAPEL>/` (fonte única).
+
+### GATE 4 — Gate Fora de Escopo
+
+Fora de escopo explícito.
 
 ---
 
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Produto)**: `/METODO/PERSONAS/PRODUTO/`
+- **Playbook**: `/METODO/PERSONAS/PRODUTO/PLAYBOOKS/PRODUTO_PLAYBOOK.md`
+- **Checklist**: `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

@@ -77,7 +77,7 @@ O CEO NÃO PODE:
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 O CEO cumpriu seu papel se:
 
@@ -112,3 +112,21 @@ O CEO cumpriu seu papel se:
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Definição**: `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md`
+- **Playbook**: `/METODO/PERSONAS/CEO/PLAYBOOKS/CEO_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/CEO/REGRAS/CEO_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/CEO/GATES/CEO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/CEO/CHECKLISTS/CEO_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

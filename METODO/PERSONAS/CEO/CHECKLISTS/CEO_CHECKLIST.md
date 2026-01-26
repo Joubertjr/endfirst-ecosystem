@@ -49,7 +49,7 @@ Fornecer checklist operacional para o CEO executar aprovações e validações s
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Checklist completo aplicado e registrado.
 - Decisões tomadas com evidências.
@@ -103,3 +103,26 @@ Fornecer checklist operacional para o CEO executar aprovações e validações s
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — END Binário (ver `../GATES/CEO_GATES.md`)
+- **GATE 2** — Critérios PASS/FAIL (ver `../GATES/CEO_GATES.md`)
+- **GATE 3** — Fonte Única de Verdade de Personas (ver `../GATES/CEO_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Playbook**: `/METODO/PERSONAS/CEO/PLAYBOOKS/CEO_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/CEO/GATES/CEO_GATES.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

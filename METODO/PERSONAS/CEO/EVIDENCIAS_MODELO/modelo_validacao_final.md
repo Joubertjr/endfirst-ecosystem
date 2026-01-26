@@ -47,7 +47,7 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Decisão final registrada com evidências rastreáveis.
 - PASS/FAIL declarado de forma binária.
@@ -92,3 +92,18 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 ### Observações / bloqueios
 
 - (Se FAIL estrutural, registrar explicitamente)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/modelo_validacao_final.md`
+- **Registro de evidência (execução real)**: `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/...`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do modelo**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

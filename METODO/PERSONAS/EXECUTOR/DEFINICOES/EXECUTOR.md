@@ -59,7 +59,7 @@ O Executor NÃO PODE:
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Seguiu o F-1 sem pular fases.
 - Gerou artefatos e evidências.
@@ -87,3 +87,22 @@ O Executor NÃO PODE:
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Executor)**: `/METODO/PERSONAS/EXECUTOR/`
+- **Definição**: `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`
+- **Playbook**: `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/EXECUTOR/REGRAS/EXECUTOR_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/EXECUTOR/GATES/EXECUTOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/EXECUTOR/CHECKLISTS/EXECUTOR_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/EXECUTOR/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

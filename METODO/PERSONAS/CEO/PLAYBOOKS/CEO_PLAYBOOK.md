@@ -70,7 +70,7 @@ Executar o papel de CEO de forma **operacional**, garantindo END binário, gover
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - END validado (mensurável + binário).
 - F-1 validado (executável + rastreável).
@@ -101,3 +101,27 @@ Executar o papel de CEO de forma **operacional**, garantindo END binário, gover
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — END Binário (ver `../GATES/CEO_GATES.md`)
+- **GATE 2** — Critérios PASS/FAIL (ver `../GATES/CEO_GATES.md`)
+- **GATE 3** — Fonte Única de Verdade de Personas (ver `../GATES/CEO_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Gates**: `/METODO/PERSONAS/CEO/GATES/CEO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/CEO/CHECKLISTS/CEO_CHECKLIST.md`
+- **Modelos de evidência**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

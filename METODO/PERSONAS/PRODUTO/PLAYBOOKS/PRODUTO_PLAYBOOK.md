@@ -47,7 +47,7 @@ Operacionalizar a criação de demandas e F-1 com governança por artefatos e ac
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Demanda completa, rastreável e governada por artefatos.
 - Zero improviso estrutural (fonte única de personas respeitada).
@@ -85,3 +85,27 @@ Operacionalizar a criação de demandas e F-1 com governança por artefatos e ac
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — Gate Estrutural (ver `../GATES/PRODUTO_GATES.md`)
+- **GATE 2** — Gate END Binário + PASS/FAIL Verificável (ver `../GATES/PRODUTO_GATES.md`)
+- **GATE 3** — Gate Fonte Única de Personas (ver `../GATES/PRODUTO_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Produto)**: `/METODO/PERSONAS/PRODUTO/`
+- **Gates**: `/METODO/PERSONAS/PRODUTO/GATES/PRODUTO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

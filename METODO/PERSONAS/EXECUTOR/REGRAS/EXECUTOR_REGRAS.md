@@ -45,7 +45,7 @@ Estabelecer regras operacionais para execução sem improviso, com rastreabilida
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Execução completa sem pular fases, com evidências e commits.
 
@@ -68,3 +68,20 @@ Estabelecer regras operacionais para execução sem improviso, com rastreabilida
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Executor)**: `/METODO/PERSONAS/EXECUTOR/`
+- **Definição**: `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`
+- **Playbook**: `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/EXECUTOR/GATES/EXECUTOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/EXECUTOR/CHECKLISTS/EXECUTOR_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

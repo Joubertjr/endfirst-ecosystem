@@ -44,7 +44,7 @@ Definir regras para auditoria binária e rastreável, sem confiança implícita.
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Auditoria objetiva, com evidência e rastreabilidade.
 
@@ -76,3 +76,20 @@ Definir regras para auditoria binária e rastreável, sem confiança implícita.
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Auditor)**: `/METODO/PERSONAS/AUDITOR/`
+- **Definição**: `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
+- **Playbook**: `/METODO/PERSONAS/AUDITOR/PLAYBOOKS/AUDITOR_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

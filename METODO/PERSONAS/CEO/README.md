@@ -43,7 +43,7 @@ Centralizar todos os artefatos necessários para qualquer agente atuar como CEO 
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Decisões binárias com evidências e rastreabilidade.
 - FAIL estrutural bloqueado.
@@ -80,3 +80,22 @@ Centralizar todos os artefatos necessários para qualquer agente atuar como CEO 
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Diretório canônico**: `/METODO/PERSONAS/CEO/`
+- **Definição**: `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md`
+- **Playbook**: `/METODO/PERSONAS/CEO/PLAYBOOKS/CEO_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/CEO/REGRAS/CEO_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/CEO/GATES/CEO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/CEO/CHECKLISTS/CEO_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do diretório canônico (meta)**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

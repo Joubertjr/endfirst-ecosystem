@@ -45,7 +45,7 @@ O CEO tem autoridade para aprovar/rejeitar demandas com base em END binário e c
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Decisão registrada com rastreabilidade e evidências.
 - Fonte única de personas confirmada.
@@ -90,3 +90,18 @@ O CEO tem autoridade para aprovar/rejeitar demandas com base em END binário e c
 ### Observações / bloqueios
 
 - (Se existir FAIL estrutural, registrar aqui)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/modelo_aprovacao_demanda.md`
+- **Registro de evidência (execução real)**: `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/...`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do modelo**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

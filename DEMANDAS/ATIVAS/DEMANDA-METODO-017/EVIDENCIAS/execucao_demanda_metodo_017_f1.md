@@ -17,7 +17,7 @@
 **Confirmação:**
 
 - A fonte única de verdade das personas é: `/METODO/PERSONAS/<PAPEL>/`
-- Artefatos legados fora do diretório canônico foram convertidos para **stubs legados** (redirecionamento), não sendo mais definição válida.
+- Artefatos legados fora do diretório canônico foram **removidos** para eliminar segunda fonte de verdade (sem definições concorrentes).
 
 ---
 
@@ -81,6 +81,9 @@
 - `/METODO/PERSONAS/PRODUTO/REGRAS/PRODUTO_REGRAS.md`
 - `/METODO/PERSONAS/PRODUTO/GATES/PRODUTO_GATES.md`
 - `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+- `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/modelo_aprovacao_demanda.md`
+- `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/modelo_aprovacao_f1.md`
+- `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/modelo_validacao_final.md`
 - `/METODO/PERSONAS/PRODUTO/README.md`
 
 - `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`
@@ -88,6 +91,7 @@
 - `/METODO/PERSONAS/EXECUTOR/REGRAS/EXECUTOR_REGRAS.md`
 - `/METODO/PERSONAS/EXECUTOR/GATES/EXECUTOR_GATES.md`
 - `/METODO/PERSONAS/EXECUTOR/CHECKLISTS/EXECUTOR_CHECKLIST.md`
+- `/METODO/PERSONAS/EXECUTOR/EVIDENCIAS_MODELO/modelo_execucao_fase.md`
 - `/METODO/PERSONAS/EXECUTOR/README.md`
 
 - `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
@@ -95,6 +99,7 @@
 - `/METODO/PERSONAS/AUDITOR/REGRAS/AUDITOR_REGRAS.md`
 - `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
 - `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+- `/METODO/PERSONAS/AUDITOR/EVIDENCIAS_MODELO/modelo_relatorio_auditoria.md`
 - `/METODO/PERSONAS/AUDITOR/README.md`
 
 ---
@@ -104,7 +109,7 @@
 ### Checagens obrigatórias
 
 - **Não existe segunda definição de persona fora de `/METODO/PERSONAS//`**: ✅ PASS  
-  - Evidência: arquivos fora do diretório canônico foram convertidos para **stubs legados** (sem definição).
+  - Evidência: definições/playbooks legados fora do diretório canônico foram removidos; fonte única permanece em `/METODO/PERSONAS/<PAPEL>/`.
 - **DEMANDA-METODO-017 contém END exato**: ✅ PASS  
 - **F1 existe**: ✅ PASS  
 - **Evidência existe**: ✅ PASS  

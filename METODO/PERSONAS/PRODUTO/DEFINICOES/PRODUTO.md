@@ -57,7 +57,7 @@ O Produto NÃO PODE:
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Demanda criada com END binário + PASS/FAIL verificáveis.
 - Fora de escopo explícito.
@@ -87,3 +87,22 @@ O Produto NÃO PODE:
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Produto)**: `/METODO/PERSONAS/PRODUTO/`
+- **Definição**: `/METODO/PERSONAS/PRODUTO/DEFINICOES/PRODUTO.md`
+- **Playbook**: `/METODO/PERSONAS/PRODUTO/PLAYBOOKS/PRODUTO_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/PRODUTO/REGRAS/PRODUTO_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/PRODUTO/GATES/PRODUTO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

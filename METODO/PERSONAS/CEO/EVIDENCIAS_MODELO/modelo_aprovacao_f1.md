@@ -46,7 +46,7 @@ O CEO tem autoridade para aprovar/rejeitar F-1 com base em executabilidade, rast
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Decisão registrada com evidências rastreáveis.
 - Fonte única de personas confirmada.
@@ -91,3 +91,18 @@ O CEO tem autoridade para aprovar/rejeitar F-1 com base em executabilidade, rast
 ### Observações / bloqueios
 
 - (Registrar FAIL estrutural se aplicável)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/modelo_aprovacao_f1.md`
+- **Registro de evidência (execução real)**: `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/...`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do modelo**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

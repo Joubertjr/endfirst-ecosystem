@@ -42,7 +42,7 @@ Centralizar os artefatos para auditar demandas, F-1 e artefatos com critérios b
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Auditoria objetiva e rastreável.
 
@@ -64,3 +64,22 @@ Centralizar os artefatos para auditar demandas, F-1 e artefatos com critérios b
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Diretório canônico**: `/METODO/PERSONAS/AUDITOR/`
+- **Definição**: `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
+- **Playbook**: `/METODO/PERSONAS/AUDITOR/PLAYBOOKS/AUDITOR_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/AUDITOR/REGRAS/AUDITOR_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/AUDITOR/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do diretório canônico (meta)**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

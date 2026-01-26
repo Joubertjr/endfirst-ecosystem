@@ -46,7 +46,7 @@ Operacionalizar auditoria binária (PASS/FAIL) de demandas, F-1 e artefatos, bus
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Relatório objetivo e rastreável, com PASS/FAIL binário.
 
@@ -87,3 +87,27 @@ Operacionalizar auditoria binária (PASS/FAIL) de demandas, F-1 e artefatos, bus
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — Gate Estrutural (ver `../GATES/AUDITOR_GATES.md`)
+- **GATE 2** — Gate Placeholders (ver `../GATES/AUDITOR_GATES.md`)
+- **GATE 3** — Gate Fonte Única de Personas (ver `../GATES/AUDITOR_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Auditor)**: `/METODO/PERSONAS/AUDITOR/`
+- **Gates**: `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/AUDITOR/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

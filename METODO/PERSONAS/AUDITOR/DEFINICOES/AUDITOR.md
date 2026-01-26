@@ -57,7 +57,7 @@ O Auditor NÃO PODE:
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Auditoria objetiva com declarações PASS/FAIL baseadas em critérios.
 - Falhas escondidas encontradas e registradas (quando existirem).
@@ -84,3 +84,22 @@ O Auditor NÃO PODE:
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Auditor)**: `/METODO/PERSONAS/AUDITOR/`
+- **Definição**: `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
+- **Playbook**: `/METODO/PERSONAS/AUDITOR/PLAYBOOKS/AUDITOR_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/AUDITOR/REGRAS/AUDITOR_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/AUDITOR/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

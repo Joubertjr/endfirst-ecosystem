@@ -45,7 +45,7 @@ Checklist operacional para executar F-1 sem pular fases e com evidências.
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Execução rastreável com evidências e sem fases puladas.
 
@@ -88,3 +88,26 @@ Checklist operacional para executar F-1 sem pular fases e com evidências.
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — Gate F-1 Aprovado (ver `../GATES/EXECUTOR_GATES.md`)
+- **GATE 2** — Gate END Claro (ver `../GATES/EXECUTOR_GATES.md`)
+- **GATE 3** — Gate Fonte Única de Personas (ver `../GATES/EXECUTOR_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Executor)**: `/METODO/PERSONAS/EXECUTOR/`
+- **Playbook**: `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/EXECUTOR/GATES/EXECUTOR_GATES.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

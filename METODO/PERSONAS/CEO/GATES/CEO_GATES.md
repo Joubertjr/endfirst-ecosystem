@@ -43,7 +43,7 @@ O CEO tem autoridade para:
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Todos os gates aplicáveis foram verificados e registrados.
 - Nenhum gate estrutural foi ignorado.
@@ -67,7 +67,7 @@ O CEO tem autoridade para:
 
 ## 🧱 Gates canônicos (CEO)
 
-### Gate 1 — END Binário
+### GATE 1 — END Binário
 
 **PASS se:**
 - END é mensurável, observável e binário.
@@ -75,7 +75,7 @@ O CEO tem autoridade para:
 **FAIL se:**
 - END é ambíguo, não mensurável ou “parcial”.
 
-### Gate 2 — Critérios PASS/FAIL
+### GATE 2 — Critérios PASS/FAIL
 
 **PASS se:**
 - Existem critérios explícitos de PASS e FAIL, verificáveis.
@@ -83,7 +83,7 @@ O CEO tem autoridade para:
 **FAIL se:**
 - Critérios ausentes, vagos, não verificáveis.
 
-### Gate 3 — Fonte Única de Verdade de Personas
+### GATE 3 — Fonte Única de Verdade de Personas
 
 **PASS se:**
 - Persona ativa existe em `/METODO/PERSONAS/<PAPEL>/` com definição, playbook, regras, gates e checklist.
@@ -92,7 +92,7 @@ O CEO tem autoridade para:
 **FAIL se:**
 - Persona sem diretório canônico, ou existe dupla fonte de verdade.
 
-### Gate 4 — Evidências para PASS Final
+### GATE 4 — Evidências para PASS Final
 
 **PASS se:**
 - Evidências existem, são rastreáveis e cobrem todos os critérios de PASS.
@@ -105,3 +105,18 @@ O CEO tem autoridade para:
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Playbook**: `/METODO/PERSONAS/CEO/PLAYBOOKS/CEO_PLAYBOOK.md`
+- **Checklist**: `/METODO/PERSONAS/CEO/CHECKLISTS/CEO_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

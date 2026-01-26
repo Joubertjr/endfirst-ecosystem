@@ -41,7 +41,7 @@ Definir gates mínimos para auditoria de integridade (estrutura, rastreabilidade
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Gates aplicados e registrados.
 
@@ -62,13 +62,39 @@ Definir gates mínimos para auditoria de integridade (estrutura, rastreabilidade
 
 ## 🧱 Gates canônicos (Auditor)
 
-1. **Gate Estrutural**: demanda/F-1 seguem estrutura canônica.
-2. **Gate Placeholders**: ausência de TODO/TBD em END e critérios.
-3. **Gate Rastreabilidade**: artefatos + evidências + commits.
-4. **Gate Fonte Única de Personas**: persona válida apenas em `/METODO/PERSONAS/<PAPEL>/`.
+### GATE 1 — Gate Estrutural
+
+Demanda/F-1 seguem estrutura canônica.
+
+### GATE 2 — Gate Placeholders
+
+Ausência de TODO/TBD em END e critérios.
+
+### GATE 3 — Gate Fonte Única de Personas
+
+Persona válida apenas em `/METODO/PERSONAS/<PAPEL>/`.
+
+### GATE 4 — Gate Rastreabilidade
+
+Artefatos + evidências + commits.
 
 ---
 
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Auditor)**: `/METODO/PERSONAS/AUDITOR/`
+- **Playbook**: `/METODO/PERSONAS/AUDITOR/PLAYBOOKS/AUDITOR_PLAYBOOK.md`
+- **Checklist**: `/METODO/PERSONAS/AUDITOR/CHECKLISTS/AUDITOR_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

@@ -47,7 +47,7 @@ Operacionalizar execução de F-1 com rastreabilidade, evidências e respeito es
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Execução rastreável fase-a-fase, com evidências.
 
@@ -92,3 +92,27 @@ Operacionalizar execução de F-1 com rastreabilidade, evidências e respeito es
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — Gate F-1 Aprovado (ver `../GATES/EXECUTOR_GATES.md`)
+- **GATE 2** — Gate END Claro (ver `../GATES/EXECUTOR_GATES.md`)
+- **GATE 3** — Gate Fonte Única de Personas (ver `../GATES/EXECUTOR_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Executor)**: `/METODO/PERSONAS/EXECUTOR/`
+- **Gates**: `/METODO/PERSONAS/EXECUTOR/GATES/EXECUTOR_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/EXECUTOR/CHECKLISTS/EXECUTOR_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/EXECUTOR/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 2.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

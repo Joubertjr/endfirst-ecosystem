@@ -42,7 +42,7 @@ Definir gates mínimos que o Executor deve aplicar antes/durante a execução.
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Gates aplicados e respeitados (sem “atalho”).
 
@@ -62,13 +62,39 @@ Definir gates mínimos que o Executor deve aplicar antes/durante a execução.
 
 ## 🧱 Gates canônicos (Executor)
 
-1. **Gate F-1 Aprovado**: não executar sem aprovação.
-2. **Gate END Claro**: END binário, sem ambiguidade.
-3. **Gate Fonte Única de Personas**: persona ativa válida em `/METODO/PERSONAS/<PAPEL>/`.
-4. **Gate Evidências**: toda fase gera evidência rastreável.
+### GATE 1 — Gate F-1 Aprovado
+
+Não executar sem aprovação.
+
+### GATE 2 — Gate END Claro
+
+END binário, sem ambiguidade.
+
+### GATE 3 — Gate Fonte Única de Personas
+
+Persona ativa válida em `/METODO/PERSONAS/<PAPEL>/`.
+
+### GATE 4 — Gate Evidências
+
+Toda fase gera evidência rastreável.
 
 ---
 
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Executor)**: `/METODO/PERSONAS/EXECUTOR/`
+- **Playbook**: `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`
+- **Checklist**: `/METODO/PERSONAS/EXECUTOR/CHECKLISTS/EXECUTOR_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

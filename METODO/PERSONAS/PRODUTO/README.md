@@ -41,7 +41,7 @@ Centralizar os artefatos para atuar como Produto sem improviso.
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Demandas rastreáveis com aceitação binária.
 
@@ -63,3 +63,22 @@ Centralizar os artefatos para atuar como Produto sem improviso.
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Diretório canônico**: `/METODO/PERSONAS/PRODUTO/`
+- **Definição**: `/METODO/PERSONAS/PRODUTO/DEFINICOES/PRODUTO.md`
+- **Playbook**: `/METODO/PERSONAS/PRODUTO/PLAYBOOKS/PRODUTO_PLAYBOOK.md`
+- **Regras**: `/METODO/PERSONAS/PRODUTO/REGRAS/PRODUTO_REGRAS.md`
+- **Gates**: `/METODO/PERSONAS/PRODUTO/GATES/PRODUTO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+- **Evidências-modelo**: `/METODO/PERSONAS/PRODUTO/EVIDENCIAS_MODELO/`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do diretório canônico (meta)**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

@@ -45,7 +45,7 @@ Definir regras para garantir que a persona Produto governe criação de demandas
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Demanda criada com rastreabilidade e aceitação binária.
 - Fonte única respeitada.
@@ -77,3 +77,20 @@ Definir regras para garantir que a persona Produto governe criação de demandas
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Produto)**: `/METODO/PERSONAS/PRODUTO/`
+- **Definição**: `/METODO/PERSONAS/PRODUTO/DEFINICOES/PRODUTO.md`
+- **Playbook**: `/METODO/PERSONAS/PRODUTO/PLAYBOOKS/PRODUTO_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/PRODUTO/GATES/PRODUTO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/PRODUTO/CHECKLISTS/PRODUTO_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

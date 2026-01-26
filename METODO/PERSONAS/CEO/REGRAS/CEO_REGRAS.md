@@ -47,7 +47,7 @@ Definir regras operacionais do papel CEO para garantir governança, rastreabilid
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Bloqueou execução quando detectou improviso estrutural.
 - Manteve END e critérios binários.
@@ -86,3 +86,20 @@ Definir regras operacionais do papel CEO para garantir governança, rastreabilid
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
+- **Definição**: `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md`
+- **Playbook**: `/METODO/PERSONAS/CEO/PLAYBOOKS/CEO_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/CEO/GATES/CEO_GATES.md`
+- **Checklist**: `/METODO/PERSONAS/CEO/CHECKLISTS/CEO_CHECKLIST.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).

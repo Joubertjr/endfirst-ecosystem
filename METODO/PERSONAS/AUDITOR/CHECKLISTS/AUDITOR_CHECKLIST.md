@@ -42,7 +42,7 @@ Checklist operacional para auditoria rápida e binária (PASS/FAIL).
 
 ---
 
-## ✅ Critérios de PASS (do papel)
+## ✅ Critérios de PASS
 
 - Checklist aplicado e resultado registrado objetivamente.
 
@@ -75,3 +75,26 @@ Checklist operacional para auditoria rápida e binária (PASS/FAIL).
 ## 🔒 Regra final
 
 > “Persona sem diretório canônico é improviso. Sistema com duas fontes de verdade é FAIL estrutural.”
+
+---
+
+## 🧱 Gates (referência explícita)
+
+- **GATE 1** — Gate Estrutural (ver `../GATES/AUDITOR_GATES.md`)
+- **GATE 2** — Gate Placeholders (ver `../GATES/AUDITOR_GATES.md`)
+- **GATE 3** — Gate Fonte Única de Personas (ver `../GATES/AUDITOR_GATES.md`)
+
+---
+
+## 🔗 Rastreabilidade
+
+- **Fonte única (persona Auditor)**: `/METODO/PERSONAS/AUDITOR/`
+- **Playbook**: `/METODO/PERSONAS/AUDITOR/PLAYBOOKS/AUDITOR_PLAYBOOK.md`
+- **Gates**: `/METODO/PERSONAS/AUDITOR/GATES/AUDITOR_GATES.md`
+
+---
+
+## 🧬 Versionamento
+
+- **Versão do artefato**: 1.0
+- **Mudanças permitidas**: somente via demanda de método (com evidência e commit rastreável).
