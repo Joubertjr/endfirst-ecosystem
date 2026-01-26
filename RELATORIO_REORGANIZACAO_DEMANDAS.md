@@ -33,11 +33,15 @@ DEMANDAS/
 │       ├── EVIDENCIAS/  # Todas as evidências desta demanda
 │       └── OUTPUTS/     # Outputs específicos desta demanda
 │
-└── FINALIZADAS/         # Demandas concluídas
-    └── DEMANDA-METODO-005/
-        ├── (arquivos da demanda)
-        ├── EVIDENCIAS/
-        └── OUTPUTS/
+├── FINALIZADAS/         # Demandas concluídas
+│   └── DEMANDA-METODO-005/
+│       ├── (arquivos da demanda)
+│       ├── EVIDENCIAS/
+│       └── OUTPUTS/
+│
+└── SEM_VINCULO/         # Arquivos sem vínculo específico
+    ├── EVIDENCIAS/      # Evidências gerais (9 arquivos)
+    └── OUTPUTS/         # Pacotes gerais (3 arquivos)
 ```
 
 ---
@@ -53,6 +57,8 @@ DEMANDAS/
 | **Demandas com Evidências** | 19 pastas | ✅ Evidências organizadas |
 | **Evidências Movidas** | 30+ arquivos | ✅ Associadas às demandas |
 | **Pacotes ZIP Movidos** | 3 arquivos | ✅ Associados às demandas |
+| **Arquivos sem Vínculo** | 12 arquivos | ✅ Organizados em SEM_VINCULO |
+| **Pastas Removidas da Raiz** | 2 pastas | ✅ EVIDENCIAS/ e OUTPUTS/ removidas |
 
 ### Detalhamento
 
@@ -163,41 +169,51 @@ DEMANDAS/ATIVAS/DEMANDA-METODO-010/
 
 ---
 
-## ⚠️ OBSERVAÇÕES
+## 📁 ESTRUTURA FINAL COMPLETA
 
-### Arquivos Não Processados
+### DEMANDAS/SEM_VINCULO/
 
-Alguns arquivos não foram associados a demandas específicas:
-- `README.md` de `DEMANDAS_MANUS/` (documentação geral)
-- `TEMPLATE_DEMANDA_MANUS.md` (template geral)
-- `PROMPT_CURSOR_DEMANDA-001.md` (arquivo auxiliar)
-- `execucao_ontologia_personas.md` (evidência geral)
-- `execucao_pacote_v3_fase_1_auditoria_estado_atual.md` (evidência geral)
+Arquivos sem vínculo específico com demandas foram organizados em:
 
-**Ação:** Estes arquivos permanecem em suas localizações originais ou em `EVIDENCIAS/` (para evidências gerais).
+**EVIDENCIAS/** (9 arquivos):
+- `auditoria_lixo_repositorio.md`
+- `auditoria_repositorio_completa_2026-01-23.md`
+- `execucao_ontologia_personas.md`
+- `execucao_pacote_v3_fase_1_auditoria_estado_atual.md`
+- `gate_z_method_repo_integrity.md`
+- `validacao_pacote_zip_v3.md`
+- `z12_audit_proof.md`
+- `z12_latest_run.md`
+- `scan_placeholders.txt`
 
-### Evidências Gerais
+**OUTPUTS/** (3 arquivos):
+- `PACOTE_EXECUCAO_COMPLETA_END_FIRST_7d34205.zip`
+- `PACOTE_EXECUCAO_COMPLETA_END_FIRST_v3.zip`
+- `PACOTE_EXECUCAO_COMPLETA_END_FIRST_v3.1.zip`
 
-Algumas evidências não são específicas de uma demanda (ex: `auditoria_repositorio_completa_2026-01-23.md`). Estas permanecem em `EVIDENCIAS/` na raiz.
+### Pastas Removidas da Raiz
 
-### Outputs Gerais
+- ✅ `DEMANDAS_MANUS/` — removida (arquivos migrados)
+- ✅ `EVIDENCIAS/` — removida da raiz (arquivos organizados)
+- ✅ `OUTPUTS/` — removida da raiz (arquivos organizados)
 
-Pacotes completos de execução (ex: `PACOTE_EXECUCAO_COMPLETA_END_FIRST_v3.1.zip`) permanecem em `OUTPUTS/` na raiz, pois não são específicos de uma demanda.
+**Resultado:** Tudo agora está dentro de `DEMANDAS/`
 
 ---
 
 ## 📝 PRÓXIMOS PASSOS
 
-### Imediatos
+### Concluídos ✅
 1. ✅ **Reorganização concluída** — Estrutura criada e validada
-2. ⏳ **Validação manual** — Revisar estrutura criada
-3. ⏳ **Atualização de scripts** — Atualizar referências aos caminhos antigos
-4. ⏳ **Documentação** — Documentar nova estrutura no método
+2. ✅ **Remoção de pastas antigas** — DEMANDAS_MANUS/, EVIDENCIAS/, OUTPUTS/ removidas
+3. ✅ **Organização completa** — Todos os arquivos dentro de DEMANDAS/
+4. ✅ **Commit e push** — Tudo no repositório remoto
 
-### Futuro
-1. ⏳ **Remover `DEMANDAS_MANUS/`** — Após validação completa
-2. ⏳ **Atualizar templates** — Refletir nova estrutura
-3. ⏳ **Automatizar** — Scripts futuros devem usar nova estrutura
+### Pendentes
+1. ⏳ **Atualização de scripts** — Atualizar referências aos caminhos antigos
+2. ⏳ **Documentação** — Documentar nova estrutura no método
+3. ⏳ **Atualizar templates** — Refletir nova estrutura
+4. ⏳ **Automatizar** — Scripts futuros devem usar nova estrutura
 
 ---
 
@@ -206,11 +222,33 @@ Pacotes completos de execução (ex: `PACOTE_EXECUCAO_COMPLETA_END_FIRST_v3.1.zi
 A reorganização estrutural foi **concluída com sucesso**. A nova estrutura:
 
 - ✅ **Resolve problemas de rastreabilidade** — Tudo relacionado a uma demanda está junto
-- ✅ **Melhora organização** — Separação clara entre ativas e finalizadas
+- ✅ **Melhora organização** — Separação clara entre ativas, finalizadas e sem vínculo
 - ✅ **Facilita auditoria** — Estrutura hierárquica intuitiva
 - ✅ **Facilita navegação** — Estrutura de pastas clara e consistente
+- ✅ **Elimina pastas soltas** — Tudo dentro de DEMANDAS/
+- ✅ **Rastreabilidade completa** — Cada demanda tem suas evidências e outputs
 
-**Status Final:** ✅ **REORGANIZAÇÃO CONCLUÍDA**
+### Estrutura Final
+
+```
+DEMANDAS/
+├── ATIVAS/          # 30 demandas ativas
+├── FINALIZADAS/     # 5 demandas finalizadas
+└── SEM_VINCULO/     # Arquivos sem vínculo específico
+    ├── EVIDENCIAS/  # 9 evidências gerais
+    └── OUTPUTS/     # 3 pacotes gerais
+```
+
+**Status Final:** ✅ **REORGANIZAÇÃO COMPLETA E LIMPA**
+
+### Commits Realizados
+
+- `db4184d` — Reorganização inicial + correção F-1 + pacote v3.1
+- `e84cb5f` — Limpeza de pastas antigas e duplicatas
+- `b3f563e` — Remoção de EVIDENCIAS e OUTPUTS da raiz
+- `840593b` — Remoção completa das pastas
+
+**Total:** 4 commits, todas as mudanças no repositório remoto
 
 ---
 
