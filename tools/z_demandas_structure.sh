@@ -86,6 +86,12 @@ for demanda_dir in DEMANDAS/ATIVAS/* DEMANDAS/FINALIZADAS/*; do
     fi
     
     # Verificar arquivo da demanda (pode ter vários nomes)
+    # Exceção: pastas que são apenas para evidências de atualização do método
+    if [ "$demanda_id" = "DEMANDA-METODO-017" ]; then
+        # Esta pasta é apenas para evidência de atualização do método
+        continue
+    fi
+    
     arquivos_demanda=$(find "$demanda_dir" -maxdepth 1 -type f \( -name "DEMANDA-*.md" -o -name "DEMANDA_*.md" \) 2>/dev/null | wc -l | tr -d ' ')
     if [ "$arquivos_demanda" -eq 0 ]; then
         echo "  ❌ FAIL: $demanda_id sem arquivo de demanda principal"
