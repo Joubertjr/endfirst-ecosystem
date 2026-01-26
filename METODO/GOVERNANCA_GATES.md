@@ -158,6 +158,42 @@ ENTÃO Z10 é RECOMENDADO
 
 ## 🔒 GATES OBRIGATÓRIOS UNIVERSAIS
 
+### Z-DEMANDAS-STRUCTURE — OBRIGATÓRIO PARA TODAS AS DEMANDAS
+
+**Gate Z-DEMANDAS-STRUCTURE (Estrutura Canônica de Demandas)** é obrigatório para **toda e qualquer demanda**, independentemente da classe.
+
+**Razão:**
+- Garante conformidade com estrutura canônica
+- Impede criação de pastas proibidas na raiz
+- Valida organização hierárquica de demandas, evidências e outputs
+- Garante rastreabilidade completa
+
+**Regra:**
+```
+PARA TODA demanda
+  Z-DEMANDAS-STRUCTURE é OBRIGATÓRIO
+  (sem exceções)
+```
+
+**Critérios de PASS:**
+- ✅ Nenhuma pasta proibida na raiz (DEMANDAS_MANUS/, EVIDENCIAS/, OUTPUTS/)
+- ✅ Demanda está em DEMANDAS/ATIVAS/ ou DEMANDAS/FINALIZADAS/
+- ✅ Pasta EVIDENCIAS/ existe dentro da pasta da demanda
+- ✅ Pasta OUTPUTS/ existe dentro da pasta da demanda
+- ✅ Evidências e outputs estão nos locais corretos
+
+**Critérios de FAIL:**
+- ❌ Pasta proibida existe na raiz
+- ❌ Demanda fora de DEMANDAS/ATIVAS/ ou DEMANDAS/FINALIZADAS/
+- ❌ Estrutura de pasta da demanda incompleta
+- ❌ Evidência ou output fora do local correto
+
+**Dispensa:** Não permitida
+
+**Referência:** `/METODO/ESTRUTURA_CANONICA_DEMANDAS.md`
+
+---
+
 ### Z12 — OBRIGATÓRIO PARA TODAS AS DEMANDAS
 
 **Gate Z12 (Auditoria Canônica)** é obrigatório para **toda e qualquer demanda**, independentemente da classe.

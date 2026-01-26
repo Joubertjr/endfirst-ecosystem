@@ -231,8 +231,10 @@ Se demanda ∈ Classe A, exige 4 provas mínimas:
 ---
 
 **Governado por:** [Path do documento que governa]  
-**Path Canônico:** [Path desta demanda]  
+**Path Canônico:** `DEMANDAS/ATIVAS/<DEMANDA-ID>/DEMANDA-<TIPO>-<NUMERO>_<TITULO>.md`  
 **Refs:** #[número da issue]
+
+**⚠️ IMPORTANTE:** Toda demanda DEVE ser criada em `DEMANDAS/ATIVAS/<DEMANDA-ID>/` seguindo a estrutura canônica definida em `/METODO/ESTRUTURA_CANONICA_DEMANDAS.md`
 ```
 
 ---

@@ -582,8 +582,20 @@ END-FIRST v2 é a **evolução canônica** do método que introduz **F-1 (Planej
 
 **Fluxo completo:**
 ```
-Pilar ENDFIRST → DEMANDA → F-1 (Planejamento) → EXECUÇÃO
+Pilar ENDFIRST 
+  → Criar Demanda em DEMANDAS/ATIVAS/<DEMANDA-ID>/
+  → Z-DEMANDAS-STRUCTURE (valida estrutura)
+  → F-1 (Planejamento) 
+  → Z-F1-INTEGRITY (valida F-1)
+  → EXECUÇÃO (F1-F6)
+  → Z-DEMANDA-COMPLETUDE (valida completude)
+  → Mover para DEMANDAS/FINALIZADAS/
 ```
+
+**Regra canônica:**
+> "Nenhuma demanda pode existir fora de DEMANDAS/ATIVAS/ ou DEMANDAS/FINALIZADAS/. Tudo relacionado a uma demanda está na mesma pasta."
+
+**Referência:** `/METODO/ESTRUTURA_CANONICA_DEMANDAS.md`
 
 ### Quando usar F-1
 

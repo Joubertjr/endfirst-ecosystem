@@ -156,7 +156,37 @@ Durante F-1, é **estritamente proibido:**
 ### Fluxo Completo (com F-1)
 
 ```
-DEMANDA → F-1 (Planejamento) → APROVAÇÃO → CARD → EXECUÇÃO → EVIDÊNCIA → JULGAMENTO
+Criar Demanda em DEMANDAS/ATIVAS/<DEMANDA-ID>/
+  ↓
+Z-DEMANDAS-STRUCTURE (valida estrutura)
+  ↓
+Criar F-1 (se necessário)
+  ↓
+Z-F1-INTEGRITY (valida F-1)
+  ↓
+APROVAÇÃO do F-1
+  ↓
+Executar Fases (F1-F6) - loop até PASS
+  ↓
+Z-DEMANDA-COMPLETUDE (valida completude)
+  ↓
+Mover para DEMANDAS/FINALIZADAS/
+  ↓
+Z-DEMANDAS-STRUCTURE (valida estrutura após movimentação)
+```
+
+### Fluxo Simplificado (sem F-1)
+
+```
+Criar Demanda em DEMANDAS/ATIVAS/<DEMANDA-ID>/
+  ↓
+Z-DEMANDAS-STRUCTURE (valida estrutura)
+  ↓
+CARD → EXECUÇÃO → EVIDÊNCIA → JULGAMENTO
+  ↓
+Z-DEMANDA-COMPLETUDE (valida completude)
+  ↓
+Mover para DEMANDAS/FINALIZADAS/
 ```
 
 ### Detalhamento de F-1
@@ -314,9 +344,29 @@ Pilar ENDFIRST → DEMANDA → F-1 (Planejamento) → EXECUÇÃO
 
 ## 🚨 BLOQUEIOS E VALIDAÇÕES
 
-### Bloqueio Estrutural
+### Bloqueio 1: Estrutura Canônica (Z-DEMANDAS-STRUCTURE)
 
-**Cursor (executor) deve verificar:**
+**Executor deve verificar ANTES de qualquer execução:**
+1. Demanda está em `DEMANDAS/ATIVAS/<DEMANDA-ID>/` ou `DEMANDAS/FINALIZADAS/<DEMANDA-ID>/`?
+2. Pasta `EVIDENCIAS/` existe dentro da pasta da demanda?
+3. Pasta `OUTPUTS/` existe dentro da pasta da demanda?
+4. Nenhuma pasta proibida (`DEMANDAS_MANUS/`, `EVIDENCIAS/`, `OUTPUTS/`) existe na raiz?
+
+**Se estrutura não está conforme:**
+> "Estrutura não está conforme. Z-DEMANDAS-STRUCTURE falhou. Corrija antes de prosseguir."
+
+**Validação automática:**
+```bash
+./tools/z_demandas_structure.sh
+```
+
+**Referência:** `/METODO/ESTRUTURA_CANONICA_DEMANDAS.md`
+
+---
+
+### Bloqueio 2: F-1 Aprovado
+
+**Executor deve verificar:**
 1. Demanda é complexa?
 2. Existe documento de F-1?
 3. F-1 foi aprovado? (declaração "F-1 aprovada")

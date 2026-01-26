@@ -10,10 +10,13 @@
 
 ### Antes de iniciar execução
 
-1. ❓ O F-1 está aprovado?
-2. ❓ O END está claro?
-3. ❓ Há bloqueios estruturais?
-4. ❓ Todas as dependências estão resolvidas?
+1. ❓ Z-DEMANDAS-STRUCTURE passou? (estrutura está conforme)
+2. ❓ Demanda está em DEMANDAS/ATIVAS/<DEMANDA-ID>/?
+3. ❓ Pastas EVIDENCIAS/ e OUTPUTS/ existem?
+4. ❓ O F-1 está aprovado?
+5. ❓ O END está claro?
+6. ❓ Há bloqueios estruturais?
+7. ❓ Todas as dependências estão resolvidas?
 
 ### Ao executar cada fase
 
@@ -28,8 +31,9 @@
 1. ❓ O artefato foi criado?
 2. ❓ Todos os critérios de PASS foram atendidos?
 3. ❓ O artefato foi commitado?
-4. ❓ A evidência foi gerada?
-5. ❓ Posso avançar para a próxima fase?
+4. ❓ A evidência foi gerada em DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/?
+5. ❓ Output foi gerado em DEMANDAS/ATIVAS/<DEMANDA-ID>/OUTPUTS/ (se houver)?
+6. ❓ Posso avançar para a próxima fase?
 
 ### Ao concluir demanda
 
@@ -81,6 +85,9 @@ O Executor cumpriu seu papel se:
 
 O Executor falhou se:
 
+- ❌ Z-DEMANDAS-STRUCTURE falhou (estrutura não conforme)
+- ❌ Criou evidência fora de DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/
+- ❌ Criou output fora de DEMANDAS/ATIVAS/<DEMANDA-ID>/OUTPUTS/
 - ❌ Pulou fases do F-1
 - ❌ Mudou o END sem aprovação
 - ❌ Não gerou artefatos definidos

@@ -10,13 +10,16 @@
 
 ### Ao criar demanda
 
-1. ❓ Qual é o problema real?
-2. ❓ Qual é o END (Estado Final Esperado)?
-3. ❓ O END é mensurável?
-4. ❓ O END é binário (PASS/FAIL)?
-5. ❓ Quais são os critérios de PASS (>= 3)?
-6. ❓ Quais são os critérios de FAIL (>= 3)?
-7. ❓ O que está fora de escopo?
+1. ❓ Criar pasta: DEMANDAS/ATIVAS/DEMANDA-<TIPO>-<NUMERO>/
+2. ❓ Criar subpastas: EVIDENCIAS/ e OUTPUTS/
+3. ❓ Qual é o problema real?
+4. ❓ Qual é o END (Estado Final Esperado)?
+5. ❓ O END é mensurável?
+6. ❓ O END é binário (PASS/FAIL)?
+7. ❓ Quais são os critérios de PASS (>= 3)?
+8. ❓ Quais são os critérios de FAIL (>= 3)?
+9. ❓ O que está fora de escopo?
+10. ❓ Z-DEMANDAS-STRUCTURE passou?
 
 ### Ao definir critérios
 
@@ -84,6 +87,9 @@ O Produto cumpriu seu papel se:
 
 O Produto falhou se:
 
+- ❌ Criou demanda fora de DEMANDAS/ATIVAS/
+- ❌ Não criou pastas EVIDENCIAS/ e OUTPUTS/
+- ❌ Z-DEMANDAS-STRUCTURE falhou
 - ❌ Criou demanda ambígua
 - ❌ Definiu END não mensurável
 - ❌ Não definiu fora de escopo

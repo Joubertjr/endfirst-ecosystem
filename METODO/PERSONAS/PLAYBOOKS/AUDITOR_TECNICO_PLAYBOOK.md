@@ -10,12 +10,15 @@
 
 ### Ao auditar demanda
 
-1. ❓ A demanda tem END explícito?
-2. ❓ O END está no formato canônico?
-3. ❓ A demanda tem critérios de PASS/FAIL?
-4. ❓ O formato é `### PASS` e `### FAIL`?
-5. ❓ A demanda tem metadados completos?
-6. ❓ Há placeholders no END?
+1. ❓ Z-DEMANDAS-STRUCTURE passou? (estrutura está conforme)
+2. ❓ Demanda está em DEMANDAS/ATIVAS/ ou DEMANDAS/FINALIZADAS/?
+3. ❓ Pastas EVIDENCIAS/ e OUTPUTS/ existem?
+4. ❓ A demanda tem END explícito?
+5. ❓ O END está no formato canônico?
+6. ❓ A demanda tem critérios de PASS/FAIL?
+7. ❓ O formato é `### PASS` e `### FAIL`?
+8. ❓ A demanda tem metadados completos?
+9. ❓ Há placeholders no END?
 
 ### Ao auditar F-1
 
@@ -36,6 +39,14 @@
 4. ❓ Há placeholders (TODO/TBD)?
 5. ❓ Há seções vazias?
 6. ❓ O artefato referencia a demanda?
+
+### Ao aplicar gate Z-DEMANDAS-STRUCTURE
+
+1. ❓ Nenhuma pasta proibida na raiz (DEMANDAS_MANUS/, EVIDENCIAS/, OUTPUTS/)?
+2. ❓ Todas as demandas em DEMANDAS/ATIVAS/ ou DEMANDAS/FINALIZADAS/?
+3. ❓ Todas as demandas têm pastas EVIDENCIAS/ e OUTPUTS/?
+4. ❓ Evidências estão nos locais corretos?
+5. ❓ Outputs estão nos locais corretos?
 
 ### Ao aplicar gate Z-METHOD-REPO-INTEGRITY
 
@@ -90,6 +101,8 @@ O Auditor Técnico cumpriu seu papel se:
 
 O Auditor Técnico falhou se:
 
+- ❌ Não validou Z-DEMANDAS-STRUCTURE antes de auditoria
+- ❌ Aprovou demanda com estrutura não conforme
 - ❌ Aprovou por simpatia
 - ❌ Validou sem critérios binários
 - ❌ Não procurou falhas escondidas

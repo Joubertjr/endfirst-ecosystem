@@ -29,6 +29,12 @@
 **Papel ativo:** Produto  
 **Critério de ativação:** Problema sem demanda formal
 
+**Ações obrigatórias:**
+1. Criar pasta: `DEMANDAS/ATIVAS/DEMANDA-<TIPO>-<NUMERO>/`
+2. Criar subpastas: `EVIDENCIAS/` e `OUTPUTS/`
+3. Criar arquivo da demanda na pasta criada
+4. Executar Z-DEMANDAS-STRUCTURE (validar estrutura)
+
 ### Regra 2: Aprovação de Demanda
 **Contexto:** Demanda criada, aguardando aprovação  
 **Papel ativo:** CEO  
@@ -49,10 +55,24 @@
 **Papel ativo:** Executor  
 **Critério de ativação:** `status: APROVADO` + fases não executadas
 
+**Ações obrigatórias:**
+1. Validar Z-DEMANDAS-STRUCTURE antes de executar
+2. Executar fases conforme F-1
+3. Registrar evidências em `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/`
+4. Gerar outputs em `DEMANDAS/ATIVAS/<DEMANDA-ID>/OUTPUTS/`
+5. NUNCA criar evidências ou outputs fora da pasta da demanda
+
 ### Regra 6: Auditoria
 **Contexto:** F-1 ou artefato criado  
 **Papel ativo:** Auditor Técnico  
 **Critério de ativação:** Solicitação de auditoria OU gate obrigatório
+
+**Ações obrigatórias:**
+1. Validar Z-DEMANDAS-STRUCTURE antes de qualquer auditoria
+2. Verificar estrutura da pasta da demanda
+3. Validar que evidências estão no local correto
+4. Validar que outputs estão no local correto
+5. Bloquear execução se estrutura não está conforme
 
 ### Regra 7: Validação de Conclusão
 **Contexto:** Todas as fases executadas  
