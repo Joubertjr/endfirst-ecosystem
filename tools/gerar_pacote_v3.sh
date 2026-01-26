@@ -14,7 +14,8 @@ TEMP_DIR=$(mktemp -d)
 echo "Gerando pacote ZIP v3..."
 
 # Limpar ZIP anterior se existir
-rm -f "$ZIP_NAME"
+mkdir -p "$REPO_ROOT/OUTPUTS"
+rm -f "$REPO_ROOT/OUTPUTS/$ZIP_NAME"
 rm -f "$REPO_ROOT/MANIFEST.json"
 
 # Criar estrutura no diretório temporário
@@ -71,7 +72,8 @@ fi
 # Criar ZIP primeiro
 echo "Criando ZIP..."
 cd "$TEMP_DIR"
-zip -r "$REPO_ROOT/$ZIP_NAME" . > /dev/null
+mkdir -p "$REPO_ROOT/OUTPUTS"
+zip -r "$REPO_ROOT/OUTPUTS/$ZIP_NAME" . > /dev/null
 
 # Agora gerar MANIFEST.json calculando hashes do ZIP
 echo "Gerando MANIFEST.json..."
@@ -97,7 +99,7 @@ manifest = {
 }
 
 # Calcular SHA256 de cada arquivo no ZIP
-with zipfile.ZipFile("$REPO_ROOT/$ZIP_NAME", "r") as z:
+with zipfile.ZipFile("$REPO_ROOT/OUTPUTS/$ZIP_NAME", "r") as z:
     file_list = sorted([f.filename for f in z.infolist() if not f.filename.endswith('/')])
     for filename in file_list:
         content = z.read(filename)
@@ -114,6 +116,6 @@ PYTHON_SCRIPT
 # Limpar diretório temporário
 rm -rf "$TEMP_DIR"
 
-echo "✅ Pacote ZIP v3 gerado: $ZIP_NAME"
+echo "✅ Pacote ZIP v3 gerado: OUTPUTS/$ZIP_NAME"
 echo "✅ MANIFEST.json gerado: MANIFEST.json"
 echo "✅ Commit final: $COMMIT_FINAL"
