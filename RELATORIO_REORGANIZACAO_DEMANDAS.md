@@ -11,6 +11,11 @@
 
 Foi realizada uma **reorganização estrutural completa** do repositório `endfirst-ecosystem` para resolver problemas críticos de **rastreabilidade** e **organização** de demandas, evidências e outputs.
 
+**Além da reorganização, foram realizadas correções críticas:**
+- ✅ **Correção de 8 F-1** — Removidos placeholders do END (substituídos por ENDs exatos)
+- ✅ **Geração de MANIFEST.json** — Criado manifest com SHA256 de todos os arquivos
+- ✅ **Pacote v3.1** — Gerado novo pacote com MANIFEST.json incluído
+
 ### Problema Identificado
 
 A estrutura anterior apresentava:
@@ -162,10 +167,24 @@ DEMANDAS/ATIVAS/DEMANDA-METODO-010/
 - Evidências associadas corretamente
 - Outputs organizados
 
-### Fase 4: Limpeza (Pendente)
-- ⏳ Remover `DEMANDAS_MANUS/` (após validação completa)
-- ⏳ Atualizar scripts e referências aos caminhos antigos
-- ⏳ Documentar nova estrutura no método
+### Fase 4: Correções Críticas ✅
+- ✅ Corrigidos 8 F-1 removendo placeholders do END:
+  - DEMANDA_SOFT-002_SINCRONIZACAO_METODO_F1_PLANEJAMENTO.md
+  - DEMANDA_SOFT-003_BANCO_DADOS_SISTEMA_F1_PLANEJAMENTO.md
+  - DEMANDA_SOFT-004_GOVERNANCA_QUALIDADE_SOFTWARE_F1_PLANEJAMENTO.md
+  - DEMANDA_PROD-001_CONTRATACAO_TI_F1_PLANEJAMENTO.md
+  - DEMANDA_PROD-002_BANCO_CONTEXTO_CONTRATACAO_TI_F1_PLANEJAMENTO.md
+  - DEMANDA_PROD-003_FLUXO_ENDFIRST_EDITAL_TI_F1_PLANEJAMENTO.md
+  - DEMANDA_PROD-004_PERSONAS_CONTRATACAO_TI_F1_PLANEJAMENTO.md
+  - DEMANDA_GOV-001_RASTREABILIDADE_TOTAL_F1_PLANEJAMENTO.md
+- ✅ Gerado MANIFEST.json com SHA256 de todos os arquivos
+- ✅ Criado pacote v3.1 com MANIFEST.json incluído
+
+### Fase 5: Limpeza ✅
+- ✅ Removida `DEMANDAS_MANUS/` (após migração completa)
+- ✅ Removidas pastas `EVIDENCIAS/` e `OUTPUTS/` da raiz
+- ✅ Criada `DEMANDAS/SEM_VINCULO/` para arquivos sem vínculo
+- ✅ Todos os arquivos organizados dentro de `DEMANDAS/`
 
 ---
 
@@ -243,14 +262,27 @@ DEMANDAS/
 
 ### Commits Realizados
 
-- `db4184d` — Reorganização inicial + correção F-1 + pacote v3.1
-- `e84cb5f` — Limpeza de pastas antigas e duplicatas
-- `b3f563e` — Remoção de EVIDENCIAS e OUTPUTS da raiz
-- `840593b` — Remoção completa das pastas
+- `db4184d` — Reorganização inicial + correção de 8 F-1 + geração MANIFEST.json + pacote v3.1
+- `e84cb5f` — Limpeza de pastas antigas e duplicatas (removida DEMANDAS_MANUS/)
+- `b3f563e` — Remoção de EVIDENCIAS e OUTPUTS da raiz (movidos para SEM_VINCULO)
+- `840593b` — Remoção completa das pastas EVIDENCIAS/ e OUTPUTS/
 - `2dd63a2` — Atualização do relatório com mudanças finais
 - `4c18533` — Correção da estrutura no relatório
+- `345a51a` — Adição de commits de atualização do relatório
 
-**Total:** 6 commits, todas as mudanças no repositório remoto
+**Total:** 7 commits, todas as mudanças no repositório remoto
+
+### Correções Realizadas
+
+**8 F-1 Corrigidos:**
+Todos os F-1 que tinham placeholder no END foram corrigidos, substituindo:
+- ❌ `[Extraído da demanda - ver arquivo de demanda para detalhes]`
+- ✅ Por END exato e verificável copiado/derivado da demanda
+
+**MANIFEST.json:**
+- Gerado com SHA256 de todos os arquivos do pacote
+- Incluído no pacote v3.1
+- Garante auditabilidade offline completa
 
 ---
 
