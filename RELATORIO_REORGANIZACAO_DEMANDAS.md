@@ -137,11 +137,11 @@ DEMANDAS/ATIVAS/DEMANDA-METODO-010/
 ### Evidências Processadas
 - **30+ evidências** movidas para dentro das pastas de demanda
 - **3 pacotes ZIP** associados às demandas
-- **Evidências gerais** permanecem em `EVIDENCIAS/` (não específicas de demanda)
+- **9 evidências gerais** movidas para `DEMANDAS/SEM_VINCULO/EVIDENCIAS/`
 
 ### Outputs Processados
 - **Pacotes específicos** movidos para dentro das pastas de demanda
-- **Pacotes gerais** permanecem em `OUTPUTS/` (pacotes completos de execução)
+- **3 pacotes gerais** movidos para `DEMANDAS/SEM_VINCULO/OUTPUTS/`
 
 ---
 
