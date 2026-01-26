@@ -40,7 +40,7 @@ Operacionalizar execução de F-1 com rastreabilidade, evidências e respeito es
 ## ❓ Perguntas canônicas
 
 - O F-1 está aprovado?
-- A estrutura canônica está PASS?
+- A estrutura canônica está PASS/FAIL?
 - Onde estão os artefatos definidos para a fase?
 - A evidência está no local canônico?
 - A persona ativa está na fonte única `/METODO/PERSONAS/<PAPEL>/`?
@@ -79,7 +79,7 @@ Operacionalizar execução de F-1 com rastreabilidade, evidências e respeito es
 - Ler END da fase
 - Criar artefatos definidos
 - Registrar evidências
-- Validar critérios de PASS
+- Validar critérios de PASS/FAIL
 
 ### Ao finalizar
 

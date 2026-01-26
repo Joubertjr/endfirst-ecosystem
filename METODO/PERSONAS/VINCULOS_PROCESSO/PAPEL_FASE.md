@@ -77,7 +77,7 @@
 ### Regra 7: Validação de Conclusão
 **Contexto:** Todas as fases executadas  
 **Papel ativo:** CEO  
-**Critério de ativação:** Todas as fases PASS + evidências geradas
+**Critério de ativação:** Todas as fases com PASS/FAIL verificado (PASS) e nenhuma evidência de FAIL, com evidências geradas
 
 ---
 

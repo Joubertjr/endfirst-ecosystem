@@ -45,7 +45,7 @@ Checklist rápido para criação/submissão de demanda com END binário e govern
 
 ## ✅ Critérios de PASS
 
-- Checklist aplicado com tudo PASS.
+- Checklist aplicado com tudo PASS/FAIL verificado.
 
 ---
 
@@ -66,7 +66,7 @@ Checklist rápido para criação/submissão de demanda com END binário e govern
 
 - [ ] Pasta canônica `DEMANDAS/ATIVAS/<DEMANDA-ID>/` criada
 - [ ] END (exato) definido e binário
-- [ ] PASS definido (verificável)
+- [ ] PASS/FAIL definido (verificável)
 - [ ] FAIL definido (verificável)
 - [ ] Fora de escopo explícito
 - [ ] Referência a `/METODO/PERSONAS/<PAPEL>/` (fonte única)

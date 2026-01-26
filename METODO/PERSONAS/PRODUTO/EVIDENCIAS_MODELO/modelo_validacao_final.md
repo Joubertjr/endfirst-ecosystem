@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Validação Final de Artefatos (Produto)
+# MODELO: Evidência — Validação Final de Artefatos (Produto)
 
 **Versão:** 1.0  
 **Data:** 26 de Janeiro de 2026  
@@ -30,7 +30,7 @@ Produto pode validar artefatos e declarar PASS/FAIL de fase (quando definido no 
 ## ❌ Limites
 
 - Não declarar PASS/FAIL final.
-- Não aceitar “quase PASS”.
+- Não aceitar “quase PASS” (decisão deve ser PASS/FAIL).
 
 ---
 
@@ -56,7 +56,7 @@ Produto pode validar artefatos e declarar PASS/FAIL de fase (quando definido no 
 
 ## 🚫 Decisões proibidas
 
-- PASS sem evidência.
+- PASS sem evidência (logo: FAIL).
 
 ---
 
@@ -69,7 +69,7 @@ Produto pode validar artefatos e declarar PASS/FAIL de fase (quando definido no 
 
 ## 🧬 Versionamento
 
-- Mudanças neste modelo exigem demanda de método.
+- Mudanças neste artefato exigem demanda de método.
 
 ---
 

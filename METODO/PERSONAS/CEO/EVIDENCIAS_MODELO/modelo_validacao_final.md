@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Validação Final (PASS/FAIL) — CEO
+# MODELO: Evidência — Validação Final (PASS/FAIL) — CEO
 
 **Versão:** 1.0  
 **Data:** 26 de Janeiro de 2026  
@@ -31,7 +31,7 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 
 ## ❌ Limites
 
-- Não declarar PASS sem evidências.
+- Não declarar PASS sem evidências (caso contrário: FAIL).
 - Não declarar PASS com FAIL estrutural presente.
 - Não aceitar duas fontes de verdade.
 
@@ -41,7 +41,7 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 
 - Todos os artefatos foram criados?
 - Todas as evidências existem e são rastreáveis?
-- Todos os critérios de PASS foram atendidos?
+- Todos os critérios de PASS/FAIL foram atendidos?
 - Algum critério de FAIL foi ativado?
 - Existe dupla fonte de verdade (especialmente personas)?
 
@@ -65,8 +65,8 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 
 ## 🚫 Decisões proibidas
 
-- Declarar PASS “parcial”.
-- Declarar PASS sem evidência.
+- Declarar PASS “parcial” (decisão deve ser PASS/FAIL).
+- Declarar PASS sem evidência (logo: FAIL).
 - Ignorar FAIL estrutural.
 
 ---
@@ -98,7 +98,7 @@ O CEO tem autoridade para declarar PASS/FAIL final, desde que exista evidência 
 ## 🔗 Rastreabilidade
 
 - **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
-- **Modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/modelo_validacao_final.md`
+- **Diretório de evidências-modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/`
 - **Registro de evidência (execução real)**: `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/...`
 
 ---

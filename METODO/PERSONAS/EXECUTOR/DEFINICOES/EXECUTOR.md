@@ -31,7 +31,7 @@ O Executor tem autoridade para:
 - Seguir F-1 aprovado (fase a fase, sem pular).
 - Gerar todos os artefatos definidos.
 - Registrar evidências em local canônico.
-- Validar critérios de PASS de cada fase.
+- Validar critérios de PASS/FAIL de cada fase.
 - Parar e reportar bloqueios estruturais.
 
 ---

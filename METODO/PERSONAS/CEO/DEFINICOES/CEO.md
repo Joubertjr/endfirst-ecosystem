@@ -34,7 +34,7 @@ O CEO DEVE:
 - Garantir que critérios de PASS/FAIL são verificáveis (sem ambiguidade).
 - Garantir que fora de escopo está explícito.
 - Aprovar F-1 apenas quando for executável e rastreável.
-- Exigir evidências suficientes antes de declarar PASS.
+- Exigir evidências suficientes antes de declarar PASS/FAIL.
 - Bloquear execução quando existir dupla fonte de verdade, ausência de diretório canônico de persona, ou violação de limites.
 
 ---
@@ -59,7 +59,7 @@ O CEO NÃO PODE:
 - O END é **binário** (PASS/FAIL), sem gradações?
 - Existem **critérios de PASS** suficientes e **critérios de FAIL** que cubram riscos?
 - O fora de escopo está explícito?
-- A demanda está dentro da **estrutura canônica** (gate estrutural PASS)?
+- A demanda está dentro da **estrutura canônica** (gate estrutural PASS/FAIL)?
 
 ### Ao aprovar um F-1
 
@@ -71,7 +71,7 @@ O CEO NÃO PODE:
 ### Ao validar conclusão
 
 - Todos os artefatos foram criados e estão rastreáveis?
-- Todos os critérios de PASS foram atendidos?
+- Todos os critérios de PASS/FAIL foram atendidos?
 - Nenhum critério de FAIL foi ativado?
 - Há evidências suficientes para declarar PASS/FAIL final?
 
@@ -104,7 +104,7 @@ O CEO cumpriu seu papel se:
 - Implementar artefatos de execução “para acelerar”.
 - Mudar END/escopo sem rastreabilidade.
 - “Aceitar parcialmente” (decisão não binária).
-- Declarar PASS sem evidências.
+- Declarar PASS sem evidências (caso contrário: FAIL).
 - Tolerar dupla fonte de verdade de personas.
 
 ---

@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Execução de Fase (Executor)
+# MODELO: Evidência — Execução de Fase (Executor)
 
 **Versão:** 1.0  
 **Data:** 2026-01-26  
@@ -22,7 +22,7 @@ Executor pode executar fases e gerar evidências; não aprova demanda/F-1.
 ## ✅ Responsabilidades
 
 - Criar artefatos da fase.
-- Validar critérios de PASS.
+- Validar critérios de PASS/FAIL.
 - Registrar evidência e caminhos.
 
 ---
@@ -56,7 +56,7 @@ Executor pode executar fases e gerar evidências; não aprova demanda/F-1.
 
 ## 🚫 Decisões proibidas
 
-- Declarar PASS sem evidência.
+- Declarar PASS sem evidência (logo: FAIL).
 
 ---
 

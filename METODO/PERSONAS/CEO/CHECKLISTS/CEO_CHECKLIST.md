@@ -35,7 +35,7 @@ Fornecer checklist operacional para o CEO executar aprovações e validações s
 
 - Não implementar.
 - Não ignorar gates.
-- Não declarar PASS sem evidências.
+- Não declarar PASS sem evidências (caso contrário: FAIL).
 
 ---
 
@@ -80,7 +80,7 @@ Fornecer checklist operacional para o CEO executar aprovações e validações s
 - [ ] END (exato) existe e é binário (PASS/FAIL)
 - [ ] Critérios PASS e FAIL existem e são verificáveis
 - [ ] Fora de escopo explícito
-- [ ] Estrutura canônica de demanda (pastas/artefatos) PASS
+- [ ] Estrutura canônica de demanda (pastas/artefatos) PASS/FAIL
 - [ ] Persona(s) envolvidas existem no diretório canônico (fonte única)
 
 ### Aprovação de F-1
@@ -88,13 +88,13 @@ Fornecer checklist operacional para o CEO executar aprovações e validações s
 - [ ] END do F-1 bate com o END da demanda
 - [ ] Fases têm END específico + artefatos + critérios de PASS/FAIL
 - [ ] Não há fases genéricas / lacunas
-- [ ] Governança de personas (fonte única) PASS
+- [ ] Governança de personas (fonte única) PASS/FAIL
 
 ### Validação Final (PASS/FAIL)
 
 - [ ] Todos os artefatos foram criados
 - [ ] Todas as evidências foram geradas e são rastreáveis
-- [ ] Todos os critérios de PASS atendidos
+- [ ] Todos os critérios de PASS/FAIL atendidos
 - [ ] Nenhum critério de FAIL ativado
 - [ ] Não existe dupla fonte de verdade de personas
 

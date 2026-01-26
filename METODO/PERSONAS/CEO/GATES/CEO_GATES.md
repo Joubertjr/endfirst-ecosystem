@@ -9,7 +9,7 @@
 
 ## 🎯 Objetivo
 
-Definir gates mínimos que o CEO deve aplicar antes de aprovar demanda/F-1 e antes de declarar PASS final.
+Definir gates mínimos que o CEO deve aplicar antes de aprovar demanda/F-1 e antes de declarar PASS/FAIL final.
 
 ---
 
@@ -32,7 +32,7 @@ O CEO tem autoridade para:
 ## ❌ Limites
 
 - CEO não “contorna” gate por conveniência.
-- CEO não declara PASS com gate falhando.
+- CEO não declara PASS com gate falhando (caso contrário: FAIL).
 
 ---
 
@@ -69,7 +69,7 @@ O CEO tem autoridade para:
 
 ### GATE 1 — END Binário
 
-**PASS se:**
+**PASS se (caso contrário: FAIL):**
 - END é mensurável, observável e binário.
 
 **FAIL se:**
@@ -77,7 +77,7 @@ O CEO tem autoridade para:
 
 ### GATE 2 — Critérios PASS/FAIL
 
-**PASS se:**
+**PASS se (caso contrário: FAIL):**
 - Existem critérios explícitos de PASS e FAIL, verificáveis.
 
 **FAIL se:**
@@ -85,17 +85,17 @@ O CEO tem autoridade para:
 
 ### GATE 3 — Fonte Única de Verdade de Personas
 
-**PASS se:**
+**PASS se (caso contrário: FAIL):**
 - Persona ativa existe em `/METODO/PERSONAS/<PAPEL>/` com definição, playbook, regras, gates e checklist.
 - Não existe definição concorrente fora do diretório canônico.
 
 **FAIL se:**
 - Persona sem diretório canônico, ou existe dupla fonte de verdade.
 
-### GATE 4 — Evidências para PASS Final
+### GATE 4 — Evidências para PASS/FAIL Final
 
-**PASS se:**
-- Evidências existem, são rastreáveis e cobrem todos os critérios de PASS.
+**PASS se (caso contrário: FAIL):**
+- Evidências existem, são rastreáveis e cobrem todos os critérios de PASS/FAIL.
 
 **FAIL se:**
 - Evidências ausentes/insuficientes.

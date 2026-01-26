@@ -66,7 +66,7 @@ Checklist operacional para auditoria rápida e binária (PASS/FAIL).
 
 - [ ] END explícito e binário
 - [ ] PASS/FAIL em formato canônico
-- [ ] Sem placeholders (TODO/TBD)
+- [ ] Sem marcadores de incompletude (ex.: itens pendentes sem definição)
 - [ ] Evidências e rastreabilidade presentes
 - [ ] Fonte única de personas confirmada (`/METODO/PERSONAS/<PAPEL>/`)
 

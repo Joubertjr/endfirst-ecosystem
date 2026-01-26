@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Aprovação de Demanda (Produto)
+# MODELO: Evidência — Aprovação de Demanda (Produto)
 
 **Versão:** 1.0  
 **Data:** 26 de Janeiro de 2026  
@@ -71,7 +71,7 @@ Produto pode criar a demanda e declarar “pronta para aprovação”, mas **nã
 
 ## 🧬 Versionamento
 
-- Mudanças neste modelo exigem demanda de método e evidência de atualização.
+- Mudanças neste artefato exigem demanda de método e evidência de atualização.
 
 ---
 

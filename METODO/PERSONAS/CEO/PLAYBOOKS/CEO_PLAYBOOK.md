@@ -27,7 +27,7 @@ Executar o papel de CEO de forma **operacional**, garantindo END binário, gover
 
 - Validar END e critérios antes de aprovar.
 - Validar F-1 (fases, artefatos, executabilidade) antes de aprovar.
-- Exigir evidências antes de declarar PASS.
+- Exigir evidências antes de declarar PASS/FAIL.
 - Garantir que personas são governadas por **artefatos** (não por prompts).
 
 ---
@@ -92,7 +92,7 @@ Executar o papel de CEO de forma **operacional**, garantindo END binário, gover
 ## 🚫 Decisões proibidas
 
 - Implementar “para ajudar”.
-- Declarar PASS sem evidências.
+- Declarar PASS sem evidências (caso contrário: FAIL).
 - Aceitar dupla fonte de verdade.
 - Alterar END sem rastreabilidade.
 

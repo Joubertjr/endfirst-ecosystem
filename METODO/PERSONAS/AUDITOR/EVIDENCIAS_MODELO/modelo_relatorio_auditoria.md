@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Relatório de Auditoria (Auditor)
+# MODELO: Evidência — Relatório de Auditoria (Auditor)
 
 **Versão:** 1.0  
 **Data:** 2026-01-26  
@@ -55,7 +55,7 @@ Auditor pode declarar PASS/FAIL técnico e solicitar evidências; não aprova de
 
 ## 🚫 Decisões proibidas
 
-- Declarar PASS sem evidência.
+- Declarar PASS sem evidência (caso contrário: FAIL).
 
 ---
 

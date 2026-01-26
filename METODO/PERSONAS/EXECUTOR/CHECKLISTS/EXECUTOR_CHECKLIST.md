@@ -76,7 +76,7 @@ Checklist operacional para executar F-1 sem pular fases e com evidências.
 - [ ] END da fase lido
 - [ ] Artefatos criados
 - [ ] Evidência gerada
-- [ ] Critérios de PASS validados
+- [ ] Critérios de PASS/FAIL validados
 
 ### Ao finalizar
 

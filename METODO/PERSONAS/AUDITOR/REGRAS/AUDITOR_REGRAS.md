@@ -40,7 +40,7 @@ Definir regras para auditoria binária e rastreável, sem confiança implícita.
 
 - Existe qualquer dupla fonte de verdade?
 - Existe qualquer critério não binário?
-- Existe qualquer placeholder?
+- Existe qualquer marcador de incompletude?
 
 ---
 

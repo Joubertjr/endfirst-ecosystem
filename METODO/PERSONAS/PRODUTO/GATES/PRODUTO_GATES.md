@@ -45,7 +45,7 @@ Gates mínimos que Produto deve aplicar antes de submeter demanda/F-1 ao CEO.
 
 ## ✅ Critérios de PASS
 
-- Submissão apenas quando gates PASS.
+- Submissão apenas quando gates PASS/FAIL estão verificados (PASS) e nenhum FAIL foi acionado.
 
 ---
 

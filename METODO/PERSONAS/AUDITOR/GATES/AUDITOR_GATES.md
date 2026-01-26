@@ -68,7 +68,7 @@ Demanda/F-1 seguem estrutura canônica.
 
 ### GATE 2 — Gate Placeholders
 
-Ausência de TODO/TBD em END e critérios.
+Ausência de marcadores de incompletude em END e critérios.
 
 ### GATE 3 — Gate Fonte Única de Personas
 

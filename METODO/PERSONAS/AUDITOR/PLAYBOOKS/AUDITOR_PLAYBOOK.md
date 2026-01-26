@@ -38,7 +38,7 @@ Operacionalizar auditoria binária (PASS/FAIL) de demandas, F-1 e artefatos, bus
 
 ## ❓ Perguntas canônicas
 
-- Estrutura canônica PASS?
+- Estrutura canônica PASS/FAIL?
 - END binário?
 - PASS/FAIL canônicos?
 - Placeholders?

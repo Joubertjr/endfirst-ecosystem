@@ -76,7 +76,7 @@ Definir regras operacionais do papel CEO para garantir governança, rastreabilid
 ## 🔒 Regras canônicas (CEO)
 
 1. **END é contrato**: se não é mensurável + binário, é FAIL.
-2. **Evidência é condição**: sem evidência, não existe PASS.
+2. **Evidência é condição**: sem evidência, não existe PASS/FAIL válido.
 3. **Persona é artefato**: persona não é prompt; é conjunto de artefatos canônicos.
 4. **Fonte única**: `/METODO/PERSONAS/<PAPEL>/` é a única verdade; fora disso é FAIL estrutural.
 5. **Separação de papéis**: CEO aprova/declara PASS/FAIL; não executa.

@@ -1,4 +1,4 @@
-# MODELO DE EVIDÊNCIA: Aprovação de F-1 (CEO)
+# MODELO: Evidência — Aprovação de F-1 (CEO)
 
 **Versão:** 1.0  
 **Data:** 26 de Janeiro de 2026  
@@ -97,7 +97,7 @@ O CEO tem autoridade para aprovar/rejeitar F-1 com base em executabilidade, rast
 ## 🔗 Rastreabilidade
 
 - **Fonte única (persona CEO)**: `/METODO/PERSONAS/CEO/`
-- **Modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/modelo_aprovacao_f1.md`
+- **Diretório de evidências-modelo**: `/METODO/PERSONAS/CEO/EVIDENCIAS_MODELO/`
 - **Registro de evidência (execução real)**: `DEMANDAS/ATIVAS/<DEMANDA-ID>/EVIDENCIAS/...`
 
 ---

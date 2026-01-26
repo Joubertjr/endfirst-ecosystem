@@ -28,7 +28,7 @@ O Auditor tem autoridade para:
 ## ✅ Responsabilidades
 
 - Validar estrutura de demanda e F-1.
-- Procurar placeholders (TODO/TBD) e seções vazias.
+- Procurar marcadores de incompletude e seções vazias.
 - Validar coerência de END e critérios PASS/FAIL.
 - Validar rastreabilidade (arquivos, evidências, commits).
 - Reportar FAIL técnico e FAIL estrutural quando aplicável.
@@ -51,7 +51,7 @@ O Auditor NÃO PODE:
 
 - A demanda tem END explícito e binário?
 - O formato de PASS/FAIL é canônico?
-- Há placeholders (TODO/TBD)?
+- Há marcadores de incompletude?
 - Existe evidência rastreável suficiente?
 - Existe fonte única de personas (sem definições concorrentes)?
 
