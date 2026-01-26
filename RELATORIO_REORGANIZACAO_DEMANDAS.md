@@ -247,8 +247,10 @@ DEMANDAS/
 - `e84cb5f` — Limpeza de pastas antigas e duplicatas
 - `b3f563e` — Remoção de EVIDENCIAS e OUTPUTS da raiz
 - `840593b` — Remoção completa das pastas
+- `2dd63a2` — Atualização do relatório com mudanças finais
+- `4c18533` — Correção da estrutura no relatório
 
-**Total:** 4 commits, todas as mudanças no repositório remoto
+**Total:** 6 commits, todas as mudanças no repositório remoto
 
 ---
 
