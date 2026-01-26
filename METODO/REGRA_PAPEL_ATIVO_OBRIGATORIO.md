@@ -25,12 +25,34 @@
 
 ---
 
+## 🔒 FONTE ÚNICA DE VERDADE (PERSONAS)
+
+> “Persona só é válida se existir em /METODO/PERSONAS//.
+> Qualquer definição fora disso é FAIL estrutural.”
+
+**Interpretação canônica:**
+
+- A única fonte válida de persona é o diretório canônico: `/METODO/PERSONAS/<PAPEL>/`
+- Diretórios/arquivos legados fora do diretório canônico (ex.: `/METODO/PERSONAS/DEFINICOES/`) **não** são fonte de verdade
+
+---
+
+## 🔒 REGRA: DIRETÓRIO CANÔNICO OBRIGATÓRIO
+
+> “Nenhuma persona pode ser ativada sem diretório próprio em /METODO/PERSONAS// contendo definição, playbook, regras, gates e checklist.”
+
+---
+
 ## ✅ CRITÉRIOS DE PASS
 
 Uma fase pode ser executada se:
 
-1. ✅ Existe artefato de definição do papel em `/METODO/PERSONAS/DEFINICOES/`
-2. ✅ Existe playbook do papel em `/METODO/PERSONAS/PLAYBOOKS/`
+1. ✅ A persona existe no diretório canônico em `/METODO/PERSONAS/<PAPEL>/`
+2. ✅ Existe artefato de definição do papel em `/METODO/PERSONAS/<PAPEL>/DEFINICOES/`
+3. ✅ Existe playbook do papel em `/METODO/PERSONAS/<PAPEL>/PLAYBOOKS/`
+4. ✅ Existe regras do papel em `/METODO/PERSONAS/<PAPEL>/REGRAS/`
+5. ✅ Existe gates do papel em `/METODO/PERSONAS/<PAPEL>/GATES/`
+6. ✅ Existe checklist do papel em `/METODO/PERSONAS/<PAPEL>/CHECKLISTS/`
 3. ✅ Existe vínculo papel-fase em `/METODO/PERSONAS/VINCULOS_PROCESSO/`
 4. ✅ O papel ativo está explicitamente declarado no contexto
 5. ✅ O papel ativo tem autoridade para executar a fase
@@ -41,8 +63,11 @@ Uma fase pode ser executada se:
 
 Uma fase NÃO pode ser executada se:
 
-1. ❌ Não existe artefato de definição do papel
-2. ❌ Não existe playbook do papel
+1. ❌ A persona não existe no diretório canônico `/METODO/PERSONAS/<PAPEL>/`
+2. ❌ Existe definição concorrente fora do diretório canônico (duas fontes de verdade)
+3. ❌ Não existe definição do papel no diretório canônico
+4. ❌ Não existe playbook do papel no diretório canônico
+5. ❌ Não existe regras/gates/checklist do papel no diretório canônico
 3. ❌ Não existe vínculo papel-fase
 4. ❌ O papel ativo não está declarado
 5. ❌ O papel ativo não tem autoridade para executar a fase
@@ -59,8 +84,8 @@ Uma fase NÃO pode ser executada se:
 - Papel ativo: Executor
 
 **Validação:**
-1. ✅ Existe `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md`?
-2. ✅ Existe `/METODO/PERSONAS/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`?
+1. ✅ Existe `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`?
+2. ✅ Existe `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`?
 3. ✅ Existe vínculo Executor ↔ Execução de Fases em `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_FASE.md`?
 4. ✅ Executor tem autoridade para executar fases?
 
@@ -75,7 +100,7 @@ Uma fase NÃO pode ser executada se:
 - Papel ativo: Executor
 
 **Validação:**
-1. ✅ Existe `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md`?
+1. ✅ Existe `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`?
 2. ✅ Executor tem autoridade para aprovar demandas?
    - ❌ NÃO — Executor NÃO PODE aprovar demandas (limite do papel)
 
@@ -87,9 +112,12 @@ Uma fase NÃO pode ser executada se:
 
 Esta regra é implementada através de:
 
-1. `/METODO/PERSONAS/DEFINICOES/` — Definições de papéis
-2. `/METODO/PERSONAS/PLAYBOOKS/` — Playbooks operacionais
-3. `/METODO/PERSONAS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
+1. `/METODO/PERSONAS/<PAPEL>/DEFINICOES/` — Definições de papéis (fonte única)
+2. `/METODO/PERSONAS/<PAPEL>/PLAYBOOKS/` — Playbooks operacionais (fonte única)
+3. `/METODO/PERSONAS/<PAPEL>/REGRAS/` — Regras do papel (fonte única)
+4. `/METODO/PERSONAS/<PAPEL>/GATES/` — Gates do papel (fonte única)
+5. `/METODO/PERSONAS/<PAPEL>/CHECKLISTS/` — Checklists do papel (fonte única)
+6. `/METODO/PERSONAS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
 
 ---
 

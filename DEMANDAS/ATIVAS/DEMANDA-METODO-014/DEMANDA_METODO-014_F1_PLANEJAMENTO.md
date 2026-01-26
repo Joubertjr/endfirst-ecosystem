@@ -13,6 +13,23 @@
 
 > "Existe definição formal de personas: CEO, Chefe de Produto e Executor (IA / humano), com responsabilidade, permissões e papéis no fluxo."
 
+---
+
+## 🔒 Regras estruturais adicionais (obrigatórias)
+
+**Fonte Única de Verdade (Personas):**
+
+> “Persona só é válida se existir em /METODO/PERSONAS//.
+> Qualquer definição fora disso é FAIL estrutural.”
+
+**Persona como artefatos (não prompt):**
+
+> "Persona = conjunto de artefatos canônicos (definição, playbook, regras, gates, checklist e evidências-modelo), não um prompt."
+
+**Proibição de persona sem diretório canônico:**
+
+> "Nenhuma persona pode ser ativada sem diretório próprio em /METODO/PERSONAS// contendo definição, playbook, regras, gates e checklist."
+
 ### Critérios de Aceitação (Binários)
 
 **PASS:**
@@ -25,6 +42,9 @@
 - ✅ Permissões de cada persona definidas
 - ✅ Papéis no fluxo de cada persona definidos
 - ✅ Critérios de PASS/FAIL para cada persona definidos
+- ✅ Referência direta à fonte única de personas: `/METODO/PERSONAS//`
+- ✅ Regra explícita: persona = conjunto de artefatos, não prompt
+- ✅ Proibição explícita: persona sem diretório canônico é FAIL estrutural
 
 **FAIL:**
 - ❌ Documento não existe
@@ -33,6 +53,9 @@
 - ❌ Permissões não estão definidas
 - ❌ Papéis no fluxo não estão definidos
 - ❌ Critérios de PASS/FAIL não estão definidos
+- ❌ Persona referenciada fora de `/METODO/PERSONAS//` (dupla fonte de verdade)
+- ❌ Persona tratada como prompt (sem artefatos)
+- ❌ Persona ativada sem diretório canônico
 
 ---
 

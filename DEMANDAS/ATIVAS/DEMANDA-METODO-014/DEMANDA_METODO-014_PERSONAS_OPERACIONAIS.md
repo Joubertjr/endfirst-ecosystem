@@ -52,6 +52,19 @@ Após a conclusão desta demanda:
 
 > "Executor pode ser IA ou humano. Método não distingue. Método governa."
 
+**Fonte Única de Verdade (Personas):**
+
+> “Persona só é válida se existir em /METODO/PERSONAS//.
+> Qualquer definição fora disso é FAIL estrutural.”
+
+**Persona como artefatos (não prompt):**
+
+> "Persona = conjunto de artefatos canônicos (definição, playbook, regras, gates, checklist e evidências-modelo), não um prompt."
+
+**Proibição de persona sem diretório canônico:**
+
+> "Nenhuma persona pode ser ativada sem diretório próprio em /METODO/PERSONAS// contendo definição, playbook, regras, gates e checklist."
+
 ---
 
 ## ✅ Critérios de Aceitação (Binários)
@@ -67,6 +80,9 @@ Após a conclusão desta demanda:
 - ✅ Permissões de cada persona definidas
 - ✅ Papéis no fluxo de cada persona definidos
 - ✅ Critérios de PASS/FAIL para cada persona definidos
+- ✅ Referência direta à fonte única de personas: `/METODO/PERSONAS//`
+- ✅ Regra explícita: persona = conjunto de artefatos, não prompt
+- ✅ Proibição explícita: persona sem diretório canônico é FAIL estrutural
 
 ### FAIL
 
@@ -76,6 +92,9 @@ Após a conclusão desta demanda:
 - ❌ Permissões não estão definidas
 - ❌ Papéis no fluxo não estão definidos
 - ❌ Critérios de PASS/FAIL não estão definidos
+- ❌ Persona referenciada fora de `/METODO/PERSONAS//` (dupla fonte de verdade)
+- ❌ Persona tratada como prompt (sem artefatos)
+- ❌ Persona ativada sem diretório canônico
 
 ---
 
@@ -155,7 +174,7 @@ Sem personas operacionais:
    - Criar índice navegável de personas
    - Definir regras de criação de novas personas
 
-**Nota:** A ontologia de personas em `/METODO/PERSONAS/` já foi criada. Esta demanda consolida em documento único.
+**Nota (atualizada):** A fonte única de verdade das personas é `/METODO/PERSONAS/<PAPEL>/`. Definições fora do diretório canônico não são válidas.
 
 ### Validações
 
