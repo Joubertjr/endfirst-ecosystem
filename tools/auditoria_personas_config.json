@@ -1,0 +1,28 @@
+{
+  "critical_terms": [
+    "clareza",
+    "viabilidade",
+    "evidência",
+    "risco",
+    "improviso estrutural",
+    "fase genérica",
+    "lacuna"
+  ],
+  "markdown": {
+    "ignore_fenced_code_blocks": true
+  },
+  "rules": {
+    "nao_binario_by_section": true,
+    "block3_require_headings": true,
+    "block3_min_nonempty_lines_after_heading": 2,
+    "min_section_lines": 2
+  },
+  "inventory_min_files": {
+    "DEFINICOES": 1,
+    "PLAYBOOKS": 1,
+    "REGRAS": 1,
+    "GATES": 3,
+    "CHECKLISTS": 1,
+    "EVIDENCIAS_MODELO": 3
+  }
+}
