@@ -42,9 +42,9 @@
    - Identificar fase atual (F-1, F1-F6, Conclusão)
 
 2. ✅ **Consultar `/METODO/PERSONAS/`**
-   - Ler `/METODO/PERSONAS/DEFINICOES/` (definições de papéis)
-   - Ler `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_FASE.md` (mapeamento papel-fase)
-   - Ler `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (mapeamento papel-tipo)
+   - Ler `/METODO/PERSONAS/<PAPEL>/DEFINICOES/` (definições de papéis)
+   - Ler `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_FASE.md` (mapeamento papel-fase)
+   - Ler `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (mapeamento papel-tipo)
    - Ler `/METODO/ATIVACAO_DINAMICA.md` (quando disponível)
 
 3. ✅ **Determinar automaticamente:**
@@ -128,7 +128,7 @@ O Cursor deve seguir este algoritmo para determinar o papel ativo:
    - Status: pending_approval | f1_pending | APROVADO | em_execucao | concluida
    - Fase atual: F-1 | F1 | F2 | ... | F6 | Conclusão
 
-3. CONSULTAR /METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_FASE.md
+3. CONSULTAR /METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_FASE.md
 
 4. APLICAR REGRAS:
    SE demanda não existe ENTÃO
@@ -279,7 +279,7 @@ O ChatGPT (usuário) fica como:
 
 - `/METODO/PERSONAS/DEFINICOES/` — Definições de papéis
 - `/METODO/PERSONAS/PLAYBOOKS/` — Playbooks operacionais
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
 - `/METODO/REGRA_PAPEL_ATIVO_OBRIGATORIO.md` — Regra canônica de papel ativo
 - `/METODO/EXECUTION_MODEL.md` — Modelo de execução
 - `/METODO/CURSOR_INSTRUCTIONS.md` — Instruções operacionais do Cursor

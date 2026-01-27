@@ -427,7 +427,7 @@ Um produto PASSA se e somente se:
 **Relação com:**
 - **Regra de governança:** Regra 3 (Aprovação de Produto) e Regra 4 (Auditoria)
 - **Papel responsável:** Auditor Técnico (valida), CEO (aprova)
-- **Ontologia de personas:** `/METODO/PERSONAS/DEFINICOES/CEO.md` e `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md`
+- **Ontologia de personas:** `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md` e `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
 
 **Bloqueio automático se:**
 - ❌ Auditor Técnico não validou
@@ -560,14 +560,14 @@ Um produto FALHA se:
 
 | Papel | Arquivo de Definição | Responsabilidade na Criação |
 |---|---|---|
-| **Produto** | `/METODO/PERSONAS/DEFINICOES/PRODUTO.md` | Cria DEMANDA-PROD, define END, cria F-1 |
-| **CEO** | `/METODO/PERSONAS/DEFINICOES/CEO.md` | Aprova DEMANDA-PROD, aprova F-1, valida END, declara PASS/FAIL |
-| **Executor** | `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md` | Cria estrutura canônica, executa fases, gera evidências |
-| **Auditor Técnico** | `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md` | Valida estrutura, valida rastreabilidade, aplica gates, bloqueia se FAIL |
+| **Produto** | `/METODO/PERSONAS/PRODUTO/DEFINICOES/PRODUTO.md` | Cria DEMANDA-PROD, define END, cria F-1 |
+| **CEO** | `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md` | Aprova DEMANDA-PROD, aprova F-1, valida END, declara PASS/FAIL |
+| **Executor** | `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md` | Cria estrutura canônica, executa fases, gera evidências |
+| **Auditor Técnico** | `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md` | Valida estrutura, valida rastreabilidade, aplica gates, bloqueia se FAIL |
 
 **Vínculos:**
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md` (define papel principal por tipo de produto)
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (define papel principal por tipo de demanda)
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md` (define papel principal por tipo de produto)
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (define papel principal por tipo de demanda)
 
 ---
 
@@ -812,12 +812,12 @@ Versionamento FALHA se:
 ### Integrações
 
 **Ontologia de Personas:**
-- `/METODO/PERSONAS/DEFINICOES/CEO.md`
-- `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md`
-- `/METODO/PERSONAS/DEFINICOES/EXECUTOR.md`
-- `/METODO/PERSONAS/DEFINICOES/PRODUTO.md`
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md`
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md`
+- `/METODO/PERSONAS/CEO/DEFINICOES/CEO.md`
+- `/METODO/PERSONAS/AUDITOR/DEFINICOES/AUDITOR.md`
+- `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`
+- `/METODO/PERSONAS/PRODUTO/DEFINICOES/PRODUTO.md`
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md`
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md`
 
 **Regras Canônicas:**
 - `/METODO/REGRA_PAPEL_ATIVO_OBRIGATORIO.md`

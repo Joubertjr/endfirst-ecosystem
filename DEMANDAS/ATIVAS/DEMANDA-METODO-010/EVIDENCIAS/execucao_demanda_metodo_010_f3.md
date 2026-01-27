@@ -301,8 +301,8 @@ Arquivo: `/METODO/GOVERNANCA_PRODUTOS.md`
 | **Auditor Técnico** | `/METODO/PERSONAS/DEFINICOES/AUDITOR_TECNICO.md` | Valida estrutura, valida rastreabilidade, aplica gates, bloqueia se FAIL |
 
 **Vínculos:**
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md` (define papel principal por tipo de produto)
-- `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (define papel principal por tipo de demanda)
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_PRODUTO.md` (define papel principal por tipo de produto)
+- `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_TIPO_DEMANDA.md` (define papel principal por tipo de demanda)
 ```
 
 **Status:** ✅ PASS

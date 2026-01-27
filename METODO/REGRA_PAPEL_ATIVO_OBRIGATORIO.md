@@ -53,7 +53,7 @@ Uma fase pode ser executada se:
 4. ✅ Existe regras do papel em `/METODO/PERSONAS/<PAPEL>/REGRAS/`
 5. ✅ Existe gates do papel em `/METODO/PERSONAS/<PAPEL>/GATES/`
 6. ✅ Existe checklist do papel em `/METODO/PERSONAS/<PAPEL>/CHECKLISTS/`
-3. ✅ Existe vínculo papel-fase em `/METODO/PERSONAS/VINCULOS_PROCESSO/`
+3. ✅ Existe vínculo papel-fase em `/METODO/_PROCESSOS/VINCULOS_PROCESSO/`
 4. ✅ O papel ativo está explicitamente declarado no contexto
 5. ✅ O papel ativo tem autoridade para executar a fase
 
@@ -86,7 +86,7 @@ Uma fase NÃO pode ser executada se:
 **Validação:**
 1. ✅ Existe `/METODO/PERSONAS/EXECUTOR/DEFINICOES/EXECUTOR.md`?
 2. ✅ Existe `/METODO/PERSONAS/EXECUTOR/PLAYBOOKS/EXECUTOR_PLAYBOOK.md`?
-3. ✅ Existe vínculo Executor ↔ Execução de Fases em `/METODO/PERSONAS/VINCULOS_PROCESSO/PAPEL_FASE.md`?
+3. ✅ Existe vínculo Executor ↔ Execução de Fases em `/METODO/_PROCESSOS/VINCULOS_PROCESSO/PAPEL_FASE.md`?
 4. ✅ Executor tem autoridade para executar fases?
 
 **Resultado:** ✅ PASS — Fase pode ser executada
@@ -117,7 +117,7 @@ Esta regra é implementada através de:
 3. `/METODO/PERSONAS/<PAPEL>/REGRAS/` — Regras do papel (fonte única)
 4. `/METODO/PERSONAS/<PAPEL>/GATES/` — Gates do papel (fonte única)
 5. `/METODO/PERSONAS/<PAPEL>/CHECKLISTS/` — Checklists do papel (fonte única)
-6. `/METODO/PERSONAS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
+6. `/METODO/_PROCESSOS/VINCULOS_PROCESSO/` — Vínculos papel-fase-demanda-produto
 
 ---
 

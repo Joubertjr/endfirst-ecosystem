@@ -170,7 +170,7 @@ Sem personas operacionais:
 1. `/METODO/PERSONAS_OPERACIONAIS.md`
    - Consolidar definições de `/METODO/PERSONAS/DEFINICOES/`
    - Consolidar playbooks de `/METODO/PERSONAS/PLAYBOOKS/`
-   - Consolidar vínculos de `/METODO/PERSONAS/VINCULOS_PROCESSO/`
+   - Consolidar vínculos de `/METODO/_PROCESSOS/VINCULOS_PROCESSO/`
    - Criar índice navegável de personas
    - Definir regras de criação de novas personas
 

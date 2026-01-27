@@ -1,0 +1,63 @@
+/Users/joubertsouza/Documents/@endfirstmethod/endfirst-ecosystem/Auditoria/auditoria-7/_ORIGINAL/METODO/PERSONAS
+├── AUDITOR
+│   ├── CHECKLISTS
+│   │   └── AUDITOR_CHECKLIST.md
+│   ├── DEFINICOES
+│   │   └── AUDITOR.md
+│   ├── EVIDENCIAS_MODELO
+│   │   └── modelo_relatorio_auditoria.md
+│   ├── GATES
+│   │   └── AUDITOR_GATES.md
+│   ├── PLAYBOOKS
+│   │   └── AUDITOR_PLAYBOOK.md
+│   ├── REGRAS
+│   │   └── AUDITOR_REGRAS.md
+│   └── README.md
+├── CEO
+│   ├── CHECKLISTS
+│   │   └── CEO_CHECKLIST.md
+│   ├── DEFINICOES
+│   │   ├── CEO.md
+│   │   └── GLOSSARIO.md
+│   ├── EVIDENCIAS_MODELO
+│   │   ├── modelo_aprovacao_demanda.md
+│   │   ├── modelo_aprovacao_f1.md
+│   │   └── modelo_validacao_final.md
+│   ├── GATES
+│   │   └── CEO_GATES.md
+│   ├── PLAYBOOKS
+│   │   └── CEO_PLAYBOOK.md
+│   ├── REGRAS
+│   │   └── CEO_REGRAS.md
+│   └── README.md
+├── EXECUTOR
+│   ├── CHECKLISTS
+│   │   └── EXECUTOR_CHECKLIST.md
+│   ├── DEFINICOES
+│   │   └── EXECUTOR.md
+│   ├── EVIDENCIAS_MODELO
+│   │   └── modelo_execucao_fase.md
+│   ├── GATES
+│   │   └── EXECUTOR_GATES.md
+│   ├── PLAYBOOKS
+│   │   └── EXECUTOR_PLAYBOOK.md
+│   ├── REGRAS
+│   │   └── EXECUTOR_REGRAS.md
+│   └── README.md
+├── PRODUTO
+│   ├── CHECKLISTS
+│   │   └── PRODUTO_CHECKLIST.md
+│   ├── DEFINICOES
+│   │   └── PRODUTO.md
+│   ├── EVIDENCIAS_MODELO
+│   │   ├── modelo_aprovacao_demanda.md
+│   │   ├── modelo_aprovacao_f1.md
+│   │   └── modelo_validacao_final.md
+│   ├── GATES
+│   │   └── PRODUTO_GATES.md
+│   ├── PLAYBOOKS
+│   │   └── PRODUTO_PLAYBOOK.md
+│   ├── REGRAS
+│   │   └── PRODUTO_REGRAS.md
+│   └── README.md
+└── README.md
